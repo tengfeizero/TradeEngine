@@ -1,0 +1,170 @@
+slug: lg-10
+status: published
+order: 7
+model_no: KA-LG10
+category: logistics
+scenarios: [medical-last-mile]
+certificates: [ce-red, un383, iso-9001]
+markets: [EU, AE, BR, AU]
+hs_code: "880623"
+moq: 5
+moq_unit: pcs
+
+lead_time:
+  en: 50–60 days after deposit, 80 days with a cold-chain box and your telemetry endpoint
+  zh: 定金后 50–60 天，含冷链箱与对接你的遥测端为 80 天
+packaging:
+  en: One aircraft per crate with the winch braced, batteries in a separate UN38.3 crate
+  zh: 一机一木箱，绞车加支撑，电池另装 UN38.3 木箱
+sample_policy:
+  en: Demo unit at 1.5× FOB, flight test data pack included for your aviation authority filing
+  zh: 演示机按 FOB 1.5 倍价，附飞行测试数据包供你方向民航当局报备
+
+title:
+  en: LG-10 Carrier
+  zh: LG-10 载货运输机
+subtitle:
+  en: 10 kg payload, winch or belly drop, cold-chain option
+  zh: 10 公斤载重、绞车或腹部投放、可选冷链箱
+summary:
+  en: A cargo platform specified for the route that has to work in the rain, not the demo that works on a sunny Tuesday. 10 kg over 18 km round trip, dual redundant flight control, and a parachute that deploys on power loss.
+  zh: 为「雨天也得飞」的航线定的规格，而不是「周二晴天演示」的那种。10 公斤、18 公里往返，双冗余飞控，失电自动开伞。
+
+description:
+  en: |
+    Medical drone programmes die at the regulator, not at the airframe. The authority asks for the failure modes, the parachute deployment test, the battery thermal data and the geofence behaviour, and the project stalls for a year waiting for documents.
+
+    We build the LG-10 with the document pack as a deliverable, not an afterthought. Every unit ships with the failure mode and effects analysis, parachute deployment test video and data, battery UN38.3 plus thermal runaway test, and the geofence and lost-link behaviour log from the factory acceptance flight.
+
+    On the aircraft side the numbers are deliberately conservative. 10 kg payload for 18 km round trip in still air, 7 kg for 18 km with a 6 m/s headwind, and the cold-chain box holds 8 L at 2–8 °C for 90 minutes on its own battery. The winch lowers the load from 30 m so the aircraft never has to land at the clinic.
+  zh: |
+    医疗无人机项目死在监管环节，不是死在机身上。当局会要失效模式分析、开伞试验、电池热失控数据与地理围栏行为，然后项目为等文件停一年。
+
+    LG-10 把文件包当成交付物的一部分，而不是补做的事后工作。每台随机交付失效模式与影响分析、开伞试验视频与数据、电池 UN38.3 与热失控试验、以及工厂验收飞行时的地理围栏与失联行为日志。
+
+    飞机侧的数字刻意保守。静风 10 公斤飞 18 公里往返，6 米/秒顶风时 7 公斤飞 18 公里；冷链箱用自带电池把 8 升维持在 2–8 ℃ 达 90 分钟。绞车从 30 米放下货物，飞机不必在诊所落地。
+
+highlights:
+  - en: 10 kg over 18 km round trip, 7 kg into a 6 m/s headwind
+    zh: 10 公斤 18 公里往返，6 米/秒顶风时 7 公斤
+  - en: Document pack incl. FMEA, parachute test data, thermal runaway report
+    zh: 文件包含 FMEA、开伞试验数据、热失控报告
+  - en: 30 m winch release, no landing at the delivery point
+    zh: 30 米绞车投放，配送点无需降落
+  - en: 8 L cold-chain box, 2–8 °C for 90 minutes on internal battery
+    zh: 8 升冷链箱，自带电池 2–8 ℃ 维持 90 分钟
+
+applications:
+  - en: Blood, plasma and vaccine transport between clinics
+    zh: 血袋、血浆与疫苗的诊所间转运
+  - en: Spare parts and consumables to remote industrial sites
+    zh: 偏远工业站点的备件与耗材配送
+
+specs:
+  - group:
+      en: Payload & range
+      zh: 载重与航程
+    items:
+      - key: payload
+        label:
+          en: Payload
+          zh: 载重
+        value_num: 10
+        unit: kg
+        filterable: true
+      - key: mtow
+        label:
+          en: Max take-off weight
+          zh: 最大起飞重量
+        value_num: 26.5
+        unit: kg
+        filterable: true
+      - key: range
+        label:
+          en: Round-trip range at full load
+          zh: 满载往返航程
+        value_num: 18
+        unit: km
+        filterable: true
+      - key: release
+        label:
+          en: Release
+          zh: 投放
+        value:
+          en: 30 m winch, belly drop, or landing
+          zh: 30 米绞车、腹部投放或降落
+      - key: cold_chain
+        label:
+          en: Cold chain
+          zh: 冷链
+        value:
+          en: 8 L, 2–8 °C, 90 minutes on internal battery
+          zh: 8 升，2–8 ℃，自带电池 90 分钟
+      - key: wind
+        label:
+          en: Wind resistance
+          zh: 抗风能力
+        value_num: 12
+        unit: m/s
+  - group:
+      en: Safety
+      zh: 安全
+    items:
+      - key: redundancy
+        label:
+          en: Flight control
+          zh: 飞控
+        value:
+          en: Dual redundant IMU and compass, independent power rails
+          zh: 双冗余 IMU 与罗盘，独立供电轨
+      - key: parachute
+        label:
+          en: Parachute
+          zh: 降落伞
+        value:
+          en: Automatic on power loss or attitude exceedance, 5.5 m/s descent
+          zh: 失电或姿态超限自动开伞，5.5 米/秒下降
+      - key: geofence
+        label:
+          en: Geofence
+          zh: 地理围栏
+        value:
+          en: 32 polygon zones, altitude ceiling, no-fly import from GeoJSON
+          zh: 32 个多边形区域、限高、GeoJSON 禁飞区导入
+  - group:
+      en: Export & support
+      zh: 出口与支持
+    items:
+      - key: docs
+        label:
+          en: Document pack
+          zh: 文件包
+        value:
+          en: FMEA, parachute test video and data, thermal runaway report, acceptance flight log
+          zh: FMEA、开伞试验视频与数据、热失控报告、验收飞行日志
+      - key: warranty
+        label:
+          en: Warranty
+          zh: 质保
+        value_num: 24
+        unit: months
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.95
+  gross_weight_kg: 58
+
+cover: media/products/lg-10.jpg
+gallery: [media/products/lg-10.jpg, media/products/cat-logistics.jpg]
+related: [sr-30, in-25]
+cases: [amazon-grid]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Cargo Drone OEM — 10 kg Payload, 18 km Round Trip
+    zh: 载货无人机 OEM — 10 公斤载重，18 公里往返
+  description:
+    en: 10 kg payload over 18 km, 30 m winch release, 8 L cold-chain box, parachute on power loss. Ships with FMEA and thermal runaway reports.
+    zh: 10 公斤载重 18 公里往返、30 米绞车投放、8 升冷链箱、失电开伞。随货附 FMEA 与热失控报告。

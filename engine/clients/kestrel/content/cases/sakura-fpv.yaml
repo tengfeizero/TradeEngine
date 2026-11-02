@@ -1,0 +1,34 @@
+slug: sakura-fpv
+status: published
+title:
+  en: 60 race airframes for a Kansai FPV league, rebuilt between heats
+  zh: 关西 FPV 联赛 60 台机身，两轮预赛之间完成重装
+country: JP
+industry:
+  en: FPV league and flight school
+  zh: FPV 联赛与飞行学校
+customer: Kansai Drone Racing Association
+challenge:
+  en: |
+    A six-round league with 140 pilots and a school running 30 students a weekend. Their previous frames used a unibody bottom plate, so a gate strike that bent one arm retired the whole airframe. Mid-season they were waiting 15 to 20 days for a replacement from the original supplier and cancelling heats.
+
+    The school had a second problem: students learned on 5-inch race builds and then had nothing legal to fly outside a club field, so the transition to a commercial licence course was abrupt.
+  zh: |
+    六轮联赛 140 名选手，学校每周末 30 名学员。原来的机架是一体式底板，撞门弯了一根机臂就整车报废。赛季中期从原供应商等替换件要 15 到 20 天，只能取消轮次。
+
+    学校还有第二个问题：学员在五寸竞速机上学会，出了俱乐部场地就没有合规机型可飞，转到商用执照课程时断层很大。
+solution:
+  en: |
+    We supply the FX-5 as airframe kits plus a parts account: every arm, cage and top plate is its own SKU, held in a local spare-parts stock in Osaka with a seven-day replenishment on arms. A team rebuilds a gate strike with four screws and no soldering.
+
+    For the school we bundled 20 M4 Mini units as the step-down airframe. Same gimbal workflow as the race quad camera, but 242 g and EU C0 equivalent under Japanese rules, so a student can fly at a public field after the club course.
+  zh: |
+    FX-5 以机身套件加零件账户的形式供货：每根机臂、护笼、顶板都是独立 SKU，在大阪设本地备件仓，机臂七天补货。撞门后车队用四颗螺丝重装，不需要焊接。
+
+    学校那边我们配了 20 台 M4 Mini 作为降级机型。云台操作逻辑与竞速机摄像头一致，但只有 242 克，按日本规则对应欧盟 C0 级别，学员结课之后可以在公共场地飞。
+result:
+  en: Rebuild downtime down from 5.2 days to 1.4, 94 percent airframe finish rate over the season
+  zh: 重装停机从 5.2 天降到 1.4 天，赛季机身完赛率 94%
+products: [fx-5, m4-mini]
+cover: media/cases/sakura-fpv.jpg
+updated_at: 2026-10-22

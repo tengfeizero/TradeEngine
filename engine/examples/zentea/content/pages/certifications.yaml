@@ -1,0 +1,56 @@
+slug: certifications
+status: published
+title:
+  en: Certifications & test reports
+  zh: 资质认证与检测报告
+summary:
+  en: Current organic, food-safety and social-compliance certificates. Numbers are listed so buyers can verify them with the issuer.
+  zh: 现行有效的有机、食品安全与社会责任认证。证书编号全部公开，买方可直接向发证机构核验。
+updated_at: 2026-08-30
+blocks:
+  - type: richtext
+    title:
+      en: Why we publish the numbers
+      zh: 为什么公开证书编号
+    body:
+      en: |
+        A certificate logo proves nothing — anyone can paste one into a page. What a buyer can act on is the issuer, the registration number and the validity window, because those can be checked in a minute on the certifier's own site.
+
+        Every certificate below is the current version. Expired certificates are removed from this page automatically at build time rather than left up as decoration.
+      zh: |
+        证书图标本身证明不了什么——谁都能贴一张图。买家真正能用的是发证机构、注册编号与有效期，因为这些一分钟内就能在发证机构官网核实。
+
+        下面每一张都是现行版本。过期证书会在构建时自动从本页移除，而不是留着当装饰。
+  - type: certificate_grid
+    title:
+      en: Current certificates
+      zh: 现行证书
+  - type: stats
+    items:
+      - value: "3"
+        label: { en: Organic schemes, zh: 有机体系 }
+        note: { en: EU / USDA / JAS, zh: 欧盟 / 美国 / 日本 }
+      - value: "2"
+        label: { en: Food safety audits, zh: 食品安全审核 }
+        note: { en: HACCP, BRC-ready, zh: HACCP、BRC 标准 }
+      - value: "0"
+        label: { en: Major non-conformities, zh: 重大不符合项 }
+        note: { en: last 3 audits, zh: 近三次审核 }
+  - type: faq
+    title:
+      en: Verification
+      zh: 核验方式
+    items:
+      - q:
+          en: How do I verify a certificate?
+          zh: 如何核验证书？
+        a:
+          en: Take the registration number from the card and search it on the issuer's website (OneCert, CERES or SGS). If it does not appear, ask us for the scanned original.
+          zh: 取卡片上的注册编号，在发证机构官网（OneCert、CERES 或 SGS）查询。查不到可直接向我们索取原件扫描件。
+      - q:
+          en: Can you send the full test report?
+          zh: 能提供完整检测报告吗？
+        a:
+          en: Yes, per lot. Pesticide residue panels cover the EU MRL list and Japan's positive list.
+          zh: 可以，按批次提供。农残检测覆盖欧盟 MRL 清单与日本肯定列表。
+  - type: inquiry

@@ -1,0 +1,31 @@
+slug: uk-coffee-chain
+status: published
+order: 2
+title:
+  en: A UK coffee chain adds tea without adding a supplier audit
+  zh: 英国咖啡连锁加茶单，不再多审一家供应商
+country: GB
+industry:
+  en: Coffee chain, tea range
+  zh: 咖啡连锁的茶单
+customer: Marlow Coffee Co.
+challenge:
+  en: The chain had 96 sites and no tea worth drinking. Its coffee roaster could not supply leaf tea, and adding a second supplier meant a full BRCGS audit, a second payment run and a second set of label rules.
+  zh: 这家连锁有 96 家门店，茶单却拿不出手。咖啡烘焙商供不了原叶茶，再加一家供应商意味着整套 BRCGS 审核、第二套付款流程与第二套标签规则。
+solution:
+  en: The roaster buys our leaf under its own vendor code, and we pack to the chain's label and case spec. Four blends — breakfast, Earl Grey, green and a decaf — built from six base lots, with barista brew cards calibrated to their water.
+  zh: 烘焙商以自有供应商编号采购我们的原叶，我们按连锁的标签与箱规包装。早餐、伯爵、绿茶、低因四款，由六个基底批次拼成，并按其水质校准了咖啡师冲煮卡。
+result:
+  en: Six weeks from first brief to first delivery, 96% approval in the barista trial, and one fewer supplier audit for the chain to run each year.
+  zh: 从首次沟通到首批交付六周，咖啡师测试通过率 96%，连锁每年少审一家供应商。
+products: [b-310-keemun-hao-ya, o-410-tieguanyin]
+cover: media/cases/uk-coffee-chain.jpg
+updated_at: 2026-08-27
+
+seo:
+  title:
+    en: Case — Four tea blends for a 96-site UK coffee chain
+    zh: 案例——为 96 家门店的英国咖啡连锁做四款茶
+  description:
+    en: Six base lots, four blends and barista brew cards calibrated to local water — from brief to first delivery in six weeks.
+    zh: 六个基底批次、四款拼配、按当地水质校准的冲煮卡：从沟通到首批交付六周。

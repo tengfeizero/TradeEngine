@@ -1,0 +1,135 @@
+slug: sencha-green-tea
+status: published
+order: 1
+featured: true
+model_no: MP-SEN-01
+category: green-tea
+scenarios: [daily-drink, wellness]
+certificates: [usda-organic, eu-organic, haccp]
+markets: [EU, US]
+hs_code: "0902100000"
+moq: 500
+moq_unit: kg
+
+lead_time:
+  en: 15–20 days after deposit
+  zh: 定金后 15–20 天
+packaging:
+  en: 25kg kraft bag with food-grade liner, 20 bags per pallet
+  zh: 25 公斤牛皮纸袋内衬食品级膜，每托 20 袋
+sample_policy:
+  en: Free 100g sample, freight collect
+  zh: 免费 100 克样品，运费到付
+
+title:
+  en: Wuyi High Mountain Sencha
+  zh: 武义高山煎茶
+subtitle:
+  en: Umami-forward, low bitterness, cold-brew stable
+  zh: 鲜味突出、苦涩低、冷泡稳定
+summary:
+  en: Steamed green tea from 1,200m gardens. Stable cup quality for private label and food service, organic certified.
+  zh: 采自海拔 1200 米茶园的蒸青绿茶，杯感稳定，适合自有品牌与餐饮渠道，持有机认证。
+
+description:
+  en: |
+    Grown at 1,200 metres where morning mist keeps the leaves thin and tender, this sencha is steamed within six hours of picking to hold its bright, savoury edge.
+
+    Each lot is blended to a fixed cup profile, so the batch you approve in March tastes the same in September — the single most important requirement for private label buyers.
+  zh: |
+    生长于海拔 1200 米，晨雾让叶片更薄更嫩。鲜叶在采摘后六小时内完成蒸青，锁住清亮的鲜味。
+
+    每一批都按固定杯感拼配，三月确认的样品与九月到货的口感一致——这是自有品牌客户最看重的一点。
+
+highlights:
+  - en: Steamed within 6 hours of picking
+    zh: 采摘后 6 小时内蒸青
+  - en: Fixed cup profile across seasons
+    zh: 全年固定杯感
+  - en: Cold-brew stable for 12 hours
+    zh: 冷泡 12 小时稳定
+  - en: EU & USDA organic certified
+    zh: 持欧盟与美国有机认证
+
+applications:
+  - en: Retail tins and pyramid bags
+    zh: 零售罐装与三角袋
+  - en: Ready-to-drink cold brew bases
+    zh: 即饮冷泡基底
+
+specs:
+  - group:
+      en: Product data
+      zh: 产品参数
+    items:
+      - key: origin
+        label:
+          en: Origin
+          zh: 产地
+        value:
+          en: Wuyi, Zhejiang
+          zh: 浙江武义
+      - key: altitude
+        label:
+          en: Growing altitude
+          zh: 生长海拔
+        value_num: 1200
+        unit: m
+        filterable: true
+      - key: grade
+        label:
+          en: Grade
+          zh: 等级
+        value:
+          en: Grade 1
+          zh: 一级
+      - key: harvest
+        label:
+          en: Harvest
+          zh: 采摘季
+        value:
+          en: Spring 2026
+          zh: 2026 春
+  - group:
+      en: Export data
+      zh: 出口数据
+    items:
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 24
+        unit: months
+        filterable: true
+      - key: moisture
+        label:
+          en: Moisture
+          zh: 水分
+        value:
+          en: "≤ 5%"
+          zh: "≤ 5%"
+      - key: packing_unit
+        label:
+          en: Standard packing
+          zh: 标准包装
+        value:
+          en: 25 kg / bag
+          zh: 25 公斤 / 袋
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.055
+  gross_weight_kg: 25.4
+
+cover: media/products/sencha-cover.png
+related: [matcha-ceremonial]
+cases: [eu-distributor-2025]
+updated_at: 2026-10-01
+
+seo:
+  title:
+    en: Organic Sencha Green Tea Wholesale Supplier
+    zh: 有机煎茶绿茶批发供应商
+  description:
+    en: 1,200m single-origin sencha, EU and USDA organic, MOQ 500kg, 15–20 day lead time.
+    zh: 海拔 1200 米原产地煎茶，持欧盟与美国有机认证，起订 500 公斤，交期 15–20 天。

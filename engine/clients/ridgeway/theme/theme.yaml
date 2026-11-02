@@ -1,0 +1,28 @@
+name: ridgeway
+skin: ecobike
+
+# 色板取自设计稿 design/ecobike-website.html 的 :root
+#（primary / canvas / surface / ink / slate），accent 用 primary-dark 保住 4.5:1
+colors:
+  primary: "#2D9B3E"
+  primary-fill: "#1E7B2C"   # primary-dark：白字按钮
+  accent: "#1E7B2C"         # kicker/编号用深绿；设计稿的 #81C784 在白底只有 1.9:1
+  ink: "#1A2B1F"
+  paper: "#FFFFFF"
+  surface: "#F6F8F5"
+  muted: "#5D6B5E"
+
+# 设计稿通篇 Inter（300-800），是三站里唯一无衬线标题的浅色站
+fonts:
+  heading: "'Inter', 'PingFang SC', system-ui, sans-serif"
+  body: "'Inter', 'PingFang SC', system-ui, sans-serif"
+  mono: "'JetBrains Mono', ui-monospace, monospace"
+
+font_faces:
+  - {family: "Inter", file: media/fonts/inter-400.woff2, weight: "400"}
+  - {family: "Inter", file: media/fonts/inter-500.woff2, weight: "500"}
+  - {family: "Inter", file: media/fonts/inter-600.woff2, weight: "600"}
+  - {family: "Inter", file: media/fonts/inter-700.woff2, weight: "700"}
+  - {family: "Inter", file: media/fonts/inter-800.woff2, weight: "800"}
+
+radius: 8px

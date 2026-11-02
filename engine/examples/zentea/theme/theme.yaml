@@ -1,0 +1,11 @@
+name: zentea
+layout: editorial
+colors:
+  primary: "#4A6B4A"
+  ink: "#1A1A1A"
+  paper: "#F5F0E8"
+  accent: "#755A21"
+fonts:
+  heading: "Cormorant Garamond, Georgia, serif"
+  body: "Inter, system-ui, sans-serif"
+radius: 2px

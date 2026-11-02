@@ -1,0 +1,65 @@
+- slug: city-commuter
+  status: published
+  order: 1
+  name:
+    en: City & Commuter
+    zh: 城市通勤
+  desc:
+    en: Upright geometry, fenders and racks as standard. Built for daily riding in wet European cities.
+    zh: 直立几何，标配挡泥板与货架，为多雨的欧洲城市日常通勤设计。
+  cover: media/products/cat-city.jpg
+
+- slug: e-bike
+  status: published
+  order: 2
+  name:
+    en: E-Bike / EPAC
+    zh: 电助力
+  desc:
+    en: Mid-drive and hub-drive platforms, EN 15194 certified, with removable in-frame batteries.
+    zh: 中置与轮毂两种驱动平台，符合 EN 15194，车架内可拆卸电池。
+  cover: media/products/cat-ebike.jpg
+
+- slug: cargo
+  status: published
+  order: 3
+  name:
+    en: Cargo & Utility
+    zh: 载货与工具车
+  desc:
+    en: Longtail and front-loader frames rated to 250 kg, used for last-mile delivery and family transport.
+    zh: 长尾与前载车架，额定载重 250 公斤，用于末端配送与家庭出行。
+  cover: media/products/cat-cargo.jpg
+
+- slug: mountain
+  status: published
+  order: 4
+  name:
+    en: Mountain
+    zh: 山地
+  desc:
+    en: Hardtail and full-suspension frames in 6061 and 6066 alloy, tested to ISO 4210-2 fatigue cycles.
+    zh: 硬尾与全避震车架，6061/6066 铝合金，通过 ISO 4210-2 疲劳测试。
+  cover: media/products/cat-mountain.jpg
+
+- slug: folding
+  status: published
+  order: 5
+  name:
+    en: Folding
+    zh: 折叠
+  desc:
+    en: Single-hinge and twin-hinge frames from 16" to 20", for multimodal commuting and small-apartment markets.
+    zh: 单铰与双铰车架，16–20 英寸，适合多式联运通勤与小户型市场。
+  cover: media/products/cat-folding.jpg
+
+- slug: kids
+  status: published
+  order: 6
+  name:
+    en: Kids & Youth
+    zh: 童车与青少年车
+  desc:
+    en: 12" to 24" wheels, EN 71 and CPSIA compliant paints and parts.
+    zh: 12–24 英寸，涂料与部件符合 EN 71 与 CPSIA。
+  cover: media/products/cat-kids.jpg

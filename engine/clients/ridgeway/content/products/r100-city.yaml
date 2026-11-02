@@ -1,0 +1,143 @@
+slug: r100-city
+status: published
+order: 1
+featured: true
+model_no: RD-C100
+category: city-commuter
+scenarios: [retail-private-label]
+certificates: [iso-9001, en-iso-4210, bsci]
+markets: [EU, US]
+hs_code: "8712009000"
+moq: 100
+moq_unit: pcs
+
+lead_time:
+  en: 45–60 days after deposit and artwork approval
+  zh: 定金与贴花确认后 45–60 天
+packaging:
+  en: One unit per carton, 90% assembled, front wheel and pedals loose
+  zh: 一车一箱，90% 组装，前轮与脚踏散装
+sample_policy:
+  en: Sample at 2× FOB, freight collect, deducted from the first bulk order
+  zh: 样品按 FOB 两倍价收取，运费到付，首个大货订单中抵扣
+
+title:
+  en: R-100 City Commuter
+  zh: R-100 城市通勤车
+subtitle:
+  en: Internal-gear, belt-ready frame with fenders and rack as standard
+  zh: 内变速、可改皮带传动的车架，标配挡泥板与货架
+summary:
+  en: The volume model for European city ranges. Shimano Nexus 7 internal hub, hydraulic discs, full commuter kit — and a frame drawing you can put your own geometry into.
+  zh: 欧洲城市车系的主力型号。Shimano Nexus 7 内变速、液压碟刹、全套通勤装备，车架图纸可改你的几何。
+
+description:
+  en: |
+    City bikes fail in the details: a rack that cracks at 15 kg, fenders that rattle loose by the second season, cables that rub the head tube through the paint. The R-100 is specified against those failures — a 6061 frame with internal cable routing, a welded rack rated to 25 kg, and stainless hardware throughout.
+
+    It is also the cheapest frame in our range to private-label. The down tube has a 240 × 60 mm flat zone for your decal, and we hold your paint code and artwork on file so repeat orders match without a new sample round.
+  zh: |
+    城市车往往败在细节：货架 15 公斤就裂、挡泥板第二个季度开始响、线管把车头管的漆磨穿。R-100 就是针对这些失败点定的规格——6061 车架内走线、焊接货架额定 25 公斤、全车不锈钢紧固件。
+
+    它也是我们产品线里做自有品牌最省事的车架：下管有一段 240 × 60 毫米的平面贴花区，你的色号和贴花我们存档，返单不需再走一轮打样。
+
+highlights:
+  - en: Shimano Nexus 7 internal hub, maintenance-free for fleet use
+    zh: Shimano Nexus 7 内变速，车队使用免维护
+  - en: Welded rear rack rated to 25 kg, not bolted on
+    zh: 焊接后货架额定 25 公斤，非螺栓外挂
+  - en: Internal cable routing, no paint rub at the head tube
+    zh: 内走线，车头管不磨漆
+  - en: 240 × 60 mm flat decal zone on the down tube
+    zh: 下管 240 × 60 毫米平面贴花区
+
+applications:
+  - en: Retail city and commuter ranges
+    zh: 零售城市与通勤车系
+  - en: Corporate and campus fleet bikes
+    zh: 企业与园区车队用车
+
+specs:
+  - group:
+      en: Frame & geometry
+      zh: 车架与几何
+    items:
+      - key: frame
+        label:
+          en: Frame material
+          zh: 车架材质
+        value:
+          en: 6061-T6 aluminium, triple butted
+          zh: 6061-T6 铝合金，三抽管
+      - key: wheel_size
+        label:
+          en: Wheel size
+          zh: 轮径
+        value:
+          en: 700c
+          zh: 700c
+      - key: sizes
+        label:
+          en: Frame sizes
+          zh: 车架尺寸
+        value:
+          en: 48 / 52 / 56 / 60 cm
+          zh: 48 / 52 / 56 / 60 厘米
+      - key: weight
+        label:
+          en: Complete bike weight
+          zh: 整车重量
+        value_num: 13.8
+        unit: kg
+        filterable: true
+  - group:
+      en: Build & export data
+      zh: 配置与出口数据
+    items:
+      - key: drivetrain
+        label:
+          en: Drivetrain
+          zh: 传动
+        value:
+          en: Shimano Nexus 7-speed internal, belt-ready
+          zh: Shimano Nexus 7 内变速，可改皮带
+      - key: brakes
+        label:
+          en: Brakes
+          zh: 刹车
+        value:
+          en: Hydraulic disc, 160 mm rotors
+          zh: 液压碟刹，160 毫米碟片
+      - key: max_load
+        label:
+          en: Max rider + cargo load
+          zh: 最大人货载重
+        value_num: 120
+        unit: kg
+        filterable: true
+      - key: warranty
+        label:
+          en: Frame warranty
+          zh: 车架质保
+        value_num: 5
+        unit: years
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.32
+  gross_weight_kg: 17.5
+
+cover: media/products/r100-city.jpg
+datasheet: media/datasheets/r100-city.pdf
+related: [r320-e-city, f20-folding]
+cases: [nordrad-germany]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: City Commuter Bike OEM — Internal Gear, 100 Unit MOQ
+    zh: 城市通勤自行车 OEM 制造商 — 内变速，100 台起订
+  description:
+    en: 6061 frame, Shimano Nexus 7 internal hub, hydraulic discs, welded rack. MOQ 100 units, 45–60 day lead time, EN ISO 4210 certified.
+    zh: 6061 车架、Shimano Nexus 7 内变速、液压碟刹、焊接货架。100 台起订，45–60 天交期，通过 EN ISO 4210。

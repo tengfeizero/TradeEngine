@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.27"
+
+      - name: Build
+        run: go build ./...
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Test
+        run: go test ./... -count=1
+
+      # 端到端冒烟：new → build 必须在干净环境一次通过（10 分钟起站的底线）
+      - name: Smoke test (new → build)
+        shell: bash
+        run: |
+          go build -o engine-tmp ./cmd/engine
+          ./engine-tmp new /tmp/smoke-site --brand "Smoke Test"
+          (cd /tmp/smoke-site && "$GITHUB_WORKSPACE"/engine-tmp build)
+        # windows 上 /tmp 由 Git Bash 提供，与上面 shell: bash 一致

@@ -1,0 +1,30 @@
+slug: nordrad-germany
+status: published
+title:
+  en: German city brand consolidates three frame suppliers into one line
+  zh: 德国城市车品牌把三家车架供应商并成一条专线
+country: DE
+industry:
+  en: Retail own-brand city bikes
+  zh: 零售自有品牌城市车
+customer: NordRad GmbH
+challenge:
+  en: Three suppliers meant three paint matches, three decal positions and three definitions of "size 52". Returns were running at 4.1% and every season started with a re-sample round.
+  zh: 三家供应商意味着三种色差、三种贴花位置、三种「52 码」定义。退货率 4.1%，每季开头都要重走一轮打样。
+solution:
+  en: We took the whole city range onto one line, archived their paint codes and decal files, and added a pre-paint check on the first 20 frames of every batch. Geometry was unified onto a single drawing set with four sizes.
+  zh: 我们把整个城市车系收上一条专线，存档他们的色号与贴花文件，并在每批前 20 台增加涂装前确认。几何统一到一套图纸、四个尺寸。
+result:
+  en: Returns fell from 4.1% to 0.6% in twelve months, and per-unit logistics cost dropped 11% once containers stopped carrying mixed size runs.
+  zh: 12 个月内退货率从 4.1% 降到 0.6%；混码柜取消后，单台物流成本下降 11%。
+products: [r100-city, r320-e-city]
+cover: media/cases/nordrad.jpg
+updated_at: 2026-09-30
+
+seo:
+  title:
+    en: Case study — German city bike brand, 4.1% to 0.6% returns
+    zh: 客户案例——德国城市车品牌，退货率 4.1% 降至 0.6%
+  description:
+    en: How consolidating three frame suppliers onto one production line cut returns from 4.1% to 0.6% and logistics cost by 11%.
+    zh: 三家车架供应商并为一条专线后，退货率从 4.1% 降至 0.6%，物流成本下降 11%。

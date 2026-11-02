@@ -1,0 +1,71 @@
+- slug: aerial-film
+  status: published
+  order: 1
+  name:
+    en: Aerial Film & Broadcast
+    zh: 影视与广播航拍
+  summary:
+    en: Productions that need 10-bit log, interchangeable lenses and a second operator on gimbal.
+    zh: 需要 10-bit log、可换镜头与独立云台操作员的制作项目。
+  cover: media/products/cat-cinema.jpg
+  icon: "camera"
+
+- slug: precision-ag
+  status: published
+  order: 2
+  name:
+    en: Precision Agriculture
+    zh: 精准农业
+  summary:
+    en: Orchards, rice and cotton where spray drift and refill logistics decide the daily hectare count.
+    zh: 果园、水稻与棉田，飘移控制与加药往返决定每日作业亩数。
+  cover: media/products/cat-agriculture.jpg
+  icon: "sprout"
+
+- slug: grid-inspection
+  status: published
+  order: 3
+  name:
+    en: Grid & Asset Inspection
+    zh: 电网与资产巡检
+  summary:
+    en: Transmission towers, wind blades and flare stacks inspected to a repeatable flight path, not by eye.
+    zh: 输电塔、风电叶片与火炬塔，按可复现的航线巡检，而不是靠眼睛。
+  cover: media/products/cat-inspection.jpg
+  icon: "zap"
+
+- slug: perimeter-security
+  status: published
+  order: 4
+  name:
+    en: Perimeter & Event Security
+    zh: 周界与活动安防
+  summary:
+    en: Industrial parks and public events that need a live eye overhead for six hours, not forty minutes.
+    zh: 工业园区与大型活动，需要六小时不间断的空中视角，而不是四十分钟。
+  cover: media/products/cat-security.jpg
+  icon: "shield"
+
+- slug: medical-last-mile
+  status: published
+  order: 5
+  name:
+    en: Medical Last Mile
+    zh: 医疗末端配送
+  summary:
+    en: Blood, plasma and vaccines moved between clinics on a schedule that road traffic cannot hold.
+    zh: 血袋、血浆与疫苗在诊所之间转运，公路交通无法保证的时刻表。
+  cover: media/products/cat-logistics.jpg
+  icon: "truck"
+
+- slug: fpv-league
+  status: published
+  order: 6
+  name:
+    en: FPV Leagues & Training
+    zh: FPV 联赛与培训
+  summary:
+    en: Race organisers and flight schools buying in tens, with spares availability as the deciding factor.
+    zh: 按几十台采购的赛事组织者与飞行学校，备件可得性是决定性因素。
+  cover: media/products/cat-fpv.jpg
+  icon: "radio"

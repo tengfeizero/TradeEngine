@@ -1,0 +1,31 @@
+slug: contact
+status: published
+title:
+  en: Send a mission profile, get a platform recommendation
+  zh: 发一份任务说明，换一个平台建议
+summary:
+  en: Export desk in Shenzhen, replies within 12 hours on business days. Technical questions go to the engineer who owns the subsystem.
+  zh: 深圳出口部，工作日 12 小时内回复。技术问题直接到负责该子系统的工程师。
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    title:
+      en: What to put in the first email
+      zh: 第一封邮件该写什么
+    lead:
+      en: Five lines are enough to get a real answer instead of a catalogue.
+      zh: 五行字就够换来一个真答案，而不是一份画册。
+    body:
+      en: |
+        Payload and what it is — camera, tank, parcel, nothing. Operating altitude and sortie length. Climate, especially temperature range and rain. Target market, because certification decides which platform is even legal for you. Annual volume, even a rough band.
+
+        If you already have a platform in mind, say which one and why. We will tell you if we think it is wrong, which is more useful than a quote for something that will not work in month three.
+
+        Direct lines — export desk export@kestrel-aero.example.com, phone and WhatsApp +86 755 8899 4200. Factory visits at Building 7, Aerospace Technology Park, Bao'an District, Shenzhen. Business-day replies land within 12 hours.
+      zh: |
+        载荷是什么——相机、药箱、包裹，或者什么都不带。作业高度与单架次时长。气候，尤其是温度区间和降雨。目标市场，因为认证决定哪款平台对你合法。年采购量，给个大致区间也行。
+
+        如果你心里已经有型号，说一下是哪款、为什么。我们会告诉你是不是选错了——这比给你报一个第三个月就用不了的价格更有用。
+
+        直线联系方式——出口部 export@kestrel-aero.example.com，电话与 WhatsApp +86 755 8899 4200。到厂地址：深圳市宝安区航空航天科技园 7 栋。工作日 12 小时内回复。
+  - type: inquiry

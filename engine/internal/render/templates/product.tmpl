@@ -1,0 +1,89 @@
+{{define "product"}}{{with .Product}}
+{{template "crumb" $.Crumb}}
+<article>
+  <div class="product-head">
+    <div>
+      <div class="thumb-main">
+        {{if .Cover}}{{template "image" .Cover}}{{end}}
+      </div>
+      {{if .Gallery}}<div class="gallery">{{range .Gallery}}{{template "image" .}}{{end}}</div>{{end}}
+    </div>
+    <div>
+      <h1>{{.Title}}</h1>
+      {{if .Subtitle}}<p class="sub">{{.Subtitle}}</p>{{end}}
+      <p>{{.Summary}}</p>
+      {{if .Highlights}}<ul class="highlights">{{range .Highlights}}<li>{{.}}</li>{{end}}</ul>{{end}}
+      <dl class="trade">
+        {{if .Price}}<dt>{{$.UI.price}}</dt><dd>{{.Price}}</dd>{{end}}
+        <dt>{{$.UI.moq}}</dt><dd>{{.Moq}}</dd>
+        <dt>{{$.UI.lead_time}}</dt><dd>{{.LeadTime}}</dd>
+        <dt>{{$.UI.packaging}}</dt><dd>{{.Packaging}}</dd>
+        {{if .Carton}}<dt>{{$.UI.carton}}</dt><dd>{{.Carton}}</dd>{{end}}
+        <dt>{{$.UI.hs_code}}</dt><dd>{{.HSCode}}</dd>
+        {{if .ModelNo}}<dt>{{$.UI.model_no}}</dt><dd>{{.ModelNo}}</dd>{{end}}
+        {{if .Sample}}<dt>{{$.UI.sample}}</dt><dd>{{.Sample}}</dd>{{end}}
+      </dl>
+      <div class="product-cta">
+        <a class="btn" href="#inquiry">{{$.UI.quote}}</a>
+        {{if .Datasheet}}<a class="btn ghost" href="{{.Datasheet.Href}}" download>{{.Datasheet.Label}}</a>{{else}}{{if .HSCode}}<a class="btn ghost" href="#specs">{{$.UI.specifications}}</a>{{end}}{{end}}
+        {{if .SpecsCSV}}<a class="btn ghost" href="{{.SpecsCSV.Href}}" download>{{.SpecsCSV.Label}}</a>{{end}}
+      </div>
+    </div>
+  </div>
+
+  {{if .SpecGroups}}
+  <section class="section" id="specs">
+    <h2>{{$.UI.specifications}}</h2>
+    {{range .SpecGroups}}
+    <div class="spec-group">
+      <h3>{{.Name}}</h3>
+      <table><tbody>
+        {{range .Rows}}<tr><th>{{.Label}}</th><td>{{.Value}}</td></tr>{{end}}
+      </tbody></table>
+    </div>
+    {{end}}
+  </section>
+  {{end}}
+
+  <section class="section body-text">
+    <h2>{{$.UI.description}}</h2>
+    {{range .Paragraphs}}<p>{{.}}</p>{{end}}
+    {{if .Applications}}
+    <h3>{{$.UI.applications}}</h3>
+    <ul>{{range .Applications}}<li>{{.}}</li>{{end}}</ul>
+    {{end}}
+  </section>
+
+  {{if .Facts}}
+  <section class="section">
+    <h2>{{$.UI.compliance_title}}</h2>
+    <dl class="legal-facts">
+      {{range .Facts}}{{if .Label}}<dt>{{.Label}}</dt><dd>{{if .Href}}<a href="{{.Href}}">{{.Value}}</a>{{else}}{{.Value}}{{end}}</dd>{{else}}<dd class="cont">{{if .Href}}<a href="{{.Href}}">{{.Value}}</a>{{else}}{{.Value}}{{end}}</dd>{{end}}{{end}}
+    </dl>
+  </section>
+  {{end}}
+
+  {{if .CertCards}}
+  <section class="section">
+    <h2>{{$.UI.certificates}}</h2>
+    <div class="grid">{{range .CertCards}}{{template "card" .}}{{end}}</div>
+  </section>
+  {{end}}
+
+  {{if .Cases}}
+  <section class="section">
+    <h2>{{$.UI.all_cases}}</h2>
+    <div class="grid">{{range .Cases}}{{template "card" .}}{{end}}</div>
+  </section>
+  {{end}}
+
+  {{if .Related}}
+  <section class="section">
+    <h2>{{$.UI.related}}</h2>
+    <div class="grid">{{range .Related}}{{template "card" .}}{{end}}</div>
+  </section>
+  {{end}}
+</article>
+{{end}}
+{{template "inquiry_form" .}}
+{{end}}

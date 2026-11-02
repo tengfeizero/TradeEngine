@@ -1,0 +1,30 @@
+slug: desert-bloom-uae
+status: published
+title:
+  en: Dubai delivery fleet holds 88% battery capacity after 18 months at 50°C
+  zh: 迪拜配送车队在 50 度高温下 18 个月仍保有 88% 电池容量
+country: AE
+industry:
+  en: Last-mile grocery delivery
+  zh: 生鲜末端配送
+customer: Desert Bloom Logistics
+challenge:
+  en: Their first cargo fleet lost 30% of battery capacity in eight months. Ambient temperatures of 50°C plus a mid-day charging habit were cooking the cells, and the replacement cost was eating the fleet's margin.
+  zh: 第一批载货车队在八个月内掉了 30% 电池容量。50 度环境温度加上午间充电习惯在「煮」电芯，换电成本吃掉了车队利润。
+solution:
+  en: We added an insulated battery compartment with a thermal vent, rewrote the charging profile to defer mid-day charging until the pack dropped below 40°C, and moved the fleet to dual-battery builds so a shift could finish on one swap.
+  zh: 我们加了带热排气口的电池隔热仓，重写充电策略把午间充电延后到电池低于 40 度，并把车队改为双电池配置，一个班次只需换电一次。
+result:
+  en: Capacity retention reached 88% at 18 months across 240 vehicles, and daily completed drops rose 34% once riders stopped waiting on chargers.
+  zh: 240 台车运行 18 个月后容量保持 88%；骑手不再等充电后，日均完成单量提升 34%。
+products: [c40-cargo-longtail]
+cover: media/cases/desert-bloom.jpg
+updated_at: 2026-07-19
+
+seo:
+  title:
+    en: Case study — cargo fleet keeps 88% capacity at 50°C
+    zh: 客户案例——50 度环境下载货车队保持 88% 容量
+  description:
+    en: Insulated battery compartment and a rewritten charging profile lifted 18-month capacity retention from 70% to 88% across a 240-vehicle Dubai fleet.
+    zh: 电池隔热仓与重写的充电策略，把迪拜 240 台车队 18 个月容量保持率从 70% 提升到 88%。

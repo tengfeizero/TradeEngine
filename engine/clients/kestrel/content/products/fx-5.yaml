@@ -1,0 +1,165 @@
+slug: fx-5
+status: published
+order: 8
+model_no: KA-FX5
+category: fpv
+scenarios: [fpv-league]
+certificates: [ce-red, fcc-id, rohs]
+markets: [EU, US, JP, AU]
+hs_code: "880621"
+moq: 50
+moq_unit: pcs
+
+lead_time:
+  en: 20–25 days after deposit, 35 days for a team colourway and printed frame
+  zh: 定金后 20–25 天，车队配色与丝印机架为 35 天
+packaging:
+  en: Ten frames per carton as kits, twelve cartons per pallet, batteries never included
+  zh: 十台一套件一箱，每托盘 12 箱，不含电池
+sample_policy:
+  en: Three units at 1.3× FOB for a race weekend, no return
+  zh: 三台按 FOB 1.3 倍价供一个比赛周末使用，不可退
+
+title:
+  en: FX-5 Racer
+  zh: FX-5 竞速机
+subtitle:
+  en: 5-inch carbon frame, 8S power train, 20 ms glass-to-glass
+  zh: 五寸碳纤维机架、8S 动力、20 毫秒端到端图传
+summary:
+  en: A race frame built to survive the first crash, not to win a spec sheet. 5 mm arms, a stack bay that takes standard 30.5 mm boards, and every part available as a single spare so a team can rebuild between heats.
+  zh: 为「第一次炸机后还能飞」而造的竞速机架，不是为了赢参数表。5 毫米机臂、兼容标准 30.5 毫米孔位的飞控仓、所有零件可单件供应，车队能在两轮预赛之间完成重装。
+
+description:
+  en: |
+    Race teams do not buy aircraft, they buy rebuild speed. A frame that needs a full teardown after a gate strike costs a heat. A frame with a bolt-on arm costs four minutes.
+
+    The FX-5 uses 5 mm carbon arms on a single-screw clamp, so an arm swap is four screws and no desoldering. The stack bay takes standard 30.5 × 30.5 mm flight controllers and 20 × 20 mm ESCs, which means a team can run the electronics they already know instead of our board. The camera cage is a separate printed part, so a lens strike does not write off the frame.
+
+    We supply the race kit as individual SKUs — arms, cages, top plates, motor mounts — with a two-week restock on any single part. For a league buying 60 airframes, that restock promise matters more than the 180 km/h number.
+  zh: |
+    竞速队买的不是飞机，是重装速度。撞门之后要整机拆解的机架，代价是一轮比赛。机臂螺栓连接的机架，代价是四分钟。
+
+    FX-5 用 5 毫米碳纤维机臂配单螺钉夹紧，换一根机臂是四颗螺丝，不用重新焊接。飞控仓兼容标准 30.5 × 30.5 毫米飞控与 20 × 20 毫米电调，车队可以继续用自己熟悉的电子件，而不是我们的板子。摄像头护笼是独立打印件，镜头撞了不会整车报废。
+
+    竞速套件按单件 SKU 供应——机臂、护笼、顶板、电机座——任何单件的补货周期是两周。对一个采购 60 台机身的联赛来说，这个补货承诺比 180 公里/小时更值钱。
+
+highlights:
+  - en: 5 mm carbon arms on single-screw clamps, four-screw swap
+    zh: 5 毫米碳纤维机臂，单螺钉夹紧，四颗螺丝换臂
+  - en: Standard 30.5 mm stack and 20 mm ESC mounting
+    zh: 标准 30.5 毫米飞控与 20 毫米电调孔位
+  - en: 180 km/h on 8S, 20 ms glass-to-glass digital video
+    zh: 8S 下 180 公里/小时，20 毫秒端到端数字图传
+  - en: Every part sold as a single SKU, two-week restock
+    zh: 所有零件可按单件采购，两周补货
+
+applications:
+  - en: League and club racing airframes
+    zh: 联赛与俱乐部竞速机身
+  - en: Flight school trainers with cheap rebuilds
+    zh: 可低成本重装的飞行学校训练机
+
+specs:
+  - group:
+      en: Airframe & power
+      zh: 机身与动力
+    items:
+      - key: wheelbase
+        label:
+          en: Wheelbase
+          zh: 轴距
+        value_num: 220
+        unit: mm
+      - key: weight
+        label:
+          en: Dry weight
+          zh: 空机重量
+        value_num: 372
+        unit: g
+        filterable: true
+      - key: arms
+        label:
+          en: Arms
+          zh: 机臂
+        value:
+          en: 5 mm 3K carbon, single-screw clamp, replaceable individually
+          zh: 5 毫米 3K 碳纤维，单螺钉夹紧，可单根更换
+      - key: power
+        label:
+          en: Power train
+          zh: 动力系统
+        value:
+          en: 8S, 2806.5 1800 KV motors, 5.1 × 4.6 props
+          zh: 8S、2806.5 1800 KV 电机、5.1 × 4.6 桨
+      - key: speed
+        label:
+          en: Top speed
+          zh: 最高速度
+        value_num: 180
+        unit: km/h
+      - key: video
+        label:
+          en: Video
+          zh: 图传
+        value:
+          en: Digital 1080p/120, 20 ms glass-to-glass, 8 channels
+          zh: 数字 1080p/120，20 毫秒端到端，8 个频道
+      - key: stack
+        label:
+          en: Electronics bay
+          zh: 电子仓
+        value:
+          en: 30.5 × 30.5 mm FC, 20 × 20 mm ESC, 25.5 mm camera
+          zh: 30.5 × 30.5 毫米飞控、20 × 20 毫米电调、25.5 毫米摄像头
+  - group:
+      en: Export & support
+      zh: 出口与支持
+    items:
+      - key: kit
+        label:
+          en: Kit contents
+          zh: 套件内容
+        value:
+          en: Frame, motors, props, VTX, camera, no battery, no receiver
+          zh: 机架、电机、桨、图传、摄像头，不含电池与接收机
+      - key: spares
+        label:
+          en: Spares kit
+          zh: 备件包
+        value:
+          en: 1 kit per 20 airframes, 8 arms, 2 cages, 2 top plates
+          zh: 每 20 台配 1 套，8 根机臂、2 个护笼、2 块顶板
+      - key: restock
+        label:
+          en: Single-part restock
+          zh: 单件补货
+        value:
+          en: 14 days on any SKU, 7 days on arms and cages
+          zh: 任一 SKU 14 天，机臂与护笼 7 天
+      - key: warranty
+        label:
+          en: Warranty
+          zh: 质保
+        value_num: 6
+        unit: months
+        filterable: true
+
+carton:
+  qty_per_carton: 10
+  cbm: 0.08
+  gross_weight_kg: 9.4
+
+cover: media/products/fx-5.jpg
+gallery: [media/products/fx-5.jpg, media/products/cat-fpv.jpg]
+related: [m4-mini]
+cases: [sakura-fpv]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: FPV Racing Frame OEM — 5-inch, 8S, Single-Part Spares
+    zh: FPV 竞速机架 OEM — 五寸、8S、单件备件
+  description:
+    en: 5 mm carbon arms on single-screw clamps, standard 30.5 mm stack, 180 km/h on 8S, 20 ms digital video. Every part sold singly with two-week restock.
+    zh: 5 毫米碳纤维机臂单螺钉夹紧、标准 30.5 毫米飞控孔位、8S 下 180 公里/小时、20 毫秒数字图传。所有零件单件供应，两周补货。

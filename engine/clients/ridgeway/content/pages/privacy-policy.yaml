@@ -1,0 +1,45 @@
+slug: privacy-policy
+status: published
+title:
+  en: Privacy Policy
+  zh: 隐私政策
+summary:
+  en: What we collect through this site, why, how long we keep it, and how to have it deleted.
+  zh: 我们通过本站收集什么、为什么、保存多久，以及如何要求删除。
+blocks:
+  - type: richtext
+    kicker:
+      en: Data you send us
+      zh: 您提交的数据
+    title:
+      en: What we collect and why
+      zh: 我们收集什么、为什么
+    body:
+      en: |
+        Zhejiang Ridgeway Cycles Co., Ltd. (No.168 Haichang Road, Jiaojiang District, Taizhou, Zhejiang 318000, China) is the data controller for information collected on this site.
+
+        The inquiry form collects your name, company, business email, country, product interest and estimated annual volume. We use this information for one purpose: replying to your inquiry and preparing a quotation. We do not add you to a mailing list, and we do not sell or share your data with third parties.
+
+        Our hosting and traffic-analytics providers process data on our behalf under contract. Analytics cookies run only after you accept the cookie notice — declining leaves analytics disabled and no tracking cookies are set.
+      zh: |
+        浙江岭道车业有限公司（中国浙江省台州市椒江区海昌路 168 号，邮编 318000）是本站所收集信息的数据控制者。
+
+        询盘表单收集您的姓名、公司、企业邮箱、国家/地区、感兴趣的产品与年采购量估算。这些信息只用于一个目的：回复您的询盘并准备报价。我们不会把您加入邮件列表，也不出售或与第三方共享您的数据。
+
+        我们的托管与流量统计服务商仅按合同约定代为处理数据。统计 Cookie 只在您同意提示后启用——拒绝则统计保持关闭，不设任何追踪 Cookie。
+  - type: richtext
+    kicker:
+      en: Retention and your rights
+      zh: 保存期限与您的权利
+    title:
+      en: How long we keep it, and what you can ask
+      zh: 保存多久，您可以要求什么
+    body:
+      en: |
+        **Retention.** Inquiry records are kept for up to 24 months and then deleted, unless a contract or shipment requires us to keep transaction records longer.
+
+        **Your rights.** You may request access to, correction of, or deletion of your personal data at any time by emailing sales@ridgeway-cycles.example.com. We respond within 30 days. If you are in the EU or UK, you also have the right to lodge a complaint with your local supervisory authority.
+      zh: |
+        **保存期限。** 询盘记录最长保存 24 个月后删除；合同或出口单证另有要求的除外。
+
+        **您的权利。** 您随时可以发邮件至 sales@ridgeway-cycles.example.com 要求查阅、更正或删除您的个人数据，我们会在 30 天内回复。如您位于欧盟或英国，您还有权向当地监管机构投诉。

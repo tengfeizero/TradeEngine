@@ -1,0 +1,167 @@
+slug: about
+status: published
+title:
+  en: A blending bench that got out of hand
+  zh: 一张失控的拼配台
+summary:
+  en: Fifteen years, three people who still cup every lot, and a business built on saying which part of the job we are not doing.
+  zh: 十五年，三个至今仍逐批杯测的人，以及一门建立在「说清自己不做什么」上的生意。
+cover: media/lab/blending.jpg
+updated_at: 2026-10-16
+blocks:
+  - type: richtext
+    title:
+      en: Started by three people who could not find the tea they wanted to sell
+      zh: 三个找不到「想卖的那款茶」的人开的头
+    body:
+      en: |
+        In 2009 we were buying tea for a small chain of tea houses in Hangzhou and could not get consistent leaf. One lot was good, the next was a different tea with the same name, and the supplier's answer was always that the weather had changed. It had — but the buyer still had a menu to print.
+
+        So we started buying by lot, writing down what we bought, and blending to a target cup rather than to a price. The first customer was a hotel that wanted the same breakfast tea in three cities. The second was a German retailer that wanted to see the pesticide report before it would talk about price. Both are still customers.
+
+        We have never owned a garden, and we stopped apologising for it. Buying from eleven gardens and co-operatives means we can change a lot when one fails, and it means the person who knows why a tea tastes the way it does is the person blending it, not a marketing department.
+      zh: |
+        2009 年，我们在为杭州几家茶馆采购，始终拿不到稳定的叶子。这批好，下批是同一个名字的另一种茶，供应商的回答永远是「天气变了」。天气确实变了，但买家还有一份菜单要印。
+
+        于是我们改成按批采购、把买到的写下来、按目标风味而不是按价格拼配。第一个客户是一家酒店，要在三个城市喝到同一款早餐茶。第二个是一家德国零售商，要先看农残报告才谈价格。两家到现在都还在。
+
+        我们从没有过自己的茶园，也不再为此道歉。从十一家茶园与合作社采购，意味着一批出问题时我们能换，也意味着真正懂这杯茶为什么是这个味的人，是拼配的人，不是市场部。
+  - type: stats
+    items:
+      - value: "2009"
+        label:
+          en: First blend shipped
+          zh: 第一款拼配出货
+        note:
+          en: for a Hangzhou tea house chain
+          zh: 给杭州一家茶馆连锁
+      - value: "11"
+        label:
+          en: Gardens and co-ops
+          zh: 合作茶园与合作社
+        note:
+          en: named on every CoA
+          zh: 每份检测报告上具名
+      - value: "31"
+        label:
+          en: Export markets
+          zh: 出口市场
+        note:
+          en: 2025
+          zh: 2025 年
+      - value: "64"
+        label:
+          en: People
+          zh: 员工
+        note:
+          en: 9 in the lab and on the bench
+          zh: 其中 9 人在实验室与拼配台
+  - type: team
+    title:
+      en: The three who still cup every lot
+      zh: 仍在逐批杯测的三个人
+    intro:
+      en: If you visit, these are the people in the room. There is no account manager between you and them on a first order.
+      zh: 如果你来，房间里就是这三个人。第一单没有客户经理夹在中间。
+    members:
+      - name: Wen Yaqing
+        role:
+          en: Founder, head of tea
+          zh: 创始人，茶师
+        bio:
+          en: Fifteen years buying leaf in Zhejiang, Anhui and Fujian. Decides which lots earn a place on the bench, and is the person who says no to a blend that is nearly right.
+          zh: 十五年在浙江、安徽、福建买叶。决定哪些批次能上台，也是那个对「差不多对」的拼配说不的人。
+        photo: media/team/wen.jpg
+      - name: Luo Jian
+        role:
+          en: Quality and compliance
+          zh: 品控与合规
+        bio:
+          en: Runs the lab and the paperwork. Came from a pharmaceutical QC background, which is why our CoA has an analyst's name on it and our sampling plan has a written rationale.
+          zh: 管实验室与单证。出身制药行业 QC，所以我们的检测报告上有检测人签名，抽样计划有书面依据。
+        photo: media/team/luo.jpg
+      - name: Priya Raman
+        role:
+          en: Packaging and artwork
+          zh: 包装与设计
+        bio:
+          en: Coordinates dielines, proofs and the two rounds of artwork approval. Keeps a file of every reject we have caused, which is the most useful document in the building.
+          zh: 管刀版、打样与两轮包装确认。她存着每一次由我们造成的退单档案——那是这栋楼里最有用的文件。
+        photo: media/team/priya.jpg
+  - type: image_text
+    title:
+      en: What we are not
+      zh: 我们不是什么
+    body:
+      en: |
+        We are not a garden, so we cannot show you a hillside and call it ours. We are not a trader, so we will not disappear when a lot fails. And we are not a brand agency — we can adapt artwork to a dieline, but if you need a brand built from nothing, we will introduce you to two people who do that better.
+
+        What we are is a bench, a lab and a packing hall in one building in Yuhang, with a file cabinet that goes back to 2014. That is a narrow business, and it is the reason a buyer can get the same tea twice.
+      zh: |
+        我们不是茶园，所以没法指着一片山坡说是我们的。我们不是贸易商，所以一批货出问题不会消失。我们也不是品牌公司——我们能按刀版改图，但如果你要从零建一个品牌，我们会介绍两个比我们做得更好的人。
+
+        我们是余杭一栋楼里的一张台子、一间实验室、一条包装线，加一个能翻到 2014 年的档案柜。这是门窄生意，也正是买家能第二次拿到同一款茶的原因。
+    bullets:
+      - en: No owned gardens — eleven named suppliers instead
+        zh: 没有自有茶园——十一家具名供应商
+      - en: No trading desk — the people who blend answer your email
+        zh: 没有贸易部——拼配的人直接回你邮件
+      - en: No silent substitution, ever
+        zh: 永不悄悄换料
+    image: media/lab/quality.jpg
+    flip: true
+  - type: testimonials
+    kicker:
+      en: Buyer voices
+      zh: 买家怎么说
+    title:
+      en: Three buyers, three reasons they stayed
+      zh: 三个买家，三个留下来的理由
+    intro:
+      en: Names and companies are shown with permission. Each quote links to the tea it is about, so you can read the specification yourself.
+      zh: 姓名与公司经对方同意后展示。每条都链到对应的茶，规格你可以自己去核。
+    items:
+      - quote:
+          en: We have bought from eleven suppliers and none of them ever told us a lot was short. Leafworks called in March to say the Keemun crop was 40 percent under and asked whether we wanted the volume at the higher price or 60 percent of it at the old one. That call is why we are still here six years later.
+          zh: 我们买过十一家供应商的货，没有一家主动说过批量不够。叶作三月打电话来，说祁红这一季减产四成，问我们要按新价拿全量、还是按原价拿六成。六年后我们还在这里，就是因为那通电话。
+        author: Anja Krüger
+        role:
+          en: Tea buyer
+          zh: 茶叶采购
+        company: Teehaus Krüger GmbH
+        country: DE
+        date: "2026-06-11"
+        product: b-310-keemun-hao-ya
+      - quote:
+          en: The same breakfast tea in three cities is a harder problem than it sounds. One of our hotels is at 1,800 metres and the water boils cooler, so the cup was thinner there. They sent a slightly heavier base blend for that property and kept the SKU and the price. Nobody had offered that before.
+          zh: 三个城市喝到同一款早餐茶，比听起来难。我们有一家酒店在海拔 1800 米，水沸点低，泡出来的茶偏薄。他们为那家店单独做了一款稍重的底料，SKU 和价格不变。之前没有供应商提过这件事。
+        author: Chen Yuwen
+        role:
+          en: F&B director
+          zh: 餐饮总监
+        company: Lakeside Hotels
+        country: CN
+        date: "2026-04-02"
+        product: b-380-assam-ctc
+      - quote:
+          en: Our label needs the CoA in our own template and a named analyst on it, because our retail customers audit us. They filled our template, signed it, and when one lot came back with a plate count above our spec they held the shipment and re-tested at their cost before we had even asked.
+          zh: 我们的品牌要求检测报告用我们自己的模板、上面有检测人姓名，因为零售客户会审我们。他们照我们的模板填、签了名；后来有一批菌落数超过我们规格，他们主动扣货、自费复检，那时我们还没开口。
+        author: Priya Nair
+        role:
+          en: Technical manager
+          zh: 技术经理
+        company: Hearth & Leaf Ltd
+        country: GB
+        date: "2026-08-21"
+        product: w-520-silver-needle
+  - type: cta
+    title:
+      en: Come and cup, or start with a sample set
+      zh: 来杯测，或者先从寄样开始
+    body:
+      en: Yuhang is 40 minutes from Hangzhou East station. If you are in China for Canton Fair or a factory tour, we can hold a bench session with your team and cup against the tea you are selling now.
+      zh: 余杭离杭州东站 40 分钟。如果你为广交会或看厂来中国，我们可以为你的团队安排一场杯测，对着你现在在卖的茶一起评。
+    cta_text:
+      en: Arrange a visit
+      zh: 安排来访
+    cta_href: "/contact/"

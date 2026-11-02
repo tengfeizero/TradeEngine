@@ -1,0 +1,16 @@
+- slug: green-tea
+  status: published
+  order: 1
+  name: { en: Green Tea, zh: 绿茶 }
+  desc:
+    en: Unoxidised leaves, pan-fired or steamed to lock in freshness.
+    zh: 不发酵茶，经杀青或蒸制锁定鲜爽。
+  cover: media/products/sencha-cover.png
+
+- slug: black-tea
+  status: published
+  order: 2
+  name: { en: Black Tea, zh: 红茶 }
+  desc:
+    en: Fully oxidised, malty and robust, ideal for blends and food service.
+    zh: 全发酵茶，甜香厚实，适合拼配与餐饮渠道。

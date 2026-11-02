@@ -1,0 +1,31 @@
+slug: nordic-grocery
+status: published
+order: 1
+title:
+  en: Swedish grocery chain takes twelve SKUs off one blend bench
+  zh: 瑞典连锁超市用一张拼配台做出十二支 SKU
+country: SE
+industry:
+  en: Grocery own-brand tea
+  zh: 商超自有品牌茶
+customer: Nordvik Livsmedel
+challenge:
+  en: Twelve own-brand SKUs across four categories, one 14-week window before the autumn listing, and an organic segregation audit that three previous suppliers had failed.
+  zh: 四个品类十二支自有品牌 SKU，秋季上架前只有 14 周，还要通过三家供应商都没过的有机隔离审核。
+solution:
+  en: We mapped the twelve SKUs onto eight base lots, built one artwork template with a single dieline, and ran the organic lots through a physically separated shift with a documented clean-down between runs.
+  zh: 我们把十二支 SKU 映射到八个基底批次，用一套刀版做统一包装模板，有机批次排在物理隔离的班次，换产有书面清洁记录。
+result:
+  en: All twelve SKUs shipped in 14 weeks with zero label rejections at the DC, and the chain moved its reorder cycle from 12 months to 8.
+  zh: 十二支 SKU 在 14 周内全部出货，配送中心零标签退单，返单周期从 12 个月缩到 8 个月。
+products: [g-100-longjing-43, g-220-anji-baiye, p-610-shou-2019]
+cover: media/cases/nordic-grocery.jpg
+updated_at: 2026-09-18
+
+seo:
+  title:
+    en: Case — 12 own-brand tea SKUs in 14 weeks for a Swedish chain
+    zh: 案例——14 周为瑞典连锁超市做十二支自有品牌茶
+  description:
+    en: How eight base lots, one dieline and a segregated organic shift delivered twelve own-brand SKUs in 14 weeks with zero label rejections.
+    zh: 八个基底批次、一套刀版与隔离的有机班次，如何在 14 周内交付十二支自有品牌 SKU，且零标签退单。

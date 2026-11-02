@@ -1,0 +1,32 @@
+slug: contact
+status: published
+title:
+  en: Contact
+  zh: 联系我们
+summary:
+  en: Send your specification and we will reply with a costed offer within 12 hours on business days.
+  zh: 发来规格，工作日 12 小时内回复带成本的报价。
+updated_at: 2026-10-10
+blocks:
+  - type: image_text
+    title:
+      en: Talk to the people who ship it
+      zh: 直接和发货的人谈
+    body:
+      en: |
+        Your inquiry goes to a named account manager, not a shared inbox. Inquiries sent after 18:00 China time are answered the next morning.
+
+        If you need a sample before committing, say so in the message — we send 100 g at freight cost.
+      zh: |
+        询盘会直接落到具体客户经理，而不是一个公共邮箱。北京时间 18:00 之后提交的询盘，次日上午回复。
+
+        需要先寄样的，请在留言里说明——我们按运费成本寄 100 克样品。
+    bullets:
+      - en: Email — sales@mistypeak.example.com
+        zh: 邮箱 — sales@mistypeak.example.com
+      - en: Phone / WhatsApp — +86 579 8888 6666
+        zh: 电话 / WhatsApp — +86 579 8888 6666
+      - en: Plant — No.18 Chayuan Road, Wuyi, Zhejiang, China
+        zh: 工厂 — 中国浙江武义茶园路 18 号
+    image: media/cases/eu-distributor.png
+  - type: inquiry

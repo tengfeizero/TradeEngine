@@ -1,0 +1,143 @@
+slug: m720-trail
+status: published
+order: 4
+featured: true
+model_no: RD-M720
+category: mountain
+scenarios: [sport-outdoor]
+certificates: [en-iso-4210, iso-9001]
+markets: [EU, US, AU]
+hs_code: "8712003000"
+moq: 100
+moq_unit: pcs
+
+lead_time:
+  en: 50–65 days after deposit, paint colour to be confirmed before cutting
+  zh: 定金后 50–65 天，下料前需确认涂装色号
+packaging:
+  en: One unit per carton, 85% assembled, handlebar removed
+  zh: 一车一箱，85% 组装，车把拆下
+
+sample_policy:
+  en: Stock geometry sample available at 2× FOB, custom geometry needs 6 weeks
+  zh: 现有几何样品按 FOB 两倍价，定制几何需 6 周
+
+title:
+  en: M-720 Trail Hardtail
+  zh: M-720 山地硬尾
+subtitle:
+  en: 29" wheels, 120 mm travel, 12-speed, ISO 4210-2 fatigue tested
+  zh: 29 英寸轮径，120 毫米行程，12 速，通过 ISO 4210-2 疲劳测试
+summary:
+  en: The frame trail brands use when they want their own geometry but not their own factory. Modern 66° head angle, 435 mm chainstays, and a geometry sheet you can revise.
+  zh: 越野品牌想要自有几何、又不想自建工厂时的选择。现代 66 度头管角、435 毫米后下叉，几何表可改。
+
+description:
+  en: |
+    Trail geometry is a moving target — every season the numbers shift, and a frame that was progressive two years ago now feels nervous. We keep the M-720 jig adjustable, so a head angle or reach change is a drawing revision rather than a new tool.
+
+    The frame is triple-butted 6061 with a 148 × 12 mm boost rear end, internal dropper routing, and a 2.4" tyre clearance at the chainstay yoke. Every production batch is pulled for ISO 4210-2 fatigue and impact testing at TÜV before it ships.
+  zh: |
+    越野几何一直在变——每季数字都在动，两年前还算进步的车架，现在骑着发飘。M-720 的夹具是可调的，改头管角或前伸量只是改图纸，不用重开模具。
+
+    车架为三抽 6061，148 × 12 毫米 boost 后轴、内走线预留升降座管线位、后下叉接头可容 2.4 英寸胎宽。每批出厂前都在 TÜV 抽检 ISO 4210-2 疲劳与冲击。
+
+highlights:
+  - en: Adjustable jig — geometry changes are a drawing revision, not a new tool
+    zh: 可调夹具——改几何是改图纸，不是重开模
+  - en: 66° head angle, 435 mm chainstays, 480 mm reach (size L)
+    zh: 66 度头管角、435 毫米后下叉、L 码前伸 480 毫米
+  - en: 148 × 12 mm boost rear, 2.4" clearance
+    zh: 148 × 12 毫米 boost 后轴，可容 2.4 英寸胎
+  - en: ISO 4210-2 fatigue and impact tested every batch
+    zh: 每批做 ISO 4210-2 疲劳与冲击测试
+
+applications:
+  - en: Trail and downcountry brand ranges
+    zh: 越野与 downcountry 品牌车系
+  - en: Rental and demo fleet builds
+    zh: 租赁与试骑车队配置
+
+specs:
+  - group:
+      en: Frame & geometry
+      zh: 车架与几何
+    items:
+      - key: frame
+        label:
+          en: Frame material
+          zh: 车架材质
+        value:
+          en: 6061-T6 aluminium, triple butted
+          zh: 6061-T6 铝合金，三抽管
+      - key: wheel_size
+        label:
+          en: Wheel size
+          zh: 轮径
+        value:
+          en: 29"
+          zh: 29 英寸
+      - key: head_angle
+        label:
+          en: Head angle
+          zh: 头管角
+        value:
+          en: 66° (size L)
+          zh: 66 度（L 码）
+      - key: travel
+        label:
+          en: Fork travel
+          zh: 前叉行程
+        value_num: 120
+        unit: mm
+        filterable: true
+  - group:
+      en: Build & export data
+      zh: 配置与出口数据
+    items:
+      - key: drivetrain
+        label:
+          en: Drivetrain
+          zh: 传动
+        value:
+          en: Shimano Deore 12-speed, 10–51T
+          zh: Shimano Deore 12 速，10–51 齿
+      - key: brakes
+        label:
+          en: Brakes
+          zh: 刹车
+        value:
+          en: Four-piston hydraulic disc, 180 mm rotors
+          zh: 四活塞液压碟刹，180 毫米碟片
+      - key: weight
+        label:
+          en: Complete bike weight
+          zh: 整车重量
+        value_num: 13.2
+        unit: kg
+        filterable: true
+      - key: max_load
+        label:
+          en: Max rider load
+          zh: 最大骑行者载重
+        value_num: 110
+        unit: kg
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.36
+  gross_weight_kg: 17.0
+
+cover: media/products/m720-trail.jpg
+related: [g500-gravel, e500-e-mtb]
+cases: [cascade-usa]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Trail Hardtail Frame OEM — Custom Geometry, ISO 4210-2
+    zh: 山地硬尾车架 OEM — 几何可定制，ISO 4210-2
+  description:
+    en: 6061 triple-butted frame, 66° head angle, boost rear end, adjustable jig for geometry changes. MOQ 100 units.
+    zh: 6061 三抽车架、66 度头管角、boost 后轴、可调夹具改几何。100 台起订。

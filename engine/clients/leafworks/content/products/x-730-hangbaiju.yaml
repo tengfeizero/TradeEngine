@@ -1,0 +1,145 @@
+slug: x-730-hangbaiju
+status: published
+order: 9
+model_no: LW-X730
+category: botanical
+scenarios: [food-service, retail-private-label, rtd-cold-brew]
+certificates: [usda-organic, fssc-22000, halal]
+markets: [EU, UK, AE, AU]
+hs_code: "121190"
+moq: 200
+moq_unit: kg
+
+lead_time:
+  en: 20–30 days after deposit, November harvest
+  zh: 定金后 20–30 天，十一月采期
+packaging:
+  en: 10 kg carton with liner, whole heads; 500 g bags for food service
+  zh: 10 公斤纸箱内衬，整朵；餐饮用 500 克袋装
+sample_policy:
+  en: 200 g at cost plus freight
+  zh: 200 克按成本加运费
+
+title:
+  en: X-730 Hangbaiju Chrysanthemum
+  zh: X-730 杭白菊
+subtitle:
+  en: Sulfur-free, whole heads, tested on the leaf-tea pesticide panel
+  zh: 无硫、整朵，按茶叶农残面板检测
+summary:
+  en: The caffeine-free SKU most ranges need and most suppliers treat casually. Same 510-analyte panel as our tea, and an SO2 result we publish.
+  zh: 大多数产品线都需要、大多数供应商却做得很随意的那支无咖啡因单品。与茶叶同做 510 项农残面板，二氧化硫结果公开。
+
+description:
+  en: |
+    Chrysanthemum is where Chinese suppliers cut corners most often, because the buyer usually treats it as a cheap filler SKU. Two shortcuts are common: sulfur fumigation to keep the colour bright, and a lighter pesticide panel than the leaf tea gets. Both show up in the cup — sulfur gives a sharp, medicinal edge, and residues are the first thing an EU lab finds.
+
+    We buy whole heads from Tongxiang, dry them at 45 °C, and test every lot on the same 510-analyte panel as our tea, plus a separate SO2 check. The result goes on the CoA. If a lot fails either, it does not ship, and we tell the buyer why the volume is short rather than substituting a different lot.
+  zh: |
+    花草类是中国供应商最容易偷工的地方，因为买家通常把它当便宜的填充 SKU。两种捷径很常见：用硫熏保持颜色鲜亮，以及用比茶叶更宽松的农残面板。两者都会在杯里显出来——硫给一股尖利的药味，而农残是欧盟实验室最先查出的东西。
+
+    我们从桐乡采购整朵，45 摄氏度烘干，每批与茶叶同做 510 项农残面板，另做二氧化硫单项。结果写在检测报告上。任一项不合格就不发货，我们会告诉买家为什么这批量不够，而不是换一批货顶上。
+
+highlights:
+  - en: Sulfur dioxide not detected, result on the CoA
+    zh: 二氧化硫未检出，结果写在检测报告上
+  - en: 510-analyte pesticide panel, same as leaf tea
+    zh: 510 项农残面板，与茶叶一致
+  - en: Whole heads, 18–22 mm, no broken petal filler
+    zh: 整朵，18–22 毫米，不掺碎瓣
+
+applications:
+  - en: Caffeine-free retail blends
+    zh: 无咖啡因零售拼配
+  - en: Hotel and restaurant herbal service
+    zh: 酒店与餐厅花草茶
+
+specs:
+  - group:
+      en: Flower and lot
+      zh: 花与批次
+    items:
+      - key: origin
+        label:
+          en: Growing district
+          zh: 产区
+        value:
+          en: Tongxiang, Jiaxing
+          zh: 嘉兴桐乡
+      - key: grade
+        label:
+          en: Grade
+          zh: 等级
+        value:
+          en: Whole heads, first pick
+          zh: 整朵，头采
+      - key: head_size
+        label:
+          en: Head diameter
+          zh: 花径
+        value:
+          en: 18–22 mm
+          zh: 18–22 毫米
+      - key: so2
+        label:
+          en: Sulfur dioxide
+          zh: 二氧化硫
+        value:
+          en: Not detected (under 10 mg/kg)
+          zh: 未检出（低于 10 毫克/公斤）
+      - key: moisture
+        label:
+          en: Moisture
+          zh: 含水率
+        value_num: 8
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: liquor
+        label:
+          en: Liquor
+          zh: 汤色
+        value:
+          en: Pale gold, clear
+          zh: 浅金，清亮
+      - key: taste
+        label:
+          en: Taste
+          zh: 滋味
+        value:
+          en: Honey, hay, cooling finish; caffeine-free
+          zh: 蜜甜、干草、收口清凉；无咖啡因
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 24
+        unit: months
+        filterable: true
+
+price:
+  min: 9
+  max: 14
+  currency: USD
+  incoterm: FOB Ningbo
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.06
+  gross_weight_kg: 10.4
+
+cover: media/products/x730-chrysanthemum.jpg
+related: [g-220-anji-baiye, w-520-silver-needle]
+cases: [us-kombucha, gulf-hotel]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Sulfur-Free Hangbaiju Chrysanthemum, Bulk — 200 kg
+    zh: 无硫杭白菊原料 — 200 公斤起订
+  description:
+    en: Tongxiang whole-head chrysanthemum, sulfur-free, tested on a 510-analyte pesticide panel. Caffeine-free bulk for retail and food service.
+    zh: 桐乡整朵杭白菊，无硫，510 项农残检测。无咖啡因散装原料，供零售与餐饮。

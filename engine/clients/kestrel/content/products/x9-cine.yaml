@@ -1,0 +1,167 @@
+slug: x9-cine
+status: published
+order: 1
+featured: true
+model_no: KA-X9C
+category: cinema
+scenarios: [aerial-film]
+certificates: [ce-red, fcc-id, un383]
+markets: [EU, US, JP, AE]
+hs_code: "880621"
+moq: 20
+moq_unit: pcs
+
+lead_time:
+  en: 30–40 days after deposit, plus 7 days for CE/FCC label personalisation
+  zh: 定金后 30–40 天，CE/FCC 标签定制另加 7 天
+packaging:
+  en: One aircraft per hard case, two cases per carton, batteries shipped separately under UN38.3
+  zh: 一机一硬箱，两箱一外箱，电池按 UN38.3 单独发运
+sample_policy:
+  en: Demo unit at 1.6× FOB with a 30-day return window, freight both ways at buyer's cost
+  zh: 演示机按 FOB 1.6 倍价提供，30 天内可退，往返运费由买方承担
+
+title:
+  en: X9 Cine
+  zh: X9 Cine 影视航拍机
+subtitle:
+  en: Four-thirds sensor, interchangeable lens mounts, 46-minute endurance
+  zh: 4/3 传感器、可换镜头卡口、46 分钟续航
+summary:
+  en: The platform production companies buy when the gimbal operator and the pilot are two different people. Two gimbal bays, 10-bit 4:2:2 internal recording, and a lens mount you can change between shots.
+  zh: 摄影与飞行由两人分工的剧组会选的平台。双云台位、10-bit 4:2:2 机内录制，镜头卡口可在两个镜头间更换。
+
+description:
+  en: |
+    Cinema drones fail on set for boring reasons. The gimbal needs a lens change and the whole aircraft has to come down. The recording is 8-bit and the grade falls apart in the shadows. The battery swap takes four minutes and the light is gone.
+
+    The X9 Cine is specified around those three failures. The lens mount is a locking bayonet, so a 24 mm to 50 mm swap is a 40-second ground operation. Recording is 10-bit 4:2:2 in-camera to a 1 TB removable SSD, so nothing depends on a downlink. And the battery is a rear-loading sled that a trained operator changes in under 20 seconds without powering down the gimbal.
+
+    We ship it with the flight log export tool your insurer will ask for, and we keep the CE and FCC test reports tied to the exact hardware revision on the label, so a customs hold in Frankfurt is a document lookup rather than a phone call.
+  zh: |
+    影视无人机在片场翻车的原因通常很无聊。要换镜头，整机就得落地。录制是 8-bit，暗部一调就崩。换电池四分钟，光已经没了。
+
+    X9 Cine 就是围绕这三个失败点定的规格。镜头卡口是锁紧式卡口，24 mm 换 50 mm 是 40 秒的地面操作。机内 10-bit 4:2:2 直接录进 1 TB 可拆 SSD，不依赖图传。电池是后装滑轨，受过训练的操作员 20 秒内换完，云台不用断电重启。
+
+    随机交付飞行日志导出工具——你的保险方一定会要。CE 与 FCC 测试报告与机身标签上的硬件版本严格对应，所以在法兰克福被扣货是查一份文件，不是一个电话。
+
+highlights:
+  - en: Locking bayonet lens mount, 24 mm and 50 mm in one body
+    zh: 锁紧式卡口，一个机身兼顾 24 mm 与 50 mm
+  - en: 10-bit 4:2:2 in-camera to removable 1 TB SSD
+    zh: 机内 10-bit 4:2:2，可拆 1 TB SSD
+  - en: 20-second hot battery swap without gimbal restart
+    zh: 20 秒热换电池，云台不重启
+  - en: Dual gimbal bays for pilot and operator separation
+    zh: 双云台位，飞行与摄影可由两人分工
+
+applications:
+  - en: Commercial and documentary aerial photography
+    zh: 广告与纪录片航拍
+  - en: Real estate and infrastructure cinematography
+    zh: 地产与基建影像
+
+specs:
+  - group:
+      en: Flight & payload
+      zh: 飞行与载荷
+    items:
+      - key: mtow
+        label:
+          en: Max take-off weight
+          zh: 最大起飞重量
+        value_num: 1.38
+        unit: kg
+        filterable: true
+      - key: flight_time
+        label:
+          en: Flight time
+          zh: 续航时间
+        value_num: 46
+        unit: min
+        filterable: true
+      - key: sensor
+        label:
+          en: Sensor
+          zh: 传感器
+        value:
+          en: 4/3 CMOS, 20 MP, dual native ISO 400/1600
+          zh: 4/3 CMOS，2000 万像素，双原生 ISO 400/1600
+      - key: video
+        label:
+          en: Recording
+          zh: 录制
+        value:
+          en: 5.1K/60fps and 4K/120fps, 10-bit 4:2:2, 1 TB removable SSD
+          zh: 5.1K/60fps 与 4K/120fps，10-bit 4:2:2，1 TB 可拆 SSD
+      - key: lens_mount
+        label:
+          en: Lens mount
+          zh: 镜头卡口
+        value:
+          en: Locking bayonet, 24 mm f/2.8 and 50 mm f/1.8 native
+          zh: 锁紧卡口，原生 24 mm f/2.8 与 50 mm f/1.8
+      - key: wind_resistance
+        label:
+          en: Wind resistance
+          zh: 抗风能力
+        value_num: 12
+        unit: m/s
+      - key: transmission
+        label:
+          en: Video transmission
+          zh: 图传距离
+        value:
+          en: 15 km FCC / 8 km CE, 1080p/60 low-latency
+          zh: FCC 15 公里 / CE 8 公里，1080p/60 低延迟
+  - group:
+      en: Export & support
+      zh: 出口与支持
+    items:
+      - key: battery
+        label:
+          en: Battery
+          zh: 电池
+        value:
+          en: TB-99 5880 mAh, 4× per kit, UN38.3 report per lot
+          zh: TB-99 5880 mAh，每套 4 块，按批附 UN38.3 报告
+      - key: operating_temp
+        label:
+          en: Operating temperature
+          zh: 工作温度
+        value:
+          en: -10 °C to 45 °C
+          zh: -10 ℃ 至 45 ℃
+      - key: spares
+        label:
+          en: Spares kit
+          zh: 备件包
+        value:
+          en: 1 kit per 10 aircraft, props, arms, gimbal ribbon, landing gear
+          zh: 每 10 台配 1 套，桨叶、机臂、云台排线、起落架
+      - key: warranty
+        label:
+          en: Warranty
+          zh: 质保
+        value_num: 24
+        unit: months
+        filterable: true
+
+carton:
+  qty_per_carton: 2
+  cbm: 0.21
+  gross_weight_kg: 18.5
+
+cover: media/products/x9-cine.jpg
+gallery: [media/products/x9-cine.jpg, media/products/cat-cinema.jpg]
+related: [m4-mini, in-25]
+cases: [dubai-perimeter]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Cinema Drone OEM — 4/3 Sensor, 46 min, 20 Unit MOQ
+    zh: 影视航拍无人机 OEM — 4/3 传感器，46 分钟，20 台起订
+  description:
+    en: 4/3 CMOS, interchangeable bayonet lenses, 10-bit 4:2:2 to removable SSD, 46-minute endurance. CE RED and FCC ID reports tied to hardware revision.
+    zh: 4/3 CMOS、可换卡口镜头、10-bit 4:2:2 录制至可拆 SSD、46 分钟续航。CE RED 与 FCC ID 报告与硬件版本一一对应。

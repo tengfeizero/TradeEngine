@@ -1,0 +1,198 @@
+slug: ag-40
+status: published
+order: 3
+featured: true
+model_no: KA-AG40
+category: agriculture
+scenarios: [precision-ag]
+certificates: [ce-red, iso-9001, un383]
+markets: [EU, US, BR, AE, AU]
+hs_code: "880623"
+moq: 5
+moq_unit: pcs
+
+lead_time:
+  en: 40–50 days after deposit, 60 days with a custom tank colour and your logo
+  zh: 定金后 40–50 天，定制药箱配色与标识为 60 天
+packaging:
+  en: Folded airframe in a plywood crate, two batteries and charger in a separate UN38.3 crate
+  zh: 折叠机身装木箱，电池与充电器另装 UN38.3 木箱
+sample_policy:
+  en: One demo unit per distributor at 1.3× FOB, replaced free within 12 months if used for local demos
+  zh: 每个经销商一台演示机，按 FOB 1.3 倍价，12 个月内用于本地演示可免费换新
+
+title:
+  en: AG-40 Hexa
+  zh: AG-40 六旋翼植保机
+subtitle:
+  en: 40 L tank, 21 hectares per hour, per-nozzle flow control
+  zh: 40 升药箱、每小时 21 公顷、逐喷头流量控制
+summary:
+  en: The workhorse for orchards and row crops where a full tank has to cover 22 hectares before the refill truck catches up. Eight nozzles with individual flow control, so a blocked nozzle shows up as a pressure fault instead of a stripe in the field.
+  zh: 果园与大田的主力机型：一箱药要覆盖 22 公顷，等加药车追上来。八个喷头各自控制流量，堵一个喷头会在屏幕上显示压力故障，而不是田里一条没喷到的空带。
+
+description:
+  en: |
+    Spraying economics are decided by two numbers: hectares per tank and minutes per refill. A 40 L tank at 22 L/ha gives you 1.8 hectares per fill on paper. In an orchard with 25 percent overlap on the headlands you actually get 1.4, and that is the number your customer will quote back at you when the machine underperforms.
+
+    We publish the overlap-adjusted figure, not the brochure figure. The AG-40 holds 40 L usable, sprays 22 L/ha at 4 m/s with an 11 m swath, and the mission planner subtracts headland overlap before it estimates coverage, so the operator sees the honest number on the tablet.
+
+    Per-nozzle flow control is the other half. Each of the eight nozzles has its own solenoid and pressure sensor, so a partial blockage drops that nozzle's flow and raises a fault instead of quietly leaving an unsprayed stripe. On a 200-hectare contract that stripe is the difference between a repeat order and a dispute.
+  zh: |
+    植保的经济性由两个数字决定：一箱能打多少公顷，加一次药要几分钟。40 升药箱按 22 升/公顷，纸面上是 1.8 公顷一箱。果园地头有 25% 重叠，实际只有 1.4 公顷——机器不达预期时，客户拿回来质问你的正是这个数。
+
+    我们给的是扣除重叠后的数字，不是画册上的数字。AG-40 可用药量 40 升，4 米/秒、11 米喷幅下 22 升/公顷，航线规划会在估算覆盖面积前先扣掉地头重叠，操作员在平板上看到的是诚实值。
+
+    另一半是逐喷头控制。八个喷头各有电磁阀与压力传感器，半堵塞会让该喷头流量下降并报故障，而不是安静地留下一条未喷带。在 200 公顷的合同里，这条空带就是返单和纠纷的区别。
+
+highlights:
+  - en: 40 L usable tank, 11 m swath, 21 ha/h overlap-adjusted
+    zh: 40 升可用药量、11 米喷幅、扣除重叠后 21 公顷/小时
+  - en: Eight nozzles with individual solenoid and pressure sensing
+    zh: 八个喷头，各自电磁阀与压力检测
+  - en: RTK ±2 cm with 45 m terrain-following radar
+    zh: RTK ±2 厘米，45 米仿地雷达
+  - en: Tool-free arm fold, fits a 1.9 m pickup bed
+    zh: 免工具折叠机臂，可放进 1.9 米皮卡车斗
+
+applications:
+  - en: Orchard and vineyard spraying with headland overlap
+    zh: 果园与葡萄园喷洒（含地头重叠）
+  - en: Rice, cotton and sugarcane row crops
+    zh: 水稻、棉花与甘蔗大田
+
+specs:
+  - group:
+      en: Airframe & spraying
+      zh: 机身与喷洒
+    items:
+      - key: mtow
+        label:
+          en: Max take-off weight
+          zh: 最大起飞重量
+        value_num: 92
+        unit: kg
+        filterable: true
+      - key: tank
+        label:
+          en: Usable tank
+          zh: 可用药量
+        value_num: 40
+        unit: L
+        filterable: true
+      - key: coverage
+        label:
+          en: Coverage rate
+          zh: 作业效率
+        value_num: 21
+        unit: ha/h
+        filterable: true
+      - key: swath
+        label:
+          en: Spray width
+          zh: 喷幅
+        value_num: 11
+        unit: m
+      - key: nozzles
+        label:
+          en: Nozzles
+          zh: 喷头
+        value:
+          en: 8 × independent solenoid, 0.4–3.0 L/min each
+          zh: 8 个独立电磁阀，单个 0.4–3.0 升/分钟
+      - key: droplet
+        label:
+          en: Droplet size
+          zh: 雾滴粒径
+        value:
+          en: 80–250 μm adjustable, air-induction tips standard
+          zh: 80–250 微米可调，标配空气诱导喷头
+      - key: ip
+        label:
+          en: Ingress protection
+          zh: 防护等级
+        value:
+          en: IP67 airframe and spray system
+          zh: 机身与喷洒系统 IP67
+      - key: wind
+        label:
+          en: Wind resistance
+          zh: 抗风能力
+        value_num: 8
+        unit: m/s
+  - group:
+      en: Navigation & power
+      zh: 导航与动力
+    items:
+      - key: rtk
+        label:
+          en: RTK accuracy
+          zh: RTK 精度
+        value:
+          en: ±2 cm horizontal, ±3 cm vertical, base station included
+          zh: 水平 ±2 厘米，垂直 ±3 厘米，含基站
+      - key: radar
+        label:
+          en: Terrain following
+          zh: 仿地雷达
+        value:
+          en: 45 m range, 0.5–15 m altitude hold
+          zh: 45 米量程，0.5–15 米定高
+      - key: battery
+        label:
+          en: Battery
+          zh: 电池
+        value:
+          en: 2 × 30,000 mAh 14S smart packs, 600 cycles to 80 percent
+          zh: 2 块 30,000 mAh 14S 智能电池，600 次循环至 80%
+      - key: refill
+        label:
+          en: Refill cycle
+          zh: 加药周期
+        value:
+          en: 90 seconds with two operators, hot-swap battery in 30 seconds
+          zh: 两人配合 90 秒，电池热换 30 秒
+  - group:
+      en: Export & support
+      zh: 出口与支持
+    items:
+      - key: spares
+        label:
+          en: Spares kit
+          zh: 备件包
+        value:
+          en: 1 kit per aircraft, 16 nozzles, 2 pump diaphragms, 4 props, arm tube
+          zh: 每台配 1 套，16 个喷头、2 片泵膜、4 支桨、机臂管
+      - key: training
+        label:
+          en: Training
+          zh: 培训
+        value:
+          en: 3-day on-site for two technicians with first 20 hectares
+          zh: 两名技师 3 天驻场，含前 20 公顷作业
+      - key: warranty
+        label:
+          en: Warranty
+          zh: 质保
+        value_num: 18
+        unit: months
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 1.85
+  gross_weight_kg: 118
+
+cover: media/products/ag-40.jpg
+gallery: [media/products/ag-40.jpg, media/products/cat-agriculture.jpg]
+related: [ag-16, in-25]
+cases: [bavaria-orchard]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: 40 L Agricultural Spraying Drone — 21 ha/h, 5 Unit MOQ
+    zh: 40 升植保无人机 — 每小时 21 公顷，5 台起订
+  description:
+    en: 40 L usable tank, 11 m swath, eight nozzles with individual flow control, RTK ±2 cm. Overlap-adjusted coverage published, not brochure numbers.
+    zh: 40 升可用药量、11 米喷幅、八个独立控流喷头、RTK ±2 厘米。公布的是扣除重叠后的效率，不是画册数字。

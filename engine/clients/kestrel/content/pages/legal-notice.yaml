@@ -1,0 +1,52 @@
+slug: legal-notice
+status: published
+title:
+  en: Legal Notice
+  zh: 法律声明
+summary:
+  en: Company registration, VAT, EU responsible person and the contact route for market surveillance and export-control enquiries.
+  zh: 公司登记、增值税、欧盟责任方，以及市场监管与出口管制事务的联系途径。
+blocks:
+  - type: legal_facts
+    title:
+      en: Company information
+      zh: 公司信息
+  - type: richtext
+    title:
+      en: Responsible for content
+      zh: 内容责任人
+    body:
+      en: |
+        Information on this site is provided by the companies named above. Despite careful checking we accept no liability for the content of external links; responsibility for those lies with their operators. Specifications may change without notice — the binding specification is the one attached to your proforma invoice.
+
+        For legal inquiries, including GPSR requests from market surveillance authorities, write to legal@kestrel-aero.example.com with the subject line "Legal". We answer within five business days.
+      zh: |
+        本站信息由上述公司提供。外部链接内容经仔细核对，但我们不承担其责任，责任归属各链接的运营方。规格可能变更不另行通知——具有约束力的规格是形式发票所附的那一份。
+
+        法律相关事务（含市场监管机构依 GPSR 提出的资料请求）请发邮件至 legal@kestrel-aero.example.com，主题注明「法律」。我们在五个工作日内答复。
+  - type: richtext
+    title:
+      en: Export control
+      zh: 出口管制
+    body:
+      en: |
+        Products shown on this site are not offered for sale in every destination. Unmanned aircraft, their payloads and certain associated software are subject to export-control rules in China, the European Union and the United States, and to separate national import regimes.
+
+        Nothing on this site constitutes an offer capable of acceptance where an export or import authorisation is required. Where a licence is needed we act as exporter of record and will tell you before the proforma invoice what end-user documentation we need from you.
+      zh: |
+        本站展示的产品并非在所有目的地销售。无人航空器及其载荷、部分相关软件受中国、欧盟与美国出口管制规则约束，并受各国进口制度约束。
+
+        在需要出口或进口许可的情形下，本站内容不构成可被承诺的要约。若需要许可证，我方以出口经营者身份办理，并在形式发票之前告知需要你方提供哪些最终用户文件。
+  - type: richtext
+    title:
+      en: Battery and airworthiness notices
+      zh: 电池与适航说明
+    body:
+      en: |
+        Lithium batteries shipped with our products are packed and documented to UN 38.3 and the applicable transport regulations; the lot number for the cells in your carton is printed on the packing list.
+
+        Our platforms are supplied for commercial and professional use. Operation may require registration, remote-operator licensing or flight authorisation in your jurisdiction. That obligation sits with the operator, not the manufacturer, and we will point you to the applicable regime if you tell us where you intend to fly.
+      zh: |
+        随产品运输的锂电池按 UN 38.3 与适用运输规则包装并出具文件；你那一箱内电芯的批次号印在装箱单上。
+
+        我们的平台面向商业与专业用途供货。在你所在司法辖区运营，可能需要注册、操控员执照或飞行许可。这一义务属于运营人而非制造商；你告知拟使用地点，我们会指出适用的制度。

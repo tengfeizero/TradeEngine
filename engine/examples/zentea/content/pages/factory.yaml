@@ -1,0 +1,89 @@
+slug: factory
+status: published
+title:
+  en: Factory & quality control
+  zh: 工厂与品控
+summary:
+  en: 4,800 m² processing plant in Wuyi, steam lines commissioned 2019, HACCP and BRC-ready processes.
+  zh: 位于武义的 4800 平方米加工厂，2019 年投产蒸青线，按 HACCP 与 BRC 标准运行。
+cover: media/products/sencha-cover.png
+updated_at: 2026-09-20
+blocks:
+  - type: stats
+    items:
+      - value: "4800m²"
+        label: { en: Processing plant, zh: 加工厂面积 }
+      - value: "6h"
+        label: { en: Picking to steaming, zh: 采摘到蒸青 }
+      - value: "2"
+        label: { en: Steam lines, zh: 蒸青线 }
+      - value: "100%"
+        label: { en: Lots retained, zh: 留样比例 }
+  - type: process
+    title:
+      en: From leaf to container
+      zh: 从鲜叶到货柜
+    intro:
+      en: Seven steps, each with a documented check. The buyer's specification is attached to the lot card, not kept in someone's head.
+      zh: 七个环节，每步都有记录检查。买家的规格跟批次卡走，而不是记在某个人脑子里。
+    steps:
+      - title: { en: Plot reservation, zh: 茶园锁定 }
+        body:
+          en: Plots are reserved by specification before the spring flush, so volume does not depend on the spot market.
+          zh: 春茶前按规格锁定地块，产量不依赖现货市场。
+      - title: { en: Hand picking, zh: 人工采摘 }
+        body:
+          en: Two leaves and a bud, picked in the morning and delivered to the plant the same day.
+          zh: 一芽两叶，上午采摘当天送达工厂。
+      - title: { en: Steaming, zh: 蒸青 }
+        body:
+          en: Within six hours of picking. Steam time is recorded per batch — it is the main lever on colour and umami.
+          zh: 采摘后六小时内完成。每批记录蒸青时长——这是决定色泽与鲜味的主要变量。
+      - title: { en: Rolling & drying, zh: 揉捻与干燥 }
+        body:
+          en: Shape is set on a two-stage roller; final moisture is held at or below 5%.
+          zh: 两段式揉捻定型，最终水分控制在 5% 以内。
+      - title: { en: Blending to spec, zh: 按规格拼配 }
+        body:
+          en: Lots are blended against the approved sample, cupped blind by two people.
+          zh: 以确认样为基准拼配，两人盲评。
+      - title: { en: Metal detection & packing, zh: 金检与包装 }
+        body:
+          en: Every bag passes a metal detector; packing is 25 kg kraft with a food-grade liner.
+          zh: 每袋过金属探测，25 公斤牛皮纸袋内衬食品级膜。
+      - title: { en: Container loading, zh: 装柜 }
+        body:
+          en: Palletised, photographed, and sealed with a number sent to the buyer before departure.
+          zh: 托盘化、拍照，装柜后铅封号在发运前发给买家。
+  - type: gallery
+    title:
+      en: Plant
+      zh: 厂区
+    images:
+      - media/products/sencha-cover.png
+      - media/products/matcha-cover.png
+      - media/cases/eu-distributor.png
+  - type: faq
+    title:
+      en: Buyer questions
+      zh: 买家常问
+    items:
+      - q:
+          en: Can we visit before ordering?
+          zh: 下单前可以来访厂吗？
+        a:
+          en: Yes. We host buyer audits from March to October. Send dates at least two weeks ahead so we can arrange cupping and line time.
+          zh: 可以。3 月至 10 月接待买家审厂，请提前两周告知日期，以便安排评茶与产线时间。
+      - q:
+          en: Do you private label?
+          zh: 支持自有品牌吗？
+        a:
+          en: Yes — tins, pyramid bags and flat pouches, from 3,000 units per SKU.
+          zh: 支持——罐装、三角袋与平口袋，单 SKU 3,000 件起。
+      - q:
+          en: What is the minimum order?
+          zh: 起订量是多少？
+        a:
+          en: 500 kg per grade for bulk leaf. Sample orders of 5 kg are available at cost.
+          zh: 散茶每个等级 500 公斤起；5 公斤样品单按成本价供应。
+  - type: inquiry

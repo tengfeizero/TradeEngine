@@ -1,0 +1,109 @@
+/*!
+ * @skin organic
+ * @label 有机自然（食品 / 农产品 / 茶 / 手作）
+ * @category 食品农业
+ * @tone light
+ */
+
+/* 语言是「物产的气味」：暖纸底、大圆角、几乎不用线、靠柔影与色块托起图片。
+   首屏是「图在上、字居中的单栏」，像产品手册的扉页。
+   适合讲究产地、工艺、温度的品类——圆角与柔影比任何文案都更快传递「不工业」。 */
+
+html[data-skin=organic] body{font-size:16.5px;line-height:1.8}
+html[data-skin=organic] h1,html[data-skin=organic] h2{font-family:var(--font-heading);font-weight:500;letter-spacing:-.01em}
+html[data-skin=organic] h1{font-size:52px;line-height:1.12}
+html[data-skin=organic] h2{font-size:30px}
+html[data-skin=organic] h3{text-transform:none;letter-spacing:0;font-size:17px;color:var(--ink);font-weight:600}
+html[data-skin=organic] .lead{font-size:18px;color:color-mix(in srgb,var(--ink) 66%,var(--paper));max-width:62ch}
+html[data-skin=organic] main{max-width:1080px}
+
+/* 页头：无边框、留白、圆角胶囊导航 */
+html[data-skin=organic] .site-header{background:color-mix(in srgb,var(--paper) 92%,transparent);border-bottom:0;padding:20px 34px;backdrop-filter:blur(6px)}
+html[data-skin=organic] .brand{font-size:21px;letter-spacing:.01em}
+html[data-skin=organic] .site-nav a{font-size:14px;opacity:.7}
+html[data-skin=organic] .site-nav a:hover{opacity:1;color:var(--primary-text)}
+
+/* 首屏：图先、字后，整体居中 */
+html[data-skin=organic] .hero{padding:36px 0 44px;border-bottom:0}
+html[data-skin=organic] .hero.split{display:flex;flex-direction:column-reverse;gap:34px;text-align:center;align-items:center}
+html[data-skin=organic] .hero.split .hero-img{width:100%;aspect-ratio:16/9;border-radius:calc(var(--radius) * 3);margin:0;box-shadow:0 22px 60px color-mix(in srgb,var(--ink) 14%,transparent)}
+html[data-skin=organic] .hero-copy{display:flex;flex-direction:column;align-items:center;max-width:760px}
+html[data-skin=organic] .hero h1{max-width:20ch;font-size:54px}
+html[data-skin=organic] .hero p{max-width:56ch;font-size:18px}
+html[data-skin=organic] .hero .badge{border:0;background:color-mix(in srgb,var(--primary) 12%,transparent);color:var(--primary-text);font-size:12px;letter-spacing:.04em;padding:7px 16px}
+html[data-skin=organic] .hero-copy .hero-cta{justify-content:center}
+html[data-skin=organic] .hero-stats{width:100%;max-width:760px;grid-template-columns:repeat(4,1fr);gap:20px;border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent);margin-top:8px;padding-top:24px;text-align:center}
+html[data-skin=organic] .hero-stats b{color:var(--primary-text);font-weight:500;font-size:30px}
+html[data-skin=organic] .hl{font-style:italic;color:var(--primary-text)}
+
+/* 区块：靠留白分节，标题居中，不用任何线 */
+html[data-skin=organic] .section{padding:64px 0 0}
+html[data-skin=organic] .section-head{justify-content:center;text-align:center;margin-bottom:30px;flex-direction:column;align-items:center}
+html[data-skin=organic] .section-head>div{display:flex;flex-direction:column;align-items:center}
+html[data-skin=organic] .section-head .lead{margin-left:auto;margin-right:auto}
+html[data-skin=organic] .kicker{font-family:var(--font-heading);font-style:italic;text-transform:none;letter-spacing:.02em;font-size:16px;color:var(--accent-text);font-weight:400}
+
+/* 卡片：无边框，图上字下，柔影浮起 */
+html[data-skin=organic] .grid{grid-template-columns:repeat(3,1fr);gap:28px}
+html[data-skin=organic] .card{background:var(--surface);border:0;border-radius:calc(var(--radius) * 2.5);overflow:hidden;box-shadow:0 10px 30px color-mix(in srgb,var(--ink) 9%,transparent)}
+html[data-skin=organic] a.card:hover{transform:translateY(-4px);box-shadow:0 20px 44px color-mix(in srgb,var(--ink) 14%,transparent)}
+html[data-skin=organic] .card .thumb{aspect-ratio:1/1}
+html[data-skin=organic] .card .body{padding:18px 20px 22px;text-align:center;align-items:center}
+html[data-skin=organic] .card p{font-size:13.5px}
+
+/* 能力网格：圆角色块，不描边 */
+html[data-skin=organic] .features{grid-template-columns:repeat(2,1fr);gap:26px}
+html[data-skin=organic] .features.numbered{grid-template-columns:repeat(2,1fr)}
+html[data-skin=organic] .feature{background:color-mix(in srgb,var(--primary) 7%,var(--surface));border:0;border-radius:calc(var(--radius) * 2);padding:28px 26px}
+html[data-skin=organic] .feature .f-icon{background:var(--surface);color:var(--primary-text);border-radius:50%;width:50px;height:50px;box-shadow:0 6px 16px color-mix(in srgb,var(--ink) 8%,transparent)}
+html[data-skin=organic] .feature .no{font-family:var(--font-heading);font-style:italic;color:var(--accent-text);font-size:13px;letter-spacing:.04em}
+html[data-skin=organic] .card.icon-card{background:color-mix(in srgb,var(--primary) 7%,var(--surface));box-shadow:none}
+html[data-skin=organic] .card.icon-card .f-icon{background:var(--surface);border-radius:50%}
+html[data-skin=organic] .card.icon-card .body{align-items:center;text-align:center}
+
+/* 数据条：淡色通栏，数字用主色 */
+html[data-skin=organic] .stats{gap:26px;padding:30px 24px;border:0;border-radius:calc(var(--radius) * 2.5);background:color-mix(in srgb,var(--primary) 7%,var(--paper))}
+html[data-skin=organic] .stat{text-align:center}
+html[data-skin=organic] .stat .value{font-size:36px;font-weight:500}
+
+/* 流程：圆点串成一条，序号做成小圆章 */
+html[data-skin=organic] .process{gap:30px}
+html[data-skin=organic] .step{border-top:0;padding-top:0}
+html[data-skin=organic] .step .no{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:color-mix(in srgb,var(--primary) 14%,transparent);color:var(--primary-text);font-size:13px;margin-bottom:12px}
+
+/* 图文：大圆角图，正文行距放宽 */
+html[data-skin=organic] .image-text{gap:44px}
+html[data-skin=organic] .image-text .media img{aspect-ratio:5/4;border-radius:calc(var(--radius) * 3);box-shadow:0 16px 40px color-mix(in srgb,var(--ink) 10%,transparent)}
+html[data-skin=organic] .image-text ul{color:color-mix(in srgb,var(--ink) 66%,var(--paper))}
+html[data-skin=organic] .checks li{color:color-mix(in srgb,var(--ink) 70%,var(--paper));font-size:14.5px}
+html[data-skin=organic] .checks .ic{color:var(--primary-text)}
+
+/* CTA / 表单 / 页脚 */
+html[data-skin=organic] .cta{background:color-mix(in srgb,var(--primary) 9%,var(--paper));border:0;border-radius:calc(var(--radius) * 3);padding:46px 40px;text-align:center}
+html[data-skin=organic] .cta p{margin-left:auto;margin-right:auto}
+html[data-skin=organic] .inquiry{background:var(--surface);border:0;border-radius:calc(var(--radius) * 2.5);padding:34px 32px;box-shadow:0 14px 40px color-mix(in srgb,var(--ink) 8%,transparent)}
+html[data-skin=organic] .inquiry input,html[data-skin=organic] .inquiry select,html[data-skin=organic] .inquiry textarea{border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);background:var(--paper);border-radius:var(--radius)}
+html[data-skin=organic] .btn{background:var(--primary-fill);border-radius:999px;padding:13px 30px;font-size:14px;letter-spacing:.02em}
+html[data-skin=organic] .btn.ghost{background:transparent;border:1px solid color-mix(in srgb,var(--primary) 45%,transparent)}
+html[data-skin=organic] .inquiry button{border-radius:999px;padding:13px 32px}
+html[data-skin=organic] .faq details{border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent);padding:18px 0}
+html[data-skin=organic] .faq summary::after{color:var(--primary-text)}
+html[data-skin=organic] footer{border-top:1px solid color-mix(in srgb,var(--ink) 10%,transparent);padding:30px 34px}
+html[data-skin=organic] .product-head .cover,html[data-skin=organic] .case-head img,html[data-skin=organic] .list-cover img,html[data-skin=organic] .gallery img{border-radius:calc(var(--radius) * 2.5)}
+html[data-skin=organic] .highlights li{border:0;background:color-mix(in srgb,var(--primary) 11%,transparent);color:var(--primary-text)}
+
+@media (max-width:900px) {
+  html[data-skin=organic] h1,html[data-skin=organic] .hero h1{font-size:36px}
+  html[data-skin=organic] h2{font-size:25px}
+  html[data-skin=organic] .grid{grid-template-columns:repeat(2,1fr);gap:18px}
+  html[data-skin=organic] .features,html[data-skin=organic] .features.numbered{grid-template-columns:1fr;gap:18px}
+  html[data-skin=organic] .hero-stats{grid-template-columns:repeat(2,1fr);gap:18px}
+  html[data-skin=organic] .section{padding:48px 0 0}
+  html[data-skin=organic] .cta{padding:34px 24px}
+}
+@media (max-width:640px) {
+  html[data-skin=organic] .grid{grid-template-columns:1fr}
+  html[data-skin=organic] .hero h1{font-size:30px}
+  html[data-skin=organic] .site-header{padding:16px 20px}
+  html[data-skin=organic] .inquiry{padding:24px 20px}
+}

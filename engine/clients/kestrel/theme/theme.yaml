@@ -1,0 +1,33 @@
+name: kestrel
+skin: aeronova
+
+# 色板直接取自设计稿 design/aeronova-website.html 的 :root
+# （--bg / --surface / --primary / --secondary / --accent / --text）
+colors:
+  primary: "#00D4FF"        # 青：主色、数字、链接
+  primary-fill: "#00D4FF"   # 渐变按钮的起点，深字压在它上面
+  secondary: "#6366F1"      # 靛：渐变终点
+  accent: "#00FF88"         # 霓虹绿：徽标圆点、标题渐变词的第二个色
+  ink: "#E2E8F0"
+  paper: "#0A0E1A"
+  surface: "#131826"
+  muted: "rgba(226,232,240,.62)"
+
+# 设计稿用 Space Grotesk / Inter / JetBrains Mono。系统字体栈模拟不出
+# Space Grotesk 那种几何窄体（它的 t 与 l 收得很紧，是这版科技感的主要来源）。
+fonts:
+  heading: "'Space Grotesk', 'PingFang SC', system-ui, sans-serif"
+  body: "'Inter', 'PingFang SC', system-ui, sans-serif"
+  mono: "'JetBrains Mono', ui-monospace, monospace"
+
+font_faces:
+  - {family: "Space Grotesk", file: media/fonts/space-grotesk-500.woff2, weight: "500"}
+  - {family: "Space Grotesk", file: media/fonts/space-grotesk-600.woff2, weight: "600"}
+  - {family: "Space Grotesk", file: media/fonts/space-grotesk-700.woff2, weight: "700"}
+  - {family: "Inter", file: media/fonts/inter-400.woff2, weight: "400"}
+  - {family: "Inter", file: media/fonts/inter-500.woff2, weight: "500"}
+  - {family: "Inter", file: media/fonts/inter-600.woff2, weight: "600"}
+  - {family: "JetBrains Mono", file: media/fonts/jetbrains-mono-400.woff2, weight: "400"}
+  - {family: "JetBrains Mono", file: media/fonts/jetbrains-mono-500.woff2, weight: "500"}
+
+radius: 8px

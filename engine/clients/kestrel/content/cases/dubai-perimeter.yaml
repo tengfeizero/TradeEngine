@@ -1,0 +1,34 @@
+slug: dubai-perimeter
+status: published
+title:
+  en: Tether-backed perimeter overwatch for a 4.2 km logistics park
+  zh: 4.2 公里物流园区系留式周界值守
+country: AE
+industry:
+  en: Industrial park security
+  zh: 工业园区安防
+customer: Jebel Ali Logistics Park, security division
+challenge:
+  en: |
+    4.2 km of perimeter fence, 19 gates, and a night shift with 34 guards. Their existing camera towers covered 71 percent of the fence line; the remaining 29 percent generated 60 percent of the false alarms, because a swaying pallet wrap at 200 m looks like a person on a thermal camera.
+
+    They had already tried a battery patrol drone. Fifty minutes of flight against a ten-hour shift meant eleven take-off and landing cycles a night, and the operator spent more time swapping packs than watching the fence.
+  zh: |
+    4.2 公里周界围栏、19 个大门、夜班 34 名保安。现有监控塔覆盖 71% 围栏线；剩下 29% 产生了 60% 的误报——200 米外一片飘动的缠绕膜，在热成像里跟一个人没有区别。
+
+    他们已经试过电池巡逻机。50 分钟续航对十小时夜班，意味着一夜十一次起降，操作员换电池的时间比盯围栏还多。
+solution:
+  en: |
+    Twenty-four SR-30 airframes on six tether stations, each covering roughly 700 m of fence at 120 m altitude. The tether gives four hours on ground power, so one operator covers a shift with a single launch.
+
+    Integration was the deciding factor. The aircraft takes a dry-contact trigger from the existing video management system over ONVIF, launches to a preset gimbal pose over the alarm zone, and streams back on the same VMS grid the guards already watch. No second console, no new training.
+  zh: |
+    六个系留站配 24 台 SR-30，每站在 120 米高度覆盖约 700 米围栏。系留提供 4 小时地面供电，一名操作员一次起飞覆盖一个班次。
+
+    决定成败的是对接。飞机通过 ONVIF 接收现有视频管理系统的干接点触发，飞向报警区域的预置云台位，画面回到保安本来就在看的同一个界面。没有第二个控制台，没有新的培训。
+result:
+  en: Night false alarms down 61 percent, average response 11 minutes to 3 min 20 s
+  zh: 夜间误报下降 61%，平均到场时间从 11 分钟缩短到 3 分 20 秒
+products: [sr-30, x9-cine]
+cover: media/cases/dubai-perimeter.jpg
+updated_at: 2026-10-22

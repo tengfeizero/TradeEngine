@@ -1,0 +1,69 @@
+slug: trade-terms
+status: published
+title:
+  en: Trade Terms
+  zh: 贸易条款
+summary:
+  en: Payment, incoterms, lead time, packaging and claims — the commercial baseline for every Ridgeway order.
+  zh: 付款方式、贸易术语、交期、包装与索赔——每张岭道订单的商业基线。
+blocks:
+  - type: richtext
+    kicker:
+      en: Payment and incoterms
+      zh: 付款与贸易术语
+    title:
+      en: How orders are paid and shipped
+      zh: 订单如何付款与发运
+    body:
+      en: |
+        **Payment.** T/T — 30% deposit with order, 70% against copy of the bill of lading. Confirmed irrevocable L/C at sight is accepted for annual contracts above USD 200,000.
+
+        **Incoterms.** Default FOB Ningbo or Shanghai. CIF and EXW quotations are available on request; DAP within the EU is quoted per season for container programmes.
+
+        **Lead time.** Repeat orders ship within 45 days of deposit; custom frame development follows the agreed project schedule, typically 90–120 days from approved drawings to first article.
+      zh: |
+        **付款方式。** 电汇 T/T：下单付 30% 定金，见提单副本付 70% 尾款。年度合同金额超过 20 万美元可接受保兑的不可撤销即期信用证。
+
+        **贸易术语。** 默认 FOB 宁波或上海；可按需报 CIF 或 EXW。欧盟境内的整柜 DAP 按季度报价。
+
+        **交期。** 常规件定金到账后 45 天内发运；定制车架开发按项目排期，通常从图纸确认到首件 90–120 天。
+  - type: richtext
+    kicker:
+      en: Pricing
+      zh: 价格
+    title:
+      en: Why there is no price list on this site
+      zh: 为什么这个网站上没有价目表
+    body:
+      en: |
+        A Ridgeway price is a function of geometry, material and specification — the same frame with a different drivetrain package is a different bike at a different price. A published list would be fiction within a season, and quoting against fiction costs you a negotiation round.
+
+        The anchors that are public: stock-platform samples at 2× FOB, credited against your first bulk order on most models. Send geometry, annual volume and target market, and an FOB estimate lands within 12 hours on business days. Quotations are valid for 30 days and tied to a specification; if aluminium or cell prices move beyond 5%, we come back to you before production, not after. Volume breaks apply per order, not per year.
+
+        For stock platforms — city, kids, folding — a season price list is available on request, because those change slowly enough to print.
+      zh: |
+        岭道的价格是几何、材质与配置的函数——同一副车架换一套传动配置，就是另一辆车、另一个价。公开价目表一个季度内就会变成虚构，而对着虚构报价，耽误的是你的一轮谈判。
+
+        公开的锚点是这些：现有平台样品按 FOB 两倍价，多数车型可在首个大货订单中抵扣。发来几何表、年采购量与目标市场，工作日 12 小时内回复 FOB 估价。报价有效期 30 天，且对应具体规格；铝价或电芯价格波动超过 5%，我们在生产前找你，而不是生产后。阶梯价按单次订单计算，不按年度累计。
+
+        现货平台——城市车、童车、折叠车——按需提供季度价目表，因为它们变化慢到可以印出来。
+  - type: richtext
+    kicker:
+      en: Packaging and claims
+      zh: 包装与索赔
+    title:
+      en: How bikes arrive, and what if something is wrong
+      zh: 到货形态，以及出问题怎么办
+    body:
+      en: |
+        **Packaging.** Bikes ship 85% assembled in reinforced export cartons; SKD and CKD container loading plans are provided before booking so your warehouse can plan labour.
+
+        **Claims.** Raise quality claims within 30 days of container arrival with the frame number and photos. We check the traceability card; if the defect is ours, we credit or replace in your next shipment — no return freight, because shipping a broken frame back costs more than the frame.
+
+        **Warranty.** Five years on frames and rigid forks, two years on electrical components, per the warranty sheet shipped with each order.
+      zh: |
+        **包装。** 整车 85% 预装后装入加强出口纸箱；SKD 与 CKD 的装柜方案在订舱前提供，方便您的仓库安排人工。
+
+        **索赔。** 集装箱到港后 30 天内凭车架号与照片提出质量索赔。我们查追溯卡；确属我方缺陷，在您下一批订单中抵扣或补发——不退运，因为把坏车架运回来的费用比车架本身还高。
+
+        **质保。** 车架与硬叉五年、电气部件两年，质保细则随每张订单附送。

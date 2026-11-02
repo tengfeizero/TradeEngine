@@ -1,0 +1,11 @@
+{{define "notfound"}}
+<section class="notfound">
+  <div class="code">404</div>
+  <h1>{{.PageTitle}}</h1>
+  <p class="lead">{{.UI.not_found_body}}</p>
+  <p>
+    <a class="btn" href="{{.BackHref}}">{{.UI.back_home}}</a>
+    <a class="btn ghost" href="/{{.Lang}}/products/">{{.UI.all_products}}</a>
+  </p>
+</section>
+{{end}}

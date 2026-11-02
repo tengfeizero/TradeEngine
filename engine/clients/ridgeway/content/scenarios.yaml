@@ -1,0 +1,39 @@
+- slug: retail-private-label
+  status: published
+  order: 1
+  name:
+    en: Retail & Private Label
+    zh: 零售与自有品牌
+  summary:
+    en: Your logo on the frame, your geometry in the drawing, our line running it every month.
+    zh: 你的标贴在车架上，你的几何在图纸里，我们的产线每月按图生产。
+
+- slug: rental-fleet
+  status: published
+  order: 2
+  name:
+    en: Rental & Sharing Fleets
+    zh: 租赁与共享车队
+  summary:
+    en: Fleet-grade components, telematics-ready frames, and a spare-parts ratio agreed up front.
+    zh: 车队级配件、预留 telematics 安装位的车架，以及事先约定的备件比例。
+
+- slug: last-mile-cargo
+  status: published
+  order: 3
+  name:
+    en: Last-Mile Delivery
+    zh: 末端配送
+  summary:
+    en: Cargo platforms rated to 250 kg with container mounts for postal and grocery operators.
+    zh: 额定载重 250 公斤的载货平台，预留邮政与生鲜运营商所需的箱体安装位。
+
+- slug: sport-outdoor
+  status: published
+  order: 4
+  name:
+    en: Sport & Outdoor Brands
+    zh: 运动与户外品牌
+  summary:
+    en: Trail and gravel frames with geometry sheets you can tune, tested to ISO 4210-2.
+    zh: 山地与砾石车架，几何可调并有图纸支撑，通过 ISO 4210-2 测试。

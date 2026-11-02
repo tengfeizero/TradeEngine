@@ -1,0 +1,181 @@
+slug: private-label
+status: published
+title:
+  en: Private-label tea, from brief to pallet
+  zh: 自有品牌茶，从需求到托盘
+summary:
+  en: What we do, what we do not do, and the eight things that decide whether your launch lands on time.
+  zh: 我们做什么、不做什么，以及决定你能否按时上架的八件事。
+cover: media/lab/packing.jpg
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    title:
+      en: We are a packing house with a lab, not a garden with a shop
+      zh: 我们是有实验室的包装厂，不是带门店的茶园
+    lead:
+      en: That distinction decides what we are good at. We buy from named gardens and co-operatives, we blend, we test, we pack, and we carry the paperwork. We do not grow tea, and we do not pretend a 40-hectare plot in Hangzhou makes 1,900 tonnes a year.
+    body:
+      en: |
+        Most private-label problems are not tea problems. They are a dieline that does not fit the filling machine, an organic claim with no segregation record, a nutrition panel that assumes the tea is eaten rather than infused, or a label language the importer will not accept. We have made each of those mistakes once, and they are now checklist items rather than surprises.
+
+        What that means commercially: we are cheaper than a brand agency and slower than a trader. A straightforward repeat order ships in three weeks. A new SKU with new artwork takes ten to fourteen, and most of that is the two proof rounds.
+
+        Three things we will not do. We will not put a garden name on a blend that contains four gardens. We will not print an organic logo on a lot without a transaction certificate for that specific lot. And we will not quote a price that assumes a container of one SKU when your range is twelve, because the freight will eat the difference.
+      zh: |
+        自有品牌的问题大多不是茶的问题。是刀版装不上灌装机、是有机声明没有隔离记录、是营养表面板按「吃茶」而不是「泡茶」算、是标签语言进口商不接受。这些错我们都犯过一次，现在它们是对照表上的勾选项，不是意外。
+
+        商业上的意思：我们比品牌公司便宜，比贸易商慢。老配方返单三周出货。新 SKU 加新包装要十到十四周，其中大半是两轮打样确认。
+
+        三件事我们不做。拼配里有四个产地，我们不会把其中一个庄园的名字印上去。没有该批次交易证书的货，我们不印有机标。你的产品线是十二支，我们不会按「一柜一支」报价——运费会把这中间的差价吃掉。
+  - type: process
+    title:
+      en: Eight steps to a listed SKU
+      zh: 一支 SKU 上架的八个步骤
+    intro:
+      en: Written in the order it actually happens, with the party responsible for each delay.
+      zh: 按实际发生顺序写，并注明每一步的延误由谁造成。
+    steps:
+      - title:
+          en: Brief and price band
+          zh: 需求与价格带
+        body:
+          en: You give category, cup, market, volume and the shelf price you need. We work backwards to a cost per kilogram. If the shelf price cannot carry the spec, we say it in the first email.
+          zh: 你给品类、想要的那杯、市场、用量与需要的货架价。我们倒推每公斤成本。货架价撑不起这个规格，我们在第一封邮件里就说。
+      - title:
+          en: Sample and cup
+          zh: 寄样与杯测
+        body:
+          en: Three to five lots, 12 working days. You cup, we cup, then we compare notes on the same sheet instead of trading adjectives.
+          zh: 三到五支样，12 个工作日。你评、我们评，然后对着同一张表对结论，而不是交换形容词。
+      - title:
+          en: Formula lock
+          zh: 配方锁定
+        body:
+          en: The blend gets a code, a version and a retained 500 g sample. Any later change to it becomes a new version, never a silent substitution.
+          zh: 拼配获得编号、版本号与 500 克留样。之后任何改动都是新版本，绝不悄悄替换。
+      - title:
+          en: Artwork and dieline
+          zh: 包装设计与刀版
+        body:
+          en: You send artwork to our dieline, or we adapt your existing pack to a standard one. Two proof rounds are included; a third is chargeable and usually means the brief moved.
+          zh: 你按我们的刀版出图，或我们把你的现有包装改到标准刀版上。含两轮打样确认；第三轮收费，通常意味着需求变了。
+      - title:
+          en: Compliance check
+          zh: 合规核对
+        body:
+          en: Ingredient declaration, infusion-based nutrition, allergen statement (none, for pure tea), country of origin, organic and halal marks, recycling marks by market.
+          zh: 配料表、按冲泡计的营养成分、过敏原声明（纯茶为无）、原产国、有机与清真标识、各市场回收标识。
+      - title:
+          en: Scale trial
+          zh: 上机试产
+        body:
+          en: 50 kg on the line with the bulk grinder setting and the actual packaging material. Fill weight, seal integrity and case count are checked against the spec sheet.
+          zh: 50 公斤上线，用大货研磨参数与实际包装材料。装量、封口强度与装箱数对照规格表检查。
+      - title:
+          en: Production
+          zh: 量产
+        body:
+          en: 300 kg minimum per SKU, 20–35 days depending on whether the base lot is in stock. Organic runs are scheduled on a separate shift with a documented clean-down.
+          zh: 单 SKU 300 公斤起，视基底是否现货 20–35 天。有机批次排独立班次，换产有书面清洁记录。
+      - title:
+          en: Documents and loading
+          zh: 单证与装柜
+        body:
+          en: CoA, packing list, health certificate where the market asks, transaction certificate for organic, and loading photos. Origin documents go out before the container, not after.
+          zh: 检测报告、装箱单、市场要求的卫生证书、有机交易证书、装柜照片。原产地单证在柜子发出前给，不是之后。
+  - type: image_text
+    title:
+      en: Four packing formats, and the one we talk you out of
+      zh: 四种包装形式，以及我们会劝你别做的那一种
+    body:
+      en: |
+        The format should follow the shelf, not the other way round. A 25 kg bag is right for a repacker and wrong for a supermarket. A pyramid sachet is right for a gift box and wrong for a value range where the sachet costs more than the tea inside.
+
+        The one we argue against is the compostable sachet for a long-life retail range. It sounds like the right decision in a sustainability meeting and behaves badly in a warehouse over eighteen months — the seam creeps and the aroma barrier is weaker than the spec sheet suggests. If your buyer insists, we will make it, and we will write the shelf-life limitation into the spec so nobody is surprised later.
+      zh: |
+        包装形式应该跟着货架走，不是反过来。25 公斤袋适合分装商，不适合超市。金字塔袋适合礼盒，不适合「袋子比茶还贵」的性价比线。
+
+        我们会劝退的一种，是给长保质期零售线用可降解袋泡。它在可持续发展会议上听起来很对，在仓库里放十八个月表现很差——封边会蠕变，香气阻隔也没有规格书上写的那么好。如果买家坚持，我们照做，但会把保质期限制写进规格，免得日后变成意外。
+    bullets:
+      - en: 25 kg multiwall bag, 40 per pallet — for repackers
+        zh: 25 公斤多层纸袋，每托 40 袋——供分装商
+      - en: 1 kg foil, 500 g tin — for food service and shelf
+        zh: 1 公斤铝箔、500 克铁罐——餐饮与货架
+      - en: Pyramid or flat sachet, 2–2.5 g — for gifting and hotels
+        zh: 金字塔或平袋，2–2.5 克——礼赠与酒店
+      - en: 20 kg foil-in-carton — for RTD and cold brew
+        zh: 20 公斤纸箱内铝箔——即饮与冷萃
+    image: media/lab/packing.jpg
+    flip: true
+    cta_text:
+      en: Ask for the packing spec sheet
+      zh: 索取包装规格表
+    cta_href: "/contact/"
+  - type: richtext
+    title:
+      en: Exclusivity, ownership and how long a price holds
+      zh: 独家、归属与报价有效期
+    body:
+      en: |
+        **Exclusivity.** Granted market by market, never globally, and only against a committed annual volume — 12 tonnes for a national retail programme, 3 tonnes for a single chain. Reviewed every 12 months, 90 days' notice to withdraw. If two consecutive lots fail your specification, you are released immediately.
+
+        **Your blend, or ours.** A blend we developed for our own range and sell to you as-is stays ours; we may sell it to other buyers, and we will say so before you commit. A blend developed against your brief — your target cup, your price ceiling, your market's MRL — belongs to you: we will not sell that recipe under another label, and we will not use it as the base of a competitor's blend. We write which of the two applies into the specification sheet, so there is no grey area after the first order.
+
+        **Artwork.** Your dielines, artwork and brand assets remain yours. We keep production files for 36 months so a reprint matches the first run, then delete them on request.
+
+        **Quotation validity.** 14 days from the date of issue. Tea is an agricultural product: a lot can sell out, and the next lot of the same garden is not the same price. We would rather re-quote than quietly substitute a cheaper leaf — which is why a quote older than 14 days is re-issued against current stock, not honoured against a tea that no longer exists.
+      zh: |
+        **独家。** 按市场授予，从不给全球独家，且必须对应年度承诺量——全国零售项目 12 吨，单一连锁 3 吨。每 12 个月复核，退出提前 90 天。若连续两批不符合你的规格，你可立即解除。
+
+        **你的拼配，还是我们的。** 我方自有产品线开发、原样卖给你的拼配，归我方；我们可能卖给其他买家，且会在你下单前说明。按你的需求开发的拼配——你的目标风味、你的价格上限、你所在市场的限量——归你：我们不会把这份配方换标出售，也不会拿它做别家拼配的底。究竟适用哪一种，我们写进规格表，第一单之后不留灰色地带。
+
+        **稿件。** 你的刀版、设计稿与品牌资产归你。生产文件我们保存 36 个月，以便重印与首印一致，之后可按要求删除。
+
+        **报价有效期。** 自开出日起 14 天。茶是农产品：一批可能卖完，同一茶园下一批也不是同一个价。我们宁愿重新报价，也不悄悄换一款便宜的叶子——所以超过 14 天的报价按现货重出，而不是对着一个已经不存在的批次硬守。
+  - type: faq
+    title:
+      en: Private-label questions
+      zh: 自有品牌常见问题
+    items:
+      - q:
+          en: What is the real minimum?
+          zh: 真实起订量是多少
+        a:
+          en: 300 kg per SKU for tea, 500 sets for a gift range with a custom tin. You can split 300 kg across two packing formats at no extra cost, because we are filling from the same lot.
+          zh: 茶类单 SKU 300 公斤；定制铁罐的礼盒 500 套起。300 公斤可以拆成两种包装形式而不加价，因为灌装用的是同一批茶。
+      - q:
+          en: Can you match a tea we already sell?
+          zh: 能仿我们现有在卖的茶吗
+        a:
+          en: Send 200 g and the spec sheet if you have one. We will cup it and tell you whether we can match it, approximate it, or cannot get close. A "cannot" usually comes with the reason — a cultivar we do not buy, or a roast profile that needs a different plant.
+          zh: 寄 200 克来，有规格书更好。我们评完告诉你：能对上、能近似、还是差得远。「差得远」通常附带原因——我们不采购的品种，或者需要另一套设备的焙火曲线。
+      - q:
+          en: Who owns the formula?
+          zh: 配方归谁
+        a:
+          en: You do, once the development is paid for. We keep a copy so repeat orders match, and we do not use it for anyone else. If you leave, we will transfer the recipe sheet, the base lot references and the roast parameters.
+          zh: 开发费付清后归你。我们留一份存档以便返单一致，不用在别人身上。你若要换供应商，我们会把配方表、基底批次编号与焙火参数交接过去。
+      - q:
+          en: How do you handle organic?
+          zh: 有机怎么处理
+        a:
+          en: Per lot, with a transaction certificate from the certifier for that specific lot. Organic runs are on a separate shift with a documented clean-down, and the packing hall's organic scope is audited annually under EU 2018/848 and USDA NOP.
+          zh: 按批，凭认证机构为该批出具的交易证书。有机批次排独立班次、有书面清洁记录，包装车间的有机范围每年按欧盟 2018/848 与美国 NOP 审核。
+      - q:
+          en: What if the artwork is late?
+          zh: 包装设计拖期怎么办
+        a:
+          en: We hold the tea and the production slot for 14 days at no charge, then release the slot. This is the most common cause of a missed launch, and it is the one we cannot fix from our side.
+          zh: 茶与产线档期免费保留 14 天，之后释放。这是上架延期最常见的原因，也是我们这边唯一修不了的一环。
+  - type: cta
+    title:
+      en: Send the brief, not the catalogue request
+      zh: 发需求，不要只发一句「发产品册」
+    body:
+      en: Category, cup, price band, market, volume, and the shelf date you are working towards. Half a page is enough to get three samples moving.
+      zh: 品类、想要的那杯、价格带、市场、用量，以及你要赶的上架日期。半页纸就够让三支样动起来。
+    cta_text:
+      en: Contact the team
+      zh: 联系我们
+    cta_href: "/contact/"

@@ -1,0 +1,202 @@
+slug: about
+status: published
+title:
+  en: About Ridgeway
+  zh: 关于岭道
+summary:
+  en: Started in 2011 as a frame welding shop for three local brands. Today two plants, 380 people, and 45 export markets — still doing our own welding.
+  zh: 2011 年从给三家本地品牌做车架焊接起家。今天两个厂区、380 人、45 个出口市场，焊接仍然自己做。
+cover: media/products/cat-folding.jpg
+updated_at: 2026-10-18
+blocks:
+  - type: image_text
+    title:
+      en: We started with the hardest part
+      zh: 我们从最难的那道工序开始
+    body:
+      en: |
+        In 2011 we were a welding shop: three jigs, eleven welders, and three local brands who needed frames they could not get from the big factories at their volume.
+
+        Painting, assembly and export came later — welding came first, which is why the two joints that fail catastrophically are still checked by hand on every frame rather than sampled. A factory that started with assembly treats the frame as a purchased part. We never could.
+      zh: |
+        2011 年我们是个焊接车间：三台夹具、十一个焊工、三家本地品牌——他们那个量级，大厂不接。
+
+        涂装、装配、出口都是后来才有的，焊接在最前。这也是为什么两处会「灾难性失效」的接头，我们今天仍逐台手检而不抽检。从装配起家的工厂，把车架当外购件；我们从来没这个条件。
+    bullets:
+      - en: Frame welding in-house since 2011
+        zh: 2011 年起车架焊接自有
+      - en: Two plants in Taizhou, 380 staff
+        zh: 台州两个厂区，380 名员工
+      - en: 45 export markets, EU and North America core
+        zh: 45 个出口市场，以欧盟与北美为主
+    image: media/products/cat-city.jpg
+  - type: stats
+    items:
+      - value: "2011"
+        label:
+          en: Founded
+          zh: 创立
+        note:
+          en: as a welding shop
+          zh: 焊接车间起家
+      - value: "380"
+        label:
+          en: Staff
+          zh: 员工
+        note:
+          en: 62 in welding
+          zh: 其中焊工 62 人
+      - value: "2"
+        label:
+          en: Plants
+          zh: 厂区
+        note:
+          en: Jiaojiang + Huangyan
+          zh: 椒江 + 黄岩
+      - value: "45"
+        label:
+          en: Export markets
+          zh: 出口市场
+        note:
+          en: 2025
+          zh: 2025 年
+  - type: richtext
+    title:
+      en: What we do not do
+      zh: 我们不做什么
+    body:
+      en: |
+        **We do not build complete bikes for our own brand.** We have no house brand, and we will not compete with the people who pay us. If you see a Ridgeway-branded bike in a shop, it is not ours.
+
+        **We do not broker.** Every frame we quote is welded in our own plant. If a platform is outside our capability — carbon frames, for instance — we say so and decline the order rather than subcontracting it quietly.
+
+        **We do not quote prices we cannot hold.** FOB numbers are valid for 30 days and tied to a specific specification. If aluminium or cell prices move beyond 5%, we come back to you before production rather than after.
+      zh: |
+        **我们不做自有品牌整车。** 我们没有自有品牌，也不会和付钱给我们的人竞争。你在店里看到挂 Ridgeway 标的整车，那不是我们的。
+
+        **我们不做倒手。** 每一台报出去的车架都在自己厂里焊。超出能力的平台——比如碳纤维车架——我们直说并拒单，不会悄悄转包。
+
+        **我们不报守不住的价格。** FOB 报价有效期 30 天，且对应具体规格。铝价或电芯价格波动超过 5%，我们在生产前找你，而不是生产后。
+  - type: image_text
+    title:
+      en: How we work with a new brand
+      zh: 我们怎么和新品牌合作
+    body:
+      en: |
+        The first order is usually the slowest, and it should be. We start with your drawing or ours, agree the fixture offsets, and build two frames before cutting a full lot.
+
+        Those two frames go to you, not to a lab. Your mechanic rides them, your painter checks the finish, and only then do we set a production date. It costs three weeks and saves the container.
+      zh: |
+        首单通常最慢，也应该最慢。从你的图纸或我们的图纸开始，先确认夹具偏置，再在整批下料之前做两台样架。
+
+        这两台寄给你，不进实验室。你的技师骑，你的涂装师看漆面，之后才排产。多花三周，省下一整柜。
+    bullets:
+      - en: Two pre-production frames shipped before tooling
+        zh: 开模前先寄两台样架
+      - en: Fixture offsets agreed in writing
+        zh: 夹具偏置书面确认
+      - en: Paint code and decal files archived per customer
+        zh: 色号与贴花文件按客户存档
+    image: media/products/cat-mountain.jpg
+    cta_text:
+      en: Start with a drawing review
+      zh: 从图纸评审开始
+    cta_href: "/contact/"
+  - type: team
+    kicker:
+      en: The people on your order
+      zh: 对接你订单的人
+    title:
+      en: You will know them by name
+      zh: 你会知道他们的名字
+    intro:
+      en: "No shared inbox: every customer has a named account manager, and the people below decide — not pass on — production and document questions."
+      zh: 没有公共邮箱：每个客户都有指定的客户经理，下面这些人直接决定生产与单证问题，而不是转发。
+    members:
+      - name: Chen Weimin
+        role:
+          en: Founder & Welding Lead
+          zh: 创始人 · 焊接主管
+        bio:
+          en: Started the shop in 2011. Signs off every new fixture himself.
+          zh: 2011 年创办车间。每套新夹具都由他本人签字确认。
+        photo: media/people/chen-weimin.jpg
+      - name: Lin Shuya
+        role:
+          en: Export Sales Manager
+          zh: 出口销售经理
+        bio:
+          en: Your quotation, incoterms and production slot. Replies within 12 hours on business days.
+          zh: 报价、贸易术语与排产档期都经她。工作日 12 小时内回复。
+        photo: media/people/lin-shuya.jpg
+      - name: Gao Heng
+        role:
+          en: QA & Certifications
+          zh: 品控与认证
+        bio:
+          en: Owns the EN 15194 files and the sampling tables your auditor will ask for.
+          zh: 负责 EN 15194 文件与验厂要看的抽检表。
+        photo: media/people/gao-heng.jpg
+      - name: Xu Jia
+        role:
+          en: Documentation & Shipping
+          zh: 单证与发运
+        bio:
+          en: Prepares the packing plan, B/L and certificate of origin — before the container books, not after.
+          zh: 装箱方案、提单与原产地证都由她备好——在订舱之前，不是之后。
+        photo: media/people/xu-jia.jpg
+  - type: testimonials
+    kicker:
+      en: Buyer voices
+      zh: 买家怎么说
+    title:
+      en: Three buyers, three different problems
+      zh: 三个买家，三个不同的问题
+    intro:
+      en: Names and companies are shown with permission. Each quote links to the product it is about, so you can check the specification yourself.
+      zh: 姓名与公司经对方同意后展示。每条都链到对应产品，规格你可以自己去核。
+    items:
+      - quote:
+          en: We moved a 900-unit gravel run to Ridgeway after our previous supplier missed a paint match twice. The first 20 frames came with D65 photos before they painted the rest — nobody had done that for us before.
+          zh: 上一家供应商两次色差没解决，我们把 900 台的砾石车订单转到了 Ridgeway。他们先拍 20 台在 D65 光源下的照片给我们确认，才继续喷剩下的——之前没人这样做过。
+        author: Jonas Berg
+        role:
+          en: Product manager
+          zh: 产品经理
+        company: Nordvelo AB
+        country: SE
+        date: "2026-08-14"
+        product: g500-gravel
+      - quote:
+          en: The traceability card is the reason we stayed. When two frames came back from a dealer with a cracked dropout, they pulled the weld records and the tube heat number in a day, and shipped replacements before we finished the claim report.
+          zh: 留住我们的是那张追溯卡。有两台车架被经销商退回、后钩开裂，他们一天内调出了焊接记录与管材炉号，我们的索赔报告还没写完，替换件已经发出。
+        author: Marta Ruiz
+        role:
+          en: Supply chain lead
+          zh: 供应链负责人
+        company: Ciclo Urbano S.L.
+        country: ES
+        date: "2026-05-22"
+        product: r320-e-city
+      - quote:
+          en: We asked for a cargo platform with a 180 kg payload and our own deck geometry. They sent a fixture drawing in four days and a rideable prototype in six weeks — the timeline they quoted was the timeline they kept.
+          zh: 我们要一个载重 180 公斤、货台几何自定的载货平台。四天给了夹具图，六周给了可骑样车——报的排期就是守住的排期。
+        author: Dirk Albers
+        role:
+          en: Founder
+          zh: 创始人
+        company: LastMile Cargo GmbH
+        country: DE
+        date: "2026-02-09"
+        product: c40-cargo-longtail
+  - type: cta
+    title:
+      en: Send the drawing. We will tell you what it costs to build.
+      zh: 把图纸发来，我们告诉你造出来要多少钱。
+    body:
+      en: If the geometry will not weld at your target price, we say that too — before tooling, not after the first container.
+      zh: 如果这个几何在你目标价内焊不出来，我们也直说——在开模之前，不是第一柜之后。
+    cta_text:
+      en: Request a quote
+      zh: 获取报价
+    cta_href: "/contact/"

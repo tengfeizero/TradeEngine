@@ -1,0 +1,34 @@
+slug: bavaria-orchard
+status: published
+title:
+  en: 36 spray drones over 1,400 hectares of Bavarian orchard
+  zh: 36 台植保机覆盖巴伐利亚 1,400 公顷果园
+country: DE
+industry:
+  en: Orchard and vineyard cooperative
+  zh: 果园与葡萄园合作社
+customer: Obstbau Genossenschaft Bayern eG
+challenge:
+  en: |
+    A cooperative of 62 growers working 1,400 hectares of apple and pear in blocks of 0.4 to 6 hectares, on slopes up to 18 degrees. Their previous contractor quoted coverage from a flat-field calculation, and every season ended in a dispute about unsprayed strips along the headlands.
+
+    Slope work also exposed the real problem: on 18-degree ground the aircraft climbed to hold altitude and the spray pattern widened, so the effective dose on the upper rows was 30 percent below label.
+  zh: |
+    62 户果农组成的合作社，1,400 公顷苹果与梨，地块从 0.4 到 6 公顷，坡度最大 18 度。此前的服务商用平地算法报覆盖面积，每个季节都因为地头未喷带吵一次。
+
+    坡地还暴露了真正的问题：在 18 度坡上，飞机为保持高度而爬升，喷幅随之变宽，上坡行的实际施药量比标签低 30%。
+solution:
+  en: |
+    We started with the coverage model rather than the aircraft. The mission planner was set to subtract headland overlap and to reduce flow on the uphill pass by the measured climb rate, using the terrain radar return instead of a fixed altitude.
+
+    The fleet is 36 AG-40 for the main blocks and 12 AG-16 for the terraces the 40 L machine cannot enter. Per-nozzle flow logging gives the cooperative a per-block dose record they can hand to the buyer, which ended the seasonal argument about strips.
+  zh: |
+    我们先改的是覆盖模型，不是飞机。航线规划被设置为扣除地头重叠，并按实测爬升率在上坡行降低流量，用的是仿地雷达回波而不是固定高度。
+
+    机队是 36 台 AG-40 打主地块，12 台 AG-16 负责 40 升机型进不去的梯田。逐喷头流量日志让合作社拿到按地块的施药记录，可以直接交给收购方——关于未喷带的季节性争论就此结束。
+result:
+  en: Herbicide use down 18 percent per hectare, zero unsprayed-strip disputes in two seasons
+  zh: 每公顷用药下降 18%，两个产季零起未喷带纠纷
+products: [ag-40, ag-16]
+cover: media/cases/bavaria-orchard.jpg
+updated_at: 2026-10-22

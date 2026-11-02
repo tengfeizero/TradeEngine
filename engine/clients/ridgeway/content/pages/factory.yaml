@@ -1,0 +1,251 @@
+slug: factory
+status: published
+title:
+  en: Factory & production control
+  zh: 工厂与生产控制
+summary:
+  en: 22,000 m² across two plants in Taizhou, eight assembly lines, 120,000 units a year. Frame welding and painting in-house, wheels and drivetrain sourced from Shimano and Novatec.
+  zh: 台州两个厂区共 22,000 平方米，八条装配线，年产 12 万台。车架焊接与涂装自有，轮组与传动来自 Shimano 与 Novatec。
+cover: media/products/cat-mountain.jpg
+updated_at: 2026-10-20
+blocks:
+  - type: stats
+    items:
+      - value: "22,000m²"
+        label:
+          en: Two plants
+          zh: 两个厂区
+        note:
+          en: Jiaojiang + Huangyan
+          zh: 椒江 + 黄岩
+      - value: "8"
+        label:
+          en: Assembly lines
+          zh: 装配线
+        note:
+          en: 2 dedicated to EPAC
+          zh: 其中 2 条专线做电助力
+      - value: "120k"
+        label:
+          en: Units per year
+          zh: 年产能（台）
+        note:
+          en: 2025 output
+          zh: 2025 年实际
+      - value: "98.6%"
+        label:
+          en: First-pass inspection
+          zh: 一次验货合格率
+        note:
+          en: third-party inspected
+          zh: 第三方验货
+  - type: process
+    title:
+      en: From tube to container
+      zh: 从管材到货柜
+    intro:
+      en: Six stages, each with a recorded check. Your specification follows the lot card, not somebody's memory.
+      zh: 六个环节，每步都有记录检查。你的规格跟着批次卡走，不靠谁的记忆。
+    steps:
+      - title:
+          en: Cutting & mitering
+          zh: 下料与切口
+        body:
+          en: Tubes are cut on a CNC line and mitered to the drawing's angles. First article from each new setup is measured against the fixture offsets.
+          zh: 管材在 CNC 线上切割，按图纸角度切口。每次换型的第一件都对照夹具偏置实测。
+      - title:
+          en: Welding
+          zh: 焊接
+        body:
+          en: TIG welded on steel fixtures. Weld current, gas flow and jig number are recorded per frame; every 500th frame gets an X-ray seam check.
+          zh: 钢制夹具上 TIG 焊接。每台的焊接电流、气体流量与夹具编号都有记录；每 500 台做一次焊缝 X 光检测。
+      - title:
+          en: Alignment & heat treatment
+          zh: 校形与热处理
+        body:
+          en: Post-weld alignment on a granite table, then T6 heat treatment. Dropout spacing and head tube parallelism are measured, not judged by eye.
+          zh: 焊后在花岗岩平台上校形，再做 T6 热处理。后钩间距与车头管平行度都是实测，不靠目测。
+      - title:
+          en: Painting & decals
+          zh: 涂装与贴花
+        body:
+          en: Six-tank pre-treatment, powder or liquid top coat, then decals under clear coat. Your paint code and decal files are archived per customer.
+          zh: 六槽前处理，粉末或液体面漆，贴花后罩清漆。你的色号与贴花文件按客户存档。
+      - title:
+          en: Assembly
+          zh: 装配
+        body:
+          en: Two EPAC-dedicated lines for e-bikes. Torque values on stem, crank and brake bolts are set with calibrated tools and spot-checked each shift.
+          zh: 电助力由两条专线装配。把立、曲柄、刹车螺栓的扭矩用校准工具设定，每班抽检。
+      - title:
+          en: Pre-delivery inspection
+          zh: 出厂检验
+        body:
+          en: 100% ride test, brake and gear check, then AQL 2.5 sampling by a third party. Photos of the sealed container are sent before departure.
+          zh: 100% 骑行测试、刹车与变速检查，再由第三方按 AQL 2.5 抽检。装柜铅封照片在发运前发送。
+  - type: image_text
+    title:
+      en: Built for scale, checked like a small shop
+      zh: 规模化生产，小作坊式检查
+    body:
+      en: |
+        Volume is the easy part. The hard part is that a 5,000-unit run must be inspected as carefully as a 50-unit sample.
+
+        Every batch carries a traceability card: tube heat number, weld operator, paint lot, assembly shift, and the inspector's initials. If a frame fails in your market two years later, we can pull the same card and tell you which shift built it.
+      zh: |
+        产能是容易的部分。难的是 5000 台的批量，要和 50 台样品一样认真检。
+
+        每批都有追溯卡：管材炉号、焊工、涂装批次、装配班次、检验员签名。两年后车架在你的市场出问题，我们能调出同一张卡，告诉你哪个班次做的。
+    bullets:
+      - en: Traceability card per batch — tube lot to inspector
+        zh: 每批一张追溯卡——从管材炉号到检验员
+      - en: OEM and ODM, including private-label packaging
+        zh: OEM 与 ODM，含自有品牌包装
+      - en: Sea, rail and air freight; FOB Ningbo or Shanghai
+        zh: 海运、铁路与空运；宁波或上海 FOB
+      - en: 45–85 day lead time depending on platform
+        zh: 交期 45–85 天，按平台不同
+    image: media/products/cat-cargo.jpg
+  - type: image_text
+    title:
+      en: Quality you can verify, not just claim
+      zh: 可核验的质量，不只是宣称
+    body:
+      en: |
+        We do not run a full test lab, and we say so. What we do run is a documented sampling programme with SGS and TÜV: frame fatigue, brake performance, battery safety, and paint adhesion, with reports tied to the lot number.
+
+        Every shipment leaves with a Certificate of Analysis covering the tests your market requires. If your customs broker asks for EN 15194 documentation, it is already in the folder.
+      zh: |
+        我们不设完整实验室，这点直说。我们做的是与 SGS、TÜV 的固定抽检计划：车架疲劳、刹车性能、电池安全、涂装附着力，报告与批号绑定。
+
+        每批出货附检测报告，覆盖你所在市场要求的项目。报关行要 EN 15194 文件时，它已经在资料夹里了。
+    bullets:
+      - en: Third-party sampling with SGS and TÜV
+        zh: 与 SGS、TÜV 的第三方抽检
+      - en: Report tied to the lot number, shipped with the goods
+        zh: 报告与批号绑定，随货发出
+      - en: EU MRL and EN 15194 documentation on file
+        zh: 欧盟限值与 EN 15194 文件常备
+      - en: Climate-controlled finished-goods warehouse
+        zh: 恒温成品仓
+    image: media/products/cat-ebike.jpg
+  - type: gallery
+    title:
+      en: Plant
+      zh: 厂区
+    images:
+      - media/products/cat-city.jpg
+      - media/products/cat-mountain.jpg
+      - media/products/cat-cargo.jpg
+  - type: factory
+    kicker:
+      en: Audit trail
+      zh: 审核与记录
+    title:
+      en: What you can check without flying over
+      zh: 不来现场也能核的部分
+    intro:
+      en: Capacity numbers mean nothing without the equipment behind them and a report number somebody can look up.
+      zh: 产能数字若没有设备与可查的报告编号撑着，就只是一句话。
+    equipment:
+      - name:
+          en: CNC tube cutting line
+          zh: CNC 管材切割线
+        qty: "3"
+        note:
+          en: 2022 and 2024 machines, auto mitering
+          zh: 2022 与 2024 年各一批，自动切口
+      - name:
+          en: TIG welding stations
+          zh: TIG 焊接工位
+        qty: "24"
+        note:
+          en: steel fixtures, current logged per frame
+          zh: 钢制夹具，逐台记录电流
+      - name:
+          en: Powder coating line
+          zh: 粉末涂装线
+        qty: "1"
+        note:
+          en: six-tank pre-treatment, 180°C cure
+          zh: 六槽前处理，180°C 固化
+      - name:
+          en: Heat treatment oven
+          zh: 热处理炉
+        qty: "2"
+        note:
+          en: T6 cycle for 6061 frames
+          zh: 6061 车架 T6 工艺
+      - name:
+          en: Granite alignment tables
+          zh: 花岗岩校形平台
+        qty: "4"
+        note:
+          en: dropout spacing measured, not judged by eye
+          zh: 后钩间距实测，不靠目测
+      - name:
+          en: Calibrated torque stations
+          zh: 校准扭矩工位
+        qty: "8"
+        note:
+          en: re-calibrated every 6 months
+          zh: 每 6 个月重新校准
+    audits:
+      - name:
+          en: SGS pre-shipment inspection (AQL 2.5)
+          zh: SGS 出货前检验（AQL 2.5）
+        number: SGS-CN-26-04187
+        issuer: SGS China
+        date: "2026-09-18"
+      - name:
+          en: EN 15194 test report (EPAC)
+          zh: EN 15194 检测报告（电助力）
+        number: TUV-5033-EN15194-2025-11
+        issuer: TÜV Rheinland
+        date: "2025-11-12"
+        valid_until: "2028-11-11"
+      - name:
+          en: amfori BSCI social audit
+          zh: amfori BSCI 社会责任审核
+        number: BSCI-26-88421
+        issuer: TÜV SÜD
+        date: "2026-06-04"
+        valid_until: "2027-06-03"
+    retention:
+      en: Every lot keeps two frames and one painted sample for 24 months, keyed to the traceability card — if a frame fails in your market, we compare it against the same lot.
+      zh: 每批留两台车架与一台涂装样件，保存 24 个月并与追溯卡绑定——车架在你的市场出问题，我们拿同批次对照。
+  - type: faq
+    title:
+      en: Buyer questions
+      zh: 买家常问
+    items:
+      - q:
+          en: What is the real MOQ if I want my own geometry?
+          zh: 要自有几何的话，真实起订量是多少？
+        a:
+          en: 100 units for mechanical frames and 50 for EPAC platforms. Below that we can still build from our existing geometry with your paint and decals, starting at 30 units for cargo.
+          zh: 机械车架 100 台，电助力平台 50 台。低于这个量仍可用我们的现有几何加你的涂装与贴花，载货车型最低 30 台。
+      - q:
+          en: Who owns the drawing and the tooling?
+          zh: 图纸与模具归谁？
+        a:
+          en: You own the drawing. Tooling is amortised into the unit price or paid upfront — if paid upfront, the tooling is yours and we will ship it to another factory on request.
+          zh: 图纸归你。开模费可摊入单价或一次性支付——若一次性支付，模具归你，我们可按要求转移到其他工厂。
+      - q:
+          en: How do you handle a paint colour that does not match?
+          zh: 色差怎么处理？
+        a:
+          en: First 20 frames of every batch are shot under D65 light against your approved sample and sent for confirmation before the run continues. A confirmed mismatch is repainted at our cost.
+          zh: 每批前 20 台在 D65 光源下对照确认样拍照，确认后才继续生产。确认不符的由我们承担返喷费用。
+      - q:
+          en: Can you ship to a marketplace seller rather than a brand?
+          zh: 可以直接发给平台卖家而不是品牌方吗？
+        a:
+          en: Yes, with neutral packaging and no factory marks, provided the certification documents are still filed under your entity.
+          zh: 可以，中性包装、无工厂标识，前提是认证文件仍挂在你的主体名下。
+      - q:
+          en: What happens if a batch fails third-party inspection?
+          zh: 第三方验货不合格怎么办？
+        a:
+          en: We rework or rebuild at our cost and cover the re-inspection fee. If it fails twice, you can cancel the balance without penalty.
+          zh: 我们承担返工或重做，并支付复检费用。若两次不合格，你可无责取消余款。

@@ -1,0 +1,65 @@
+- slug: cinema
+  status: published
+  order: 1
+  name:
+    en: Consumer & Cinema
+    zh: 消费与影视航拍
+  desc:
+    en: Sub-250 g to 1.4 kg platforms with 1-inch and Micro Four Thirds sensors, dual-native ISO and 10-bit log recording.
+    zh: 249 克至 1.4 公斤平台，一英寸与 M4/3 传感器，双原生 ISO 与 10-bit log 记录。
+  cover: media/products/cat-cinema.jpg
+
+- slug: agriculture
+  status: published
+  order: 2
+  name:
+    en: Agricultural Spraying
+    zh: 农业植保
+  desc:
+    en: 16 L and 40 L hexacopters with RTK guidance, terrain-following radar and per-nozzle flow control.
+    zh: 16 升与 40 升六旋翼，RTK 导航、仿地雷达与逐喷头流量控制。
+  cover: media/products/cat-agriculture.jpg
+
+- slug: inspection
+  status: published
+  order: 3
+  name:
+    en: Industrial Inspection
+    zh: 工业巡检
+  desc:
+    en: IP54 airframes with 640×512 radiometric thermal and 48 MP zoom, built for power line and flare stack work.
+    zh: IP54 机身，640×512 测温热成像与 4800 万像素变焦，面向输电线与火炬塔巡检。
+  cover: media/products/cat-inspection.jpg
+
+- slug: security
+  status: published
+  order: 4
+  name:
+    en: Security & Rescue
+    zh: 安防与救援
+  desc:
+    en: EO/IR gimbals, tethered power options and 4-hour station keeping for perimeter and incident response.
+    zh: 双光吊舱、可选系留供电，4 小时定点驻留，用于周界与突发事件响应。
+  cover: media/products/cat-security.jpg
+
+- slug: logistics
+  status: published
+  order: 5
+  name:
+    en: Logistics & Delivery
+    zh: 物流运输
+  desc:
+    en: 10 kg payload carriers with winch or belly-drop release, cold-chain box option and BVLOS flight logging.
+    zh: 10 公斤载重运输机，绞车或腹部投放，可选冷链箱，含超视距飞行日志。
+  cover: media/products/cat-logistics.jpg
+
+- slug: fpv
+  status: published
+  order: 6
+  name:
+    en: FPV Racing
+    zh: FPV 竞速
+  desc:
+    en: 5-inch carbon frames, 8S power trains and sub-10 ms digital video for race teams and training schools.
+    zh: 五寸碳纤维机架、8S 动力系统与低于 10 毫秒的数字图传，面向竞速队与培训机构。
+  cover: media/products/cat-fpv.jpg

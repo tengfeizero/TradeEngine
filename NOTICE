@@ -1,0 +1,28 @@
+NOTICE — 第三方资产说明
+========================
+
+本仓库包含以下第三方授权资产，均允许再分发：
+
+## 字体（SIL Open Font License 1.1）
+
+以下字体以 WOFF2 形式内置于示例站点的 media/fonts/ 目录：
+
+- Inter（rsoxf/Inter，https://github.com/rsms/inter）
+- JetBrains Mono（JetBrains，https://github.com/JetBrains/JetBrainsMono）
+- Space Grotesk（Florian Karsten，https://github.com/floriankarsten/space-grotesk）
+- Cormorant Garamond（Christian Thalmann，https://github.com/CatharsisFonts/Cormorant）
+
+SIL OFL 1.1 全文见各字体上游仓库；要点：可自由使用、嵌入、再分发，
+不得单独出售字体文件本身，保留版权声明。
+
+## 图片
+
+- `design/images/` 与各示例站 `media/` 下的图片均为本项目使用 AI 工具
+  生成或由脚本（engine/tools/gen_media.py）程序化产出，版权归本项目所有，
+  随 MIT 许可证一并授权。
+
+## 示例站内容
+
+- `engine/examples/` 与根目录 `engine/clients/` 下的演示站点（zentea /
+  kestrel / leafworks / ridgeway）均为**虚构企业**：域名 `*.example.com`、
+  占位电话、虚构地址。其中的文字内容为演示用途创作，随 MIT 许可证授权。

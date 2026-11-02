@@ -1,0 +1,146 @@
+base_url: https://ridgeway-cycles.example.com
+schema_version: 1
+default_lang: en
+langs: [en, zh]
+theme: ridgeway
+
+brand:
+  name: Ridgeway Cycles
+  logo: media/brand/logo.svg
+  tagline:
+    en: OEM bicycles and e-bikes built to your specification, shipped from Zhejiang
+    zh: 按你的规格生产的自行车与电助力车，浙江出厂直发
+
+company:
+  legal_name: Zhejiang Ridgeway Cycles Co., Ltd.
+  founded_year: 2011
+  address:
+    country: CN
+    region: Zhejiang
+    city: Taizhou
+    street: No.168 Haichang Road, Jiaojiang District
+    zip: "318000"
+
+contact:
+  email: sales@ridgeway-cycles.example.com
+  phone: "+86 576 8888 6600"
+  whatsapp: "8613800000000"
+
+markets:
+  - code: EU
+    name:
+      en: Europe
+      zh: 欧洲
+    langs: [en]
+  - code: US
+    name:
+      en: North America
+      zh: 北美
+    langs: [en]
+  - code: JP
+    name:
+      en: Japan
+      zh: 日本
+    langs: [en]
+  - code: AU
+    name:
+      en: Australia
+      zh: 澳洲
+    langs: [en]
+  - code: AE
+    name:
+      en: Middle East
+      zh: 中东
+    langs: [en]
+
+social:
+  linkedin: https://linkedin.com/company/ridgeway-cycles
+  instagram: https://instagram.com/ridgewaycycles
+
+analytics:
+  ga4_id: G-XXXXXXXXXX
+  # Google Search Console 的 HTML 标签验证码（只填 content 的值）
+  # gsc_verify: "abc123..."
+
+# 市场准入信息（B1 v2.0 R2）。
+# 值会渲染到：产品页「制造商与市场合规」段、页脚常驻披露行、legal-notice 页。
+# 欧盟责任方是进口商/授权代表，不是制造商——写错了 GPSR 等于没满足。
+compliance:
+  eu_responsible:
+    name: Ridgeway Europe B.V.
+    address: Scheepsbouwkade 12, 3011 Rotterdam, Netherlands
+    email: eu@ridgeway-cycles.example.com
+    phone: "+31 10 000 0000"
+  legal_notice:
+    register_no: "KvK 87654321"
+    register_court: Rotterdam
+    vat_id: NL864123456B01
+    managing_director: M. de Vries
+    email: legal@ridgeway-cycles.example.com
+    phone: "+31 10 000 0000"
+  epr:
+    de_packaging: "LUCID DE1234567890123"
+    fr_packaging: ""
+    weee: ""
+
+catalog:
+  file: media/catalog.pdf
+  label:
+    en: Download product catalogue (PDF)
+    zh: 下载产品目录（PDF）
+
+nav:
+  - label:
+      en: Products
+      zh: 产品
+    href: "/products/"
+  - label:
+      en: Applications
+      zh: 应用场景
+    href: "/scenarios/"
+  - label:
+      en: Factory
+      zh: 工厂
+    href: "/factory/"
+  - label:
+      en: Quality
+      zh: 品控
+    href: "/quality/"
+  - label:
+      en: Certifications
+      zh: 认证
+    href: "/certifications/"
+  - label:
+      en: Cases
+      zh: 案例
+    href: "/cases/"
+  - label:
+      en: About
+      zh: 关于
+    href: "/about/"
+  - label:
+      en: Contact
+      zh: 联系
+    href: "/contact/"
+
+inquiry:
+  recipients: [sales@ridgeway-cycles.example.com]
+  fields: [name, company, email, country, product, volume, message]
+  required: [name, email, message]
+  product_field: true
+  success_url: /{lang}/thank-you/
+  turnstile_sitekey: ""
+  api_base: ""
+  allowed_origins: []
+  rate_limit_per_hour: 10
+  webhook: ""
+
+images:
+  transcode: false
+  quality: 82
+  widths: [640, 960, 1280]
+  max_kb: 400
+
+store:
+  driver: sqlite
+  dsn: .data/inquiries.db

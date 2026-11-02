@@ -1,0 +1,65 @@
+- slug: green-tea
+  status: published
+  order: 1
+  name:
+    en: Green Tea
+    zh: 绿茶
+  desc:
+    en: Pan-fired and oven-dried lots from Hangzhou, Anji and Huangshan. Spring pluck only, packed at 4.5% moisture and cold-stored from June.
+    zh: 杭州、安吉、黄山的炒青与烘青。只做春茶，4.5% 含水率装箱，6 月起进冷库。
+  cover: media/products/cat-green.jpg
+
+- slug: black-tea
+  status: published
+  order: 2
+  name:
+    en: Black Tea
+    zh: 红茶
+  desc:
+    en: Qimen leaf grades for specialty retail, and CTC for milk tea and RTD. The CTC is the workhorse — consistent colour across lots matters more than peak quality.
+    zh: 供精品零售的祁门条红茶，以及供奶茶与即饮茶的 CTC。CTC 是主力——批次间色泽稳定比峰值品质更重要。
+  cover: media/products/cat-black.jpg
+
+- slug: oolong
+  status: published
+  order: 3
+  name:
+    en: Oolong
+    zh: 乌龙茶
+  desc:
+    en: Nanyan Tieguanyin and single-bush Dancong. Charcoal or electric roast, rested six weeks before packing so the roast settles.
+    zh: 南岩铁观音与单株单丛。炭焙或电焙，装箱前静置六周让火气退掉。
+  cover: media/products/cat-oolong.jpg
+
+- slug: white-tea
+  status: published
+  order: 4
+  name:
+    en: White Tea
+    zh: 白茶
+  desc:
+    en: Fuding Silver Needle and Shou Mei, sun-withered, no rolling, nothing above 45 °C. The category where patience is the whole process.
+    zh: 福鼎银针与寿眉，日光萎凋、不揉捻、不超过 45 摄氏度。这个品类里，耐心就是全部工艺。
+  cover: media/products/cat-white.jpg
+
+- slug: puer
+  status: published
+  order: 5
+  name:
+    en: Pu-erh
+    zh: 普洱
+  desc:
+    en: Menghai shou and sheng, loose or pressed. Warehouse records kept per lot since 2014, because age claims are worth nothing without them.
+    zh: 勐海熟茶与生茶，散茶或紧压。自 2014 年起按批次保留仓贮记录——没有记录，年份说法一文不值。
+  cover: media/products/cat-puer.jpg
+
+- slug: botanical
+  status: published
+  order: 6
+  name:
+    en: Botanical
+    zh: 花草
+  desc:
+    en: Chrysanthemum, osmanthus, rose and ginger. Caffeine-free, sulfur-free, and tested against the same 510-analyte panel we run on leaf tea.
+    zh: 菊花、桂花、玫瑰、姜。无咖啡因、无硫，按与茶叶相同的 510 项农残面板检测。
+  cover: media/products/cat-botanical.jpg

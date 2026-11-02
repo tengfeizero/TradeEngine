@@ -1,0 +1,53 @@
+slug: privacy-policy
+status: published
+title:
+  en: Privacy Policy
+  zh: 隐私政策
+summary:
+  en: What this site collects, how we handle samples and shipment addresses, how long we keep records, and how to have your data deleted.
+  zh: 本站收集什么、我们如何处理样品与收货地址、记录保存多久，以及如何要求删除您的数据。
+blocks:
+  - type: richtext
+    kicker:
+      en: Data you send us
+      zh: 您提交的数据
+    title:
+      en: What we collect and why
+      zh: 我们收集什么、为什么
+    body:
+      en: |
+        Hangzhou Leafworks Tea Co., Ltd. (No.6 Chayuan Road, Yuhang District, Hangzhou, Zhejiang 311100, China) is the data controller for information collected on this site.
+
+        The inquiry form collects your name, company, business email, country, product interest and estimated annual volume. We use it for one purpose: replying to your inquiry and preparing a quotation. We do not add you to a mailing list and we do not sell your data.
+
+        **If you ask for samples**, we also keep the recipient name, address, phone number and courier tracking number until the shipment is confirmed delivered. That record exists so that a parcel stuck in customs can be traced, and it is deleted 12 months after delivery.
+
+        Analytics cookies run only after you accept the cookie notice. Declining leaves analytics disabled and no tracking cookies are set.
+      zh: |
+        杭州叶作茶业有限公司（中国浙江省杭州市余杭区茶园路 6 号，邮编 311100）是本站所收集信息的数据控制者。
+
+        询盘表单收集您的姓名、公司、企业邮箱、国家/地区、感兴趣的产品与年采购量估算。这些信息只用于一个目的：回复您的询盘并准备报价。我们不会把您加入邮件列表，也不出售您的数据。
+
+        **如需寄样**，我们还会保存收件人姓名、地址、电话与快递单号，直至确认送达。留这份记录是为了让卡在清关的包裹能查到，送达后 12 个月删除。
+
+        统计 Cookie 只在您同意提示后启用。拒绝则统计保持关闭，不设任何追踪 Cookie。
+  - type: richtext
+    kicker:
+      en: Retention and your rights
+      zh: 保存期限与您的权利
+    title:
+      en: How long we keep it, and what you can ask
+      zh: 保存多久，您可以要求什么
+    body:
+      en: |
+        **Retention.** Inquiry records are kept for 24 months. Detected-lot records — the certificate of analysis, the retained sample and the cupping notes — are kept for 24 months after the lot ships, because that is how long we promise to be able to cup the same tea you have.
+
+        **Your rights.** You may request access to, correction of, or deletion of your personal data at any time by emailing hello@leafworks-tea.example.com. We reply within 30 days. If you are in the EU or UK you also have the right to lodge a complaint with your local supervisory authority.
+
+        **What is not personal data.** Lot codes, garden names and test results are commercial records about tea, not about people. They stay in the archive and are not affected by a deletion request.
+      zh: |
+        **保存期限。** 询盘记录保存 24 个月。批次记录——检测报告、留样与杯测笔记——在该批出货后保存 24 个月，因为这是我们承诺「能喝到你手上同一批茶」的期限。
+
+        **您的权利。** 您随时可以发邮件至 hello@leafworks-tea.example.com 要求查阅、更正或删除您的个人数据，我们会在 30 天内回复。如您位于欧盟或英国，您还有权向当地监管机构投诉。
+
+        **不属于个人数据的部分。** 批次号、产地名与检测结果，是关于茶叶而非关于人的商业记录。它们留在档案里，不受删除请求影响。

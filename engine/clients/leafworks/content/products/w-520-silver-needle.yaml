@@ -1,0 +1,138 @@
+slug: w-520-silver-needle
+status: published
+order: 7
+model_no: LW-W520
+category: white-tea
+scenarios: [gifting, retail-private-label, rtd-cold-brew]
+certificates: [usda-organic, eu-organic, fssc-22000]
+markets: [EU, US, JP]
+hs_code: "090220"
+moq: 200
+moq_unit: kg
+
+lead_time:
+  en: 25–35 days after deposit, 2026 spring lot
+  zh: 定金后 25–35 天，2026 年春茶批
+packaging:
+  en: 15 kg carton with foil liner, or 100 g tins for gift assembly
+  zh: 15 公斤纸箱内衬铝箔，或 100 克铁罐供礼盒组装
+sample_policy:
+  en: 200 g at cost plus freight, two vintages on request
+  zh: 200 克按成本加运费，可寄两个年份对照
+
+title:
+  en: W-520 Silver Needle, 2026 Spring
+  zh: W-520 白毫银针，2026 春
+subtitle:
+  en: Sun-withered, unrolled, nothing above 45 °C
+  zh: 日光萎凋，不揉捻，全程不超过 45 摄氏度
+summary:
+  en: Fuding buds only, 92% bud coverage, and a process with three steps — which is why the price is honest and the flavour is quiet.
+  zh: 只用福鼎芽头，芽头占比 92%，工艺只有三步——所以价格诚实，滋味安静。
+
+description:
+  en: |
+    White tea is the easiest category to fake and the easiest to explain. There is no firing, no rolling, no oxidation step to hide behind: pick buds, wither them in sun and air, dry them slowly. What separates a good lot is the picking — buds only, no leaf — and the weather during the two days of withering.
+
+    In a beverage application the quietness is the point. Cold-brewed at 4 °C for eight hours, Silver Needle gives a pale, sweet base with almost no bitterness, so a formulator does not need to add sugar to cover it. We supply it as a base for two kombucha producers, both of whom specify the same two numbers: 0.8% soluble solids at 1:50 and turbidity under 5 NTU after filtration.
+  zh: |
+    白茶是最容易造假、也最容易讲清楚的品类。不炒、不揉、没有发酵环节可以藏：采芽、日晒与阴凉萎凋、慢慢烘干。决定一批好坏的是采摘——只要芽，不要叶——以及那两天萎凋的天气。
+
+    用在饮料里，「安静」正是它的价值。4 摄氏度冷萃八小时，银针给出浅色、带甜、几乎没有苦味的基底，配方师不需要靠加糖去盖。我们给两家康普茶厂供基底，两家指定的都是同样两个数字：1 比 50 冲泡可溶性固形物 0.8%，过滤后浊度低于 5 NTU。
+
+highlights:
+  - en: 92% bud coverage, no leaf content declared
+    zh: 芽头占比 92%，叶片含量明示
+  - en: Withering dates recorded per lot
+    zh: 每批记录萎凋日期
+  - en: Cold-brew specification available for beverage clients
+    zh: 饮料客户可提供冷萃规格
+
+applications:
+  - en: Cold brew and kombucha base
+    zh: 冷萃与康普茶基底
+  - en: Gift tins and hotel amenity
+    zh: 礼盒与酒店客房
+
+specs:
+  - group:
+      en: Leaf and lot
+      zh: 鲜叶与批次
+    items:
+      - key: origin
+        label:
+          en: Growing district
+          zh: 产区
+        value:
+          en: Dianxia, Fuding, Fujian
+          zh: 福建福鼎点头
+      - key: pluck
+        label:
+          en: Pluck standard
+          zh: 采摘标准
+        value:
+          en: Single bud, no leaf
+          zh: 单芽，不带叶
+      - key: buds
+        label:
+          en: Bud coverage
+          zh: 芽头占比
+        value_num: 92
+        unit: "%"
+        filterable: true
+      - key: moisture
+        label:
+          en: Moisture at packing
+          zh: 装箱含水率
+        value_num: 5.5
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: liquor
+        label:
+          en: Liquor
+          zh: 汤色
+        value:
+          en: Faint gold, almost clear
+          zh: 淡金，近乎透明
+      - key: taste
+        label:
+          en: Taste
+          zh: 滋味
+        value:
+          en: Melon, hay, mineral finish
+          zh: 甜瓜、干草、矿物收口
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 36
+        unit: months
+        filterable: true
+
+price:
+  min: 44
+  max: 62
+  currency: USD
+  incoterm: FOB Fuzhou
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.04
+  gross_weight_kg: 15.5
+
+cover: media/products/w520-silver-needle.jpg
+related: [g-220-anji-baiye, p-610-shou-2019]
+cases: [us-kombucha, japan-gift]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Silver Needle White Tea, 2026 Spring — 200 kg MOQ
+    zh: 白毫银针 2026 春茶 — 200 公斤起订
+  description:
+    en: Fuding single-bud white tea, 92% bud coverage, sun-withered, 5.5% moisture. Bulk for gift tins and cold-brew beverage bases.
+    zh: 福鼎单芽白茶，芽头占比 92%，日光萎凋，含水率 5.5%。散装供礼盒与冷萃饮料基底。

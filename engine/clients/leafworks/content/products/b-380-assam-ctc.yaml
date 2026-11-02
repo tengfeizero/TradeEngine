@@ -1,0 +1,145 @@
+slug: b-380-assam-ctc
+status: published
+order: 4
+model_no: LW-B380
+category: black-tea
+scenarios: [food-service, rtd-cold-brew]
+certificates: [fssc-22000, halal, kosher]
+markets: [AE, EU, UK]
+hs_code: "090240"
+moq: 1000
+moq_unit: kg
+
+lead_time:
+  en: 15–25 days from Hangzhou stock, 45 days if ordered at auction
+  zh: 杭州现货 15–25 天；拍卖订购 45 天
+packaging:
+  en: 40 kg paper sack, 20 sacks per pallet; 20 kg foil-in-carton for RTD lines
+  zh: 40 公斤纸袋，每托 20 袋；即饮线可做 20 公斤纸箱内铝箔
+sample_policy:
+  en: 1 kg free, freight collect
+  zh: 1 公斤免费，运费到付
+
+title:
+  en: B-380 Assam CTC BP1
+  zh: B-380 阿萨姆 CTC BP1
+subtitle:
+  en: A workhorse base for chai, milk tea and RTD — bought at auction, re-packed under our FSSC system
+  zh: 供香料茶、奶茶与即饮的基底——拍卖采购，在我们的 FSSC 体系下分装
+summary:
+  en: Grown in Assam, bought through a Kolkata broker, re-packed in Hangzhou. We say so because your customer will ask, and because the colour consistency is the reason to buy it.
+  zh: 阿萨姆种植、经加尔各答经纪商采购、杭州分装。我们把这条链路写明，因为你的客户会问；也因为批次色泽稳定才是买它的理由。
+
+description:
+  en: |
+    This is the only product on our list that is not Chinese. Chinese buyers of milk tea and RTD need a strong, cheap, high-extraction base, and Chinese leaf cannot hit the price. We buy BP1 at auction in Kolkata, ship it to Hangzhou in 40 kg sacks, and re-pack it under the same FSSC 22000 system as our own tea. Origin is declared on every document — an FTA claim on a re-packed third-country tea is the fastest way to lose a customer at customs.
+
+    The specification that matters is not "Assam" but the numbers: 31 to 33 percent extraction at 90 °C in five minutes, and a liquor colour that stays within a narrow band lot to lot. A chai brand switching base because the colour drifted is a brand whose product looks different on shelf. We keep a retained sample of every lot for 24 months so a colour complaint can be traced to a specific sack.
+  zh: |
+    这是我们清单上唯一不是中国的产品。做奶茶与即饮的中国买家需要一个浓、便宜、萃取率高的基底，国产叶子到不了那个价。我们在加尔各答拍卖买 BP1，40 公斤袋运到杭州，在我们的 FSSC 22000 体系下分装。产地写在每一份单证上——给第三国分装的茶套用自贸协定优惠，是在海关丢客户最快的方式。
+
+    真正重要的规格不是「阿萨姆」，是数字：90 摄氏度、五分钟萃取率 31% 至 33%，以及批与批之间汤色落在很窄的区间。一个香料茶品牌如果因为基底换批导致颜色漂移，货架上的产品看起来就变了一个样。每批留样 24 个月，颜色投诉能追到具体哪一袋。
+
+highlights:
+  - en: 31–33% extraction yield at 90 °C, 5 minutes
+    zh: 90 摄氏度五分钟萃取率 31%–33%
+  - en: Liquor colour held within a narrow band lot to lot
+    zh: 批间汤色控制在窄区间
+  - en: 24-month retained sample per lot
+    zh: 每批留样 24 个月
+
+applications:
+  - en: Chai and masala tea blends
+    zh: 香料茶与玛萨拉茶拼配
+  - en: Bubble tea and RTD base
+    zh: 奶茶与即饮基底
+
+specs:
+  - group:
+      en: Leaf and lot
+      zh: 鲜叶与批次
+    items:
+      - key: origin
+        label:
+          en: Origin
+          zh: 产地
+        value:
+          en: Assam, India — re-packed in Hangzhou
+          zh: 印度阿萨姆——杭州分装
+      - key: grade
+        label:
+          en: Grade
+          zh: 等级
+        value:
+          en: CTC BP1
+          zh: CTC BP1
+      - key: sieve
+        label:
+          en: Sieve size
+          zh: 筛号
+        value:
+          en: 2.0–2.5 mm
+          zh: 2.0–2.5 毫米
+      - key: extract
+        label:
+          en: Extraction yield
+          zh: 萃取率
+        value_num: 32
+        unit: "%"
+        filterable: true
+      - key: moisture
+        label:
+          en: Moisture
+          zh: 含水率
+        value_num: 5
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: liquor
+        label:
+          en: Liquor at 1% infusion
+          zh: 1% 冲泡汤色
+        value:
+          en: Dark red-brown, opaque
+          zh: 深红褐，浓强
+      - key: taste
+        label:
+          en: Taste
+          zh: 滋味
+        value:
+          en: Malt, brisk, takes milk and sugar without losing structure
+          zh: 麦芽香、强爽，加奶加糖仍有骨架
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 24
+        unit: months
+        filterable: true
+
+price:
+  min: 3.1
+  max: 4.2
+  currency: USD
+  incoterm: FOB Ningbo
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.065
+  gross_weight_kg: 40.4
+
+cover: media/products/b380-assam.jpg
+related: [b-310-keemun-hao-ya]
+cases: [gulf-hotel]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Assam CTC BP1 for Chai and RTD — 1 Ton MOQ
+    zh: 阿萨姆 CTC BP1 奶茶与即饮基底 — 1 吨起订
+  description:
+    en: Assam CTC BP1 bought at auction and re-packed in Hangzhou. 31–33% extraction, stable liquor colour, 1 ton MOQ, halal and kosher certified.
+    zh: 拍卖采购、杭州分装的阿萨姆 CTC BP1。萃取率 31%–33%，汤色稳定，1 吨起订，有清真与洁食认证。

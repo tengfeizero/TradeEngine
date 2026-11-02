@@ -1,0 +1,160 @@
+slug: m4-mini
+status: published
+order: 2
+featured: true
+model_no: KA-M4M
+category: cinema
+scenarios: [aerial-film]
+certificates: [ce-red, fcc-id, rohs, un383]
+markets: [EU, US, JP, AU]
+hs_code: "880610"
+moq: 50
+moq_unit: pcs
+
+lead_time:
+  en: 25–30 days after deposit, 45 days for private-label packaging
+  zh: 定金后 25–30 天，自有品牌包装为 45 天
+packaging:
+  en: Six aircraft per carton, batteries in a separate UN38.3 carton, retail-ready inner boxes
+  zh: 六台一箱，电池另装 UN38.3 外箱，内盒可直接零售上架
+sample_policy:
+  en: One unit at 1.4× FOB, deducted from the first order above 200 units
+  zh: 单台按 FOB 1.4 倍价，200 台以上首单中抵扣
+
+title:
+  en: M4 Mini
+  zh: M4 Mini 便携航拍机
+subtitle:
+  en: 249 g, no registration in most markets, 34-minute endurance
+  zh: 249 克、多数市场免登记、34 分钟续航
+summary:
+  en: The sub-250 g model that lets your retail customers fly in the EU C0 category and skip registration in Japan and the US. Same 1/1.3-inch sensor platform across three SKUs, so parts stock stays small.
+  zh: 249 克机型，让你的零售客户在欧盟按 C0 类别飞行，在日本与美国免登记。三个 SKU 共用同一套 1/1.3 英寸传感器平台，备件库存压力小。
+
+description:
+  en: |
+    The 249 g limit is a legal cliff, not a marketing number. Cross it by one gram and the buyer needs an operator registration, a remote ID broadcast module and, in the EU, a C1 labelled aircraft.
+
+    We build the M4 Mini to 242 g with the battery installed and the prop guards off, so a dealer can sell it with a one-page compliance sheet instead of a training course. The 48 MP 1/1.3-inch sensor and the 4K/60 pipeline are shared with the M4 Pro body we build on the same line, which means one sensor stock, one calibration jig and one set of spare parts for two SKUs.
+
+    For private label we print the compliance sheet with your entity as the importer, which is what customs and market surveillance actually check.
+  zh: |
+    249 克是法律红线，不是营销数字。超一克，买家就需要操作员登记、远程识别广播模块，在欧盟还得是 C1 标识机型。
+
+    M4 Mini 装电池、去护桨后是 242 克，经销商可以随货附一页合规说明，而不是卖一门培训课。4800 万像素 1/1.3 英寸传感器与 4K/60 处理链路，与我们同线的 M4 Pro 机身共用，结果是一份传感器库存、一台标定夹具、一套备件覆盖两个 SKU。
+
+    做自有品牌时，合规说明上的进口商写成你的主体——海关与市场监管查的正是这一栏。
+
+highlights:
+  - en: 242 g with battery, under the 250 g registration threshold
+    zh: 含电池 242 克，低于 250 克登记门槛
+  - en: 1/1.3-inch 48 MP sensor, 4K/60 HDR, vertical shooting mode
+    zh: 1/1.3 英寸 4800 万像素，4K/60 HDR，支持竖拍
+  - en: Shared sensor and gimbal platform with M4 Pro, one spares pool
+    zh: 与 M4 Pro 共用传感器与云台平台，备件池合一
+  - en: Retail-ready inner box, compliance sheet printed with your entity
+    zh: 内盒可直接上架，合规说明印你的主体
+
+applications:
+  - en: Consumer retail and e-commerce channels
+    zh: 消费零售与电商渠道
+  - en: Travel and outdoor content creation
+    zh: 旅行与户外内容创作
+
+specs:
+  - group:
+      en: Flight & payload
+      zh: 飞行与载荷
+    items:
+      - key: mtow
+        label:
+          en: Take-off weight with battery
+          zh: 含电池起飞重量
+        value_num: 242
+        unit: g
+        filterable: true
+      - key: flight_time
+        label:
+          en: Flight time
+          zh: 续航时间
+        value_num: 34
+        unit: min
+        filterable: true
+      - key: sensor
+        label:
+          en: Sensor
+          zh: 传感器
+        value:
+          en: 1/1.3-inch CMOS, 48 MP, f/1.7
+          zh: 1/1.3 英寸 CMOS，4800 万像素，f/1.7
+      - key: video
+        label:
+          en: Recording
+          zh: 录制
+        value:
+          en: 4K/60 HDR, 1080p/120 slow motion, 8-bit 4:2:0
+          zh: 4K/60 HDR，1080p/120 慢动作，8-bit 4:2:0
+      - key: transmission
+        label:
+          en: Video transmission
+          zh: 图传距离
+        value:
+          en: 10 km FCC / 6 km CE
+          zh: FCC 10 公里 / CE 6 公里
+      - key: wind_resistance
+        label:
+          en: Wind resistance
+          zh: 抗风能力
+        value_num: 10.7
+        unit: m/s
+  - group:
+      en: Export & support
+      zh: 出口与支持
+    items:
+      - key: category
+        label:
+          en: EU class
+          zh: 欧盟类别
+        value:
+          en: C0 (no operator registration)
+          zh: C0（无需操作员登记）
+      - key: battery
+        label:
+          en: Battery
+          zh: 电池
+        value:
+          en: 28.4 Wh, under the 100 Wh carry-on limit
+          zh: 28.4 Wh，低于 100 Wh 随身携带上限
+      - key: spares
+        label:
+          en: Spares kit
+          zh: 备件包
+        value:
+          en: 1 kit per 50 aircraft, props, gimbal cover, battery latch
+          zh: 每 50 台配 1 套，桨叶、云台罩、电池卡扣
+      - key: warranty
+        label:
+          en: Warranty
+          zh: 质保
+        value_num: 12
+        unit: months
+        filterable: true
+
+carton:
+  qty_per_carton: 6
+  cbm: 0.045
+  gross_weight_kg: 6.8
+
+cover: media/products/m4-mini.jpg
+gallery: [media/products/m4-mini.jpg, media/products/cat-cinema.jpg]
+related: [x9-cine]
+cases: [sakura-fpv]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Sub-250 g Camera Drone OEM — 48 MP, 50 Unit MOQ
+    zh: 249 克以下航拍无人机 OEM — 4800 万像素，50 台起订
+  description:
+    en: 242 g take-off weight, EU C0 class, 48 MP 1/1.3-inch sensor, 34-minute flight. Retail-ready packaging and compliance sheet with your entity as importer.
+    zh: 242 克起飞重量、欧盟 C0 类别、4800 万像素 1/1.3 英寸传感器、34 分钟续航。可直接上架的内盒，合规说明以你为进口商。

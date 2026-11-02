@@ -1,0 +1,89 @@
+slug: trade-terms
+status: published
+title:
+  en: Trade Terms
+  zh: 贸易条款
+summary:
+  en: Payment, incoterms, why we quote per configuration, shipping documents and claims — the commercial baseline for every Kestrel order.
+  zh: 付款、贸易术语、为何按配置报价、随货单证与索赔——每张 Kestrel 订单的商业基线。
+blocks:
+  - type: richtext
+    kicker:
+      en: Payment and incoterms
+      zh: 付款与贸易术语
+    title:
+      en: How orders are paid and shipped
+      zh: 订单如何付款与发运
+    body:
+      en: |
+        **Payment.** T/T — 30% deposit with order, 70% against copy of the bill of lading. All lead times on our product pages start from the day the deposit lands. A confirmed irrevocable L/C at sight is accepted for annual contracts above USD 150,000.
+
+        **Incoterms.** Default FOB Shenzhen (Yantian). EXW and CIF quotations are available on request. DAP into the EU is quoted per programme and handled through Kestrel Europe B.V. in Rotterdam, so your import paperwork faces a company inside the union.
+
+        **Export control.** Where a destination crosses the control threshold, the shipping terms are settled after the licence position is known — and we will tell you that before the proforma invoice, not after the deposit.
+      zh: |
+        **付款方式。** 电汇 T/T：下单付 30% 定金，见提单副本付 70% 尾款。产品页上的所有交期都从定金到账当天起算。年度合同金额超过 15 万美元，可接受保兑的不可撤销即期信用证。
+
+        **贸易术语。** 默认 FOB 深圳（盐田）；可按需报 EXW 或 CIF。欧盟境内 DAP 按项目报价，由鹿特丹的 Kestrel Europe B.V. 经手——你的进口文件面对的是一家欧盟境内的公司。
+
+        **出口管制。** 目的地触及管制阈值时，运输条款在许可状态明确后再定——而且我们在形式发票之前就说，不会等收到定金再说。
+  - type: richtext
+    kicker:
+      en: Pricing
+      zh: 价格
+    title:
+      en: Why there is no price list on this site
+      zh: 为什么这个网站上没有价目表
+    body:
+      en: |
+        Every Kestrel quote starts from a configuration: payload, battery capacity, calibration range, firmware parameter set. Two buyers rarely order the same aircraft, so a published price list would be wrong the day it went up — and a wrong price is more expensive for you than a two-day wait.
+
+        What is public instead: each quotation ships with a fixed configuration sheet that states FOB, carton dimensions, HS code and MOQ, so you always know what the number covers. Demo units are priced at published multipliers of FOB — 1.3× to 1.6× depending on the platform. Quotations hold for 30 days. Volume breaks apply per order, not per year.
+
+        Want a number before any sales call? Send the mission profile from the contact page — the configuration sheet with the FOB comes back in the first reply.
+      zh: |
+        每份 Kestrel 报价都始于一个配置：载荷、电池容量、标定区间、固件参数集。两个买家很少买到完全相同的飞机，公开价目表上线的当天就是错的——而一个错的价格，比两天等待对你更贵。
+
+        公开的是这些：每份报价随附固定配置表，写明 FOB、外箱尺寸、HS 编码与起订量，你永远知道这个数字对应什么。演示机按公开的 FOB 倍率计价——按平台不同为 1.3 至 1.6 倍。报价有效期 30 天。阶梯价按单次订单计算，不按年度累计。
+
+        想在接触销售之前先拿到数字？从联系页发来任务说明——带 FOB 的配置表第一次回复就到。
+  - type: richtext
+    kicker:
+      en: Shipping and documents
+      zh: 装运与单证
+    title:
+      en: What is in the box, and what is in the envelope
+      zh: 箱子里是什么，信封里是什么
+    body:
+      en: |
+        Lithium batteries make packing the real work. Full cartons go by sea. Air freight is possible — our forwarder prepares the UN38.3 test summary and the air waybill declaration for each platform, and the LG-10 was designed from the start with that document pack as a deliverable.
+
+        Every shipment includes the commercial invoice, packing list, transport document, CE-RED and FCC certificate copies for the platform you bought, the UN38.3 test summary and MSDS for the packs, and a certificate of origin on request.
+
+        Spare batteries travel in a separate consignment. Most airlines will not carry them as cargo on passenger aircraft, and we will not gamble your main shipment to find out.
+      zh: |
+        锂电池让装箱成为真正的技术活。整柜走海运。空运可行——我们的货代为每个平台准备 UN38.3 测试摘要与空运申报单，而 LG-10 从设计之初就把这套文件包当作交付物。
+
+        每批货随附商业发票、装箱单、运输单据、所购平台的 CE-RED 与 FCC 证书副本、电池的 UN38.3 测试摘要与 MSDS；产地证按需提供。
+
+        备用电池单独发运。多数航空公司不承运客机腹舱电池货，我们不会拿你的主货去赌这个概率。
+  - type: richtext
+    kicker:
+      en: Warranty and claims
+      zh: 质保与索赔
+    title:
+      en: What happens when something is wrong
+      zh: 出了问题怎么办
+    body:
+      en: |
+        Warranty runs 6 to 24 months depending on the platform — the number is printed on the configuration sheet and the warranty sheet shipped with each order. Raise quality claims within 30 days of arrival, with the serial number and the flight log. The unit record ties your claim to the exact board, motor and gimbal lots, which is how a claim gets bounded in hours rather than weeks.
+
+        If the defect is ours, replacement parts ship at our cost and the warranty on the affected units extends by six months. We have done this twice, both times on a connector batch.
+
+        Claims that turn on a crash are judged against the logged flight data — which is exactly why we log it.
+      zh: |
+        质保按平台为 6 至 24 个月——具体数字印在配置表与随货质保卡上。到港后 30 天内凭序列号与飞行日志提出质量索赔。整机档案把你的索赔对应到具体的板卡、电机与云台批次，索赔因此以小时而不是周为单位收敛。
+
+        确属我方缺陷，更换件由我方承担运费发出，受影响机型的质保延长六个月。我们做过两次，都是同一批连接器。
+
+        涉及坠机的索赔以记录的飞行数据为准——这正是我们记录它的原因。

@@ -1,0 +1,53 @@
+slug: privacy-policy
+status: published
+title:
+  en: Privacy Policy
+  zh: 隐私政策
+summary:
+  en: What this site collects, why an export business asks for some of it, how long we keep it, and how to have it deleted.
+  zh: 本站收集什么、一家出口企业为什么会问其中某些信息、保存多久，以及如何要求删除。
+blocks:
+  - type: richtext
+    kicker:
+      en: Data you send us
+      zh: 您提交的数据
+    title:
+      en: What we collect and why
+      zh: 我们收集什么、为什么
+    body:
+      en: |
+        Shenzhen Kestrel Aero Technology Co., Ltd. (Building 7, Aerospace Technology Park, Bao'an District, Shenzhen, Guangdong 518101, China) is the data controller for information collected on this site.
+
+        The inquiry form collects your name, company, business email, country, product interest and estimated annual volume. We use it for two purposes only: replying to your inquiry, and preparing a quotation. We do not add you to a mailing list and we do not sell or share your data.
+
+        **One thing specific to our industry.** If an order involves a platform above the export-control thresholds of your destination, we may also ask for the end user and the intended use. That is a legal requirement of the export licence, not marketing, and it is kept with the shipment file rather than in a sales database. Tell us if your procurement policy restricts what you can disclose and we will work out the minimum set the licence actually needs.
+
+        Analytics cookies run only after you accept the cookie notice. Declining leaves analytics disabled and no tracking cookies are set.
+      zh: |
+        深圳市鹰隼航空科技有限公司（中国广东省深圳市宝安区航空科技园 7 栋，邮编 518101）是本站所收集信息的数据控制者。
+
+        询盘表单收集您的姓名、公司、企业邮箱、国家/地区、感兴趣的产品与年采购量估算。这些信息只用于两件事：回复您的询盘、准备报价。我们不会把您加入邮件列表，也不出售或共享您的数据。
+
+        **一项与行业相关的说明。** 若订单涉及超过目的国出口管制阈值的平台，我们可能额外索取最终用户与最终用途。这是出口许可的法定要求，不是营销行为；这类信息随发货档案保存，不进销售数据库。如果你的采购政策限制了可披露范围，请告诉我们，我们按许可证实际需要的最小集合来定。
+
+        统计 Cookie 只在您同意提示后启用。拒绝则统计保持关闭，不设任何追踪 Cookie。
+  - type: richtext
+    kicker:
+      en: Retention and your rights
+      zh: 保存期限与您的权利
+    title:
+      en: How long we keep it, and what you can ask
+      zh: 保存多久，您可以要求什么
+    body:
+      en: |
+        **Retention.** Inquiry records are kept for 24 months and then deleted. Export-licence files and transaction records are kept for the period the destination's customs and export rules require, which is longer and cannot be shortened on request.
+
+        **Your rights.** You may request access to, correction of, or deletion of your personal data at any time by emailing export@kestrel-aero.example.com. We reply within 30 days. If you are in the EU or UK you also have the right to lodge a complaint with your local supervisory authority.
+
+        **What we cannot delete.** Flight logs and calibration files belong to the aircraft, not to a person. They stay with the unit record for the service life of the platform so that a field failure can be traced — the same record your own maintenance team relies on.
+      zh: |
+        **保存期限。** 询盘记录保存 24 个月后删除。出口许可档案与交易记录按目的国海关与出口规定要求的期限保存，这个期限更长，且不能应要求缩短。
+
+        **您的权利。** 您随时可以发邮件至 export@kestrel-aero.example.com 要求查阅、更正或删除您的个人数据，我们会在 30 天内回复。如您位于欧盟或英国，您还有权向当地监管机构投诉。
+
+        **不能删除的部分。** 飞行日志与标定文件属于飞机而不属于某个人，它们随整机档案保存至平台服役期结束，以便现场失效可追溯——这也是你自己的维护团队所依赖的同一份记录。

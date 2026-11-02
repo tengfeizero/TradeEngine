@@ -1,0 +1,142 @@
+slug: c40-cargo-longtail
+status: published
+order: 3
+featured: true
+model_no: RD-C40
+category: cargo
+scenarios: [last-mile-cargo, rental-fleet]
+certificates: [en-15194, ce-marking, iso-9001]
+markets: [EU, AE]
+hs_code: "8711601000"
+moq: 30
+moq_unit: pcs
+
+lead_time:
+  en: 70–85 days after deposit, frame jig reserved per order
+  zh: 定金后 70–85 天，车架夹具按单预留
+packaging:
+  en: Two cartons per unit (frame + cargo module), strapped as one shipping unit
+  zh: 一车两箱（车架 + 载货模块），打包带固定为一个运输单元
+sample_policy:
+  en: Built to order, 3-week sample lead time, cost credited against first bulk order
+  zh: 按单生产，样品 3 周，费用在首个大货订单中抵扣
+
+title:
+  en: C-40 Cargo Longtail
+  zh: C-40 长尾载货车
+subtitle:
+  en: 250 kg rated, 85 Nm mid-drive, container mounts for postal and grocery operators
+  zh: 额定载重 250 公斤，85 牛米中置电机，预留邮政与生鲜箱体安装位
+summary:
+  en: "A longtail that survives depot life — 6066 frame, four-piston brakes, and a cargo deck drilled for standard Euro containers."
+  zh: 能扛住车队日常的长尾车——6066 车架、四活塞刹车，载货平台已按标准欧标箱体开好安装孔。
+
+description:
+  en: |
+    Cargo bikes are bought on payload and killed by flex. The C-40 uses a 6066 longtail with a reinforced cargo deck, a second triangulation behind the seat tube, and a 1.5 mm wall thickness at the chainstay yoke — the point where cheap longtails crack first.
+
+    The deck is drilled to the 600 × 400 mm Euro container pattern and pre-wired for a rear light and a container lock, so your operator bolts on their box rather than fabricating a bracket.
+  zh: |
+    载货车买的是载重，死的是刚性。C-40 用 6066 长尾车架、加强载货平台、座管后方第二组三角补强，后下叉接头的壁厚做到 1.5 毫米——廉价长尾最先开裂的就是这里。
+
+    平台按 600 × 400 毫米欧标箱体开孔，并预留尾灯与箱锁线束，运营方直接上箱，不必自行做支架。
+
+highlights:
+  - en: 250 kg rated payload, tested at 1.5× static load
+    zh: 额定载重 250 公斤，按 1.5 倍静载测试
+  - en: 1.5 mm chainstay yoke, the joint that fails first on cheap frames
+    zh: 后下叉接头壁厚 1.5 毫米，廉价车架最先断裂处
+  - en: Deck pre-drilled to the Euro container pattern
+    zh: 平台按欧标箱体预开孔
+  - en: Dual battery option, 1,008 Wh for a full delivery shift
+    zh: 双电池选配 1008 瓦时，覆盖一个完整配送班次
+
+applications:
+  - en: Postal and parcel last-mile delivery
+    zh: 邮政与包裹末端配送
+  - en: Grocery and pharmacy delivery fleets
+    zh: 生鲜与药品配送车队
+
+specs:
+  - group:
+      en: Frame & cargo
+      zh: 车架与载货
+    items:
+      - key: frame
+        label:
+          en: Frame material
+          zh: 车架材质
+        value:
+          en: 6066-T6 aluminium, reinforced longtail
+          zh: 6066-T6 铝合金，加强长尾
+      - key: payload
+        label:
+          en: Rated payload
+          zh: 额定载重
+        value_num: 250
+        unit: kg
+        filterable: true
+      - key: deck
+        label:
+          en: Cargo deck
+          zh: 载货平台
+        value:
+          en: 700 × 500 mm, Euro container pattern, pre-wired
+          zh: 700 × 500 毫米，欧标箱体孔位，预留线束
+      - key: wheel_mix
+        label:
+          en: Wheel setup
+          zh: 轮组
+        value:
+          en: 26" front / 20" rear, heavy-duty spokes
+          zh: 前 26 英寸 / 后 20 英寸，加强辐条
+  - group:
+      en: Drive & export data
+      zh: 驱动与出口数据
+    items:
+      - key: motor
+        label:
+          en: Motor
+          zh: 电机
+        value:
+          en: 250 W mid-drive, 85 Nm, cargo-tuned firmware
+          zh: 250 瓦中置，85 牛米，载货专用固件
+      - key: battery
+        label:
+          en: Battery
+          zh: 电池
+        value:
+          en: 36 V 20 Ah (720 Wh), dual-battery option 1,008 Wh
+          zh: 36 伏 20 安时（720 瓦时），双电池选配 1008 瓦时
+      - key: weight
+        label:
+          en: Complete bike weight
+          zh: 整车重量
+        value_num: 38.0
+        unit: kg
+        filterable: true
+      - key: brakes
+        label:
+          en: Brakes
+          zh: 刹车
+        value:
+          en: Four-piston hydraulic disc, 203 mm front
+          zh: 四活塞液压碟刹，前 203 毫米
+
+carton:
+  qty_per_carton: 1
+  cbm: 1.10
+  gross_weight_kg: 45.0
+
+cover: media/products/c40-cargo.jpg
+related: [r320-e-city]
+cases: [desert-bloom-uae]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Cargo Bike OEM — 250 kg Payload, 30 Unit MOQ
+    zh: 载货自行车 OEM — 250 公斤载重，30 台起订
+  description:
+    en: 6066 longtail frame, 85 Nm mid-drive, Euro container mounts, four-piston brakes. MOQ 30 units, 70–85 day lead time.
+    zh: 6066 长尾车架、85 牛米中置电机、欧标箱体孔位、四活塞刹车。30 台起订，70–85 天交期。

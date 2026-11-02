@@ -1,0 +1,142 @@
+slug: g500-gravel
+status: published
+order: 5
+featured: false
+model_no: RD-G500
+category: mountain
+scenarios: [sport-outdoor, retail-private-label]
+certificates: [en-iso-4210, iso-9001]
+markets: [EU, US]
+hs_code: "8712003000"
+moq: 100
+moq_unit: pcs
+
+lead_time:
+  en: 50–65 days after deposit
+  zh: 定金后 50–65 天
+packaging:
+  en: One unit per carton, 85% assembled
+  zh: 一车一箱，85% 组装
+sample_policy:
+  en: Sample at 2× FOB, freight collect
+  zh: 样品按 FOB 两倍价，运费到付
+
+title:
+  en: G-500 Gravel
+  zh: G-500 砾石车
+subtitle:
+  en: 45 mm tyre clearance, carbon fork, 11-speed — a two-season bestseller shape
+  zh: 45 毫米胎宽、碳纤维前叉、11 速——两个季度的畅销几何
+summary:
+  en: "Gravel is the fastest-moving category in the European range, and the G-500 is built to be re-specced cheaply — same frame, three build levels, one geometry."
+  zh: 砾石是欧洲增长最快的品类。G-500 的设计目标就是「低成本换配置」：同一车架、三个配置等级、一套几何。
+
+description:
+  en: |
+    Buyers ask for gravel, then argue about tyre clearance. We settled on 45 mm at the chainstay yoke and 50 mm at the fork — enough for a 700×45c knobby, still inside the ISO 4210 clearance requirement with mud.
+
+    The frame carries rack and fender mounts, three bottle positions, and a bento-box boss on the top tube. Carbon fork is standard; an alloy fork version is available for price-point builds under €900 retail.
+  zh: |
+    买家都要砾石，然后为胎宽吵架。我们定在后下叉接头 45 毫米、前叉 50 毫米——够装 700×45c 齿胎，且在泥地条件下仍满足 ISO 4210 的间隙要求。
+
+    车架带前后货架与挡泥板安装孔、三个水壶位、上管补给盒螺柱。碳纤维前叉为标配；零售价 900 欧元以下的价位段可选铝叉版本。
+
+highlights:
+  - en: 45 mm rear / 50 mm front clearance, mud-safe
+    zh: 后 45 毫米 / 前 50 毫米胎宽，泥地安全
+  - en: Carbon fork standard, alloy fork for price-point builds
+    zh: 碳纤维前叉标配，价位段可选铝叉
+  - en: Rack, fender and bento-box mounts from the frame
+    zh: 车架自带货架、挡泥板与补给盒安装位
+  - en: One geometry, three build levels
+    zh: 一套几何，三个配置等级
+
+applications:
+  - en: Gravel and all-road retail ranges
+    zh: 砾石与全路况零售车系
+  - en: Bikepacking and touring builds
+    zh: 长途与露营配置
+
+specs:
+  - group:
+      en: Frame & geometry
+      zh: 车架与几何
+    items:
+      - key: frame
+        label:
+          en: Frame material
+          zh: 车架材质
+        value:
+          en: 6061-T6 aluminium, double butted
+          zh: 6061-T6 铝合金，双抽管
+      - key: fork
+        label:
+          en: Fork
+          zh: 前叉
+        value:
+          en: Full carbon, 12 mm thru-axle
+          zh: 全碳，12 毫米桶轴
+      - key: tyre_clearance
+        label:
+          en: Tyre clearance
+          zh: 最大胎宽
+        value_num: 45
+        unit: mm
+        filterable: true
+      - key: weight
+        label:
+          en: Complete bike weight
+          zh: 整车重量
+        value_num: 10.8
+        unit: kg
+        filterable: true
+  - group:
+      en: Build & export data
+      zh: 配置与出口数据
+    items:
+      - key: drivetrain
+        label:
+          en: Drivetrain
+          zh: 传动
+        value:
+          en: Shimano GRX 11-speed, 46/30T compact
+          zh: Shimano GRX 11 速，46/30 齿双盘
+      - key: brakes
+        label:
+          en: Brakes
+          zh: 刹车
+        value:
+          en: Hydraulic disc, 160 mm rotors
+          zh: 液压碟刹，160 毫米碟片
+      - key: mounts
+        label:
+          en: Mounts
+          zh: 安装位
+        value:
+          en: Rack, fender, 3 bottles, top-tube box
+          zh: 货架、挡泥板、3 个水壶、上管盒
+      - key: max_load
+        label:
+          en: Max rider + cargo load
+          zh: 最大人货载重
+        value_num: 125
+        unit: kg
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.35
+  gross_weight_kg: 14.5
+
+cover: media/products/g500-gravel.jpg
+related: [m720-trail]
+cases: [cascade-usa]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Gravel Bike OEM — 45 mm Clearance, Carbon Fork, 100 Unit MOQ
+    zh: 砾石自行车 OEM — 45 毫米胎宽，碳叉，100 台起订
+  description:
+    en: 6061 frame, full carbon fork, Shimano GRX 11-speed, rack and fender mounts. MOQ 100 units, 50–65 day lead time.
+    zh: 6061 车架、全碳前叉、Shimano GRX 11 速、货架与挡泥板安装位。100 台起订，50–65 天交期。

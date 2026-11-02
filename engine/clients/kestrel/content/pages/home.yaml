@@ -1,0 +1,210 @@
+slug: home
+status: published
+title:
+  en: Task-specific UAV platforms, exported with the paperwork done
+  zh: 为具体任务造的无人机平台，出口文件随货备齐
+summary:
+  en: Six UAV platforms for film, agriculture, inspection, security, logistics and FPV — shipped from Shenzhen with certification and customs paperwork done.
+  zh: 影视、农业、巡检、安防、物流与 FPV 六条无人机平台线，自深圳出货，认证与清关文件随货备齐。
+updated_at: 2026-10-22
+blocks:
+  - type: hero
+    badge:
+      en: 48 countries · FCC ID and CE RED on the label
+      zh: 48 个国家 · 标签印有 FCC ID 与 CE RED
+    headline:
+      en: Pick the {mission}. We spec the airframe.
+      zh: 先说{任务}，再定机身。
+    sub:
+      en: Six platforms, each specified against the failure its operators actually complain about — spray drift, gimbal water ingress, a rebuild that takes a week. Certification reports are tied to the hardware revision printed on the label.
+      zh: 六条平台线，每一款都是对着操作员真正会抱怨的失败点定的规格——飘移、云台进水、重装要一周。认证报告与机身标签上的硬件版本严格对应。
+    cta_text:
+      en: Send your mission profile
+      zh: 发来任务说明
+    cta_href: "/contact/"
+    cta2_text:
+      en: See the six platforms
+      zh: 看六条平台线
+    cta2_href: "/products/"
+    stats:
+      - value: "6"
+        label:
+          en: UAV platforms
+          zh: 无人机平台
+      - value: "15"
+        label:
+          en: Years exporting
+          zh: 出口年数
+      - value: "48"
+        label:
+          en: Export countries
+          zh: 出口国家
+      - value: "99.2%"
+        label:
+          en: First-pass flight test
+          zh: 一次试飞通过率
+    image: media/products/x9-cine.jpg
+  - type: category_grid
+    kicker:
+      en: Product Lines
+      zh: 产品线
+    title:
+      en: Six platforms, six different failure modes
+      zh: 六条平台线，六种不同的失败模式
+    intro:
+      en: We do not sell a catalogue of 200 models. Each line exists because a specific operator kept breaking something specific.
+      zh: 我们不卖 200 个型号的目录。每一条线存在，都是因为某类操作员一直在弄坏同一个地方。
+  - type: image_text
+    kicker:
+      en: Why Kestrel
+      zh: 为什么是我们
+    title:
+      en: The spec sheet is the last thing we write
+      zh: 参数表是我们最后才写的东西
+    body:
+      en: |
+        Most factories start from a platform and look for a market. We start from the flight the operator cannot complete today: a spray pass on an 18-degree slope, a tower inspection in the rain, a rebuild between heats.
+
+        That is why the AG-40 publishes overlap-adjusted coverage instead of the flat-field number, why the IN-25 ships a CSV index with every flight, and why the FX-5 sells arms as separate SKUs. None of those are features. They are the things that decide whether the machine gets used in month three.
+      zh: |
+        多数工厂是从平台出发去找市场。我们从操作员今天飞不完的那一趟出发：18 度坡上的一个喷洒行程、雨里的一次巡塔、两轮预赛之间的一次重装。
+
+        所以 AG-40 给的是扣除地头重叠后的覆盖效率而不是平地数字，IN-25 每次飞行都附 CSV 索引，FX-5 的机臂按单件 SKU 卖。这些都不是功能点，而是决定第三个月这台机器还在不在用的东西。
+    bullets:
+      - en: Platform choice argued from the mission, written down before the quote
+        zh: 平台选型从任务推出来，写进报价之前
+      - en: Certification reports tied to the hardware revision on the label
+        zh: 认证报告与标签上的硬件版本一一对应
+      - en: Spare parts priced per single SKU, not per kit only
+        zh: 备件按单件定价，而不是只卖整套
+    image: media/products/cat-inspection.jpg
+    cta_text:
+      en: How we test
+      zh: 我们怎么测
+    cta_href: "/quality/"
+  - type: features
+    kicker:
+      en: Core Technology
+      zh: 核心技术
+    title:
+      en: Four subsystems we build ourselves
+      zh: 四个我们自研的子系统
+    intro:
+      en: Flight control, gimbal stabilization, video transmission and battery management are in-house. Everything else we buy from the best supplier — and say so on the spec sheet.
+      zh: 飞控、云台增稳、图传与电池管理自研。其余部件从最合适的供应商采购，并在参数表里写清楚。
+    items:
+      - icon: cpu
+        title:
+          en: Flight control
+          zh: 飞控
+        body:
+          en: Dual IMU on separate power rails, cross-checked every control cycle.
+          zh: 双 IMU 独立供电，每个控制周期交叉比对。
+      - icon: layers
+        title:
+          en: Gimbal stabilization
+          zh: 云台增稳
+        body:
+          en: Two connectors, one field swap, calibrated per airframe family.
+          zh: 两个接插件，现场更换，按机身家族标定。
+      - icon: radio
+        title:
+          en: Video transmission
+          zh: 图传
+        body:
+          en: Three bands with adaptive hopping; FCC and CE ranges printed side by side.
+          zh: 三频段自适应跳频；FCC 与 CE 距离并排印在包装上。
+      - icon: battery
+        title:
+          en: Battery management
+          zh: 电池管理
+        body:
+          en: Per-cell thermal model with the history stored in the pack.
+          zh: 单芯热模型，温度历史存在电池内。
+  - type: scenario_grid
+    kicker:
+      en: Use Cases
+      zh: 应用场景
+    title:
+      en: Where these platforms actually fly
+      zh: 这些平台实际飞在哪里
+    intro:
+      en: Six application profiles, each with a different binding constraint — and a different number that decides whether the project survives.
+      zh: 六个应用画像，各自的硬约束不同，决定项目能否活下去的那个数字也不同。
+  - type: process
+    kicker:
+      en: How we ship
+      zh: 交付流程
+    title:
+      en: From mission profile to first container
+      zh: 从任务说明到第一个货柜
+    intro:
+      en: A typical distributor order runs 11 to 14 weeks end to end. The two steps that sink most projects are certification labelling and the battery paperwork, so both are scheduled early.
+      zh: 一个典型的经销商订单从头到尾 11 到 14 周。最容易拖垮项目的两步是认证标签与电池文件，所以这两步都排在最前面。
+    steps:
+      - title:
+        en: Mission profile
+        zh: 任务说明
+        body:
+          en: Two pages from you — payload, altitude, sortie length, climate, target market. We reply with one recommended platform and one alternative, or a reason neither fits.
+          zh: 你给两页纸——载荷、高度、单架次时长、气候、目标市场。我们回一个推荐平台加一个备选，或者说明为什么两个都不合适。
+      - title:
+        en: Configuration and quote
+        zh: 配置与报价
+        body:
+          en: Fixed configuration sheet with FOB, carton dimensions, HS code and MOQ. No options hidden behind a sales call.
+          zh: 固定配置表，含 FOB、外箱尺寸、HS 编码与起订量。没有藏在销售电话后面的选配。
+      - title:
+        en: Sample and local flight
+        zh: 样机与本地试飞
+        body:
+          en: One demo unit, flown on your site with your payload. Flight log exported and handed over the same day.
+          zh: 一台演示机，在你的场地、带你的载荷飞。飞行日志当天导出交付。
+      - title:
+        en: Certification and label
+        zh: 认证与标签
+        body:
+          en: FCC ID and CE RED reports matched to the hardware revision, label artwork approved before the run starts.
+          zh: FCC ID 与 CE RED 报告对应到硬件版本，标签稿在大货开线前确认。
+      - title:
+        en: Battery and customs pack
+        zh: 电池与清关文件
+        body:
+          en: UN38.3 report per lot, MSDS, air waybill declaration and HS code cross-check. This is where containers get held, so it ships ahead of the goods.
+          zh: 按批 UN38.3 报告、MSDS、空运申报与 HS 编码复核。货柜最常卡在这里，所以这份文件比货先走。
+      - title:
+        en: Bulk run and spares
+        zh: 大货与备件
+        body:
+          en: Production with 100 percent flight test, spares kit per agreed ratio, and a restock commitment on the parts that wear.
+          zh: 全数实飞测试后出货，按约定比例配备件包，易损件给出补货承诺。
+  - type: certificate_grid
+    kicker:
+      en: Quality & Compliance
+      zh: 质量与合规
+    title:
+      en: Paperwork your customs broker will accept
+      zh: 你的报关行会认的文件
+    intro:
+      en: Each report is issued against a hardware revision, not a product family. Ask for the revision number and compare it to the label.
+      zh: 每份报告对应的是硬件版本，不是产品系列。可以索要版本号，和机身标签对一遍。
+  - type: case_grid
+    kicker:
+      en: Global Reach
+      zh: 全球部署
+    title:
+      en: Recent deployments
+      zh: 近期部署
+    limit: 5
+  - type: cta
+    title:
+      en: Send the flight you cannot complete today
+      zh: 把今天飞不完的那一趟发给我们
+    body:
+      en: Payload, altitude, sortie length, climate and target market are enough to start. You get a platform recommendation, a configuration sheet and a costed FOB offer, or a straight answer that we are the wrong factory for it.
+      zh: 载荷、高度、单架次时长、气候与目标市场，这几项就够开始。你会拿到平台建议、配置表与带成本的 FOB 报价；如果我们不是合适的工厂，也会直说。
+    cta_text:
+      en: Request a quote
+      zh: 获取报价
+    cta_href: "/contact/"
+  - type: inquiry

@@ -1,0 +1,138 @@
+slug: p-610-shou-2019
+status: published
+order: 8
+model_no: LW-P610
+category: puer
+scenarios: [retail-private-label, gifting, food-service]
+certificates: [fssc-22000, eu-organic, kosher]
+markets: [EU, UK, US]
+hs_code: "090240"
+moq: 300
+moq_unit: kg
+
+lead_time:
+  en: 20–30 days from stock, pressing adds 15 days
+  zh: 现货 20–30 天，压饼另加 15 天
+packaging:
+  en: 20 kg loose in carton, or 357 g cake in paper wrap, 12 cakes per carton
+  zh: 20 公斤散茶装箱，或 357 克棉纸饼、每箱 12 饼
+sample_policy:
+  en: 250 g loose or one cake at cost plus freight
+  zh: 250 克散茶或一饼，按成本加运费
+
+title:
+  en: P-610 Shou Pu-erh, 2019 Menghai
+  zh: P-610 熟普，2019 勐海
+subtitle:
+  en: Six years in dry storage with a warehouse record you can read
+  zh: 干仓六年，仓贮记录可查
+summary:
+  en: Wo dui in 2019, pressed or loose, stored at 23 °C and 55% RH since. Boring on purpose — a shou that tastes the same in June as it did in January.
+  zh: 2019 年渥堆，压饼或散茶，此后 23 摄氏度、55% 湿度存放。故意做得「无聊」——六月与一月喝起来一样。
+
+description:
+  en: |
+    Shou pu-erh buyers fall into two groups: the ones who want a story about a cave, and the ones who want a base for a blended tea bag that will not change character between shipments. This lot is for the second group. Wo dui in 2019, turned twice, then stored dry in Menghai with monthly temperature and humidity logs.
+
+    The flavour is what the trade calls clean shou — dark wood, dates, a little camphor, no fishiness, no wet-storage mustiness. It extracts fast, so in a tea bag it is usually blended with a lighter leaf to slow it down. We keep the loose and pressed versions as separate lots even though they come from the same pile, because they age differently.
+  zh: |
+    买熟普的人分两类：一类想听一个关于山洞的故事，一类想要一个批次之间性格稳定的袋泡茶基底。这一批是给后者的。2019 年渥堆，翻堆两次，之后在勐海干仓存放，每月记录温湿度。
+
+    滋味是行内说的「干净熟茶」——深色木质、枣香、一点樟香，没有鱼腥，没有湿仓霉味。它出味快，做袋泡通常要拼一点轻发酵的叶子拖住。散茶与紧压我们按两批管理，虽然同出一堆，因为陈化速度不一样。
+
+highlights:
+  - en: Monthly warehouse temperature and humidity logs since 2019
+    zh: 自 2019 年起每月仓贮温湿度记录
+  - en: Clean shou profile, no wet-storage character
+    zh: 干净熟茶风格，无湿仓味
+  - en: Loose and pressed kept as separate lots
+    zh: 散茶与紧压分开按批管理
+
+applications:
+  - en: Blended tea bags and food service
+    zh: 拼配袋泡与餐饮
+  - en: Retail cakes and gift sets
+    zh: 零售茶饼与礼盒
+
+specs:
+  - group:
+      en: Leaf and lot
+      zh: 鲜叶与批次
+    items:
+      - key: origin
+        label:
+          en: Growing district
+          zh: 产区
+        value:
+          en: Menghai, Xishuangbanna
+          zh: 西双版纳勐海
+      - key: vintage
+        label:
+          en: Vintage
+          zh: 年份
+        value:
+          en: 2019 wo dui, turned twice
+          zh: 2019 年渥堆，翻堆两次
+      - key: storage
+        label:
+          en: Storage
+          zh: 仓储
+        value:
+          en: Dry storage, 23 °C, 55% RH
+          zh: 干仓，23 摄氏度，55% 湿度
+      - key: moisture
+        label:
+          en: Moisture
+          zh: 含水率
+        value_num: 10.5
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: liquor
+        label:
+          en: Liquor
+          zh: 汤色
+        value:
+          en: Dark chestnut, clear edge
+          zh: 深栗色，边沿透亮
+      - key: taste
+        label:
+          en: Taste
+          zh: 滋味
+        value:
+          en: Date, dark wood, camphor, smooth
+          zh: 枣香、木质、樟香，顺滑
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 60
+        unit: months
+        filterable: true
+
+price:
+  min: 13
+  max: 19
+  currency: USD
+  incoterm: FOB Ningbo
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.05
+  gross_weight_kg: 20.5
+
+cover: media/products/p610-shou.jpg
+related: [w-520-silver-needle, b-380-assam-ctc]
+cases: [gulf-hotel, nordic-grocery]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Shou Pu-erh 2019, Menghai Dry Storage — 300 kg MOQ
+    zh: 2019 熟普，勐海干仓 — 300 公斤起订
+  description:
+    en: Clean shou pu-erh from 2019, dry-stored at 23 °C with monthly logs. Loose or 357 g cakes, bulk 300 kg MOQ for blends and retail.
+    zh: 2019 年干净熟普，23 摄氏度干仓存放，每月记录。散茶或 357 克茶饼，300 公斤起订。

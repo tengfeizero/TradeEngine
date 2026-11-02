@@ -1,0 +1,26 @@
+slug: legal-notice
+status: published
+title:
+  en: Legal Notice
+  zh: 法律声明
+summary:
+  en: Company registration, VAT, EU responsible person and contact details required by EU and German law.
+  zh: 欧盟与德国法律要求的公司登记、增值税、欧盟责任方与联系方式。
+blocks:
+  - type: legal_facts
+    title:
+      en: Company information
+      zh: 公司信息
+  - type: richtext
+    title:
+      en: Responsible for content
+      zh: 内容责任人
+    body:
+      en: |
+        Information on this site is provided by the companies named above. Despite careful checking we accept no liability for the content of external links; responsibility for those lies with their operators.
+
+        For legal inquiries — including GPSR requests from market surveillance authorities — write to legal@ridgeway-cycles.example.com with the subject line "Legal".
+      zh: |
+        本站信息由上述公司提供。外部链接内容经仔细核对，但我们不承担其责任，责任归属各链接的运营方。
+
+        法律相关事务（含市场监管机构依 GPSR 提出的资料请求）请发邮件至 legal@ridgeway-cycles.example.com，主题注明「法律」。

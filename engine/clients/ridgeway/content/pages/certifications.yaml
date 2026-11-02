@@ -1,0 +1,87 @@
+slug: certifications
+status: published
+title:
+  en: Certifications & test reports
+  zh: 资质认证与检测报告
+summary:
+  en: Current certificates for EU and North American markets, with issuer, registration number and validity window so buyers can verify them independently.
+  zh: 面向欧盟与北美市场的现行证书，公开发证机构、注册编号与有效期，买方可独立核验。
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    title:
+      en: Why we publish the numbers
+      zh: 为什么公开证书编号
+    body:
+      en: |
+        A certificate logo proves nothing — anyone can paste one onto a page. What a buyer can act on is the issuer, the registration number and the validity window, because those take a minute to check on the certifier's own site.
+
+        Everything below is current. Expired certificates drop off this page at build time rather than sitting here as decoration.
+      zh: |
+        证书图标证明不了什么——谁都能贴一张。买家真正能用的是发证机构、注册编号与有效期，因为这些一分钟内就能在发证机构官网核实。
+
+        下面每一张都是现行版本。过期证书在构建时自动从本页移除，而不是留着当装饰。
+  - type: certificate_grid
+    title:
+      en: Current certificates
+      zh: 现行证书
+  - type: stats
+    items:
+      - value: "6"
+        label:
+          en: Active certificates
+          zh: 现行证书
+        note:
+          en: EU / US / JP
+          zh: 欧盟 / 美国 / 日本
+      - value: "2"
+        label:
+          en: Notified bodies
+          zh: 公告机构
+        note:
+          en: TÜV Rheinland, SGS
+          zh: TÜV 莱茵、SGS
+      - value: "0"
+        label:
+          en: Major non-conformities
+          zh: 重大不符合项
+        note:
+          en: last 3 audits
+          zh: 近三次审核
+      - value: "48h"
+        label:
+          en: Document turnaround
+          zh: 文件交付时效
+        note:
+          en: for buyer requests
+          zh: 买家索件
+  - type: faq
+    title:
+      en: Verification
+      zh: 核验方式
+    items:
+      - q:
+          en: How do I verify a certificate?
+          zh: 如何核验证书？
+        a:
+          en: Take the registration number from the card and search it on the issuer's site (TÜV Rheinland, SGS, amfori). If it does not come up, ask us for the scanned original.
+          zh: 取卡片上的注册编号，在发证机构官网（TÜV 莱茵、SGS、amfori）查询。查不到可直接向我们索取原件扫描件。
+      - q:
+          en: Do you have EN 15194 for every e-bike platform?
+          zh: 每个电助力平台都有 EN 15194 吗？
+        a:
+          en: Yes, as a complete EPAC including the 25 km/h cut-off under load. The report covers the frame, drive unit and battery as a system, not the frame alone.
+          zh: 有，且是整车型式，包含负载下的 25 公里限速表现。报告覆盖车架、驱动与电池作为系统的组合，不只是车架。
+      - q:
+          en: Can certificates be issued under my company name?
+          zh: 证书能挂在我们公司名下吗？
+        a:
+          en: For OEM builds, yes — we act as the manufacturer and your entity appears as the brand holder on the declaration. This takes 4–6 weeks and requires your company registration documents.
+          zh: 做 OEM 可以——我们作为制造商，你的主体作为品牌持有方出现在声明上。周期 4–6 周，需要你的公司注册文件。
+      - q:
+          en: What if my market needs a certification you do not hold?
+          zh: 我的市场需要你没有的认证怎么办？
+        a:
+          en: We will quote the testing cost and timeline before you commit. If the volume does not justify it, we say so rather than absorbing it into the unit price.
+          zh: 你决定前我们先报检测费用与周期。若量级不划算，我们直说，而不是摊进单价里。
+  - type: inquiry

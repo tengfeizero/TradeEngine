@@ -1,0 +1,57 @@
+slug: contact
+status: published
+title:
+  en: Contact
+  zh: 联系我们
+summary:
+  en: Send your drawing or platform, annual volume and target market. We reply within 12 hours on business days with an FOB estimate and a tooling position.
+  zh: 发来图纸或平台、年采购量与目标市场。工作日 12 小时内回复 FOB 估价与开模方案。
+updated_at: 2026-10-22
+blocks:
+  - type: image_text
+    title:
+      en: Talk to the people who build it
+      zh: 直接和造车的人谈
+    body:
+      en: |
+        Your inquiry goes to a named account manager, not a shared inbox. Messages sent after 18:00 China time are answered the next morning.
+
+        What speeds up a quote: frame material and geometry sheet, annual volume, target market, certification requirements, and whether you need private-label packaging. Without those we can only give a range.
+      zh: |
+        询盘直接落到具体客户经理，不是一个公共邮箱。北京时间 18:00 之后提交的，次日上午回复。
+
+        能让报价快起来的：车架材质与几何表、年采购量、目标市场、认证要求，以及是否需要自有品牌包装。缺这些我们只能给区间价。
+    bullets:
+      - en: Email — sales@ridgeway-cycles.example.com
+        zh: 邮箱 — sales@ridgeway-cycles.example.com
+      - en: Phone / WhatsApp — +86 576 8888 6600
+        zh: 电话 / WhatsApp — +86 576 8888 6600
+      - en: Plant — No.168 Haichang Road, Jiaojiang, Taizhou, Zhejiang, China 318000
+        zh: 工厂 — 中国浙江台州椒江区海昌路 168 号，318000
+      - en: Hours — Mon–Fri 09:00–18:00 GMT+8
+        zh: 工作时间 — 周一至周五 09:00–18:00（GMT+8）
+    image: media/products/cat-city.jpg
+  - type: faq
+    title:
+      en: Before you write
+      zh: 发信之前
+    items:
+      - q:
+          en: Do you send free samples?
+          zh: 寄免费样品吗？
+        a:
+          en: Not for custom builds. Stock platforms are available at 2× FOB with freight collect, and the difference is credited against your first bulk order.
+          zh: 定制款不免费。现有平台按 FOB 两倍价提供，运费到付，差额在首个大货订单中抵扣。
+      - q:
+          en: What is the smallest order you will quote?
+          zh: 最小报价量是多少？
+        a:
+          en: 30 units for cargo platforms, 50 for EPAC, 100 for mechanical frames, 200 for kids. Below those numbers the tooling and inspection cost dominates the unit price.
+          zh: 载货平台 30 台、电助力 50 台、机械车架 100 台、童车 200 台。低于这些数字，开模与检验成本会主导单价。
+      - q:
+          en: Can you quote in EUR or USD?
+          zh: 可以报欧元或美元吗？
+        a:
+          en: Both, and RMB. We quote in the currency of your PO; the exchange basis is stated on the offer so neither side is surprised at settlement.
+          zh: 美元、欧元与人民币都可以。按你订单的币种报，报价单上写明汇率基准，结算时双方都不会意外。
+  - type: inquiry

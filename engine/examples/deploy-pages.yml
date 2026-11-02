@@ -1,0 +1,52 @@
+# GitHub Pages 一键部署样例：push 到 main 即构建并发布。
+# 用法：拷贝到 .github/workflows/deploy-pages.yml；仓库设置里
+# Settings → Pages → Source 选 "GitHub Actions"。
+# 内容在仓库里时，把 settings.yaml / engine.yaml / content/ / theme/ / media/
+# 放在仓库根，workflow 会拷进站点骨架再构建。
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.27"
+
+      - name: Build engine
+        run: go build -o engine ./cmd/engine
+
+      - name: Scaffold and assemble site
+        run: |
+          ./engine new site --brand "${{ vars.SITE_BRAND || 'My Site' }}"
+          cp settings.yaml engine.yaml site/
+          cp -r content theme media site/ 2>/dev/null || true
+
+      - name: Build site
+        run: cd site && ../engine build .
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/.build/public
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

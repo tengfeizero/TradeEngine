@@ -1,0 +1,30 @@
+slug: us-kombucha
+status: published
+order: 3
+title:
+  en: A kombucha brewer fixes a cloudy base without changing the tea
+  zh: 康普茶厂在不换茶的前提下解决了基底浑浊
+challenge:
+  en: The brewery's green tea base was going cloudy after filtration, and the two obvious fixes both cost money — a tighter filter stripped the aroma, and switching to a concentrate changed the flavour the brand had built on.
+  zh: 这家厂的绿茶基底过滤后仍然浑浊，两条显而易见的解法都要花钱——换更细的滤芯会把香气滤掉，换浓缩液则改变了品牌赖以立足的风味。
+industry:
+  en: Kombucha and RTD
+  zh: 康普茶与即饮
+customer: Fieldday Ferments
+solution:
+  en: We moved them from a whole-leaf green to a specified cold-brew cut with a declared particle profile, then set the extraction at 4 °C for eight hours against a turbidity target of 5 NTU. Three pilot lots were brewed at their plant before the spec was fixed.
+  zh: 我们把整叶绿茶换成有明确碎度规格的冷萃专用切叶，萃取条件定为 4 摄氏度八小时、浊度目标 5 NTU。规格定稿前，在他们的厂里试了三批。
+result:
+  en: Filtration cost fell 22%, the base now holds 9 months in pack, and the brewery stopped discounting short-dated bottles.
+  zh: 过滤成本下降 22%，基底在包装内可稳定 9 个月，厂里不再打折处理临期瓶。
+products: [w-520-silver-needle, x-730-hangbaiju]
+cover: media/cases/us-kombucha.jpg
+updated_at: 2026-07-14
+
+seo:
+  title:
+    en: Case — Cutting turbidity in a kombucha green tea base
+    zh: 案例——把康普茶绿茶基底的浊度降下来
+  description:
+    en: A cold-brew cut with a declared particle profile and a 5 NTU target cut filtration cost 22% and extended shelf life to nine months.
+    zh: 有明确碎度规格的冷萃切叶与 5 NTU 浊度目标，让过滤成本降 22%，货架期延至九个月。

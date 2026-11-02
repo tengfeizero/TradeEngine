@@ -1,0 +1,139 @@
+slug: b-310-keemun-hao-ya
+status: published
+order: 3
+featured: true
+model_no: LW-B310
+category: black-tea
+scenarios: [retail-private-label, gifting, food-service]
+certificates: [eu-organic, fssc-22000, brcgs]
+markets: [EU, UK, US]
+hs_code: "090240"
+moq: 300
+moq_unit: kg
+
+lead_time:
+  en: 20–30 days after deposit
+  zh: 定金后 20–30 天
+packaging:
+  en: 25 kg multiwall bag with liner, or 500 g foil for gift assembly
+  zh: 25 公斤多层纸袋内衬，或 500 克铝箔供礼盒组装
+sample_policy:
+  en: 500 g at cost plus freight, two grade samples on request
+  zh: 500 克按成本加运费，可另寄两个等级样
+
+title:
+  en: B-310 Keemun Hao Ya A
+  zh: B-310 祁门毫芽 A
+subtitle:
+  en: The leaf grade that carries a breakfast blend without milk
+  zh: 不加奶也能撑起早餐拼配的条红等级
+summary:
+  en: Orchid and cocoa, thin enough to drink plain, strong enough to hold its place in a blend. The grade we ship most to UK and German blenders.
+  zh: 兰香与可可，汤感清瘦可清饮，又足够有力在拼配里站住位。我们发往英国与德国拼配商最多的等级。
+
+description:
+  en: |
+    Keemun is usually sold as "the champagne of black tea", which tells a buyer nothing. What matters in a blend is how it behaves against Assam and Ceylon: Keemun gives aroma and a dry finish, but body comes from somewhere else. Put more than 40 percent Keemun in a breakfast blend and it goes thin in the cup, which is why our blending bench treats it as a top note rather than a base.
+
+    Hao Ya A is the small-leaf grade — roughly 0.8 to 1.2 mm, golden tips present but not dominant. It takes milk badly, so we do not recommend it for food service unless the menu is black tea served plain. For a gift tin or a specialty shelf it is the easiest sale in the category.
+  zh: |
+    祁门常被叫作「红茶里的香槟」，这句话对买家没有信息量。拼配里真正要紧的是它与阿萨姆、锡兰的关系：祁门给香气和收口的干爽，厚度得从别处来。早餐拼配里祁门超过 40%，杯中就会发空——所以我们的拼配台把它当顶香，不当基底。
+
+    毫芽 A 是小叶等级，约 0.8 至 1.2 毫米，金毫有但不占主导。它吃奶吃得不好，所以除非菜单上的红茶是清饮，我们不建议餐饮渠道用它。礼盒与精品货架上，它是这个品类里最好卖的一支。
+
+highlights:
+  - en: Small-leaf grade, 0.8–1.2 mm, golden tips present
+    zh: 小叶等级，0.8–1.2 毫米，带金毫
+  - en: Sold with a blending note, not just a grade name
+    zh: 随货附拼配说明，不只是一个等级名
+  - en: Two lots per year, spring and summer, kept separate
+    zh: 每年春、夏两批，分开存放
+
+applications:
+  - en: English and German breakfast blends
+    zh: 英式与德式早餐拼配
+  - en: Specialty retail and gift tins
+    zh: 精品零售与礼盒
+
+specs:
+  - group:
+      en: Leaf and lot
+      zh: 鲜叶与批次
+    items:
+      - key: origin
+        label:
+          en: Growing district
+          zh: 产区
+        value:
+          en: Qimen County, Huangshan
+          zh: 黄山祁门
+      - key: grade
+        label:
+          en: Grade
+          zh: 等级
+        value:
+          en: Hao Ya A, small leaf
+          zh: 毫芽 A，小叶
+      - key: leaf_size
+        label:
+          en: Leaf size
+          zh: 叶径
+        value:
+          en: 0.8–1.2 mm
+          zh: 0.8–1.2 毫米
+      - key: moisture
+        label:
+          en: Moisture at packing
+          zh: 装箱含水率
+        value_num: 4.5
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: liquor
+        label:
+          en: Liquor
+          zh: 汤色
+        value:
+          en: Deep amber with a red edge
+          zh: 深琥珀带红边
+      - key: aroma
+        label:
+          en: Aroma
+          zh: 香气
+        value:
+          en: Orchid, cocoa, dried longan
+          zh: 兰香、可可、桂圆干
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 24
+        unit: months
+        filterable: true
+
+price:
+  min: 22
+  max: 31
+  currency: USD
+  incoterm: FOB Ningbo
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.055
+  gross_weight_kg: 25.6
+
+cover: media/products/b310-keemun.jpg
+related: [b-380-assam-ctc, o-410-tieguanyin]
+cases: [uk-coffee-chain, gulf-hotel]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Keemun Hao Ya A, Bulk Black Tea — 300 kg MOQ
+    zh: 祁门毫芽 A 红茶原料 — 300 公斤起订
+  description:
+    en: Small-leaf Keemun Hao Ya A, 0.8–1.2 mm, orchid and cocoa, 4.5% moisture. Bulk for breakfast blends and gift tins, 300 kg MOQ.
+    zh: 祁门毫芽 A 小叶等级，0.8–1.2 毫米，兰香与可可，含水率 4.5%。适合早餐拼配与礼盒，300 公斤起订。

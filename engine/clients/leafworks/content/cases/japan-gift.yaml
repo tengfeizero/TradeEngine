@@ -1,0 +1,31 @@
+slug: japan-gift
+status: published
+order: 4
+title:
+  en: Sakura tins, six weeks on shelf, 94% sell-through
+  zh: 樱花铁罐，上架六周，售罄率 94%
+country: JP
+industry:
+  en: Seasonal gifting
+  zh: 节令礼赠
+customer: Kyo no Mori Retail
+challenge:
+  en: A cherry-blossom gift set with a six-week selling window. The tin had to be filled in Japan within ten days of landing, because the retailer would not hold stock past the season and air freight for 4,000 sets was not viable.
+  zh: 一套樱花礼盒，销售窗口只有六周。罐子必须到港后十天内在日本完成灌装——零售方不接受季末压货，而 4,000 套走空运不划算。
+solution:
+  en: We shipped the tea in 10 kg nitrogen-flushed foil to Osaka, and the retailer's own packing house filled and sealed locally. The leaf was the single-bush dancong and a spring silver needle, both stable enough to survive a second handling.
+  zh: 我们把茶以 10 公斤充氮铝箔发到大阪，由零售方自己的包装厂在当地灌装封口。茶选的是单株单丛与春银针，两者都经得起二次分装。
+result:
+  en: 94% sell-through in the six-week window, and the same format ran for three consecutive seasons.
+  zh: 六周窗口售罄率 94%，同一形式连续做了三个季节。
+products: [o-460-dancong, w-520-silver-needle]
+cover: media/cases/japan-gift.jpg
+updated_at: 2026-06-02
+
+seo:
+  title:
+    en: Case — Sakura gift tins, 94% sell-through in six weeks
+    zh: 案例——樱花礼盒六周售罄率 94%
+  description:
+    en: Nitrogen-flushed bulk tea shipped to Osaka and filled locally within ten days — 94% sell-through and three repeat seasons.
+    zh: 充氮散茶发往大阪、当地十天内灌装：售罄率 94%，连做三季。

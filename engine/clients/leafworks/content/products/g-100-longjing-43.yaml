@@ -1,0 +1,153 @@
+slug: g-100-longjing-43
+status: published
+order: 1
+featured: true
+model_no: LW-G100
+category: green-tea
+scenarios: [retail-private-label, food-service]
+certificates: [usda-organic, eu-organic, fssc-22000]
+markets: [EU, US, JP]
+hs_code: "090220"
+moq: 300
+moq_unit: kg
+
+lead_time:
+  en: 20–30 days after deposit, 10 days if the lot is in cold store
+  zh: 定金后 20–30 天；冷库现货 10 天
+packaging:
+  en: 25 kg multiwall kraft bag with food-grade LDPE liner, 40 bags per pallet
+  zh: 25 公斤多层牛皮纸袋内衬食品级 LDPE，每托 40 袋
+sample_policy:
+  en: 500 g at cost plus freight, deducted from the first order over 500 kg
+  zh: 500 克按成本加运费，订单超 500 公斤时抵扣
+
+title:
+  en: G-100 Longjing 43, Pre-Qingming
+  zh: G-100 龙井 43，明前
+subtitle:
+  en: Fuyang-grown Longjing 43, hand-fired in an electric wok
+  zh: 富阳产龙井 43，电炒锅手工辉锅
+summary:
+  en: The green tea we sell most of. Longjing 43 from Fuyang — same cultivar as Xihu, a third of the price, and we will say that on the invoice.
+  zh: 我们出货最多的绿茶。富阳的龙井 43——与西湖同品种，价格是三分之一，这一点我们写在发票上。
+
+description:
+  en: |
+    Buyers ask for "Longjing" and mean two different things: the 1,680 hectares around West Lake with a designation behind it, and the cultivar that is now grown across Zhejiang. We sell the second one, and we put the growing district on every document. If your label says Xihu and the leaf came from Fuyang, that is a misdescription in the EU and a recall in the US. We would rather lose the order.
+
+    The lot is picked as one bud and one leaf in the ten days before Qingming, withered four hours, then fired by hand in a 180 °C electric wok in four passes. Hand-firing is slower than the machine line and gives the flat, pressed shape that a machine press only imitates. Moisture leaves the plant at 4.2 percent and the lot goes into cold store at 4 °C, which is why a July shipment tastes like a May one.
+  zh: |
+    买家说「龙井」，其实指两样东西：西湖边那 1,680 公顷、有原产地保护的名头，和如今种遍浙江的这个品种。我们卖后者，并且把产区写在每一份单证上。如果你的标签写西湖、叶子来自富阳，在欧盟是虚假描述，在美国是召回。这种单子我们宁可不接。
+
+    这一批是清明前十天的「一芽一叶」，萎凋四小时，再在 180 摄氏度电炒锅里分四道手工辉锅。手工比机器线慢，但能做出那口扁平压合的形状，机器压形只是模仿。出厂含水率 4.2%，随即进 4 摄氏度冷库——所以七月的货喝起来像五月的。
+
+highlights:
+  - en: Growing district stated on invoice, packing list and CoA
+    zh: 产区写明在发票、装箱单与检测报告上
+  - en: Hand-fired in four passes, not machine-pressed
+    zh: 四道手工辉锅，非机器压形
+  - en: Cold-stored at 4 °C from the week it is made
+    zh: 出厂当周即入 4 摄氏度冷库
+
+applications:
+  - en: Specialty retail and own-brand green tea
+    zh: 精品零售与自有品牌绿茶
+  - en: Hotel and restaurant welcome tea
+    zh: 酒店与餐厅迎宾茶
+
+specs:
+  - group:
+      en: Leaf and lot
+      zh: 鲜叶与批次
+    items:
+      - key: origin
+        label:
+          en: Growing district
+          zh: 产区
+        value:
+          en: Fuyang, Hangzhou (not Xihu-designated)
+          zh: 杭州富阳（非西湖产区）
+      - key: cultivar
+        label:
+          en: Cultivar
+          zh: 品种
+        value:
+          en: Longjing 43, clonal
+          zh: 龙井 43，无性系
+      - key: pluck
+        label:
+          en: Pluck standard
+          zh: 采摘标准
+        value:
+          en: One bud, one leaf, pre-Qingming
+          zh: 一芽一叶，明前
+      - key: moisture
+        label:
+          en: Moisture at packing
+          zh: 装箱含水率
+        value_num: 4.2
+        unit: "%"
+        filterable: true
+      - key: broken
+        label:
+          en: Broken leaf
+          zh: 碎叶率
+        value_num: 3
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: liquor
+        label:
+          en: Liquor
+          zh: 汤色
+        value:
+          en: Pale apricot-green, clear
+          zh: 浅杏绿，清亮
+      - key: aroma
+        label:
+          en: Aroma
+          zh: 香气
+        value:
+          en: Roasted chestnut, fresh pea, no smoke
+          zh: 炒栗、青豆，无烟味
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 18
+        unit: months
+        filterable: true
+      - key: storage
+        label:
+          en: Storage
+          zh: 仓储
+        value:
+          en: 4 °C, sealed, away from light
+          zh: 4 摄氏度密封避光
+
+price:
+  min: 68
+  max: 95
+  currency: USD
+  incoterm: FOB Ningbo
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.055
+  gross_weight_kg: 25.6
+
+cover: media/products/g100-longjing.jpg
+related: [g-220-anji-baiye, x-730-hangbaiju]
+cases: [nordic-grocery, uk-coffee-chain]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Longjing 43 Green Tea, Bulk Export — 300 kg MOQ
+    zh: 龙井 43 绿茶原料出口 — 300 公斤起订
+  description:
+    en: Fuyang-grown Longjing 43, hand-fired, 4.2% moisture, cold-stored. 300 kg MOQ, 20–30 day lead time, USDA and EU organic lots available.
+    zh: 富阳龙井 43，手工辉锅，含水率 4.2%，冷库存储。300 公斤起订，20–30 天交期，可做美国与欧盟有机批次。

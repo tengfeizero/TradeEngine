@@ -1,0 +1,43 @@
+- slug: retail-private-label
+  status: published
+  order: 1
+  name:
+    en: Retail Private Label
+    zh: 零售自有品牌
+  summary:
+    en: Supermarket and specialty own-brand ranges. Your artwork, our formula file, 300 kg per SKU to start.
+    zh: 商超与精品店的自有品牌。你的包装设计、我们的配方档案，单 SKU 300 公斤起订。
+  icon: "package"
+
+- slug: food-service
+  status: published
+  order: 2
+  name:
+    en: Café & Food Service
+    zh: 咖啡馆与餐饮
+  summary:
+    en: Two or three blends that a barista can brew without training, in 1 kg foil or 500 g tins for the shelf.
+    zh: 两到三款咖啡师不用培训就能冲好的拼配，1 公斤铝箔装或 500 克货架铁罐。
+  icon: "cup"
+
+- slug: rtd-cold-brew
+  status: published
+  order: 3
+  name:
+    en: RTD & Cold Brew
+    zh: 即饮与冷萃
+  summary:
+    en: Extraction yield, turbidity and colour specified as numbers, not adjectives. 20 kg foil-in-carton for pilot runs.
+    zh: 萃取率、浊度、色值都用数字写进规格，不用形容词。中试按 20 公斤纸箱内铝箔装。
+  icon: "droplet"
+
+- slug: gifting
+  status: published
+  order: 4
+  name:
+    en: Gifting & Corporate
+    zh: 礼赠与团购
+  summary:
+    en: Seasonal tins and presentation boxes, assembled and shrink-wrapped in our packing hall. Short runs from 500 sets.
+    zh: 节令铁罐与礼盒，在我们的包装车间组装并塑封。500 套起做短单。
+  icon: "star"

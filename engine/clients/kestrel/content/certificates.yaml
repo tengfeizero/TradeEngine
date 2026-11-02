@@ -1,0 +1,71 @@
+- slug: iso-9001
+  status: published
+  name:
+    en: ISO 9001:2015
+    zh: ISO 9001:2015 质量体系
+  issuer: SGS China
+  number: CN-QMS-2025-20714
+  issued: 2025-05-12
+  expires: 2028-05-11
+  markets: [EU, US, JP, AU, AE, BR]
+  file: media/certs/iso-9001.pdf
+
+- slug: ce-red
+  status: published
+  name:
+    en: CE RED 2014/53/EU
+    zh: CE RED 2014/53/EU 无线设备指令
+  issuer: TÜV SÜD Shenzhen
+  number: RED-2025-KA-0417
+  issued: 2025-09-08
+  expires: 2030-09-07
+  markets: [EU, AE]
+  file: media/certs/ce-red.pdf
+
+- slug: fcc-id
+  status: published
+  name:
+    en: FCC Part 15.247 Grant
+    zh: FCC Part 15.247 认证
+  issuer: Bay Area Compliance Laboratories
+  number: 2A9KQ-KX9C
+  issued: 2025-06-19
+  expires: 2030-06-18
+  markets: [US, BR]
+  file: media/certs/fcc-id.pdf
+
+- slug: rohs
+  status: published
+  name:
+    en: RoHS 2011/65/EU
+    zh: RoHS 2011/65/EU 有害物质限制
+  issuer: Intertek Shenzhen
+  number: RoHS-KA-2025-0088
+  issued: 2025-07-02
+  expires: 2029-07-01
+  markets: [EU, JP]
+  file: media/certs/rohs.pdf
+
+- slug: un383
+  status: published
+  name:
+    en: UN38.3 Battery Transport
+    zh: UN38.3 锂电池运输
+  issuer: CQC South China
+  number: UN383-2026-CN-1142
+  issued: 2026-03-11
+  expires: 2029-03-10
+  markets: [EU, US, JP, AU, AE, BR]
+  file: media/certs/un383.pdf
+
+- slug: ip54
+  status: published
+  name:
+    en: IEC 60529 IP54 Report
+    zh: IEC 60529 IP54 防护等级报告
+  issuer: SGS China
+  number: IEC60529-2025-KA-0219
+  issued: 2025-11-20
+  expires: 2028-11-19
+  markets: [EU, US, AU]
+  file: media/certs/ip54.pdf

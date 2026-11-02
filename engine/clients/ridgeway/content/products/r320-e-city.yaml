@@ -1,0 +1,142 @@
+slug: r320-e-city
+status: published
+order: 2
+featured: true
+model_no: RD-E320
+category: e-bike
+scenarios: [retail-private-label, rental-fleet]
+certificates: [en-15194, ce-marking, iso-9001, tuv-audit]
+markets: [EU, JP]
+hs_code: "8711601000"
+moq: 50
+moq_unit: pcs
+
+lead_time:
+  en: 55–70 days after deposit, battery cells subject to allocation
+  zh: 定金后 55–70 天，电芯受配额影响
+packaging:
+  en: One unit per carton with battery removed and separately boxed inside
+  zh: 一车一箱，电池拆下单独装箱置于箱内
+sample_policy:
+  en: Sample at 2× FOB, air freight quote on request
+  zh: 样品按 FOB 两倍价，可另报空运
+
+title:
+  en: R-320 E-City
+  zh: R-320 电助力城市车
+subtitle:
+  en: Mid-drive 80 Nm, 504 Wh in-frame battery, EN 15194 certified
+  zh: 中置电机 80 牛米，504 瓦时车架内电池，通过 EN 15194
+summary:
+  en: Our highest-volume EPAC platform. Mid-drive torque sensing, removable in-frame battery, and a frame that passes EN 15194 without a derating note.
+  zh: 出货量最大的电助力平台。中置力矩传感、车架内可拆电池，整车型式通过 EN 15194，无需降额说明。
+
+description:
+  en: |
+    Most e-city failures come from three places: the battery mount, the speed sensor, and the controller's behaviour in rain. The R-320 uses a locking in-frame battery with a secondary mechanical latch, a sealed cadence-plus-torque sensor, and an IP65 controller mounted away from the rear wheel spray zone.
+
+    For rental fleets we can ship the same frame with a locked battery, a fleet keyway, and a telematics pocket under the top tube — so your operator can add tracking without drilling the frame.
+  zh: |
+    电助力城市车的问题八成出在三处：电池安装座、速度传感器、以及控制器在雨天的表现。R-320 用带二次机械锁扣的车架内电池、密封的踏频加力矩双传感、以及避开后轮溅水区的 IP65 控制器。
+
+    面向租赁车队，同一车架可配锁死电池、车队统一钥匙，并在上管下方预留 telematics 安装仓——运营商加装定位不必在车架上打孔。
+
+highlights:
+  - en: 250 W mid-drive, 80 Nm, torque-sensing bottom bracket
+    zh: 250 瓦中置电机，80 牛米，力矩传感中轴
+  - en: 504 Wh removable battery with secondary mechanical latch
+    zh: 504 瓦时可拆电池，带二次机械锁扣
+  - en: IP65 controller mounted outside the spray zone
+    zh: IP65 控制器，避开溅水区安装
+  - en: Telematics pocket under the top tube for fleet builds
+    zh: 上管下方 telematics 安装仓，供车队版本使用
+
+applications:
+  - en: Retail e-city and trekking ranges
+    zh: 零售电助力城市与旅行车系
+  - en: Subscription and rental fleets
+    zh: 订阅制与租赁车队
+
+specs:
+  - group:
+      en: Drive system
+      zh: 驱动系统
+    items:
+      - key: motor
+        label:
+          en: Motor
+          zh: 电机
+        value:
+          en: 250 W mid-drive, 80 Nm, 25 km/h cut-off
+          zh: 250 瓦中置，80 牛米，25 公里限速
+      - key: battery
+        label:
+          en: Battery
+          zh: 电池
+        value:
+          en: 36 V 14 Ah (504 Wh), LG 21700 cells, removable
+          zh: 36 伏 14 安时（504 瓦时），LG 21700 电芯，可拆
+      - key: range
+        label:
+          en: Range
+          zh: 续航
+        value_num: 90
+        unit: km
+        filterable: true
+      - key: charge_time
+        label:
+          en: Charge time
+          zh: 充电时间
+        value:
+          en: 4.5 h standard, 2.5 h fast
+          zh: 标配 4.5 小时，快充 2.5 小时
+  - group:
+      en: Build & export data
+      zh: 配置与出口数据
+    items:
+      - key: drivetrain
+        label:
+          en: Drivetrain
+          zh: 传动
+        value:
+          en: Shimano Deore 9-speed
+          zh: Shimano Deore 9 速
+      - key: brakes
+        label:
+          en: Brakes
+          zh: 刹车
+        value:
+          en: Hydraulic disc, 180/160 mm, motor cut-off
+          zh: 液压碟刹 180/160 毫米，断电联动
+      - key: weight
+        label:
+          en: Complete bike weight
+          zh: 整车重量
+        value_num: 24.5
+        unit: kg
+        filterable: true
+      - key: max_load
+        label:
+          en: Max rider + cargo load
+          zh: 最大人货载重
+        value_num: 130
+        unit: kg
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.45
+  gross_weight_kg: 28.0
+
+cover: media/products/r320-e-city.jpg
+related: [r100-city, e500-e-mtb]
+cases: [nordrad-germany]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: E-City Bike OEM — 250W Mid-Drive, EN 15194, 50 Unit MOQ
+    zh: 电助力城市车 OEM — 250 瓦中置电机，EN 15194，50 台起订
+  description:
+    en: 504 Wh in-frame battery, 80 Nm mid-drive, IP65 controller, EN 15194 certified. MOQ 50 units, 55–70 day lead time.
+    zh: 504 瓦时车架内电池、80 牛米中置电机、IP65 控制器，通过 EN 15194。50 台起订，55–70 天交期。

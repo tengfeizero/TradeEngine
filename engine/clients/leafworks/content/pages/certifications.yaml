@@ -1,0 +1,73 @@
+slug: certifications
+status: published
+title:
+  en: Certificates, and the scope line that matters
+  zh: 认证，以及真正要看的那行范围
+summary:
+  en: Six certificates, what each one covers and what it does not. The one line buyers skip is usually the one that decides whether the file is worth anything.
+  zh: 六张证书，各自覆盖什么、不覆盖什么。买家最常跳过的那一行，往往决定这份文件有没有用。
+cover: media/lab/quality.jpg
+updated_at: 2026-10-18
+blocks:
+  - type: richtext
+    title:
+      en: A certificate is a scope, not a badge
+      zh: 证书是一段范围，不是一个标
+    lead:
+      en: Every file below states what it covers — the product category, the site, the process. Most import disputes we see are not forged certificates; they are real certificates whose scope did not include the thing being imported.
+    body:
+      en: |
+        Two lines decide whether a certificate is useful to you. The first is the scope: our FSSC 22000 certificate covers tea blending and packing at the Yuhang site, which is where your order is made — not a sister plant, not a supplier's plant. The second is validity at the date of import, not the date of order; a certificate that expires while your container is on the water is a problem at the border, not at our desk.
+
+        For organic there is a third document that does not appear on this page: the transaction certificate, issued per lot. Certificates prove we are allowed to handle organic tea. The transaction certificate proves the tea in your container is that tea. If a supplier cannot produce one for the specific lot, the organic claim has no basis, whatever the wall certificate says.
+      zh: |
+        两行字决定一份证书对你有没有用。第一行是范围：我们的 FSSC 22000 覆盖余杭工厂的茶叶拼配与包装，也就是你这批货实际生产的地方——不是兄弟工厂，不是供应商的工厂。第二行是进口当日的有效性，而不是下单当日；证书在柜子还在海上时过期，问题出在口岸，不在我们桌上。
+
+        有机还有第三份不会挂在这面墙上的文件：按批出具的交易证书。墙上的证书证明我们有权处理有机茶；交易证书证明你柜子里的茶就是那批茶。如果供应商拿不出对应批次的交易证书，有机声明就没有依据，墙上挂什么牌子都一样。
+  - type: certificate_grid
+    title:
+      en: Current certificates
+      zh: 现有认证
+    intro:
+      en: Download any of them. Expiry dates are shown as printed, and we will tell you when a renewal is in progress rather than let you find out at customs.
+      zh: 都可以下载。到期日按证书原文标注；换证进行中我们会主动告知，不会让你在海关才发现。
+  - type: faq
+    title:
+      en: Compliance questions
+      zh: 合规问题
+    items:
+      - q:
+          en: Does your BRCGS grade apply to packing only?
+          zh: BRCGS 的等级只覆盖包装吗
+        a:
+          en: Yes. Grade A covers blending, packing and storage of dried tea at Yuhang. It does not cover the gardens, which are certified separately under organic schemes. A BRCGS certificate that claims to cover farms is a red flag.
+          zh: 是。A 级覆盖余杭的拼配、包装与干茶仓储，不覆盖茶园——茶园是按有机体系单独认证的。声称覆盖农场的 BRCGS 证书本身就是个警告信号。
+      - q:
+          en: Can you ship organic and conventional in one container?
+          zh: 有机与常规能装同一个柜吗
+        a:
+          en: Only with physical segregation, separate documentation and a written agreement from your certifier. In practice we ship organic as a full lot or not at all, because a mixed container is where organic claims go wrong.
+          zh: 只有在物理隔离、单证分开、并由你的认证机构书面同意的前提下。实际操作中，有机要么整批发，要么不发——混柜是有机声明出事的地方。
+      - q:
+          en: Which certificates do you not have?
+          zh: 你们没有哪些认证
+        a:
+          en: Rainforest Alliance, Demeter and Fairtrade. We are not against them; each needs a supply-chain arrangement our growers are not in yet, and we would rather say so than put a logo on a page. If your listing requires one, tell us early — it changes which gardens we can buy from.
+          zh: 雨林联盟、德米特与公平贸易。不是不认同；每一项都需要与我们现有农户尚未建立的供应链安排，我们宁愿直说，也不愿在页面上放个标。如果你的渠道要求其中之一，请早说——它会改变我们能从哪些茶园采购。
+      - q:
+          en: Do you provide MSDS or allergen statements?
+          zh: 提供 MSDS 或过敏原声明吗
+        a:
+          en: An allergen statement, yes — pure tea contains none of the 14 EU allergens, and botanical blends are declared per ingredient. MSDS is not applicable to dried tea, but we provide a food safety data sheet in the format most EU importers ask for.
+          zh: 过敏原声明有——纯茶不含欧盟 14 类过敏原，花草拼配按单一原料逐项声明。MSDS 对干茶不适用，但我们提供多数欧盟进口商要求格式的食品安全数据表。
+  - type: cta
+    title:
+      en: Need the full document pack?
+      zh: 需要整套单证包吗
+    body:
+      en: Certificates, CoA template, allergen statement, packing specification and a sample transaction certificate — one zip file, sent the same day.
+      zh: 证书、检测报告模板、过敏原声明、包装规格与一份样本交易证书——一个压缩包，当天发。
+    cta_text:
+      en: Request the pack
+      zh: 索取单证包
+    cta_href: "/contact/"

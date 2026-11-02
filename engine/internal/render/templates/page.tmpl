@@ -1,0 +1,13 @@
+{{define "crumb"}}{{if .}}<nav class="crumb">{{range .}}<a href="{{.Href}}">{{.Label}}</a>{{end}}</nav>{{end}}{{end}}
+
+{{/* 固定页：内容全部来自 blocks，模板本身不留任何业务字段。 */}}
+{{define "page"}}
+{{template "crumb" .Crumb}}
+{{if .ShowHead}}
+<header class="page-head">
+  <h1>{{.PageTitle}}</h1>
+  {{if .Intro}}<p class="lead">{{.Intro}}</p>{{end}}
+</header>
+{{end}}
+{{.Blocks}}
+{{end}}

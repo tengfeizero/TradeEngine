@@ -1,0 +1,30 @@
+name: leafworks
+skin: zentea
+
+# 色板取自设计稿 design/zentea-website.html 的 :root（jade / gold / ink / paper）
+colors:
+  primary: "#5B7F5B"        # jade
+  primary-fill: "#3D5C3D"   # jade-dark：按钮底，白字可读
+  accent: "#82622A"        # gold 压深：#C4A35A 原值浅底 2.1:1，#82622A 三底 ≥4.5
+  ink: "#1A1A1A"
+  paper: "#F5F0E8"
+  surface: "#FAF6EF"
+  muted: "#8A8580"
+
+# 设计稿正文是 Inter，标题是 Cormorant Garamond——高对比衬线，系统字体栈给不出
+fonts:
+  heading: "'Cormorant Garamond', 'Songti SC', Georgia, serif"
+  body: "'Inter', 'PingFang SC', system-ui, sans-serif"
+  mono: "'JetBrains Mono', ui-monospace, monospace"
+
+font_faces:
+  - {family: "Cormorant Garamond", file: media/fonts/cormorant-garamond-300.woff2, weight: "300"}
+  - {family: "Cormorant Garamond", file: media/fonts/cormorant-garamond-italic-400.woff2, weight: "400", style: "italic"}
+  - {family: "Cormorant Garamond", file: media/fonts/cormorant-garamond-500.woff2, weight: "500"}
+  - {family: "Cormorant Garamond", file: media/fonts/cormorant-garamond-600.woff2, weight: "600"}
+  - {family: "Cormorant Garamond", file: media/fonts/cormorant-garamond-700.woff2, weight: "700"}
+  - {family: "Inter", file: media/fonts/inter-400.woff2, weight: "400"}
+  - {family: "Inter", file: media/fonts/inter-500.woff2, weight: "500"}
+  - {family: "Inter", file: media/fonts/inter-600.woff2, weight: "600"}
+
+radius: 2px

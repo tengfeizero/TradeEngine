@@ -1,0 +1,139 @@
+slug: o-410-tieguanyin
+status: published
+order: 5
+featured: true
+model_no: LW-O410
+category: oolong
+scenarios: [retail-private-label, gifting, food-service]
+certificates: [eu-organic, fssc-22000, brcgs]
+markets: [EU, UK, JP, AU]
+hs_code: "090240"
+moq: 300
+moq_unit: kg
+
+lead_time:
+  en: 30–40 days after deposit, including the six-week rest
+  zh: 定金后 30–40 天（含六周静置）
+packaging:
+  en: 20 kg foil bag in carton, or 250 g vacuum brick for retail
+  zh: 20 公斤铝箔袋装箱，或 250 克真空砖供零售
+sample_policy:
+  en: 300 g at cost plus freight, roasted and unroasted on request
+  zh: 300 克按成本加运费，可寄焙火与未焙火对照样
+
+title:
+  en: O-410 Tieguanyin, Nanyan Light Aroma
+  zh: O-410 铁观音，南岩清香
+subtitle:
+  en: Electric-roasted, rested six weeks, packed at 5% moisture
+  zh: 电焙，静置六周，5% 含水率装箱
+summary:
+  en: Orchid and cream, no green edge. The roast is light enough for a Western palate and heavy enough that the leaf survives a second infusion.
+  zh: 兰香与奶香，没有青草气。火功轻到西方口味能接受，又重到第二泡还站得住。
+
+description:
+  en: |
+    Light-aroma Tieguanyin has a reputation problem in Europe: the cheapest versions are unroasted, packed young and taste of hay by the time they clear customs. The fix is not more roast, it is rest. We hold every lot six weeks after the final firing so the roast integrates, then pack at 5 percent moisture in foil.
+
+    Nanyan leaf is thicker than the lowland material and takes a second and third infusion without going flat, which changes the cost per cup for a food-service account. If your customer is comparing on price per kilogram alone, this is the wrong product — the right comparison is price per litre of acceptable tea.
+  zh: |
+    清香型铁观音在欧洲有个口碑问题：最便宜的版本不焙火、很早就装箱，清关时已经有干草味。解法不是加重火功，是静置。每批最后一道焙火后我们放六周，让火气融合，再以 5% 含水率铝箔装箱。
+
+    南岩的叶子比低山原料厚，第二、三泡不发空——这对餐饮客户来说直接改变每杯成本。如果你的客户只按每公斤比价，这款是错的产品；正确的比法是「每升合格茶汤的成本」。
+
+highlights:
+  - en: Six-week rest after firing, dated on the lot card
+    zh: 焙火后静置六周，批次卡上标注日期
+  - en: Thick Nanyan leaf, holds a third infusion
+    zh: 南岩厚叶，第三泡仍有味
+  - en: Vacuum brick option for retail shelves
+    zh: 零售货架可选真空砖
+
+applications:
+  - en: Specialty retail and tea houses
+    zh: 精品零售与茶馆
+  - en: Restaurant tea pairings
+    zh: 餐厅配餐用茶
+
+specs:
+  - group:
+      en: Leaf and lot
+      zh: 鲜叶与批次
+    items:
+      - key: origin
+        label:
+          en: Growing district
+          zh: 产区
+        value:
+          en: Nanyan, Anxi County
+          zh: 安溪南岩
+      - key: style
+        label:
+          en: Style
+          zh: 香型
+        value:
+          en: Light aroma, electric roast
+          zh: 清香型，电焙
+      - key: rest
+        label:
+          en: Rest after firing
+          zh: 焙后静置
+        value_num: 6
+        unit: weeks
+        filterable: true
+      - key: moisture
+        label:
+          en: Moisture at packing
+          zh: 装箱含水率
+        value_num: 5
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: liquor
+        label:
+          en: Liquor
+          zh: 汤色
+        value:
+          en: Golden green, clear
+          zh: 金黄带绿，清亮
+      - key: aroma
+        label:
+          en: Aroma
+          zh: 香气
+        value:
+          en: Orchid, cream, warm grain
+          zh: 兰花香、奶香、焙谷香
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 24
+        unit: months
+        filterable: true
+
+price:
+  min: 18
+  max: 26
+  currency: USD
+  incoterm: FOB Xiamen
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.06
+  gross_weight_kg: 20.8
+
+cover: media/products/o410-tieguanyin.jpg
+related: [o-460-dancong, g-100-longjing-43]
+cases: [japan-gift, uk-coffee-chain]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Tieguanyin Oolong, Light Aroma, Bulk — 300 kg MOQ
+    zh: 清香型铁观音原料 — 300 公斤起订
+  description:
+    en: Nanyan Tieguanyin, electric roast, rested six weeks, 5% moisture. Bulk oolong for retail ranges and restaurant pairings. 300 kg MOQ.
+    zh: 安溪南岩铁观音，电焙，静置六周，含水率 5%。散装乌龙，适合零售产品线与餐厅配餐，300 公斤起订。

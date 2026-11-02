@@ -1,0 +1,142 @@
+slug: f20-folding
+status: published
+order: 6
+featured: false
+model_no: RD-F20
+category: folding
+scenarios: [retail-private-label, rental-fleet]
+certificates: [en-iso-4210, bsci]
+markets: [EU, JP, AU]
+hs_code: "8712009000"
+moq: 100
+moq_unit: pcs
+
+lead_time:
+  en: 45–60 days after deposit
+  zh: 定金后 45–60 天
+packaging:
+  en: One folded unit per carton, 95% assembled
+  zh: 折叠状态一车一箱，95% 组装
+sample_policy:
+  en: Sample at 2× FOB, freight collect
+  zh: 样品按 FOB 两倍价，运费到付
+
+title:
+  en: F-20 Folding
+  zh: F-20 折叠车
+subtitle:
+  en: Single-hinge 20", 3-second fold, 12.6 kg — sized for apartment lifts and train cars
+  zh: 单铰 20 英寸，3 秒折叠，12.6 公斤——适配公寓电梯与车厢
+summary:
+  en: The fold and the hinge are the whole product. Ours folds in three seconds with one hand and passes a 1,200 N clamp test on every batch.
+  zh: 折叠车卖的就是折叠动作与铰链。我们单手三秒折好，每批铰链过 1200 牛夹紧测试。
+
+description:
+  en: |
+    Folding bikes sell on two numbers: folded volume and weight. The F-20 folds to 80 × 38 × 62 cm in three seconds with one hand, and the complete bike is 12.6 kg — light enough to carry up four floors, which is the real adoption threshold in Japanese and Dutch walk-ups.
+
+    The hinge is the part that fails, so it uses a double-locking cam with a 1,200 N clamp test per batch, and the frame is x-ray inspected at the weld seam every 500 units.
+  zh: |
+    折叠车只卖两个数字：折叠体积和重量。F-20 单手三秒折到 80 × 38 × 62 厘米，整车 12.6 公斤——轻到能搬上四层楼，这是日本与荷兰楼梯房的真实使用门槛。
+
+    铰链是最容易失效的部件。我们用双锁定偏心扣，每批抽检 1200 牛夹紧力，每 500 台对焊缝做一次 X 光检测。
+
+highlights:
+  - en: 3-second single-hand fold, 80 × 38 × 62 cm
+    zh: 三秒单手折叠，80 × 38 × 62 厘米
+  - en: 12.6 kg complete — carryable up four floors
+    zh: 整车 12.6 公斤——可搬上四层楼
+  - en: Double-locking cam hinge, 1,200 N clamp test per batch
+    zh: 双锁定偏心铰链，每批 1200 牛夹紧测试
+  - en: X-ray weld inspection every 500 units
+    zh: 每 500 台做一次焊缝 X 光检测
+
+applications:
+  - en: Multimodal commuting ranges
+    zh: 多式联运通勤车系
+  - en: Rental and hotel loaner fleets
+    zh: 租赁与酒店借用车队
+
+specs:
+  - group:
+      en: Frame & fold
+      zh: 车架与折叠
+    items:
+      - key: frame
+        label:
+          en: Frame material
+          zh: 车架材质
+        value:
+          en: 6061-T6 aluminium, single hinge
+          zh: 6061-T6 铝合金，单铰
+      - key: wheel_size
+        label:
+          en: Wheel size
+          zh: 轮径
+        value:
+          en: 20"
+          zh: 20 英寸
+      - key: folded_size
+        label:
+          en: Folded size
+          zh: 折叠尺寸
+        value:
+          en: 80 × 38 × 62 cm
+          zh: 80 × 38 × 62 厘米
+      - key: weight
+        label:
+          en: Complete bike weight
+          zh: 整车重量
+        value_num: 12.6
+        unit: kg
+        filterable: true
+  - group:
+      en: Build & export data
+      zh: 配置与出口数据
+    items:
+      - key: drivetrain
+        label:
+          en: Drivetrain
+          zh: 传动
+        value:
+          en: Shimano 7-speed derailleur
+          zh: Shimano 7 速外变速
+      - key: brakes
+        label:
+          en: Brakes
+          zh: 刹车
+        value:
+          en: Mechanical disc, 160 mm rotors
+          zh: 机械碟刹，160 毫米碟片
+      - key: hinge_test
+        label:
+          en: Hinge clamp test
+          zh: 铰链夹紧测试
+        value:
+          en: 1,200 N per batch
+          zh: 每批 1200 牛
+      - key: max_load
+        label:
+          en: Max rider load
+          zh: 最大骑行者载重
+        value_num: 100
+        unit: kg
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.22
+  gross_weight_kg: 15.0
+
+cover: media/products/f20-folding.jpg
+related: [r100-city, k16-kids]
+cases: [sakura-japan]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Folding Bike OEM — 20", 12.6 kg, 100 Unit MOQ
+    zh: 折叠自行车 OEM — 20 英寸，12.6 公斤，100 台起订
+  description:
+    en: Single-hinge 6061 frame, 3-second fold, 12.6 kg complete. MOQ 100 units, 45–60 day lead time, EN ISO 4210 certified.
+    zh: 单铰 6061 车架、三秒折叠、整车 12.6 公斤。100 台起订，45–60 天交期，通过 EN ISO 4210。

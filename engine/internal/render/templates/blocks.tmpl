@@ -1,0 +1,256 @@
+{{/* ---------- 区块：首屏 ---------- */}}
+{{define "blk_hero"}}
+<section class="hero{{if .Image}} split{{end}}">
+  <div class="hero-copy">
+    {{if .Badge}}<p class="badge"><i aria-hidden="true"></i>{{.Badge}}</p>{{end}}
+    {{if .Kicker}}<p class="kicker">{{.Kicker}}</p>{{end}}
+    <h1>{{.Headline}}</h1>
+    {{if .Sub}}<p class="sub">{{.Sub}}</p>{{end}}
+    {{if or .CtaText .Cta2Text}}<div class="hero-cta">
+      {{if .CtaText}}<a class="btn" href="{{.CtaHref}}">{{.CtaText}}</a>{{end}}
+      {{if .Cta2Text}}<a class="btn ghost" href="{{.Cta2Href}}">{{.Cta2Text}}</a>{{end}}
+    </div>{{end}}
+    {{if .Stats}}<div class="hero-stats">{{range .Stats}}<div><b>{{.Value}}</b><span>{{.Label}}</span></div>{{end}}</div>{{end}}
+  </div>
+  {{if .Image}}{{template "image" .Image}}{{end}}
+</section>
+{{end}}
+
+{{/* ---------- 区块：纯文本 ---------- */}}
+{{define "blk_richtext"}}
+<section class="section richtext">
+  <div>
+    {{if .Kicker}}<p class="kicker">{{.Kicker}}</p>{{end}}
+    {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+  </div>
+  <div class="body-text">
+    {{if .Lead}}<p class="lead">{{.Lead}}</p>{{end}}
+    {{range .Paragraphs}}<p>{{.}}</p>{{end}}
+  </div>
+</section>
+{{end}}
+
+{{/* ---------- 区块：图文 ---------- */}}
+{{define "blk_image_text"}}
+<section class="section image-text{{if .Flip}} flip{{end}}">
+  <div class="media">{{if .Image}}{{template "image" .Image}}{{end}}</div>
+  <div>
+    {{if .Kicker}}<p class="kicker">{{.Kicker}}</p>{{end}}
+    {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+    {{if .Body}}<p>{{.Body}}</p>{{end}}
+    {{if .Checks}}<ul class="checks">{{range .Checks}}<li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg><span>{{.}}</span></li>{{end}}</ul>{{end}}
+    {{if .Bullets}}<ul>{{range .Bullets}}<li>{{.}}</li>{{end}}</ul>{{end}}
+    {{if .CtaText}}<a class="btn ghost" href="{{.CtaHref}}">{{.CtaText}}</a>{{end}}
+  </div>
+</section>
+{{end}}
+
+{{/* ---------- 区块：能力网格（图标卡 / 编号卡） ---------- */}}
+{{define "blk_features"}}
+<section class="section">
+  <div class="section-head">
+    <div>
+      {{if .Kicker}}<p class="kicker">{{.Kicker}}</p>{{end}}
+      {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+      {{if .Intro}}<p class="lead">{{.Intro}}</p>{{end}}
+    </div>
+  </div>
+  <div class="features{{if eq .Style "numbered"}} numbered{{end}}">
+    {{range .Items}}
+    <div class="feature">
+      {{if .Icon}}<div class="f-icon">{{.Icon}}</div>{{end}}
+      {{if .No}}<div class="no">{{.No}}{{if .Tag}} / {{.Tag}}{{end}}</div>{{end}}
+      <h3>{{.Title}}</h3>
+      {{if .Body}}<p>{{.Body}}</p>{{end}}
+      {{if .Checks}}<ul class="checks">{{range .Checks}}<li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg><span>{{.}}</span></li>{{end}}</ul>{{end}}
+    </div>
+    {{end}}
+  </div>
+</section>
+{{end}}
+
+{{/* ---------- 区块：数字条 ---------- */}}
+{{define "blk_stats"}}
+<section class="section">
+  {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+  <div class="stats">
+    {{range .Items}}
+    <div class="stat">
+      <div class="value">{{.Value}}</div>
+      <div class="label">{{.Label}}</div>
+      {{if .Note}}<div class="note">{{.Note}}</div>{{end}}
+    </div>
+    {{end}}
+  </div>
+</section>
+{{end}}
+
+{{/* ---------- 通用卡片网格 ---------- */}}
+{{define "grid"}}
+<section class="section">
+  <div class="section-head">
+    <div>
+      {{if .Kicker}}<p class="kicker">{{.Kicker}}</p>{{end}}
+      {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+      {{if .Intro}}<p class="lead">{{.Intro}}</p>{{end}}
+    </div>
+    {{if .More}}<a class="more" href="{{.MoreHref}}">{{.More}} →</a>{{end}}
+  </div>
+  <div class="grid">
+    {{range .Cards}}{{template "card" .}}{{end}}
+  </div>
+</section>
+{{end}}
+
+{{define "blk_product_grid"}}{{template "grid" .}}{{end}}
+{{define "blk_category_grid"}}{{template "grid" .}}{{end}}
+{{define "blk_scenario_grid"}}{{template "grid" .}}{{end}}
+{{define "blk_certificate_grid"}}{{template "grid" .}}{{end}}
+{{define "blk_case_grid"}}{{template "grid" .}}{{end}}
+
+{{/* ---------- 区块：流程 ---------- */}}
+{{define "blk_process"}}
+<section class="section">
+  {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+  {{if .Intro}}<p class="lead">{{.Intro}}</p>{{end}}
+  <div class="process">
+    {{range .Steps}}
+    <div class="step">
+      <div class="no">{{.No}}</div>
+      <h3>{{.Title}}</h3>
+      {{if .Body}}<p>{{.Body}}</p>{{end}}
+    </div>
+    {{end}}
+  </div>
+</section>
+{{end}}
+
+{{/* ---------- 区块：团队 ---------- */}}
+{{define "blk_team"}}
+<section class="section">
+  {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+  {{if .Intro}}<p class="lead">{{.Intro}}</p>{{end}}
+  <div class="team">
+    {{range .Members}}
+    <div class="member">
+      {{if .Photo}}{{template "image" .Photo}}{{end}}
+      <h3>{{.Name}}</h3>
+      <div class="role">{{.Role}}</div>
+      {{if .Bio}}<p>{{.Bio}}</p>{{end}}
+    </div>
+    {{end}}
+  </div>
+</section>
+{{end}}
+
+{{/* ---------- 区块：FAQ ---------- */}}
+{{define "blk_faq"}}
+<section class="section faq">
+  {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+  {{range .Items}}
+  <details>
+    <summary>{{.Q}}</summary>
+    <div class="answer">{{range .A}}<p>{{.}}</p>{{end}}</div>
+  </details>
+  {{end}}
+</section>
+{{end}}
+
+{{/* ---------- 区块：行动号召 ---------- */}}
+{{define "blk_cta"}}
+<section class="cta">
+  <h2>{{.Title}}</h2>
+  {{if .Body}}<p>{{.Body}}</p>{{end}}
+  {{if .CtaText}}<a class="btn" href="{{.CtaHref}}">{{.CtaText}}</a>{{end}}
+</section>
+{{end}}
+
+{{/* ---------- 区块：标志墙 / 图集 ---------- */}}
+{{define "blk_logos"}}
+<section class="section">
+  {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+  <div class="logos">
+    {{range .Logos}}{{template "image" .}}{{end}}
+  </div>
+</section>
+{{end}}
+
+{{define "blk_gallery"}}
+<section class="section">
+  {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+  <div class="gallery">
+    {{range .Images}}{{template "image" .}}{{end}}
+  </div>
+</section>
+{{end}}
+
+{{/* ---------- 区块：工厂证据链（B1 D6） ---------- */}}
+{{define "blk_factory"}}
+<section class="section factory">
+  <div class="section-head"><div>
+    {{if .Kicker}}<p class="kicker">{{.Kicker}}</p>{{end}}
+    {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+    {{if .Intro}}<p class="lead">{{.Intro}}</p>{{end}}
+  </div></div>
+  {{if .Capacity}}
+  <div class="stats">{{range .Capacity}}<div class="stat"><div class="value">{{.Value}}</div><div class="label">{{.Label}}</div>{{if .Note}}<div class="note">{{.Note}}</div>{{end}}</div>{{end}}</div>
+  {{end}}
+  {{if .Equipment}}
+  <h3>{{.LabelEquipment}}</h3>
+  <table class="facts"><tbody>
+    {{range .Equipment}}<tr><th>{{.Name}}</th><td>{{.Qty}}{{if .Note}} · {{.Note}}{{end}}</td></tr>{{end}}
+  </tbody></table>
+  {{end}}
+  {{if .QC}}
+  <h3>{{.LabelQC}}</h3>
+  <div class="process">{{range .QC}}<div class="step"><div class="no">{{.No}}</div><h3>{{.Title}}</h3>{{if .Body}}<p>{{.Body}}</p>{{end}}</div>{{end}}</div>
+  {{end}}
+  {{if .Audits}}
+  <h3>{{.LabelAudits}}</h3>
+  <ul class="audits">
+    {{range .Audits}}<li><strong>{{.Name}}</strong>{{if .Issuer}} · {{.Issuer}}{{end}}
+      <div class="meta">{{if .Number}}{{$.LabelNumber}} {{.Number}}{{end}}{{if .Date}} · {{.Date}}{{end}}{{if .Valid}} · {{$.LabelValid}} {{.Valid}}{{end}}</div>
+      {{if .File}}<a href="{{.File}}" download>PDF</a>{{end}}</li>{{end}}
+  </ul>
+  {{end}}
+  {{if .Retention}}<p class="retention"><strong>{{.LabelRetention}}</strong> {{.Retention}}</p>{{end}}
+  {{if .Photos}}<h3>{{.LabelPhotos}}</h3><div class="gallery">{{range .Photos}}{{template "image" .}}{{end}}</div>{{end}}
+</section>
+{{end}}
+
+{{/* ---------- 区块：客户证言（B1 D7） ---------- */}}
+{{define "blk_testimonials"}}
+<section class="section testimonials">
+  {{if or .Kicker .Title .Intro}}<div class="section-head"><div>
+    {{if .Kicker}}<p class="kicker">{{.Kicker}}</p>{{end}}
+    {{if .Title}}<h2>{{.Title}}</h2>{{end}}
+    {{if .Intro}}<p class="lead">{{.Intro}}</p>{{end}}
+  </div></div>{{end}}
+  <div class="quotes">
+    {{range .Items}}
+    <figure class="quote">
+      <blockquote>{{.Quote}}</blockquote>
+      <figcaption>
+        <span class="who">{{.Author}}{{if .Role}}, {{.Role}}{{end}}</span>
+        {{if .Company}}<span>{{.Company}}{{if .Country}} · {{.Country}}{{end}}</span>{{end}}
+        {{if .Product}}<a class="on" href="{{.Product.Href}}">{{.Product.Label}}</a>{{end}}
+        {{if .Date}}<span>{{.Date}}</span>{{end}}
+      </figcaption>
+    </figure>
+    {{end}}
+  </div>
+</section>
+{{end}}
+
+{{/* ---------- 区块：法定披露（B1 R2） ---------- */}}
+{{define "blk_legal_facts"}}
+<section class="section">
+  <h2>{{.Title}}</h2>
+  <dl class="legal-facts">
+    {{range .Facts}}{{if .Label}}<dt>{{.Label}}</dt><dd>{{if .Href}}<a href="{{.Href}}">{{.Value}}</a>{{else}}{{.Value}}{{end}}</dd>{{else}}<dd class="cont">{{if .Href}}<a href="{{.Href}}">{{.Value}}</a>{{else}}{{.Value}}{{end}}</dd>{{end}}{{end}}
+  </dl>
+</section>
+{{end}}
+
+{{/* ---------- 区块：询盘表单 ---------- */}}
+{{define "blk_inquiry"}}{{template "form_body" .}}{{end}}

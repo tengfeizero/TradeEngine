@@ -1,0 +1,143 @@
+slug: e500-e-mtb
+status: published
+order: 8
+featured: false
+model_no: RD-E500
+category: e-bike
+scenarios: [sport-outdoor]
+certificates: [en-15194, ce-marking, iso-9001]
+markets: [EU, US]
+hs_code: "8711601000"
+moq: 50
+moq_unit: pcs
+
+lead_time:
+  en: 60–75 days after deposit, cells subject to allocation
+  zh: 定金后 60–75 天，电芯受配额影响
+packaging:
+  en: One unit per carton, battery removed and boxed inside
+  zh: 一车一箱，电池拆下装箱
+sample_policy:
+  en: Sample at 2× FOB, air freight quote on request
+  zh: 样品按 FOB 两倍价，可另报空运
+
+title:
+  en: E-500 E-MTB
+  zh: E-500 电助力山地
+subtitle:
+  en: 85 Nm mid-drive, 720 Wh, 140 mm travel, EN 15194 certified
+  zh: 85 牛米中置电机，720 瓦时，140 毫米行程，通过 EN 15194
+
+summary:
+  en: "The e-MTB platform for brands that already sell analogue trail bikes — same geometry language, same handling, with 85 Nm where the climb starts."
+  zh: 给已经在卖人力越野车的品牌：同一套几何语言、同一种操控，在爬坡处多出 85 牛米。
+
+description:
+  en: |
+    An e-MTB that handles like an e-bike loses the trail rider. We kept the M-720's 66° head angle and 435 mm chainstays, then put the motor mass low and central — the battery sits in the down tube rather than behind the seat tube, so the front wheel stays loaded on steep climbs.
+
+    The frame passes EN 15194 as a complete EPAC, including the 25 km/h cut-off behaviour under load, which is where most OE frames fail the test the first time.
+  zh: |
+    骑起来像电器的电助力山地车，会失去越野骑手。我们保留 M-720 的 66 度头管角与 435 毫米后下叉，再把电机质量放到低且居中的位置——电池在下管而不是座管后方，陡坡时前轮仍然压得住。
+
+    车架以整车型式通过 EN 15194，包含负载下的 25 公里限速表现——多数 OE 车架第一次送检就卡在这里。
+
+highlights:
+  - en: Same geometry as the M-720 — trail handling, not appliance handling
+    zh: 与 M-720 同一套几何——越野操控，不是电器感
+  - en: Down-tube battery keeps front wheel loaded on climbs
+    zh: 下管电池让爬坡时前轮保持载荷
+  - en: 85 Nm mid-drive, 720 Wh, 110 km eco range
+    zh: 85 牛米中置，720 瓦时，节能模式续航 110 公里
+  - en: Passes EN 15194 as a complete EPAC under load
+    zh: 以整车型式通过 EN 15194，含负载工况
+
+applications:
+  - en: E-MTB and e-trail brand ranges
+    zh: 电助力越野与林道品牌车系
+  - en: Demo and rental fleet builds
+    zh: 试骑与租赁车队配置
+
+specs:
+  - group:
+      en: Drive system
+      zh: 驱动系统
+    items:
+      - key: motor
+        label:
+          en: Motor
+          zh: 电机
+        value:
+          en: 250 W mid-drive, 85 Nm, 25 km/h cut-off
+          zh: 250 瓦中置，85 牛米，25 公里限速
+      - key: battery
+        label:
+          en: Battery
+          zh: 电池
+        value:
+          en: 36 V 20 Ah (720 Wh), down-tube integrated
+          zh: 36 伏 20 安时（720 瓦时），下管集成
+      - key: range
+        label:
+          en: Eco range
+          zh: 节能续航
+        value_num: 110
+        unit: km
+        filterable: true
+      - key: travel
+        label:
+          en: Fork travel
+          zh: 前叉行程
+        value_num: 140
+        unit: mm
+        filterable: true
+  - group:
+      en: Build & export data
+      zh: 配置与出口数据
+    items:
+      - key: frame
+        label:
+          en: Frame material
+          zh: 车架材质
+        value:
+          en: 6061-T6 aluminium, motor-specific downtube
+          zh: 6061-T6 铝合金，电机专用下管
+      - key: drivetrain
+        label:
+          en: Drivetrain
+          zh: 传动
+        value:
+          en: Shimano Deore XT 12-speed
+          zh: Shimano Deore XT 12 速
+      - key: weight
+        label:
+          en: Complete bike weight
+          zh: 整车重量
+        value_num: 23.8
+        unit: kg
+        filterable: true
+      - key: max_load
+        label:
+          en: Max rider + cargo load
+          zh: 最大人货载重
+        value_num: 120
+        unit: kg
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.48
+  gross_weight_kg: 27.5
+
+cover: media/products/e500-e-mtb.jpg
+related: [m720-trail, r320-e-city]
+cases: [cascade-usa]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: E-MTB Frame OEM — 85 Nm Mid-Drive, EN 15194, 50 Unit MOQ
+    zh: 电助力山地车 OEM — 85 牛米中置电机，EN 15194，50 台起订
+  description:
+    en: 6061 frame with motor-specific downtube, 720 Wh battery, 140 mm travel, EN 15194 certified as complete EPAC. MOQ 50 units.
+    zh: 6061 电机专用下管车架、720 瓦时电池、140 毫米行程，以整车型式通过 EN 15194。50 台起订。

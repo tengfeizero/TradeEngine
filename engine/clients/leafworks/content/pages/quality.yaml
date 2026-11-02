@@ -1,0 +1,240 @@
+slug: quality
+status: published
+title:
+  en: Quality control, and the three results that stop a lot
+  zh: 品控，以及会让一批货停下的三个结果
+summary:
+  en: The pesticide panel, the moisture meter, the micro lab and the cupping table — plus what happens, and who pays, when a lot fails.
+  zh: 农残面板、水分仪、微生物实验室与杯测台——以及一批不合格时发生什么、由谁承担。
+cover: media/lab/quality.jpg
+updated_at: 2026-10-20
+blocks:
+  - type: stats
+    items:
+      - value: "510"
+        label:
+          en: Pesticide analytes screened
+          zh: 农残筛查项
+        note:
+          en: every production lot
+          zh: 每个量产批次
+      - value: "48h"
+        label:
+          en: Lab turnaround
+          zh: 实验室出结果
+        note:
+          en: in-house, on arrival
+          zh: 到货即检，自有实验室
+      - value: "3"
+        label:
+          en: Results that stop a lot
+          zh: 停线判定的三项结果
+        note:
+          en: no commercial override
+          zh: 不因订单紧急放行
+      - value: "0"
+        label:
+          en: Recalls since 2014
+          zh: 2014 年以来召回
+        note:
+          en: product recalls, all markets
+          zh: 全市场产品召回
+  - type: richtext
+    title:
+      en: Three numbers we will not negotiate
+      zh: 三个不商量的数字
+    lead:
+      en: Most of our specification is a conversation. These three are not, because each of them has already cost a customer a container.
+    body:
+      en: |
+        **Anthraquinone, 0.02 mg/kg.** The EU MRL for anthraquinone in tea is the single most common reason Chinese tea is rejected at Rotterdam, and it is not a pesticide in the usual sense — it comes from smoke, exhaust and some packaging materials. Tea that has been dried over a wood fire, or stored next to a diesel generator, can fail without any farmer doing anything wrong. Our lots are hot-air dried and tested per lot; anything at or above the limit does not ship, and we tell the buyer the volume is short rather than blending it down.
+
+        **Moisture, 4.5 percent for green and 5 percent for oolong.** Above that, the tea does not fail a test — it just tastes stale four months earlier than the shelf life claims, which is worse, because the complaint arrives after the pallet has been paid for. We measure at packing and again on the retained sample at six months.
+
+        **Total plate count under 10⁴ CFU/g.** Tea is an infusion, not a ready-to-eat food, so there is no legal limit in most markets. Buyers still specify it, and a count above 10⁴ usually means the packing hall's humidity control has drifted. It is a leading indicator for the whole line, which is why we treat it as a stop rather than a warning.
+      zh: |
+        **蒽醌，0.02 毫克/公斤。** 欧盟对茶叶蒽醌的限量，是中国茶在鹿特丹被拒最常见的原因；它不是通常意义上的农药——来自烟、尾气与某些包装材料。用柴火烘干、或与柴油发电机放在一起的茶，农户什么都没做错也可能超标。我们的批次用热风干燥并逐批检测；达到或超过限量的不出货，我们会告诉买家这批量不够，而不是拼稀了事。
+
+        **含水率，绿茶 4.5%、乌龙 5%。** 超过这个数，茶不会「检测不合格」——它只是比标注的保质期早四个月变陈，而这更糟，因为投诉到货已付款之后才来。装箱时测一次，留样满六个月再测一次。
+
+        **菌落总数低于 10⁴ CFU/g。** 茶是冲泡饮品，不是即食食品，多数市场没有法定限量。但买家会写进规格，而超过 10⁴ 通常意味着包装车间的湿度控制漂了。它是整条线的先行指标，所以我们按停线处理，不按警告。
+  - type: process
+    title:
+      en: When a lot fails
+      zh: 一批不合格时
+    intro:
+      en: The sequence, including who pays. We have run this eleven times since 2019, and it has never taken longer than nine days.
+      zh: 顺序，以及费用归属。2019 年以来执行过十一次，最长一次九天。
+    steps:
+      - title:
+          en: Hold
+          zh: 扣货
+        body:
+          en: The lot is moved to a red-taped area and its transaction documents are frozen. Nothing is re-blended to dilute a failing result — that is the one shortcut that turns a reject into a recall.
+          zh: 该批移入红标区，单证冻结。绝不通过拼配稀释不合格结果——那是把「退货」变成「召回」的唯一捷径。
+      - title:
+          en: Re-test
+          zh: 复检
+        body:
+          en: A second sample from the same lot goes to an accredited third-party lab, at our cost. If the two labs disagree, the third lab decides.
+          zh: 同批第二份样送认可第三方实验室，费用我们出。两家结果不一致时，以第三家为准。
+      - title:
+          en: Root cause
+          zh: 定位原因
+        body:
+          en: Drying method, storage, packaging or the garden itself. Anthraquinone almost always traces to drying or storage, which means it is our process, not the farmer's.
+          zh: 干燥方式、仓储、包装，还是茶园本身。蒽醌几乎总能追到干燥或仓储——也就是我们的工艺，不是农户的问题。
+      - title:
+          en: Replace or refund
+          zh: 换货或退款
+        body:
+          en: If the ship date allows, we replace from stock at our cost. If not, we refund the deposit and give you the failing report so you can tell your own customer the truth.
+          zh: 船期允许就从现货补发，费用我们出；不允许就退定金，并把不合格报告给你，让你能对自己的客户讲实话。
+      - title:
+          en: Change the process
+          zh: 改工艺
+        body:
+          en: Every failure produces a written change to the process, not a memo. Two of the eleven were storage issues; both led to a change in how pallets are sited in the warehouse.
+          zh: 每次不合格都产生一份书面的工艺变更，不是一张通知。十一次里有两次是仓储问题，都改成了托盘的堆位规则。
+  - type: factory
+    kicker:
+      en: Audit trail
+      zh: 审核与记录
+    title:
+      en: The building, and what is in it
+      zh: 这栋楼，以及里面有什么
+    intro:
+      en: We do not own a garden, so what we can show you is the part we do control — the bench, the lab, the packing hall, and the certificates that cover them.
+      zh: 我们没有自己的茶园，所以能给你看的是我们真正控制的部分——拼配台、实验室、包装车间，以及覆盖这些环节的证书。
+    equipment:
+      - name:
+          en: Hot-air dryers (no wood fire)
+          zh: 热风干燥机（不用柴火）
+        qty: "4"
+        note:
+          en: the anthraquinone control, purchased for this reason
+          zh: 蒽醌控制手段，专为此购置
+      - name:
+          en: Optical colour sorters
+          zh: 光电色选机
+        qty: "2"
+        note:
+          en: stems and off-colour leaf removed before packing
+          zh: 装箱前剔除茶梗与异色叶
+      - name:
+          en: Metal detector and X-ray
+          zh: 金属探测与 X 光
+        qty: "2"
+        note:
+          en: in line, every retail pack, no sampling
+          zh: 在线检测，每个零售包装都过，不抽检
+      - name:
+          en: Automatic weighing lines
+          zh: 自动称量线
+        qty: "3"
+        note:
+          en: 2–25 kg formats, weight check per pack
+          zh: 2–25 公斤规格，逐包重量复检
+      - name:
+          en: Climate-controlled warehouse
+          zh: 恒温恒湿仓库
+        qty: "1"
+        note:
+          en: logged, 18 °C / 50 % RH — two of eleven failures traced here
+          zh: 有记录，18 ℃ / 50 % 相对湿度——十一停线里有两次追到此处
+      - name:
+          en: Cupping bench
+          zh: 杯测台
+        qty: "1"
+        note:
+          en: every lot, three cuppers, blind
+          zh: 逐批，三人盲测
+    audits:
+      - name:
+          en: Organic certification, packing operation (EU 2018/848)
+          zh: 有机认证，包装环节（EU 2018/848）
+        number: CN-BIO-154-2025-0311
+        issuer: CERES
+        date: "2025-03-11"
+        valid_until: "2027-03-10"
+      - name:
+          en: ISO 22000 food safety management
+          zh: ISO 22000 食品安全管理体系
+        number: CN-FSMS-2024-0662
+        issuer: SGS China
+        date: "2024-08-22"
+        valid_until: "2027-08-21"
+      - name:
+          en: Sedex SMETA 4-pillar social audit
+          zh: Sedex SMETA 四支柱社会责任审核
+        number: ZS-2026-11425
+        issuer: Intertek
+        date: "2026-02-11"
+        valid_until: "2027-02-10"
+      - name:
+          en: Pesticide panel, representative lot (510 analytes)
+          zh: 农残面板，代表性批次（510 项）
+        number: SGS-CN-26-07881
+        issuer: SGS China
+        date: "2026-09-24"
+      - name:
+          en: US FDA food facility registration
+          zh: 美国 FDA 食品设施注册
+        number: FDA-REG-1-23456789012
+        issuer: US FDA
+        date: "2024-10-02"
+        valid_until: "2026-12-31"
+    retention:
+      en: Every lot keeps a 500 g sample at 18 °C in the dark for 24 months, and we cup it again at six and at twelve months. When a buyer writes that the tea "tastes older than the date on the bag", that sample is how we answer with evidence instead of an apology.
+      zh: 每批留 500 克样，18 ℃ 避光保存 24 个月，并在第六与第十二个月各复杯一次。当买家来信说「茶比袋上的日期更陈」，那份留样就是我们拿出证据的地方，而不是只有一句道歉。
+    photos:
+      - src: media/lab/blending.jpg
+        date: "2026-09-08"
+        caption:
+          en: The bench, mid-blend
+          zh: 拼配中的台面
+      - src: media/lab/packing.jpg
+        date: "2026-09-08"
+        caption:
+          en: Packing hall, retail line
+          zh: 包装车间，零售线
+  - type: faq
+    title:
+      en: Testing questions buyers actually ask
+      zh: 买家真正会问的检测问题
+    items:
+      - q:
+          en: Can we nominate the laboratory?
+          zh: 可以指定实验室吗
+        a:
+          en: Yes, if it is accredited to ISO 17025 and can take the sample within seven days. You pay the difference if it costs more than our in-house panel; we pay if it finds something we missed.
+          zh: 可以，前提是通过 ISO 17025 认可、能在七天内接样。费用高于我们自有面板的部分由你承担；若查出我们漏掉的问题，由我们承担。
+      - q:
+          en: Do you test every lot for everything?
+          zh: 每批都全项检测吗
+        a:
+          en: No, and nobody does. Every lot gets the 510-analyte pesticide panel, moisture, and micro. Heavy metals and anthraquinone are every lot for EU-bound tea, quarterly for other markets. Sensory is every lot — it is the cheapest test we run and the one that catches most problems.
+          zh: 不是，也没有人这样做。每批做 510 项农残、含水率与微生物。发往欧盟的茶每批做重金属与蒽醌，其他市场按季度。感官每批都做——它是最便宜的检测，也是抓出问题最多的那一项。
+      - q:
+          en: What is the CoA format?
+          zh: 检测报告是什么格式
+        a:
+          en: One page per lot, PDF with signature. Lot code, garden, pluck date, results against spec with pass or fail, and the name of the analyst. Buyers often need it in their own template; send yours and we will fill it.
+          zh: 每批一页，PDF 并签章：批次号、产地、采摘日期、对照规格的逐项结果与判定，以及检测人姓名。买家常常需要用自己的模板，发来我们照填。
+      - q:
+          en: How do you handle a customer complaint after delivery?
+          zh: 到货后的投诉怎么处理
+        a:
+          en: Send the lot code and photographs. Retained samples are kept 24 months, so we can cup the same lot you have. If it is our fault, we credit the invoice; we do not ask for the tea back, because return freight on a spoiled pallet costs more than the tea.
+          zh: 提供批次号与照片。留样保存 24 个月，我们能喝到你手上的同一批。确属我方问题就冲抵货款；不要求退回，因为坏掉的一托运回来的运费比茶还贵。
+  - type: cta
+    title:
+      en: Ask for a sample CoA before you order
+      zh: 下单前先要一份样本检测报告
+    body:
+      en: We will send a redacted CoA from a recent lot, the full analyte list, and the sampling plan we use on arrival. Your QA team can mark it up before the first order rather than after.
+      zh: 我们可发一份近期批次（脱敏）的检测报告、完整检测项清单与到货抽样计划。让你的质量团队在第一单之前批注，而不是之后。
+    cta_text:
+      en: Request the documents
+      zh: 索取文件
+    cta_href: "/contact/"

@@ -1,0 +1,83 @@
+base_url: https://mistypeak.example.com
+schema_version: 1
+default_lang: en
+langs: [en, zh]
+theme: zentea
+
+brand:
+  name: Misty Peak Tea
+  logo: media/brand/logo.svg
+  tagline:
+    en: Single-origin tea from 1,200m mist-covered gardens
+    zh: 来自海拔 1200 米云雾茶园的原产地好茶
+
+company:
+  legal_name: Wuyi Misty Peak Tea Co., Ltd.
+  founded_year: 1998
+  address:
+    country: CN
+    region: Zhejiang
+    city: Wuyi
+    street: No.18 Chayuan Road
+    zip: "321200"
+
+contact:
+  email: sales@mistypeak.example.com
+  phone: "+86 579 8888 6666"
+  whatsapp: "8613800000000"
+
+markets:
+  - code: EU
+    name: { en: Europe, zh: 欧洲 }
+    langs: [en]
+  - code: US
+    name: { en: North America, zh: 北美 }
+    langs: [en]
+  - code: JP
+    name: { en: Japan, zh: 日本 }
+    langs: [en]
+
+social:
+  linkedin: https://linkedin.com/company/mistypeak
+
+analytics:
+  ga4_id: G-XXXXXXXXXX
+
+nav:
+  - label: { en: Home, zh: 首页 }
+    href: "/"
+  - label: { en: Products, zh: 产品 }
+    href: "/products/"
+  - label: { en: Factory, zh: 工厂 }
+    href: "/factory/"
+  - label: { en: Certifications, zh: 认证 }
+    href: "/certifications/"
+  - label: { en: Cases, zh: 案例 }
+    href: "/cases/"
+  - label: { en: Contact, zh: 联系 }
+    href: "/contact/"
+
+inquiry:
+  recipients: [sales@mistypeak.example.com]
+  fields: [name, company, email, country, product, message]
+  required: [name, email, message]
+  product_field: true
+  # {lang} 由服务端填充，对应构建自动生成的 /{lang}/thank-you/ 页面
+  success_url: /{lang}/thank-you/
+  turnstile_sitekey: ""
+  # 留空表示静态站与 API 同源（engine serve 同时托管两者）。
+  # 若静态站放 Cloudflare Pages、API 放 VPS，这里填 API 子域并配置 allowed_origins。
+  api_base: ""
+  allowed_origins: []
+  rate_limit_per_hour: 10
+  webhook: ""
+
+images:
+  transcode: false
+  quality: 82
+  widths: [640, 960, 1280]
+  max_kb: 400
+
+store:
+  driver: sqlite
+  dsn: .data/inquiries.db

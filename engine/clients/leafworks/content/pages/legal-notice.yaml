@@ -1,0 +1,56 @@
+slug: legal-notice
+status: published
+title:
+  en: Legal Notice
+  zh: 法律声明
+summary:
+  en: Company registration, VAT, EU responsible food business, and the contact route for market surveillance and labelling enquiries.
+  zh: 公司登记、增值税、欧盟责任食品经营者，以及市场监管与标签事务的联系途径。
+blocks:
+  - type: legal_facts
+    title:
+      en: Company information
+      zh: 公司信息
+  - type: richtext
+    title:
+      en: Responsible for content
+      zh: 内容责任人
+    body:
+      en: |
+        Information on this site is provided by the companies named above. Despite careful checking we accept no liability for the content of external links; responsibility for those lies with their operators. Harvest years, pluck dates and prices change with each season — the binding specification is the one stated on your certificate of analysis and proforma invoice.
+
+        For legal inquiries, including requests from food-safety authorities and GPSR requests from market surveillance, write to legal@leafworks-tea.example.com with the subject line "Legal". We answer within five business days.
+      zh: |
+        本站信息由上述公司提供。外部链接内容经仔细核对，但我们不承担其责任，责任归属各链接的运营方。年份、采摘日期与价格随季变化——具有约束力的规格是检测报告与形式发票上所载的那一份。
+
+        法律相关事务（含食品安全主管机构查询、市场监管机构依 GPSR 提出的资料请求）请发邮件至 legal@leafworks-tea.example.com，主题注明「法律」。我们在五个工作日内答复。
+  - type: richtext
+    title:
+      en: Food business and labelling
+      zh: 食品经营与标签
+    body:
+      en: |
+        We are a food business registered with the competent authority in Zhejiang and an exporter of record for every shipment. The EU importer named above is the food business operator responsible for the product once it is placed on the EU market.
+
+        Labelling follows the destination market: ingredient and origin statements, net quantity, lot code, best-before date and storage conditions are set per market rather than one label for all. Organic claims are made only where the lot carries a valid certificate under EU 2018/848 or the equivalent regime of the destination, and the certificate number is printed on the CoA.
+
+        Tea is an infusion, not a ready-to-eat food. Nothing on this site is a health claim, and we do not supply nutritional or medical advice.
+      zh: |
+        我方是在浙江主管部门登记的食品经营者，也是每一批货的出口经营者。上述欧盟进口商是产品进入欧盟市场后承担责任的食品经营者。
+
+        标签按目的市场执行：配料与原产地声明、净含量、批号、保质期与贮存条件逐市场确定，不做一张标签通用于所有市场。有机声明仅在批次持有欧盟 2018/848 或目的国等效制度的有效证书时使用，证书编号印在检测报告上。
+
+        茶是冲泡饮品，不是即食食品。本站内容不构成任何健康声称，我们也不提供营养或医疗建议。
+  - type: richtext
+    title:
+      en: Pesticide residues and organic lots
+      zh: 农残与有机批次
+    body:
+      en: |
+        Every production lot is screened against the 510-analyte panel described on the Quality page, and results are reported against the MRL of your destination market, not against a single global figure. Where your market's limit is stricter than the EU's, tell us at inquiry stage — the sampling plan changes and so does the lead time.
+
+        Organic lots are produced on a separate shift with a documented clean-down. We hold organic certification for the packing operation, not for the gardens; the gardens hold their own. Both certificates are available on request.
+      zh: |
+        每个量产批次都按质量页所述的 510 项面板筛查，结果对照**你目的市场**的限量出具，而不是一个全球统一数字。若你所在市场的限量比欧盟更严，请在询盘阶段说明——抽样计划会变，交期也会变。
+
+        有机批次在独立班次生产，并有书面的清线记录。我们持有的是包装环节的有机认证，不是茶园的；茶园各自持有。两份证书均可索取。

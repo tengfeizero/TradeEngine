@@ -1,0 +1,178 @@
+slug: sr-30
+status: published
+order: 6
+model_no: KA-SR30
+category: security
+scenarios: [perimeter-security]
+certificates: [ce-red, fcc-id, ip54, un383]
+markets: [EU, US, AE, AU]
+hs_code: "880622"
+moq: 5
+moq_unit: pcs
+
+lead_time:
+  en: 45–55 days after deposit, 70 days with the tether option and customer firmware keys
+  zh: 定金后 45–55 天，带系留选配与客户固件密钥为 70 天
+packaging:
+  en: One aircraft per hard case, tether station shipped as a separate crate for tethered orders
+  zh: 一机一硬箱，系留订单的系留站单独木箱发运
+sample_policy:
+  en: Demo unit at 1.4× FOB, tethered station on 30-day loan for tenders
+  zh: 演示机按 FOB 1.4 倍价，投标项目系留站可借 30 天
+
+title:
+  en: SR-30 Sentinel
+  zh: SR-30 Sentinel 安防机
+subtitle:
+  en: EO/IR gimbal, 55 minutes on battery or 4 hours on tether
+  zh: 双光吊舱，电池 55 分钟或系留 4 小时
+summary:
+  en: The difference between a patrol drone and a useful one is whether it is still overhead when the incident happens. Battery gives 55 minutes, the optional tether station gives 4 hours at 120 m, and the autopilot hands over to the ground station without a landing cycle.
+  zh: 巡逻无人机有没有用，取决于事发时它还在不在空中。电池 55 分钟，可选系留站在 120 米高度提供 4 小时，飞控与地面站交接不需要落地。
+
+description:
+  en: |
+    Security buyers write tenders that say 24/7 coverage. No multirotor does 24/7 on batteries. What they mean is that the aircraft must be overhead within 90 seconds of an alarm, and stay there long enough for a response team to arrive.
+
+    The SR-30 answers with two configurations. On battery it sits on a dock, wakes on an alarm input and is at 100 m in 55 seconds, with 50 minutes of station keeping. With the tether station it flies to 120 m and stays for 4 hours on ground power, so a single operator can cover an evening shift instead of swapping packs every hour.
+
+    The payload is a 48 MP EO sensor paired with a 640×512 IR core, plus a 12,000 lumen spotlight and a 128 dB speaker. We ship the alarm and ONVIF integration notes with the unit, because a drone that cannot take a trigger from the existing VMS is a demo, not equipment.
+  zh: |
+    安防客户的标书里会写 7×24 覆盖。没有哪台多旋翼能靠电池做到 7×24。他们真正要的是：报警后 90 秒内机器到空中，并且在处置人员到场前一直待在那里。
+
+    SR-30 用两种配置回答。电池模式下它停在机库，收到报警输入后 55 秒到达 100 米，定点驻留 50 分钟。配系留站时升到 120 米，用地面供电驻留 4 小时，一名操作员可以覆盖整个夜班，而不用每小时换一次电池。
+
+    载荷是 4800 万像素可见光加 640×512 红外，另有 12,000 流明探照灯与 128 分贝喊话器。报警与 ONVIF 对接说明随货交付——接不了现有视频管理平台触发信号的无人机，只是演示品，不是装备。
+
+highlights:
+  - en: 55 seconds from alarm to 100 m, 50 minutes on station
+    zh: 报警到 100 米 55 秒，定点驻留 50 分钟
+  - en: Tether station gives 4 hours at 120 m on ground power
+    zh: 系留站在 120 米提供 4 小时地面供电
+  - en: 12,000 lm spotlight, 128 dB speaker, 2 kg drop payload
+    zh: 12,000 流明探照灯、128 分贝喊话、2 公斤投放
+  - en: ONVIF and dry-contact alarm integration notes included
+    zh: 随货含 ONVIF 与干接点报警对接说明
+
+applications:
+  - en: Industrial park and campus perimeter patrol
+    zh: 工业园区与园区周界巡逻
+  - en: Public event and critical infrastructure overwatch
+    zh: 大型活动与关键基础设施空中值守
+
+specs:
+  - group:
+      en: Payload & endurance
+      zh: 载荷与续航
+    items:
+      - key: mtow
+        label:
+          en: Max take-off weight
+          zh: 最大起飞重量
+        value_num: 12.5
+        unit: kg
+        filterable: true
+      - key: flight_time
+        label:
+          en: Battery endurance
+          zh: 电池续航
+        value_num: 55
+        unit: min
+        filterable: true
+      - key: tether
+        label:
+          en: Tethered endurance
+          zh: 系留续航
+        value:
+          en: 4 hours at 120 m with 350 W ground station
+          zh: 配 350 瓦地面站，120 米高度 4 小时
+      - key: eo
+        label:
+          en: Visible camera
+          zh: 可见光
+        value:
+          en: 48 MP, 30× hybrid zoom
+          zh: 4800 万像素，30 倍混合变焦
+      - key: ir
+        label:
+          en: Thermal camera
+          zh: 红外
+        value:
+          en: 640×512, 25 Hz, -20 to 150 °C
+          zh: 640×512，25 赫兹，-20 至 150 ℃
+      - key: accessories
+        label:
+          en: Accessories
+          zh: 挂载
+        value:
+          en: 12,000 lm spotlight, 128 dB speaker, 2 kg drop mechanism
+          zh: 12,000 流明探照灯、128 分贝喊话器、2 公斤投放机构
+      - key: ip
+        label:
+          en: Ingress protection
+          zh: 防护等级
+        value:
+          en: IP55 airframe, rain-capable
+          zh: IP55 机身，可小雨作业
+  - group:
+      en: Autonomy & integration
+      zh: 自主与集成
+    items:
+      - key: response
+        label:
+          en: Alarm response
+          zh: 报警响应
+        value:
+          en: 55 seconds from dry contact to 100 m
+          zh: 干接点触发到 100 米 55 秒
+      - key: patrol
+        label:
+          en: Patrol
+          zh: 巡逻
+        value:
+          en: 64 waypoint routes, 8 preset gimbal poses per route
+          zh: 64 条航线，每条 8 个预置云台位
+      - key: integration
+        label:
+          en: Integration
+          zh: 对接
+        value:
+          en: ONVIF profile S, RTSP, MQTT events, dry contact in
+          zh: ONVIF Profile S、RTSP、MQTT 事件、干接点输入
+  - group:
+      en: Export & support
+      zh: 出口与支持
+    items:
+      - key: spares
+        label:
+          en: Spares kit
+          zh: 备件包
+        value:
+          en: 1 kit per 5 aircraft, props, motor, gimbal ribbon, landing gear
+          zh: 每 5 台配 1 套，桨叶、电机、云台排线、起落架
+      - key: warranty
+        label:
+          en: Warranty
+          zh: 质保
+        value_num: 24
+        unit: months
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.42
+  gross_weight_kg: 32
+
+cover: media/products/sr-30.jpg
+gallery: [media/products/sr-30.jpg, media/products/cat-security.jpg]
+related: [in-25, lg-10]
+cases: [dubai-perimeter]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Security Drone with Tether Option — 4 h at 120 m
+    zh: 安防无人机（可选系留）— 120 米驻留 4 小时
+  description:
+    en: EO/IR gimbal, 55-minute battery or 4-hour tether at 120 m, 12,000 lm spotlight, ONVIF and dry-contact alarm integration. 5 unit MOQ.
+    zh: 双光吊舱、电池 55 分钟或系留 120 米 4 小时、12,000 流明探照灯、ONVIF 与干接点报警对接。5 台起订。

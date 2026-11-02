@@ -1,0 +1,422 @@
+{{define "base"}}<!DOCTYPE html>
+<html lang="{{.Lang}}" data-skin="{{.Skin}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="/favicon.ico">
+{{range .FontPreload}}<link rel="preload" as="font" type="font/woff2" href="{{.}}" crossorigin>
+{{end}}<title>{{.Title}}</title>
+{{if .Description}}<meta name="description" content="{{.Description}}">
+{{end}}{{if .NoIndex}}<meta name="robots" content="noindex,follow">
+{{end}}<link rel="canonical" href="{{.Canonical}}">
+{{range .Alternates}}<link rel="alternate" hreflang="{{.Hreflang}}" href="{{.Href}}">
+{{end}}<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{.Brand}}">
+<meta property="og:title" content="{{.Title}}">
+{{if .Description}}<meta property="og:description" content="{{.Description}}">
+{{end}}<meta property="og:url" content="{{.Canonical}}">
+{{if .OGImage}}<meta property="og:image" content="{{.OGImage}}">
+<meta name="twitter:card" content="summary_large_image">
+{{end}}{{if .GSCVerify}}<meta name="google-site-verification" content="{{.GSCVerify}}">
+{{end}}{{if .Cover}}{{if .Cover.Src}}<link rel="preload" as="image" href="{{.Cover.Src}}" fetchpriority="high">
+{{end}}{{end}}{{.JSONLD}}
+<style>
+{{.Styles}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);line-height:1.7;font-size:16px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--primary-text)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;background:#fff;color:#111;padding:8px 14px;z-index:9}
+
+/* ---- 页头 ---- */
+.site-header{display:flex;gap:28px;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:1px solid rgba(0,0,0,.08);background:var(--paper);position:sticky;top:0;z-index:20}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-heading);font-size:20px;text-decoration:none;color:var(--ink);letter-spacing:.02em;white-space:nowrap}
+.brand img{height:28px;width:auto}
+.site-nav{display:flex;gap:22px;flex-wrap:wrap;margin-left:auto}
+.site-nav a{color:var(--ink);text-decoration:none;font-size:14px;opacity:.72}
+.site-nav a:hover{opacity:1;color:var(--primary-text)}
+.lang-switch{display:flex;gap:6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.lang-switch a{color:var(--muted-text);text-decoration:none;padding:2px 5px;border:1px solid transparent;border-radius:3px}
+.lang-switch a[aria-current]{color:var(--primary-text);border-color:currentColor}
+/* 汉堡菜单：checkbox + label，零 JS。≤900px 时导航收进抽屉（M5-6）。 */
+.nav-toggle{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:4px;width:40px;height:40px;padding:9px;cursor:pointer;border:1px solid rgba(0,0,0,.16);border-radius:8px;flex:none}
+.nav-burger i,.nav-burger::before,.nav-burger::after{content:"";display:block;height:1.8px;background:currentColor;border-radius:2px}
+.nav-burger i{width:100%}
+
+/* ---- 主体 ---- */
+main{max-width:1120px;margin:0 auto;padding:0 32px 80px}
+.page-head{padding:44px 0 8px}
+h1{font-family:var(--font-heading);font-size:40px;line-height:1.2;margin:0 0 14px;font-weight:500;letter-spacing:-.01em}
+h2{font-family:var(--font-heading);font-size:26px;font-weight:500;margin:0 0 16px}
+h3{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--primary-text);margin:0 0 8px;font-weight:600}
+.lead{font-size:18px;color:var(--muted-text);max-width:64ch;margin:0 0 20px}
+.section{padding:48px 0 0}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.section-head h2{margin:0}
+.list-cover{margin:8px 0 0}
+.list-cover img{width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--radius)}
+.chip-nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 0}
+.chip-nav a{font-size:13px;text-decoration:none;padding:5px 12px;border:1px solid rgba(0,0,0,.16);border-radius:999px;color:var(--ink)}
+.chip-nav a:hover{border-color:var(--primary-text);color:var(--primary-text)}
+.section-head .more{font-size:13px;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.crumb{font-size:13px;color:var(--muted-text);margin:0;padding:22px 0 0}
+.crumb a{color:inherit;text-decoration:none}
+.crumb a:hover{color:var(--primary-text)}
+.crumb a+a::before{content:" / ";opacity:.5;margin:0 6px}
+
+/* ---- 区块：hero ---- */
+.hero{padding:56px 0 40px;border-bottom:1px solid rgba(0,0,0,.08)}
+.hero .kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-text);margin:0 0 14px}
+.hero h1{font-size:52px;max-width:20ch}
+.hero p{font-size:18px;color:var(--muted-text);max-width:56ch}
+.hero-img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:var(--radius);margin:28px 0 0}
+.hero.split{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero.split .hero-img{margin:0;aspect-ratio:4/3}
+.hero .badge{display:inline-flex;align-items:center;gap:8px;margin:0 0 18px;padding:6px 14px;border:1px solid rgba(0,0,0,.14);border-radius:999px;font-size:12px;letter-spacing:.03em;color:var(--muted-text)}
+.hero .badge i{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:26px 0 0}
+.hero-cta .btn{margin-top:0}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:34px 0 0;padding-top:22px;border-top:1px solid rgba(0,0,0,.08)}
+.hero-stats b{display:block;font-family:var(--font-heading);font-size:26px;font-weight:700;line-height:1.1;color:var(--primary-text)}
+.hero-stats span{display:block;margin-top:4px;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted-text)}
+/* 标题里的着色词：classic/editorial 用斜体+强调色，tech 改成渐变裁切（见布局块） */
+.hl{font-style:italic;color:var(--accent-text)}
+.btn{display:inline-block;margin-top:8px;padding:12px 26px;background:var(--primary-fill);color:#fff;text-decoration:none;border-radius:var(--radius);font-size:14px;letter-spacing:.02em}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--primary-text);border:1px solid currentColor}
+
+/* ---- 区块：文本 ---- */
+.richtext{display:grid;grid-template-columns:1fr 1.6fr;gap:40px}
+.richtext p{margin:0 0 16px;color:rgba(0,0,0,.78)}
+.richtext p:last-child{margin-bottom:0}
+
+/* ---- 区块：图文 ---- */
+.image-text{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.image-text.flip .media{order:2}
+.image-text .media img{width:100%;border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover}
+.image-text ul{margin:16px 0 0;padding-left:18px;color:var(--muted-text)}
+.image-text li{margin-bottom:6px}
+
+/* ---- 区块：数据 ---- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;padding:32px 0;border-top:1px solid rgba(0,0,0,.08);border-bottom:1px solid rgba(0,0,0,.08)}
+.stat .value{font-family:var(--font-heading);font-size:38px;line-height:1.1;color:var(--primary-text)}
+.stat .label{font-size:14px;margin-top:6px}
+.stat .note{font-size:12px;color:var(--muted-text)}
+
+/* ---- 图标 ---- */
+/* 尺寸/描边统一在这里定：symbol 内部不带任何呈现属性，
+   一律继承 currentColor 与线宽，深浅色主题都不用二次适配。 */
+.ic{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-text);font-weight:600;margin:0 0 10px}
+.checks{list-style:none;padding:0;margin:18px 0 0}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted-text);margin:0 0 9px;line-height:1.55}
+.checks .ic{width:16px;height:16px;margin-top:3px;color:var(--primary-text);stroke-width:2.2}
+
+/* ---- 区块：能力网格（图标卡 / 编号卡） ---- */
+.features{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+.feature{background:var(--surface);border:1px solid rgba(0,0,0,.08);border-radius:var(--radius);padding:24px 22px}
+.feature h3{font-family:var(--font-heading);font-size:17px;font-weight:500;text-transform:none;letter-spacing:0;color:var(--ink);margin:0 0 8px}
+.feature p{margin:0;font-size:14px;color:var(--muted-text);line-height:1.6}
+.feature .f-icon{width:46px;height:46px;border-radius:calc(var(--radius) + 4px);display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--primary) 12%,transparent);color:var(--primary-text);margin:0 0 16px}
+.feature .no{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);margin:0 0 10px}
+.features.numbered{grid-template-columns:repeat(2,1fr);gap:20px}
+.features.numbered .feature{padding:26px 26px 24px}
+
+/* ---- 卡片 ---- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:26px}
+.card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid rgba(0,0,0,.08);border-radius:var(--radius);overflow:hidden;background:var(--surface);transition:transform .18s ease,box-shadow .18s ease}
+a.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.07)}
+.card .thumb{aspect-ratio:4/3;background:rgba(0,0,0,.04);overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:4px;flex:1}
+.card h3{font-family:var(--font-heading);font-size:17px;text-transform:none;letter-spacing:0;color:var(--ink);margin:0;font-weight:500}
+.card p{margin:0;font-size:13px;color:var(--muted-text)}
+.card .meta{margin-top:auto;padding-top:10px;font-size:12px;color:var(--muted-text);letter-spacing:.02em}
+.card .count{font-size:12px;color:var(--accent-text)}
+a.dl{font-size:13px;color:var(--primary-text)}
+/* 图标卡：无图，图标置顶（设计稿的 Use Cases 网格形态） */
+.card.icon-card .f-icon{width:44px;height:44px;border-radius:calc(var(--radius) + 4px);display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--primary) 12%,transparent);color:var(--primary-text);margin:22px 20px 0}
+.card.icon-card .body{padding-top:14px}
+.card.icon-card h3{font-size:18px}
+
+/* ---- 区块：流程 ---- */
+.process{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;counter-reset:step}
+.step{border-top:2px solid var(--primary);padding-top:14px}
+.step .no{font-family:var(--font-heading);font-size:13px;color:var(--accent-text);letter-spacing:.1em}
+.step h3{margin:4px 0 8px;font-size:16px;text-transform:none;letter-spacing:0;color:var(--ink);font-weight:500}
+.step p{margin:0;font-size:14px;color:var(--muted-text)}
+
+/* ---- 区块：团队 ---- */
+.team{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px}
+.member img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--radius);background:rgba(0,0,0,.04)}
+.member h3{margin:12px 0 2px;font-size:16px;text-transform:none;letter-spacing:0;color:var(--ink);font-weight:500}
+.member .role{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text)}
+.member p{font-size:13px;color:var(--muted-text);margin:6px 0 0}
+
+/* ---- 区块：FAQ ---- */
+.faq details{border-bottom:1px solid rgba(0,0,0,.09);padding:16px 0}
+.faq summary{cursor:pointer;font-size:16px;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--primary-text)}
+.faq details[open] summary::after{content:"–"}
+.faq .answer{margin-top:10px;color:rgba(0,0,0,.72);font-size:15px}
+.faq .answer p{margin:0 0 10px}
+
+/* ---- 区块：CTA / 标志墙 / 图集 ---- */
+.cta{margin:56px 0 0;padding:44px 40px;background:var(--surface);border:1px solid rgba(0,0,0,.08);border-left:3px solid var(--primary);border-radius:var(--radius)}
+.cta h2{margin:0 0 10px}
+.cta p{margin:0 0 18px;color:var(--muted-text);max-width:60ch}
+.logos{display:flex;flex-wrap:wrap;gap:32px;align-items:center;opacity:.75}
+.logos img{height:34px;width:auto;filter:grayscale(1)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius)}
+
+/* ---- 产品页 ---- */
+.product-head{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start;padding-top:12px}
+.product-head .cover{width:100%;border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover}
+.product-head .gallery{grid-template-columns:repeat(3,1fr);margin-top:10px}
+.product-cta{margin:22px 0 0;display:flex;gap:12px;flex-wrap:wrap}
+.sub{color:var(--accent-text);margin:0 0 18px;font-size:17px}
+.highlights{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 24px}
+.highlights li{font-size:13px;padding:4px 11px;border:1px solid var(--primary);border-radius:999px;color:var(--primary-text)}
+dl.trade{display:grid;grid-template-columns:130px 1fr;gap:8px 18px;margin:0;font-size:14px}
+dl.trade dt{color:var(--muted-text)}
+dl.trade dd{margin:0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+table th{text-align:left;font-weight:400;color:var(--muted-text);padding:10px 0;width:38%;border-bottom:1px solid rgba(0,0,0,.07);vertical-align:top}
+table td{padding:10px 0;border-bottom:1px solid rgba(0,0,0,.07)}
+.spec-group{margin-bottom:26px}
+.body-text p{color:rgba(0,0,0,.78)}
+
+/* ---- 案例 ---- */
+.case-head{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding-top:10px}
+.case-head img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius)}
+.case-meta{display:flex;gap:28px;flex-wrap:wrap;font-size:13px;color:var(--muted-text);margin:0 0 18px}
+.case-meta strong{display:block;color:var(--ink);font-weight:500;font-size:14px}
+.case-body{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:36px;border-top:1px solid rgba(0,0,0,.08);padding-top:28px}
+.case-body p{font-size:14px;color:rgba(0,0,0,.75);margin:0 0 10px}
+.case-result{font-family:var(--font-heading);font-size:19px;line-height:1.5;color:var(--primary-text)}
+
+/* ---- 表单 ---- */
+.inquiry{margin:56px 0 0;padding:34px;background:var(--surface);border:1px solid rgba(0,0,0,.08);border-radius:var(--radius)}
+.inquiry h2{margin:0 0 8px}
+.inquiry-intro{margin:0 0 24px;color:var(--muted-text);font-size:14px;max-width:64ch}
+.inquiry .fields{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+.inquiry .field{display:flex;flex-direction:column;gap:6px;font-size:13px}
+.inquiry .field.wide{grid-column:1/-1}
+.inquiry .field span{color:var(--muted-text);letter-spacing:.02em}
+.inquiry .req{color:#B4462F;font-style:normal;margin-left:2px}
+.inquiry input[type=text],.inquiry input[type=email],.inquiry input[type=tel],.inquiry select,.inquiry textarea{font:inherit;font-size:14px;padding:10px 12px;border:1px solid rgba(0,0,0,.18);border-radius:var(--radius);background:var(--paper);color:var(--ink);width:100%}
+.inquiry textarea{resize:vertical}
+.inquiry input:focus,.inquiry select:focus,.inquiry textarea:focus{outline:none;border-color:var(--primary-text);box-shadow:0 0 0 3px color-mix(in srgb,var(--primary) 22%,transparent)}
+.inquiry .actions{display:flex;align-items:center;gap:16px;margin-top:20px;flex-wrap:wrap}
+.inquiry button{font:inherit;font-size:14px;letter-spacing:.02em;padding:12px 28px;border:0;border-radius:var(--radius);background:var(--primary-fill);color:#fff;cursor:pointer}
+.inquiry button:hover{filter:brightness(1.08)}
+.inquiry button[disabled]{opacity:.6;cursor:progress}
+.inquiry .privacy{font-size:12px;color:var(--muted-text);max-width:46ch;line-height:1.6}
+.inquiry .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-note{margin:14px 0 0;font-size:13px;padding:10px 14px;border-radius:var(--radius)}
+.form-note.ok{background:rgba(47,107,63,.1);color:var(--primary-text)}
+.form-note.err{background:rgba(180,70,47,.1);color:#B4462F}
+
+/* ---- 其他 ---- */
+.thanks{padding:64px 0}
+.thanks .back{color:var(--primary-text)}
+.notfound{padding:72px 0}
+.notfound .code{font-family:var(--font-heading);font-size:80px;line-height:1;color:var(--accent-text);opacity:.5}
+footer{border-top:1px solid rgba(0,0,0,.08);padding:30px 32px;font-size:13px;color:var(--muted-text);display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+footer a{color:inherit}
+
+/* ---- 浮层联系（A1/A6）---- 全站常驻，任意页面一击直达 ---- */
+.float-contact{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:40}
+.fc-btn{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.22)}
+.fc-btn:hover{filter:brightness(1.08)}
+.fc-btn .ic{width:22px;height:22px;stroke-width:2}
+.fc-whatsapp{background:#22A55B}
+.fc-mail{background:var(--primary-fill)}
+.fc-phone{background:color-mix(in srgb,var(--primary-fill) 82%,#000)}
+
+/* ---- Cookie 同意（D2）---- 拒绝即不加载 gtag，默认不追踪 ---- */
+.cookie-bar{position:fixed;left:16px;bottom:16px;z-index:50;max-width:460px;padding:16px 18px;background:var(--surface);border:1px solid rgba(0,0,0,.12);border-radius:var(--radius);box-shadow:0 10px 30px rgba(0,0,0,.18);font-size:13px;color:var(--ink)}
+.cookie-bar p{margin:0 0 12px;line-height:1.6}
+.cookie-bar .ck-actions{display:flex;gap:10px;justify-content:flex-end}
+.cookie-bar button{font:inherit;font-size:13px;padding:8px 18px;border-radius:var(--radius);border:0;background:var(--primary-fill);color:var(--paper);cursor:pointer}
+.cookie-bar button.ck-no{background:transparent;color:var(--muted-text);border:1px solid rgba(0,0,0,.18)}
+@media print{.float-contact,.cookie-bar{display:none}}
+
+/* ---- 页脚（A2/C7/G5 出口）---- 三列：品牌+地址 / 联系直达 / 法律页 ---- */
+footer{display:block;border-top:1px solid rgba(0,0,0,.08);margin-top:72px;padding:36px 32px 22px;font-size:13px;color:var(--muted-text)}
+.foot-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.foot-brand strong{display:block;font-family:var(--font-heading);font-size:16px;font-weight:500;color:var(--ink)}
+.foot-brand p{margin:8px 0 0;line-height:1.6;max-width:40ch}
+.foot-addr{color:var(--muted-text)}
+.foot-dl{margin:12px 0 0}
+.foot-dl a{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;text-decoration:none;color:var(--primary-text);border-bottom:1px solid color-mix(in srgb,var(--primary) 40%,transparent);padding-bottom:2px}
+.foot-dl a+a{margin-left:14px}
+.foot-col{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.foot-col h3{margin:0 0 4px}
+.foot-col a{color:inherit;text-decoration:none}
+.foot-col a:hover{color:var(--primary-text)}
+.foot-legal{max-width:1120px;margin:28px auto 0;padding-top:16px;border-top:1px solid rgba(0,0,0,.07);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ---- 工厂证据链（D6）---- 能力、设备、QC、审核报告：每条都要能被核对 ---- */
+.factory .stats{margin:0 0 8px}
+.factory table.facts,.facts-table{width:100%;border-collapse:collapse;margin:0 0 26px}
+.factory table.facts th{text-align:left;font-weight:500;font-size:14px;padding:11px 0;border-bottom:1px solid rgba(0,0,0,.08);width:44%}
+.factory table.facts td{font-size:14px;color:var(--muted-text);padding:11px 0;border-bottom:1px solid rgba(0,0,0,.08)}
+.factory .process{margin:0 0 26px}
+.audits{list-style:none;padding:0;margin:0 0 22px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px 22px}
+.audits li{padding:14px 16px;border:1px solid rgba(0,0,0,.1);border-radius:var(--radius);font-size:14px}
+.audits .meta{font-size:12.5px;color:var(--muted-text);margin-top:4px}
+.audits a{font-size:12.5px}
+.retention{font-size:14px;background:var(--surface);border-left:3px solid var(--primary);padding:12px 16px;border-radius:var(--radius);margin:0 0 22px}
+/* ---- 客户证言（D7）---- 有署名、公司、国家、日期：不署名的好话等于没写 ---- */
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.quote{margin:0;padding:22px 24px;border:1px solid rgba(0,0,0,.1);border-radius:var(--radius);background:var(--surface)}
+.quote blockquote{margin:0 0 14px;font-family:var(--font-heading);font-size:18px;line-height:1.55}
+.quote figcaption{font-size:13px;color:var(--muted-text);display:flex;flex-direction:column;gap:3px;line-height:1.5}
+.quote .who{color:var(--ink);font-weight:500}
+.quote .on{color:var(--primary-text);text-decoration:none;font-size:12.5px}
+/* ---- 法定披露（R2）---- 值来自 settings.compliance，页面只引用不重写 ---- */
+.legal-facts{display:grid;grid-template-columns:190px 1fr;gap:10px 20px;margin:0;font-size:14px}
+.legal-facts dt{color:var(--muted-text)}
+.legal-facts dd{margin:0}
+.legal-facts dd.cont{grid-column:2}
+.foot-compliance{max-width:1120px;margin:14px auto 0;font-size:12px;color:var(--muted-text);line-height:1.6}
+/* ---- 审美皮肤 ----
+   基础层只负责「功能可用 + 响应式」：间距、栅格、表单、可读性。
+   配色、版式语法、装饰（边框/圆角/阴影/字阶/首屏构图）全部在皮肤里，
+   由 {{.SkinCSS}} 追加在本段之后——后写覆盖，皮肤不必堆 !important。
+
+   这是 CSS Zen Garden 的分工：HTML 说「有什么」，皮肤说「像什么」。
+   站点换肤只要改 theme.yaml 的 skin:，不碰内容、不碰结构。
+   皮肤来源：engine/internal/skins/presets/*.css 或 <site>/skins/*.css。 */
+
+
+@media (max-width:900px){
+  .hero.split,.image-text,.product-head,.case-head,.richtext,.case-body{grid-template-columns:1fr;gap:28px}
+  /* 皮肤会把列数写死在 html[data-skin=x] 上，特异性高于上面这行；
+     每套皮肤文件末尾自带同一断点的重压，这里只保基础层的兜底。
+     新增皮肤时漏写断点会被 skins 包的测试拦下。 */
+  .features,.features.numbered{grid-template-columns:1fr;gap:18px}
+  .image-text.flip .media{order:0}
+  .case-body{gap:20px}
+  .hero-stats{grid-template-columns:repeat(2,1fr);gap:16px 20px}
+  /* 导航折叠（M5-6）：汉堡接管，菜单变抽屉式下拉。
+     header 高度控制在 15% 视高以内（390×844 实测 ≤60px）。 */
+  .nav-burger{display:flex;margin-left:auto;color:var(--ink)}
+  .site-nav{display:none;position:absolute;left:0;right:0;top:100%;margin:0;padding:14px 24px 20px;
+    flex-direction:column;gap:2px;background:var(--paper);border-bottom:1px solid rgba(0,0,0,.1);
+    box-shadow:0 14px 26px rgba(0,0,0,.08);z-index:19}
+  .site-nav a{padding:10px 0;opacity:.86;border-bottom:1px solid rgba(0,0,0,.05)}
+  .site-nav a:last-child{border-bottom:0}
+  .nav-toggle:checked ~ .site-nav{display:flex}
+  .nav-toggle:focus-visible ~ .nav-burger{outline:2px solid var(--primary);outline-offset:2px}
+  .lang-switch{margin-left:10px}
+}
+@media (max-width:640px){
+  main{padding:0 20px 56px}
+  .site-header{padding:14px 20px;gap:12px}
+  h1{font-size:28px}
+  .hero{padding:32px 0 24px}
+  .hero h1{font-size:32px}
+  dl.trade{grid-template-columns:104px 1fr}
+  .inquiry{padding:22px 18px}
+  .inquiry .fields{grid-template-columns:1fr}
+  .cta{padding:28px 22px}
+  .float-contact{right:12px;bottom:12px}
+  /* Cookie 条在小屏占满整行宽度，浮层让位到它上方；选择一次后归位 */
+  .cookie-bar:not([hidden]) ~ .float-contact{bottom:158px}
+  .cookie-bar{left:12px;right:12px;bottom:12px;max-width:none}
+  footer{padding:28px 20px 18px}
+  .foot-grid{grid-template-columns:1fr;gap:24px}
+  .quotes,.audits,.legal-facts{grid-template-columns:1fr;gap:4px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+{{.SkinCSS}}
+</style>
+{{if .Form}}<script src="/assets/inquiry.js" defer></script>
+{{end}}{{with .Form}}{{if .TurnstileKey}}<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{{end}}{{end}}</head>
+<body>
+{{.IconSprite}}
+<a class="skip" href="#main">{{.UI.skip}}</a>
+<header class="site-header">
+  <a class="brand" href="/{{.Lang}}/">{{if .Logo}}<img src="{{.Logo.Src}}" alt="" width="{{.Logo.Width}}" height="{{.Logo.Height}}">{{end}}{{.Brand}}</a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-burger"><span class="sr-only">Menu</span><i aria-hidden="true"></i></label>
+  <nav class="site-nav">
+    {{range .Nav}}<a href="{{.Href}}">{{.Label}}</a>{{end}}
+  </nav>
+  {{if gt (len .Switcher) 1}}<div class="lang-switch">
+    {{range .Switcher}}<a href="{{.Href}}" hreflang="{{.Hreflang}}"{{if eq .Hreflang $.Lang}} aria-current="true"{{end}}>{{.Hreflang}}</a>{{end}}
+  </div>{{end}}
+</header>
+<main id="main">
+{{.Body}}
+</main>
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <strong>{{.Brand}}</strong>
+      {{with .Footer}}<p>{{.Tagline}}</p>
+      {{if .Address}}<p class="foot-addr">{{.Address}}</p>{{end}}
+      {{if .Catalog}}<p class="foot-dl"><a href="{{.Catalog.Href}}" download>{{.Catalog.Label}}</a></p>{{end}}
+      {{if .Data}}<p class="foot-dl">{{range .Data}}<a href="{{.Href}}" download>{{.Label}}</a>{{end}}</p>{{end}}{{end}}
+    </div>
+    {{with .Footer}}{{if .Contact}}<nav class="foot-col" aria-label="{{$.UI.contact}}">
+      <h3>{{$.UI.contact}}</h3>
+      {{range .Contact}}<a href="{{.Href}}"{{if eq .Class "whatsapp"}} target="_blank" rel="noopener"{{end}}>{{.Label}}</a>{{end}}
+      {{range .Social}}<a href="{{.Href}}" target="_blank" rel="noopener">{{.Label}}</a>{{end}}
+    </nav>{{end}}
+    {{if .Legal}}<nav class="foot-col" aria-label="{{$.UI.legal}}">
+      <h3>{{$.UI.legal}}</h3>
+      {{range .Legal}}<a href="{{.Href}}">{{.Label}}</a>{{end}}
+    </nav>{{end}}{{end}}
+  </div>
+  {{with .Footer}}{{if .Compliance}}<p class="foot-compliance">{{.Compliance}}</p>{{end}}{{end}}
+  <div class="foot-legal"><span>© {{.Footer.Year}} {{.Brand}}{{with .Footer}}{{if .LegalName}} · {{.LegalName}}{{end}}{{end}}</span><span>{{.Lang}}</span></div>
+</footer>
+{{if .GA4ID}}<div class="cookie-bar" id="cookie-bar" hidden>
+  <p>{{.UI.cookie_text}}</p>
+  <div class="ck-actions"><button id="ck-deny" class="ck-no" type="button">{{.UI.cookie_deny}}</button><button id="ck-accept" type="button">{{.UI.cookie_accept}}</button></div>
+</div>
+<script>
+(function(){var K='cookie-consent',id='{{.GA4ID}}',bar=document.getElementById('cookie-bar');
+function load(){if(window.__gax)return;window.__gax=1;window.dataLayer=window.dataLayer||[];
+function g(){window.dataLayer.push(arguments)}window.gtag=g;g('js',new Date());
+g('config',id,{anonymize_ip:true});
+var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(s);}
+try{var v=localStorage.getItem(K);
+if(v==='granted'){load();}
+else if(v!=='denied'){bar.hidden=false;
+document.getElementById('ck-accept').addEventListener('click',function(){try{localStorage.setItem(K,'granted')}catch(e){}bar.hidden=true;load();});
+document.getElementById('ck-deny').addEventListener('click',function(){try{localStorage.setItem(K,'denied')}catch(e){}bar.hidden=true});}
+}catch(e){}})();
+</script>
+{{end}}{{if .ContactBar}}<div class="float-contact" aria-label="{{.UI.contact}}">
+  {{range .ContactBar}}<a class="fc-btn fc-{{.Class}}" href="{{.Href}}" aria-label="{{.Aria}}"{{if eq .Class "whatsapp"}} target="_blank" rel="noopener"{{end}}>{{.Icon}}</a>
+  {{end}}</div>
+{{end}}</body>
+</html>{{end}}
+
+{{define "image"}}{{if .Src}}{{if .HasSrcset}}<picture>
+{{if .AVIFSrcset}}<source type="image/avif" srcset="{{.AVIFSrcset}}"{{if .Sizes}} sizes="{{.Sizes}}"{{end}}>
+{{end}}{{if .WebPSrcset}}<source type="image/webp" srcset="{{.WebPSrcset}}"{{if .Sizes}} sizes="{{.Sizes}}"{{end}}>
+{{end}}<img src="{{.Src}}"{{if .Width}} width="{{.Width}}" height="{{.Height}}"{{end}} alt="{{.Alt}}"{{if .Class}} class="{{.Class}}"{{end}} loading="{{.Loading}}" decoding="async"{{if .Priority}} fetchpriority="high"{{end}}{{if .Color}} style="background:{{.Color}}"{{end}}>
+</picture>{{else}}<img src="{{.Src}}"{{if .Width}} width="{{.Width}}" height="{{.Height}}"{{end}} alt="{{.Alt}}"{{if .Class}} class="{{.Class}}"{{end}} loading="{{.Loading}}" decoding="async"{{if .Priority}} fetchpriority="high"{{end}}{{if .Color}} style="background:{{.Color}}"{{end}}>{{end}}{{end}}{{end}}
+
+{{define "card"}}{{if .Href}}<a class="card{{if and .Icon (not .Image)}} icon-card{{end}}" href="{{.Href}}">{{else}}<div class="card{{if and .Icon (not .Image)}} icon-card{{end}}">{{end}}
+  {{if .Image}}<div class="thumb">{{template "image" .Image}}</div>{{else if .Icon}}<div class="f-icon">{{.Icon}}</div>{{end}}
+  <div class="body">
+    <h3>{{.Title}}</h3>
+    {{if .Sub}}<p>{{.Sub}}</p>{{end}}
+    {{if .Count}}<p class="count">{{.Count}}</p>{{end}}
+    {{if .Download}}<a class="dl" href="/{{.Download}}" download>{{.DownloadLabel}}</a>{{end}}
+    {{if .Meta}}<div class="meta">{{.Meta}}</div>{{end}}
+  </div>
+{{if .Href}}</a>{{else}}</div>{{end}}{{end}}

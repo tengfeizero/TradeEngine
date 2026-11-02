@@ -1,0 +1,20 @@
+slug: efg
+status: draft
+
+title:
+  en: New case study
+  zh: 新案例
+country: ""
+industry:
+  en: Industry
+  zh: 行业
+challenge:
+  en: What problem did the customer face?
+  zh: 客户当时面对什么问题？
+solution:
+  en: What did we supply and how was it deployed?
+  zh: 我们供了什么、怎么落地？
+result:
+  en: What measurable outcome followed?
+  zh: 带来了什么可量化的结果？
+products: []

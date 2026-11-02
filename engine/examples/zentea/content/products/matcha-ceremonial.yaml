@@ -1,0 +1,95 @@
+slug: matcha-ceremonial
+status: published
+order: 2
+model_no: MP-MAT-02
+category: green-tea
+scenarios: [wellness, food-service]
+certificates: [usda-organic, haccp]
+markets: [EU, US]
+hs_code: "0902100000"
+moq: 100
+moq_unit: kg
+
+lead_time:
+  en: 20–25 days after deposit
+  zh: 定金后 20–25 天
+packaging:
+  en: 1kg aluminium foil bag, nitrogen flushed, 10 bags per carton
+  zh: 1 公斤铝箔袋充氮，每箱 10 袋
+sample_policy:
+  en: 50g sample free, freight collect
+  zh: 50 克样品免费，运费到付
+
+title:
+  en: Ceremonial Grade Matcha
+  zh: 仪式级抹茶
+subtitle:
+  en: Stone-milled, vivid green, no bitterness
+  zh: 石磨研磨、色泽翠绿、无苦涩
+summary:
+  en: First-harvest tencha, shade-grown 21 days, stone-milled at 30g per hour. For premium retail and café chains.
+  zh: 头采碾茶，遮光 21 天，石磨每小时仅磨 30 克。适合高端零售与连锁咖啡。
+
+description:
+  en: |
+    Leaves are shaded for 21 days before picking to build L-theanine, then stone-milled slowly enough that the powder never heats above 40°C.
+
+    The result is a matcha that stays bright green in a latte and keeps its sweetness without added sugar.
+  zh: |
+    采摘前遮光 21 天以积累茶氨酸，再用石磨以极慢速度研磨，粉温始终不超过 40°C。
+
+    成品在拿铁中依然保持翠绿，不加糖也带自然甜感。
+
+highlights:
+  - en: 21-day shading before harvest
+    zh: 采摘前遮光 21 天
+  - en: Stone-milled below 40°C
+    zh: 石磨研磨，粉温低于 40°C
+  - en: First harvest only
+    zh: 仅用头采
+
+specs:
+  - group:
+      en: Product data
+      zh: 产品参数
+    items:
+      - key: origin
+        label:
+          en: Origin
+          zh: 产地
+        value:
+          en: Wuyi, Zhejiang
+          zh: 浙江武义
+      - key: shading
+        label:
+          en: Shading period
+          zh: 遮光期
+        value_num: 21
+        unit: days
+        filterable: true
+      - key: mesh
+        label:
+          en: Particle size
+          zh: 粒径
+        value:
+          en: 5–10 μm
+          zh: 5–10 微米
+      - key: grade
+        label:
+          en: Grade
+          zh: 等级
+        value:
+          en: Ceremonial
+          zh: 仪式级
+
+cover: media/products/matcha-cover.png
+related: [sencha-green-tea]
+updated_at: 2026-10-01
+
+seo:
+  title:
+    en: Ceremonial Grade Matcha Wholesale
+    zh: 仪式级抹茶批发
+  description:
+    en: Stone-milled first-harvest matcha, 21-day shaded, MOQ 100kg, organic certified.
+    zh: 石磨头采抹茶，遮光 21 天，起订 100 公斤，持有机认证。

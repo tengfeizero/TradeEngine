@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44" role="img" aria-label="Kestrel Aero">
+  <rect width="44" height="44" rx="9" fill="#0B0F14"/>
+  <path d="M8 27 L16 15 L22 22 L28 13 L36 27" fill="none" stroke="#35D6F0" stroke-width="2.4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 33 H30" stroke="#FFC069" stroke-width="1.6" stroke-linecap="round" opacity="0.8"/>
+</svg>

@@ -1,0 +1,30 @@
+slug: sakura-japan
+status: published
+title:
+  en: Japanese folding brand gets 2.2 kg out of the frame for walk-up apartments
+  zh: 日本折叠车品牌为楼梯房减重 2.2 公斤
+country: JP
+industry:
+  en: Folding bikes for multimodal commuting
+  zh: 多式联运通勤折叠车
+customer: Sakura Mobility
+challenge:
+  en: Their previous frame weighed 14.8 kg complete. Japanese walk-up apartments mean carrying the bike up three to five flights daily, and complaints clustered on weight rather than price.
+  zh: 原车架整车 14.8 公斤。日本楼梯房意味着每天要把车搬上三到五层，投诉集中在重量而不是价格上。
+solution:
+  en: We re-butted the tubes, moved to a single-hinge design with a double-locking cam, and cut 1.1 kg from the wheelset. Each batch now gets a 1,200 N clamp test and an X-ray weld check every 500 units.
+  zh: 我们重排了抽管方案，改为双锁定偏心扣的单铰结构，并从轮组减掉 1.1 公斤。现在每批做 1200 牛夹紧测试，每 500 台做焊缝 X 光检测。
+result:
+  en: Complete weight dropped to 12.6 kg, return rate fell from 2.8% to 0.4%, and annual volume grew from 800 to 3,200 units over three seasons.
+  zh: 整车降到 12.6 公斤，退货率从 2.8% 降到 0.4%，三个季度内年订单量从 800 台增至 3200 台。
+products: [f20-folding]
+cover: media/cases/sakura.jpg
+updated_at: 2026-09-12
+
+seo:
+  title:
+    en: Case study — folding bike at 12.6 kg for Japanese walk-ups
+    zh: 客户案例——为日本楼梯房做到 12.6 公斤的折叠车
+  description:
+    en: Re-butted tubes, single-hinge redesign and a lighter wheelset took 2.2 kg out of a folding bike, cutting returns from 2.8% to 0.4%.
+    zh: 重排抽管、单铰重设计与轻量轮组减重 2.2 公斤，退货率从 2.8% 降至 0.4%。

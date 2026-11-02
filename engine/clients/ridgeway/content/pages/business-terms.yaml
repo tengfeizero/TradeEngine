@@ -1,0 +1,75 @@
+slug: business-terms
+status: published
+title:
+  en: Business Terms
+  zh: 商业模式政策
+summary:
+  en: OEM and private-label minimums, exclusivity, IP ownership and quotation validity — answered before you ask.
+  zh: OEM/白标最小量、独家代理、知识产权归属与报价有效期——在你开口之前先答清楚。
+blocks:
+  - type: richtext
+    title:
+      en: OEM and ODM
+      zh: OEM 与 ODM
+    body:
+      en: |
+        **OEM.** We build to your drawings, your BOM and your brand. First run minimum is 100 units for mechanical frames and 50 for EPAC platforms; repeat orders start at 30. Tooling, samples and the first-article approval run are quoted separately and itemised in the proforma invoice.
+
+        **ODM.** Our existing platforms can carry your brand: minimum 30 units per model and colourway, with your logo on the frame, packaging and manual. A first ODM run takes 45–85 days depending on platform, counted from artwork approval.
+      zh: |
+        **OEM。** 按你的图纸、BOM 与品牌生产。首次量产机械车架 100 台、电助力平台 50 台起，返单 30 台起。模具、样品与首件确认另行报价，并在形式发票中逐项列出。
+
+        **ODM。** 我们的成熟平台可以贴你的品牌：单款单色 30 台起，车架、包装与说明书均可印你的标识。首次 ODM 量产按平台不同 45–85 天，从稿件确认起算。
+  - type: richtext
+    title:
+      en: Private label and exclusivity
+      zh: 白标与独家代理
+    body:
+      en: |
+        **Private label.** Your logo, packaging and manuals; no factory marks on the product or the carton. Neutral packaging is available for marketplace sellers — certification documents must stay filed under your entity.
+
+        **Exclusivity.** Granted territory by territory, never globally. It requires a committed annual volume of 10,000 units, a review every 12 months, and 90 days' notice to withdraw. If we cannot supply, you are released immediately.
+      zh: |
+        **白标。** 你的标识、包装与说明书；产品与外箱上不出现工厂标识。平台卖家可用中性包装，但认证文件必须挂在你的主体名下。
+
+        **独家代理。** 按区域授予，从不给全球独家。条件：年度承诺量 10,000 台、每 12 个月复核一次、退出提前 90 天通知。若我方供不上货，你可以立即解除。
+  - type: richtext
+    title:
+      en: IP, tooling and quotation validity
+      zh: 知识产权、模具与报价有效期
+    body:
+      en: |
+        **IP.** Your drawings, trademarks and moulds remain yours. We sign an NDA before quoting and never build your geometry for another buyer. Our platform patents remain ours.
+
+        **Tooling.** Moulds and fixtures paid for by you are yours; we store them free of charge for 24 months after the last order and ship them on request.
+
+        **Quotation validity.** Prices are valid for 30 days from the date of issue, printed on every quotation, because tube, paint and freight move. Volume breaks apply per order, not per year.
+      zh: |
+        **知识产权。** 你的图纸、商标与模具归你所有。报价前可签保密协议，我们不会把你的几何做给其他买家；我方平台专利归我方。
+
+        **模具。** 你付费的模具与夹具归你所有；最后一次订单后我们免费保管 24 个月，可应要求发回。
+
+        **报价有效期。** 自开出日起 30 天，每份报价单都会写明——管材、涂料与运费会动。阶梯价按单次订单计算，不按年度累计。
+  - type: faq
+    title:
+      en: Questions buyers ask first
+      zh: 买家最常问的几个问题
+    items:
+      - q:
+          en: Can you produce under our brand with no reference to yours?
+          zh: 能不能完全贴我们的品牌、不出现你们的任何信息？
+        a:
+          en: Yes. The only exception is what the law requires — for EU GPSR, the manufacturer's name and address must appear on the product itself.
+          zh: 可以。唯一例外是法规要求的部分——按欧盟 GPSR，产品上必须标注制造商名称与地址。
+      - q:
+          en: Who owns the design if we co-develop it?
+          zh: 共同开发的款式，设计归谁？
+        a:
+          en: You own what you paid to develop and what is unique to your brief. We keep generic improvements (a stronger joint, a cheaper finish) for use across our platform.
+          zh: 你出资开发、且专属于你的需求的部分归你。通用性改进（更牢的接头、更省的表面处理）我方保留用于平台其他款式。
+      - q:
+          en: Do you sell to our competitors in the same country?
+          zh: 会把同款卖给同国的竞争对手吗？
+        a:
+          en: Without an exclusivity agreement, we may supply other buyers in your market, but never your geometry or your paint and decal files. An exclusivity agreement makes that boundary contractual.
+          zh: 没有独家协议时，我们可能向你的市场供应其他买家，但绝不会用你的几何、涂装与贴花文件。签独家协议后，这条边界变成合同条款。

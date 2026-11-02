@@ -1,0 +1,34 @@
+slug: outback-survey
+status: published
+title:
+  en: Monthly pit survey in the Pilbara at 46 degrees
+  zh: 皮尔巴拉 46 度高温下的月度采坑测绘
+country: AU
+industry:
+  en: Iron ore mining
+  zh: 铁矿开采
+customer: Pilbara Iron Group, survey department
+challenge:
+  en: |
+    A monthly volumetric survey of four open pits, previously done by a two-person ground crew with a total station over nine days. At 46 °C ambient the crew worked four hours a day, and the resulting model had gaps where the pit wall was unsafe to approach.
+
+    They had tried a survey-grade fixed wing, but the launch and recovery area was 30 minutes from the pit and the aircraft could not hold position in the afternoon crosswind.
+  zh: |
+    四个露天采坑的月度方量测绘，原由两人地面组用全站仪做九天。环境温度 46 ℃ 时一天只能干四小时，且坑壁不可接近的位置在模型里留下空洞。
+
+    他们试过测绘级固定翼，但起降区离坑口 30 分钟车程，且下午的侧风下飞机无法定点。
+solution:
+  en: |
+    Eighteen IN-25 airframes flying a terrain-following grid at 90 m, with no RTK base station on site. We set up a permanent base on the workshop roof and surveyed it into the mine grid once, so every flight afterwards corrects to the same reference without a daily setup.
+
+    The IP54 airframe and sealed gimbal were specified for the dust, and the battery bay is cooled by the same airflow as the ESC heatsink, which keeps pack temperature under 55 °C during a 22-minute mapping flight.
+  zh: |
+    18 台 IN-25 按仿地航线在 90 米高度做网格飞行，现场不设 RTK 基站。我们在车间屋顶建了永久基准，一次性测入矿区坐标，之后每次飞行都校正到同一参考，不需每日架站。
+
+    IP54 机身与密封云台是为粉尘定的；电池仓与电调散热片共用风道，22 分钟测绘飞行中电池温度保持在 55 ℃ 以下。
+result:
+  en: 1,240 hectares surveyed per month with 2 field staff instead of 6
+  zh: 每月完成 1,240 公顷测绘，外业人员从 6 人减到 2 人
+products: [in-25]
+cover: media/cases/outback-survey.jpg
+updated_at: 2026-10-22

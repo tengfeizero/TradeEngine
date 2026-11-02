@@ -1,0 +1,60 @@
+slug: contact
+status: published
+title:
+  en: Contact the bench
+  zh: 联系拼配台
+summary:
+  en: What to put in the first email so the first reply is useful. Samples leave Hangzhou on Tuesdays and Fridays.
+  zh: 第一封邮件写什么，才能让第一封回信有用。样品每周二、周五从杭州发出。
+cover: media/lab/packing.jpg
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    title:
+      en: Five lines that get you a real answer
+      zh: 五行字，换一封有用的回信
+    lead:
+      en: We answer every enquiry within one business day. The ones we can answer properly look like this — and none of them start with "please send your catalogue".
+    body:
+      en: |
+        Category and the cup you want, in your own words. "A green tea for a supermarket own-brand range, less bitter than what we sell now, under 30 dollars a kilo" is a brief. "Premium quality tea" is not.
+
+        Market and label language, because it decides the pesticide panel, the certification and half the artwork. Your annual volume, even a rough band, because 300 kg and 12 tonnes are different conversations. Your shelf date, because that decides whether we can develop a blend or have to match from stock. And whether you are the buyer, the brand owner or an agency — it changes who has to approve the artwork.
+
+        Samples go out on Tuesdays and Fridays by courier, freight collect. If you are in Hangzhou, come to Yuhang instead; a bench session is faster than three rounds of email and you can taste the two lots we would have argued about.
+      zh: |
+        品类，以及你想要的那杯，用你自己的话说。「给超市自有品牌线的一款绿茶，比我们现在卖的更不苦，每公斤 30 美元以内」是需求。「高品质茶叶」不是。
+
+        市场与标签语言——它决定农残面板、认证和一半的包装工作。你的年用量，哪怕是大概区间——300 公斤和 12 吨是两场不同的对话。你的上架日期——它决定我们是能做开发，还是只能从现货里对上。还有你的角色是买家、品牌方还是代理——这决定谁要确认包装。
+
+        样品每周二、周五快递发出，运费到付。如果你在杭州，直接来余杭；一场杯测比三轮邮件快，而且你能喝到我们本来会争论的那两支。
+  - type: inquiry
+  - type: faq
+    title:
+      en: Before you write
+      zh: 写信之前
+    items:
+      - q:
+          en: What does a sample cost?
+          zh: 样品收费吗
+        a:
+          en: The tea is charged at cost, the courier is collect. A typical set of three 200 g samples is 15 to 40 dollars of tea depending on category. It is deducted from your first order over 500 kg.
+          zh: 茶按成本收，运费到付。三支 200 克的常规样品，视品类约 15 至 40 美元的茶钱。订单超过 500 公斤时抵扣。
+      - q:
+          en: How fast can you ship an urgent order?
+          zh: 急单多快能发
+        a:
+          en: If the base lot is in stock and the packaging is standard, 10 days to a booked container. If it needs a new dieline, no — and we would rather tell you that on day one than on day twenty.
+          zh: 基底现货、包装是标准规格的情况下，10 天可订舱。要开新刀版就不行——这话我们在第一天说，而不是第二十天。
+      - q:
+          en: Do you work with small brands?
+          zh: 接小品牌吗
+        a:
+          en: Yes, at 300 kg per SKU. What we cannot do is 30 kg of six different teas; the changeover cost is the same as for a tonne and it shows up in the price.
+          zh: 接，单 SKU 300 公斤起。做不了的是六款茶各 30 公斤——换产成本跟做一吨一样，最后都会体现在价格里。
+      - q:
+          en: Can we visit without an appointment?
+          zh: 可以不用预约直接来吗
+        a:
+          en: Ring first. The packing hall is a food facility and visitors need a coat, and the person you want to talk to is probably at the cupping table with a mouth full of tea.
+          zh: 请先打个电话。包装车间是食品区域，访客要穿工作服；而你想找的那个人，多半正在杯测台上、嘴里含着茶。

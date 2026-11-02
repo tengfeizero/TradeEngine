@@ -1,0 +1,154 @@
+slug: technology
+status: published
+title:
+  en: Four subsystems we build ourselves, and why
+  zh: 我们自研的四个子系统，以及为什么
+summary:
+  en: Flight control, gimbal stabilization, video transmission and battery management are in-house. Everything else we buy from the best supplier and say so.
+  zh: 飞控、云台增稳、图传与电池管理自研。其余部件从最合适的供应商采购，并且在参数表里写清楚。
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    kicker:
+      en: Core Technology
+      zh: 核心技术
+    title:
+      en: Vertical integration, but only where it pays
+      zh: 垂直整合，但只在划算的地方
+    lead:
+      en: A drone has about 40 significant subsystems. We make four of them and buy the other 36.
+      zh: 一台无人机大约有 40 个重要子系统。我们自己做 4 个，其余 36 个靠采购。
+    body:
+      en: |
+        Vertical integration is only worth it when the supplier's off-the-shelf part fails in a way your customers will blame you for. For us that is flight control, gimbal stabilization, video transmission, and battery management — the four places where a generic part produces a failure that shows up as "your drone crashed" rather than "the ESC failed".
+
+        Everything else is bought from suppliers who make it better than we would. The motors are T-Motor. The thermal cores are from a supplier we will name in an NDA. The RTK module is a commercial board with our own antenna layout. Saying so costs us nothing and saves the customer a month of reverse engineering.
+
+        The consequence is that our spec sheets contain supplier names, and our failure analysis points at our own code where it belongs.
+      zh: |
+        只有当供应商的现货件坏起来会让客户来怪你的时候，垂直整合才值得做。对我们来说那是飞控、云台增稳、图传与电池管理——这四处用通用件产生的失效，最终表现为「你们的飞机掉下来了」，而不是「电调坏了」。
+
+        其余部件从比我们做得更好的供应商采购。电机是 T-Motor。热成像机芯来自一家签了 NDA 才方便点名的供应商。RTK 是商用板卡配我们自己画的射频天线。把这些写出来不损失什么，还给客户省一个月的逆向工程。
+
+        结果是我们的参数表里带供应商名字，失效分析会指向我们自己的代码——该指的地方。
+  - type: image_text
+    kicker:
+      en: Subsystem 01
+      zh: 子系统 01
+    title:
+      en: Flight control — two of everything that can fail silently
+      zh: 飞控：凡是会静默失效的，都做两份
+    body:
+      en: |
+        An IMU does not fail loudly. It drifts, and the aircraft starts compensating for a horizon that is not there. Our controller runs two IMUs on separate power rails with different sampling phases, and compares them every control cycle. When the disagreement exceeds the noise envelope for 200 ms, it drops to the healthy one and logs the event.
+
+        The same logic applies to the compass and the barometer. A single-sensor aircraft that loses its compass in a magnetic field near a substation will either refuse to fly or fly badly. Ours refuses to fly and tells the operator which sensor it distrusts.
+      zh: |
+        陀螺不会大声坏掉。它漂移，然后飞机开始为一个并不存在的水平面做补偿。我们的控制器跑两颗独立供电、采样相位不同的 IMU，每个控制周期互相比对。当偏差超过噪声包络持续 200 毫秒，就切到健康的那一颗并记录事件。
+
+        罗盘与气压计同理。单传感器的飞机在变电站附近的磁场里丢了罗盘，要么拒绝起飞，要么飞得很糟。我们的选择是拒绝起飞，并告诉操作员它不信任哪个传感器。
+    checks:
+      - en: Dual IMU on independent rails, cross-checked every cycle
+        zh: 双 IMU 独立供电，每个周期交叉比对
+      - en: Sensor fault is reported by name, not as a generic error code
+        zh: 传感器故障按名称上报，不是一个笼统的错误码
+      - en: Degraded mode flies home on the remaining sensor set
+        zh: 降级模式用剩余传感器返航
+    image: media/products/cat-inspection.jpg
+  - type: image_text
+    flip: true
+    kicker:
+      en: Subsystem 02
+      zh: 子系统 02
+    title:
+      en: Transmission — the number on the box is the FCC number
+      zh: 图传：包装上写的数字是 FCC 的数字
+    body:
+      en: |
+        Every manufacturer quotes 15 km. In the EU you will get 8 km, because 15 km is measured under FCC power limits and CE allows less. We print both numbers, on the box, in the same font size.
+
+        The link runs three bands with adaptive hopping, and it degrades to 720p before it drops frames — a lower resolution picture is more useful to a pilot than a frozen one. The link quality is logged with the flight so a support case about "the video cut out" has data attached.
+      zh: |
+        每家都写 15 公里。在欧盟你只能得到 8 公里，因为 15 公里是 FCC 功率限值下的测量值，CE 允许的更少。我们把两个数字都印在包装上，字号一样大。
+
+        链路跑三个频段并自适应跳频，在丢帧之前先降到 720p——对飞手来说，低分辨率的画面比卡住的画面有用。链路质量随飞行日志一起记录，所以「图传断了」这类支持工单是带数据来的。
+    image: media/products/cat-security.jpg
+  - type: image_text
+    kicker:
+      en: Subsystem 03
+      zh: 子系统 03
+    title:
+      en: Battery — the thermal model decides the warranty
+      zh: 电池：热模型决定质保条款
+    body:
+      en: |
+        A lithium pack that is discharged at 40 °C ages twice as fast as one at 25 °C, and the customer blames the aircraft, not the weather. Our BMS models cell temperature per pack, derates the current limit when a cell exceeds 55 °C, and writes the temperature history into the pack so a warranty claim can be checked against what actually happened.
+
+        That history is also why we can offer 600 cycles to 80 percent on the agricultural packs and only 300 on the high-discharge FPV packs. The number is not marketing; it is what the model predicts for the way each pack is actually used.
+      zh: |
+        在 40 ℃ 下放电的锂电池，老化速度是 25 ℃ 时的两倍，而客户会怪飞机，不会怪天气。我们的 BMS 按电池包建模电芯温度，单芯超过 55 ℃ 就下调电流限值，并把温度历史写进电池——质保索赔可以对着真实发生过的数据核。
+
+        也正因为有这段历史，我们敢给农业电池 600 次循环到 80%，而高倍率 FPV 电池只给 300 次。这个数字不是营销，是模型按各自真实用法算出来的。
+    checks:
+      - en: Per-cell temperature history stored in the pack
+        zh: 单芯温度历史存在电池内
+      - en: Current derating above 55 °C instead of a shutdown
+        zh: 超过 55 ℃ 降额而不是直接断电
+      - en: Cycle rating quoted per use case, not per product line
+        zh: 循环次数按使用场景给，不按产品线给
+    image: media/products/cat-agriculture.jpg
+  - type: faq
+    kicker:
+      en: FAQ
+      zh: 常见问题
+    title:
+      en: Questions engineers actually ask
+      zh: 工程师真正会问的问题
+    items:
+      - q:
+          en: Can we load our own firmware?
+          zh: 可以刷我们自己的固件吗
+        a:
+          en: |
+            On the inspection and cargo platforms, yes — the autopilot exposes a signed firmware slot and we provide the build toolchain under NDA. On consumer and agricultural platforms the flight control is locked, because the certification reports are tied to that firmware hash. Changing it voids the CE and FCC basis, and we will tell you that in writing rather than after the fact.
+          zh: |
+            巡检与载货平台可以——飞控开放一个签名固件槽，我们按 NDA 提供编译工具链。消费与农业平台的飞控是锁定的，因为认证报告绑定了固件哈希。刷掉它，CE 与 FCC 的依据就没了；这一点我们写在纸上告诉你，而不是事后再说。
+      - q:
+          en: What is the real MTBF on the motors?
+          zh: 电机的真实 MTBF 是多少
+        a:
+          en: |
+            We do not publish a single number, because it depends on prop balance and ambient temperature. What we do publish is the field return rate by model per quarter, and the failure mode breakdown. Last quarter it was 0.7 percent on the 2806.5 motor, with 81 percent of returns being bearing noise rather than a stopped motor.
+          zh: |
+            我们不给单一数字，因为它取决于桨叶平衡与环境温度。我们公布的是按型号、按季度的现场返修率与失效模式构成。上个季度 2806.5 电机是 0.7%，其中 81% 的返修是轴承异响，而不是电机停转。
+      - q:
+          en: Can the gimbal be swapped between airframes?
+          zh: 云台可以在不同机身之间换吗
+        a:
+          en: |
+            Within a platform family, yes, and it is a field operation with two connectors. Across families, no — the ribbon and the mounting pattern differ, and we would rather say that than sell an adapter that resonates at the wrong frequency.
+          zh: |
+            同一平台家族内可以，是两个接插件的现场操作。跨家族不行——排线与安装孔位都不同，而且我们宁愿直说，也不想卖一个会在错误频率上共振的转接件。
+      - q:
+          en: Do you support a customer-supplied thermal core?
+          zh: 可以配客户指定的热成像机芯吗
+        a:
+          en: |
+            On the IN-25 we can integrate a customer-supplied core if it exposes a standard LVDS or USB interface and you accept the integration cost, which is roughly 4 to 6 weeks of engineering. We have done it twice, both times for utilities with an existing image-processing pipeline.
+          zh: |
+            IN-25 可以集成客户指定的机芯，前提是它提供标准 LVDS 或 USB 接口，且你接受集成成本——大约 4 到 6 周工程投入。我们做过两次，都是给已有图像处理流程的电力客户。
+
+  - type: cta
+    kicker:
+      en: Get in touch
+      zh: 联系我们
+    title:
+      en: Ask for the failure analysis, not the brochure
+      zh: 要失效分析，不要画册
+    body:
+      en: We will send the FMEA for whichever platform you are evaluating, with the failure modes we consider credible and the ones we have ruled out. It is more useful than a spec sheet and less flattering.
+      zh: 你在评估哪一款，我们就发那一款的 FMEA，包含我们认定可信的失效模式，以及已排除的那些。它比参数表有用，也没那么好看。
+    cta_text:
+      en: Request the FMEA
+      zh: 索取 FMEA
+    cta_href: "/contact/"

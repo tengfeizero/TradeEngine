@@ -1,0 +1,97 @@
+slug: home
+status: published
+title:
+  en: Single-origin tea from mist-covered mountains
+  zh: 来自云雾山的原产地好茶
+summary:
+  en: BRC-ready supply, organic certified, 26 years of export experience to the EU, North America and Japan.
+  zh: 符合 BRC 标准、持有机认证，26 年出口欧盟、北美与日本的经验。
+updated_at: 2026-10-18
+blocks:
+  - type: hero
+    kicker:
+      en: Wuyi · Zhejiang · since 1998
+      zh: 浙江武义 · 始于 1998
+    headline:
+      en: From misty mountains to your shelf
+      zh: 从云雾茶园到你的货架
+    sub:
+      en: We lock a cup profile for your brand, then ship it the same way every season. Organic certified, BRC-ready, 500 kg minimum.
+      zh: 我们为你的品牌锁定杯感，此后每一季都按同一标准交付。持有机认证、符合 BRC 标准，500 公斤起订。
+    cta_text:
+      en: Request a quote
+      zh: 获取报价
+    cta_href: "/contact/"
+    image: media/products/sencha-cover.png
+  - type: stats
+    items:
+      - value: "26"
+        label: { en: Years exporting, zh: 出口年数 }
+        note: { en: since 1998, zh: 自 1998 年起 }
+      - value: "1200m"
+        label: { en: Garden altitude, zh: 茶园海拔 }
+        note: { en: single origin, zh: 单一产地 }
+      - value: "3"
+        label: { en: Organic schemes, zh: 有机认证体系 }
+        note: { en: EU / USDA / JAS, zh: 欧盟 / 美国 / 日本 }
+      - value: "12h"
+        label: { en: Reply time, zh: 回复时效 }
+        note: { en: business days, zh: 工作日 }
+  - type: product_grid
+    title:
+      en: Tea we ship most
+      zh: 出口量最大的茶
+    intro:
+      en: Two grades cover most private-label briefs. Both are blended to a fixed specification.
+      zh: 两个等级即可覆盖多数自有品牌需求，均按固定规格拼配。
+    featured: true
+    limit: 6
+  - type: image_text
+    title:
+      en: A cup profile you can put on a contract
+      zh: 可以写进合同的杯感
+    body:
+      en: |
+        Most tea buyers lose margin in re-blending: the March sample and the September shipment taste different, so the label has to change and the shelf position goes with it.
+
+        We reserve garden plots for your specification, blend to a locked recipe, and ship in pre-agreed lots — so what your customer tastes in spring is what they taste at Christmas.
+      zh: |
+        多数茶叶买家把利润耗在反复拼配上：三月样品与九月到货口感不同，标签要改，货架位置也跟着丢。
+
+        我们为你的规格锁定茶园，按固定配方拼配，并按预先约定的批次发运——客户春天喝到的味道，圣诞节还是同一个。
+    bullets:
+      - en: Locked recipe, no seasonal re-blend
+        zh: 配方锁定，不随季节重拼
+      - en: Pre-agreed shipping lots
+        zh: 预先约定发运批次
+      - en: Retained samples for every lot
+        zh: 每批留样可追溯
+    image: media/products/matcha-cover.png
+    cta_text:
+      en: See the factory
+      zh: 看看工厂
+    cta_href: "/factory/"
+  - type: scenario_grid
+    title:
+      en: Who we supply
+      zh: 我们供应谁
+    intro:
+      en: The same leaf, packed and specified differently for each channel.
+      zh: 同一片叶子，按渠道做不同的规格与包装。
+  - type: case_grid
+    title:
+      en: Recent work
+      zh: 近期案例
+    limit: 1
+  - type: cta
+    title:
+      en: Send your specification, get a costed offer
+      zh: 发来你的规格，收到带成本的报价
+    body:
+      en: Include volume, target market, certification requirements and destination port. We reply within 12 hours on business days.
+      zh: 请注明采购量、目标市场、认证要求与目的港。工作日 12 小时内回复。
+    cta_text:
+      en: Request a quote
+      zh: 获取报价
+    cta_href: "/contact/"
+  - type: inquiry

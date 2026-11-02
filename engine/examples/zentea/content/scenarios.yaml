@@ -1,0 +1,23 @@
+- slug: daily-drink
+  status: published
+  order: 1
+  name: { en: Daily Drinking, zh: 日常饮用 }
+  summary:
+    en: Consistent cup quality for private label and supermarket ranges.
+    zh: 稳定杯感，适合自有品牌与商超渠道。
+
+- slug: wellness
+  status: published
+  order: 2
+  name: { en: Health & Wellness, zh: 养生保健 }
+  summary:
+    en: High theanine grades for functional tea blends.
+    zh: 高茶氨酸等级，适合功能性拼配。
+
+- slug: food-service
+  status: published
+  order: 3
+  name: { en: Food Service, zh: 餐饮供应 }
+  summary:
+    en: Cold-brew stable extracts and bulk leaf for chains.
+    zh: 冷泡稳定萃取与大包装散茶，服务连锁餐饮。

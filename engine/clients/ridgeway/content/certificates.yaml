@@ -1,0 +1,71 @@
+- slug: iso-9001
+  status: published
+  name:
+    en: ISO 9001:2015
+    zh: ISO 9001:2015 质量体系
+  issuer: SGS China
+  number: CN-QMS-2024-11802
+  issued: 2024-06-18
+  expires: 2027-06-17
+  markets: [EU, US, JP, AU]
+  file: media/certs/iso-9001.pdf
+
+- slug: en-iso-4210
+  status: published
+  name:
+    en: EN ISO 4210
+    zh: EN ISO 4210 自行车安全
+  issuer: TÜV Rheinland
+  number: TR-4210-2025-0471
+  issued: 2025-03-04
+  expires: 2028-03-03
+  markets: [EU]
+  file: media/certs/en-iso-4210.pdf
+
+- slug: en-15194
+  status: published
+  name:
+    en: EN 15194 (EPAC)
+    zh: EN 15194 电助力车
+  issuer: TÜV Rheinland
+  number: TR-15194-2025-0912
+  issued: 2025-04-22
+  expires: 2028-04-21
+  markets: [EU]
+  file: media/certs/en-15194.pdf
+
+- slug: ce-marking
+  status: published
+  name:
+    en: CE Marking
+    zh: CE 符合性声明
+  issuer: Ridgeway Cycles (self-declaration, TÜV witnessed)
+  number: CE-2025-RDW-01
+  issued: 2025-05-10
+  expires: 2030-05-09
+  markets: [EU]
+  file: media/certs/ce-marking.pdf
+
+- slug: tuv-audit
+  status: published
+  name:
+    en: TÜV Factory Audit
+    zh: TÜV 工厂审核
+  issuer: TÜV Rheinland
+  number: TR-FA-2025-2231
+  issued: 2025-02-14
+  expires: 2027-02-13
+  markets: [EU, US]
+  file: media/certs/tuv-audit.pdf
+
+- slug: bsci
+  status: published
+  name:
+    en: amfori BSCI
+    zh: amfori BSCI 社会责任
+  issuer: amfori
+  number: BSCI-2024-RDW-0093
+  issued: 2025-11-08
+  expires: 2027-11-07
+  markets: [EU, US]
+  file: media/certs/bsci.pdf

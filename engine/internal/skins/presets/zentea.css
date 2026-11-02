@@ -1,0 +1,284 @@
+/*!
+ * @skin zentea
+ * @label 茶韵东方（茶 / 食品 / 高净值农产品出口）
+ * @category 食品农业
+ * @tone light
+ */
+
+/* 语言严格转译自 design/zentea-website.html（CSS Zen Garden：HTML 说有什么，
+   皮肤说像什么）。五条设计语法：
+   1) 米白纸底：body 是 #F5F0E8 而非白——浅带 #FAF6EF 与白卡叠在纸底上，
+      页脚也是浅色 #EDE6D8（与 ecobike 的深页脚相反）。
+   2) 衬线标题：h1–h4 用高对比衬线（Cormorant Garamond / 宋体，站点在
+      theme.yaml 自托管 woff2），weight 500，正文 Inter。hero 64px/300。
+   3) 暗带：hero 是「墨黑→茶山绿」135deg 渐变 + jade/gold 辉光 + 山峦剪影
+      （SVG data-uri）；cta 墨黑 #1A1A1A；inquiry 茶山绿渐变——满宽（::before 100vw）。
+   4) 金色点缀：节标题下 48px 金线（section-head::after）、眉题、暗带数字单位。
+   5) 锐利几何：按钮 2px 圆角、卡片 4px、图标是「圆形墨黑底座 + 纸色描边」
+      （与 ecobike 的薄荷圆角底座相对）；流程序号是 2px 玉绿圆环 + 顶部虚线。
+   配色不改：全部取设计稿 :root 原值（#1A1A1A/#2C2C2C/#F5F0E8/#FAF6EF/#EDE6D8/
+   #5B7F5B/#3D5C3D/#8AAB8A/#C4A35A/#D8D0BE）。同色板内加深两处过 WCAG AA：
+   小字正文 #63605C（muted #8A8580 往墨混 45%，浅底 ≥5.0，原值 3.0–3.7 不过）、
+   浅底上的金/玉绿小字用 #82622A / #3D5C3D；按钮白字在 #5B7F5B 上 4.53:1 刚过，
+   保留设计稿原色。 */
+
+/* ---- 主题令牌对齐设计稿 ---- */
+html[data-skin=zentea]{
+  --paper:#F5F0E8;--surface:#FAF6EF;--ink:#1A1A1A;--muted:#8A8580;
+  --muted-text:#63605C;--primary:#5B7F5B;--primary-fill:#3D5C3D;
+  --primary-text:#3D5C3D;--accent:#82622A;--accent-text:#82622A;--radius:2px}
+html[data-skin=zentea] body{font-family:'Inter','Segoe UI',system-ui,'PingFang SC','Microsoft YaHei',sans-serif;font-size:16px;line-height:1.7;color:#2C2C2C;overflow-x:hidden;overflow-x:clip}
+
+/* ---- 版心：1320 + 40px（设计稿 .container），节距 100px ---- */
+html[data-skin=zentea] main{max-width:1320px;padding:0 40px 0}
+html[data-skin=zentea] .section{padding:100px 0}
+
+/* ---- 通栏色带：几何与底色拆两条（:is() 含 :has 的共享规则特异性会压过
+   单类覆盖，暗带底色必须各自独立成规则——ecobike 的教训） ---- */
+html[data-skin=zentea] :is(.hero,.cta,.inquiry,
+  .image-text,.faq,.testimonials,.factory,
+  section:has(>.features),section:has(>.team),
+  section:has(>.gallery),section:has(>.logos)){position:relative;isolation:isolate}
+html[data-skin=zentea] :is(.hero,.cta,.inquiry,
+  .image-text,.faq,.testimonials,.factory,
+  section:has(>.features),section:has(>.team),
+  section:has(>.gallery),section:has(>.logos))::before{
+  content:"";position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);z-index:-1}
+/* 浅带：#FAF6EF（设计稿 tea-types / craft / cert-section） */
+html[data-skin=zentea] :is(.image-text,.faq,.testimonials,.factory,
+  section:has(>.features),section:has(>.team),
+  section:has(>.gallery),section:has(>.logos))::before{background:#FAF6EF}
+
+/* ---- 排版：衬线标题（站点 theme.yaml 自托管 Cormorant，缺省回退系统衬线） ---- */
+html[data-skin=zentea] h1,html[data-skin=zentea] h2,html[data-skin=zentea] h3,html[data-skin=zentea] h4{
+  font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',Georgia,'Times New Roman',serif;
+  font-weight:500;color:#1A1A1A;letter-spacing:-.01em}
+html[data-skin=zentea] h2{font-size:42px;line-height:1.3}
+html[data-skin=zentea] .lead{font-size:16px;font-weight:300;line-height:1.8;color:#63605C;max-width:60ch}
+html[data-skin=zentea] .kicker{font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#3D5C3D;margin:0 0 16px}
+html[data-skin=zentea] .hl{font-style:italic;font-weight:400;color:#8AAB8A}
+
+/* 节标题：中轴三段式 + 金线（设计稿 divider-zen） */
+html[data-skin=zentea] .section-head{flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:0;margin-bottom:64px}
+html[data-skin=zentea] .section-head h2{margin:0}
+html[data-skin=zentea] .section-head .lead{margin:16px 0 0;max-width:600px}
+html[data-skin=zentea] .section-head::after{content:"";width:48px;height:2px;background:#C4A35A;margin-top:24px}
+html[data-skin=zentea] .section-head .more{margin-top:20px;color:#82622A;font-size:14px;font-weight:600;border:0}
+
+/* ---- 按钮：2px 圆角（设计稿 .btn-primary） ---- */
+html[data-skin=zentea] .btn{border-radius:2px;font-weight:600;font-size:14px;letter-spacing:.03em;padding:14px 36px;background:#5B7F5B}
+html[data-skin=zentea] .btn:hover{filter:none;background:#3D5C3D;transform:translateY(-2px)}
+html[data-skin=zentea] .btn.ghost{background:transparent;color:#1A1A1A;border:1px solid #C9C2B2}
+html[data-skin=zentea] .btn.ghost:hover{background:transparent;border-color:#5B7F5B;color:#3D5C3D;transform:none}
+
+/* ---- 页头：sticky 毛玻璃纸底（设计稿 nav） ---- */
+html[data-skin=zentea] .site-header{position:sticky;top:0;z-index:50;background:rgba(245,240,232,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #D8D0BE;padding:0 40px;min-height:72px}
+html[data-skin=zentea] .brand{font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',Georgia,serif;font-size:24px;font-weight:600;color:#1A1A1A;letter-spacing:.02em}
+html[data-skin=zentea] .site-nav{gap:36px}
+html[data-skin=zentea] .site-nav a{font-weight:500;font-size:14px;opacity:1;color:#2C2C2C}
+html[data-skin=zentea] .site-nav a:hover{color:#5B7F5B}
+html[data-skin=zentea] .lang-switch a{color:#63605C}
+
+/* ---- 首屏：墨黑→茶山绿渐变满宽暗带 + 辉光 + 山峦剪影，文案左对齐 ---- */
+html[data-skin=zentea] .hero{padding:96px 0 100px;border-bottom:0;border-radius:0;margin-top:0;text-align:left}
+html[data-skin=zentea] .hero::before{
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 400' preserveAspectRatio='none'><path d='M0,400 L0,280 Q100,200 200,240 Q300,280 400,180 Q500,80 600,160 Q700,240 800,140 Q900,40 1000,120 Q1100,200 1200,100 Q1300,40 1440,120 L1440,400 Z' fill='%231a2818' opacity='0.6'/><path d='M0,400 L0,320 Q150,260 300,300 Q450,340 600,260 Q750,180 900,280 Q1050,360 1200,280 Q1350,220 1440,260 L1440,400 Z' fill='%231a1a1a' opacity='0.5'/></svg>") bottom/cover no-repeat,
+    radial-gradient(ellipse at 70% 30%,rgba(91,127,91,.15) 0%,transparent 50%),
+    radial-gradient(ellipse at 20% 80%,rgba(196,163,90,.08) 0%,transparent 50%),
+    linear-gradient(135deg,#1a1a1a 0%,#2a3a28 40%,#1a2818 100%)}
+html[data-skin=zentea] .hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:0;max-width:680px}
+html[data-skin=zentea] .hero .badge{background:transparent;border:1px solid rgba(196,163,90,.4);border-radius:2px;color:#C4A35A;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;margin:0 0 28px}
+html[data-skin=zentea] .hero .badge i{background:#C4A35A}
+html[data-skin=zentea] .hero .kicker{color:#C4A35A;letter-spacing:.1em;margin:0 0 16px}
+html[data-skin=zentea] .hero h1{font-size:64px;line-height:1.15;font-weight:300;letter-spacing:-.01em;max-width:14em;margin:0;color:#F5F0E8}
+html[data-skin=zentea] .hero p{font-size:18px;font-weight:300;line-height:1.8;color:rgba(245,240,232,.75);max-width:520px;margin:24px 0 0}
+html[data-skin=zentea] .hero .btn{margin-top:0}
+html[data-skin=zentea] .hero .btn.ghost{color:#F5F0E8;border-color:rgba(245,240,232,.3)}
+html[data-skin=zentea] .hero .btn.ghost:hover{border-color:#F5F0E8;color:#F5F0E8;transform:none}
+html[data-skin=zentea] .hero-cta{margin-top:40px}
+html[data-skin=zentea] .hero-img{aspect-ratio:16/8;border-radius:4px;box-shadow:0 8px 40px rgba(26,26,26,.1)}
+html[data-skin=zentea] .hero.split .hero-img{margin-top:0}
+/* 首屏数据行：顶线 + 衬线大数字 + 金色单位（设计稿 .hero-stats） */
+html[data-skin=zentea] .hero-stats{border-top:1px solid rgba(245,240,232,.1);padding-top:32px;margin-top:64px;gap:48px;justify-content:flex-start}
+html[data-skin=zentea] .hero-stats>div{text-align:left}
+html[data-skin=zentea] .hero-stats b{font-family:'Cormorant Garamond','Songti SC',Georgia,serif;font-size:36px;font-weight:500;color:#F5F0E8;letter-spacing:0}
+html[data-skin=zentea] .hero-stats span{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:rgba(245,240,232,.5);margin-top:4px}
+
+/* ---- 数据条：白卡细边（设计稿 .cert-badge 几何） ---- */
+html[data-skin=zentea] .stats{border:0;padding:0;gap:20px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+html[data-skin=zentea] .stat{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px;padding:28px 20px;text-align:center}
+html[data-skin=zentea] .stat .value{font-family:'Cormorant Garamond','Songti SC',Georgia,serif;font-size:30px;font-weight:500;color:#1A1A1A}
+html[data-skin=zentea] .stat .label{font-size:11px;letter-spacing:.03em;text-transform:uppercase;color:#63605C;margin-top:4px}
+html[data-skin=zentea] .stat .note{font-size:12px;color:#63605C}
+
+/* ---- 卡片：白底 4px 细边 #D8D0BE，悬停浮起描玉绿（设计稿 .tea-card） ---- */
+html[data-skin=zentea] .grid{grid-template-columns:repeat(3,1fr);gap:24px}
+html[data-skin=zentea] .card{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px;overflow:hidden}
+html[data-skin=zentea] a.card:hover{transform:translateY(-6px);box-shadow:0 8px 40px rgba(26,26,26,.1);border-color:#8AAB8A}
+html[data-skin=zentea] .card .body{padding:28px 24px}
+html[data-skin=zentea] .card h3{font-size:22px;margin:0 0 8px}
+html[data-skin=zentea] .card p{font-size:13px;line-height:1.6;color:#63605C}
+html[data-skin=zentea] .card .meta{font-size:12px;color:#63605C;letter-spacing:.02em}
+html[data-skin=zentea] .card .count{font-size:12px;color:#3D5C3D;font-weight:600}
+html[data-skin=zentea] a.dl{font-size:13px;font-weight:600;color:#82622A}
+html[data-skin=zentea] .card img{border-radius:0}
+
+/* ---- 徽章 chips：paper-dark 底墨字（设计稿 .tea-tag） ---- */
+html[data-skin=zentea] .highlights li{background:#EDE6D8;border:0;color:#2C2C2C;font-size:11px;font-weight:500;border-radius:2px;padding:4px 10px}
+
+/* ---- 图标卡：白/浅卡 + 圆形墨黑底座 + 纸色描边图标（设计稿 .scenario-icon） ---- */
+html[data-skin=zentea] .feature{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px;padding:24px}
+html[data-skin=zentea] .feature:hover{box-shadow:0 2px 20px rgba(26,26,26,.06)}
+html[data-skin=zentea] .feature h3{font-size:16px}
+html[data-skin=zentea] .feature p{font-size:13px;color:#63605C;line-height:1.6}
+html[data-skin=zentea] .feature .no{color:#82622A;font-weight:600;font-size:13px}
+html[data-skin=zentea] .feature .f-icon,html[data-skin=zentea] .card.icon-card .f-icon{
+  width:54px;height:54px;border-radius:50%;background:#1A1A1A;color:#F5F0E8;margin:0 0 18px}
+html[data-skin=zentea] .feature .f-icon .ic,html[data-skin=zentea] .card.icon-card .f-icon .ic{width:26px;height:26px;stroke-width:1.5}
+html[data-skin=zentea] .card.icon-card{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px}
+html[data-skin=zentea] .card.icon-card .f-icon{margin:28px 24px 0}
+html[data-skin=zentea] .card.icon-card .body{padding-top:16px}
+html[data-skin=zentea] .card.icon-card h3{font-size:20px}
+html[data-skin=zentea] .checks .ic{color:#3D5C3D;stroke-width:2}
+
+/* ---- 图文：36px 衬线标题 + 4px 圆角图（设计稿 .origin 内容侧语言） ---- */
+html[data-skin=zentea] .image-text{gap:80px}
+html[data-skin=zentea] .image-text h2{font-size:40px}
+html[data-skin=zentea] .image-text .kicker{color:#82622A}
+html[data-skin=zentea] .image-text p{font-size:15px;font-weight:300;line-height:1.9;color:#63605C}
+html[data-skin=zentea] .image-text .media img{border-radius:4px;box-shadow:0 8px 40px rgba(26,26,26,.1)}
+html[data-skin=zentea] .image-text ul{color:#63605C;font-size:14px}
+
+/* ---- 流程：玉绿圆环序号 + 顶部虚线（设计稿 .craft-steps） ---- */
+html[data-skin=zentea] .process{position:relative}
+html[data-skin=zentea] .process::before{content:"";position:absolute;top:36px;left:10%;right:10%;height:1px;
+  background:repeating-linear-gradient(to right,#D8D0BE 0,#D8D0BE 8px,transparent 8px,transparent 16px)}
+html[data-skin=zentea] .step{border-top:0;padding-top:0;text-align:center;position:relative;z-index:2}
+html[data-skin=zentea] .step .no{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;
+  background:#FAF6EF;border:2px solid #5B7F5B;color:#3D5C3D;font-family:'Cormorant Garamond','Songti SC',Georgia,serif;font-size:24px;font-weight:500;margin-bottom:20px}
+html[data-skin=zentea] .step h3{font-size:17px}
+html[data-skin=zentea] .step p{font-size:12px;color:#63605C;line-height:1.6;padding:0 12px}
+
+/* ---- 团队：白卡 + 居中（设计稿 .client-logo-item 几何） ---- */
+html[data-skin=zentea] .team{gap:20px}
+html[data-skin=zentea] .member{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px;overflow:hidden}
+html[data-skin=zentea] .member img{border-radius:0;aspect-ratio:1}
+html[data-skin=zentea] .member h3{font-size:18px;text-align:center;margin:16px 0 2px;padding:0 20px}
+html[data-skin=zentea] .member .role{font-size:12px;letter-spacing:.02em;color:#82622A;font-weight:500;text-align:center}
+html[data-skin=zentea] .member p{font-size:13px;color:#63605C;line-height:1.5;text-align:center;padding:0 20px 20px;margin:8px 0 0}
+
+/* ---- FAQ / 证言：白卡列表（设计稿 .cert-badge 几何） ---- */
+html[data-skin=zentea] .faq details{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px;margin-bottom:12px}
+html[data-skin=zentea] .faq summary{font-size:17px;font-weight:500}
+html[data-skin=zentea] .faq summary::after{color:#82622A}
+html[data-skin=zentea] .faq .answer{color:#63605C;font-size:14px}
+html[data-skin=zentea] .quotes{gap:20px}
+html[data-skin=zentea] .quote{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px;padding:28px}
+html[data-skin=zentea] .quote blockquote{font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',Georgia,serif;font-size:19px;line-height:1.6;color:#1A1A1A}
+html[data-skin=zentea] .quote .who{color:#1A1A1A;font-weight:500}
+html[data-skin=zentea] .quote .on{color:#82622A;font-weight:600}
+
+/* ---- CTA：墨黑 #1A1A1A 满宽暗带 ---- */
+html[data-skin=zentea] .cta{margin:0;padding:100px 40px;border:0;border-radius:0;border-left:0;text-align:center}
+html[data-skin=zentea] .cta::before{background:#1A1A1A}
+html[data-skin=zentea] .cta h2{color:#F5F0E8}
+html[data-skin=zentea] .cta p{color:rgba(245,240,232,.75);font-size:16px;font-weight:300;margin:16px auto 0;max-width:640px}
+html[data-skin=zentea] .cta .btn{margin-top:32px}
+html[data-skin=zentea] .cta .btn.ghost{color:#F5F0E8;border-color:rgba(245,240,232,.3)}
+html[data-skin=zentea] .cta .btn.ghost:hover{border-color:#F5F0E8;color:#F5F0E8;transform:none}
+
+/* ---- 询盘：茶山绿渐变暗带 + 半透明表单卡（设计稿 .inquiry） ---- */
+html[data-skin=zentea] .inquiry{padding:100px 0}
+html[data-skin=zentea] .inquiry::before{
+  background:
+    radial-gradient(ellipse at 80% 20%,rgba(196,163,90,.08) 0%,transparent 50%),
+    radial-gradient(ellipse at 15% 85%,rgba(91,127,91,.12) 0%,transparent 55%),
+    linear-gradient(160deg,#233124 0%,#1a2818 100%)}
+html[data-skin=zentea] .inquiry h2{color:#F5F0E8;font-size:40px}
+html[data-skin=zentea] .inquiry .kicker{color:#C4A35A}
+html[data-skin=zentea] .inquiry .intro,html[data-skin=zentea] .inquiry .lead{color:rgba(245,240,232,.7)}
+html[data-skin=zentea] .inquiry form{background:rgba(245,240,232,.03);border:1px solid rgba(245,240,232,.1);border-radius:4px;padding:44px}
+html[data-skin=zentea] .inquiry .field span{font-size:12px;font-weight:500;letter-spacing:.03em;color:rgba(245,240,232,.6)}
+html[data-skin=zentea] .inquiry input[type=text],html[data-skin=zentea] .inquiry input[type=email],html[data-skin=zentea] .inquiry input[type=tel],html[data-skin=zentea] .inquiry select,html[data-skin=zentea] .inquiry textarea{
+  background:rgba(245,240,232,.05);border:1px solid rgba(245,240,232,.15);border-radius:2px;color:#F5F0E8;padding:12px 16px;font-size:14px}
+html[data-skin=zentea] .inquiry select{background:#1A1A1A}
+html[data-skin=zentea] .inquiry input::placeholder,html[data-skin=zentea] .inquiry textarea::placeholder{color:rgba(245,240,232,.4)}
+html[data-skin=zentea] .inquiry input:focus,html[data-skin=zentea] .inquiry select:focus,html[data-skin=zentea] .inquiry textarea:focus{outline:none;border-color:#C4A35A;background:rgba(245,240,232,.08);box-shadow:none}
+html[data-skin=zentea] .inquiry button{background:#5B7F5B;border-radius:2px;font-weight:600;font-size:14px;letter-spacing:.05em;padding:16px 32px}
+html[data-skin=zentea] .inquiry button:hover{filter:none;background:#3D5C3D}
+html[data-skin=zentea] .inquiry .privacy{color:rgba(245,240,232,.6)}
+html[data-skin=zentea] .form-note.ok{background:rgba(138,171,138,.15);color:#8AAB8A}
+
+/* ---- 工厂证据链 / 法定披露 / 图集 ---- */
+html[data-skin=zentea] .audits li{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px}
+html[data-skin=zentea] .audits .meta{color:#63605C}
+html[data-skin=zentea] .retention{background:#FFFFFF;border:1px solid #D8D0BE;border-left:3px solid #C4A35A;border-radius:4px;color:#63605C}
+html[data-skin=zentea] .retention strong{color:#1A1A1A}
+html[data-skin=zentea] .factory table.facts th,html[data-skin=zentea] .factory table.facts td{border-bottom:1px solid #E8E1D2}
+html[data-skin=zentea] .factory table.facts td{color:#63605C}
+html[data-skin=zentea] .legal-facts dt{color:#63605C}
+html[data-skin=zentea] .legal-facts{background:#FFFFFF;border:1px solid #D8D0BE;border-radius:4px}
+html[data-skin=zentea] .list-cover img,html[data-skin=zentea] .product-head .cover,html[data-skin=zentea] .case-head img,html[data-skin=zentea] .gallery img{border-radius:4px}
+html[data-skin=zentea] .case-result{color:#3D5C3D}
+html[data-skin=zentea] .sub{color:#3D5C3D}
+
+/* ---- 页脚：paper-dark #EDE6D8 浅色满宽（设计稿 footer 是浅的） ---- */
+html[data-skin=zentea] footer{background:#EDE6D8;border-top:0;margin-top:0;padding:80px 40px 32px;color:#63605C;font-size:14px}
+html[data-skin=zentea] .foot-grid{max-width:1320px}
+html[data-skin=zentea] .foot-brand strong{font-family:'Cormorant Garamond','Songti SC',Georgia,serif;color:#1A1A1A;font-size:24px;font-weight:600}
+html[data-skin=zentea] .foot-brand p{color:#63605C;font-size:13px;line-height:1.8}
+html[data-skin=zentea] .foot-addr{color:#63605C}
+html[data-skin=zentea] .foot-dl a{color:#82622A;border-bottom-color:rgba(138,106,44,.4)}
+html[data-skin=zentea] .foot-col h3{color:#1A1A1A;font-size:14px;font-weight:600;letter-spacing:.02em;text-transform:none;margin:0 0 8px}
+html[data-skin=zentea] .foot-col a{color:#63605C;font-size:13px}
+html[data-skin=zentea] .foot-col a:hover{color:#5B7F5B}
+html[data-skin=zentea] .foot-legal{max-width:1320px;border-top:1px solid #D8D0BE;color:#63605C}
+html[data-skin=zentea] .foot-compliance{max-width:1320px;color:#63605C;font-size:12.5px}
+
+/* ---- 常驻浮层与 Cookie 条 ---- */
+html[data-skin=zentea] .fc-mail{background:#3D5C3D}
+html[data-skin=zentea] .fc-phone{background:#1A1A1A}
+html[data-skin=zentea] .cookie-bar{background:#FFFFFF;border-color:#D8D0BE;box-shadow:0 8px 40px rgba(26,26,26,.12)}
+html[data-skin=zentea] .cookie-bar button{background:#3D5C3D;border-radius:2px}
+html[data-skin=zentea] .cookie-bar button:hover{background:#36522F;filter:none}
+/* 拒绝按钮保持幽灵样式：上面 (0,2,2) 的绿底会压过基础层 .ck-no 的透明底（0,2,1），必须显式还原 */
+html[data-skin=zentea] .cookie-bar button.ck-no{background:transparent;color:#63605C;border:1px solid rgba(0,0,0,.18)}
+html[data-skin=zentea] .cookie-bar button.ck-no:hover{background:transparent;filter:none}
+
+/* ---- 断点：1024 降列 / 900 版心与导航 / 640 单列（设计稿节奏） ---- */
+@media (max-width:1024px){
+  html[data-skin=zentea] .grid{grid-template-columns:repeat(2,1fr)}
+  html[data-skin=zentea] .features,html[data-skin=zentea] .features.numbered{grid-template-columns:repeat(2,1fr);gap:20px}
+  html[data-skin=zentea] .image-text{gap:48px}
+  html[data-skin=zentea] .hero h1{font-size:48px}
+  html[data-skin=zentea] h2{font-size:36px}
+}
+@media (max-width:900px){
+  html[data-skin=zentea] main{padding:0 24px}
+  html[data-skin=zentea] .section{padding:64px 0}
+  html[data-skin=zentea] .hero{padding:64px 0 72px}
+  html[data-skin=zentea] .hero h1{font-size:42px}
+  html[data-skin=zentea] .image-text h2,html[data-skin=zentea] .inquiry h2,html[data-skin=zentea] .cta h2{font-size:30px}
+  html[data-skin=zentea] .process::before{display:none}
+  html[data-skin=zentea] .cta{padding:64px 24px}
+  html[data-skin=zentea] .inquiry{padding:64px 0}
+  html[data-skin=zentea] .site-header{padding:0 24px}
+}
+@media (max-width:640px){
+  html[data-skin=zentea] main{padding:0 20px}
+  html[data-skin=zentea] .section{padding:48px 0}
+  html[data-skin=zentea] .hero{padding:48px 0 56px}
+  html[data-skin=zentea] .hero h1{font-size:36px}
+  html[data-skin=zentea] h2{font-size:28px}
+  html[data-skin=zentea] .grid{grid-template-columns:1fr}
+  html[data-skin=zentea] .features,html[data-skin=zentea] .features.numbered{grid-template-columns:1fr}
+  html[data-skin=zentea] .stats{grid-template-columns:1fr}
+  html[data-skin=zentea] .quotes{grid-template-columns:1fr}
+  html[data-skin=zentea] .hero-stats{grid-template-columns:repeat(2,1fr);gap:20px 24px}
+  html[data-skin=zentea] .inquiry{padding:48px 0}
+  html[data-skin=zentea] .inquiry form{padding:24px 20px}
+  html[data-skin=zentea] .inquiry .fields{grid-template-columns:1fr}
+  html[data-skin=zentea] footer{padding:48px 20px 24px}
+  html[data-skin=zentea] .foot-grid{grid-template-columns:1fr;gap:24px}
+}

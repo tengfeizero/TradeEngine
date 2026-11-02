@@ -1,0 +1,243 @@
+slug: factory
+status: published
+title:
+  en: A 12,000 m² plant in Bao'an, and what happens inside it
+  zh: 宝安 12,000 平方米厂区，以及里面发生的事
+summary:
+  en: Two SMT lines, four assembly cells, an anechoic chamber and a flight test cage. Every unit flies before it is packed.
+  zh: 两条 SMT 线、四个装配单元、一间电波暗室与一个飞行测试笼。每台出厂前都要飞。
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    title:
+      en: What we keep in-house, and what we do not
+      zh: 哪些留在厂里，哪些不放
+    lead:
+      en: The plant exists to control three things — flight controller assembly, gimbal calibration, and the final flight test.
+      zh: 这个厂存在的目的，是控制三件事——飞控板组装、云台标定、出厂实飞。
+    body:
+      en: |
+        The SMT lines build the flight controller and the BMS boards. Those two boards carry our firmware and our failure modes, and a contract manufacturer changing a component supplier without telling us is the kind of surprise that ends with a recall. Everything on those boards is traceable to a lot number.
+
+        The assembly cells are semi-manual on purpose. A fully automated line at 2,400 units a month would spend more time changing over between the six platforms than building. The cells are set up per platform and change over in 40 minutes.
+
+        What we do not make is the airframe carbon. It is laid up by a specialist 90 minutes away, to our ply schedule, and we inspect every frame for delamination on receipt. Making carbon ourselves would add 2,000 m² and one more process we would be mediocre at.
+      zh: |
+        SMT 线生产飞控板与 BMS 板。这两块板承载我们的固件与失效模式，而代工厂在我们不知情的情况下换掉一个元件供应商，这种"惊喜"最后会以召回收场。板上每一个元件都能追到批次。
+
+        装配单元是刻意做成半手工的。月产 2,400 台的自动化线，在六条平台之间换型的时间会比生产时间还长。现在的单元按平台布置，换型 40 分钟。
+
+        我们不做的是机身碳纤维。它由 90 分钟车程外的一家专业厂按我们的铺层表成型，到货后逐台敲击检查分层。自己做碳纤维要多 2,000 平方米车间，还多一道我们只会做得平庸的工序。
+  - type: gallery
+    title:
+      en: Inside the plant
+      zh: 厂区内
+    images:
+      - media/factory/line-01.jpg
+      - media/factory/line-02.jpg
+      - media/factory/cage-01.jpg
+  - type: process
+    title:
+      en: How a unit moves through the plant
+      zh: 一台机器在厂里的路线
+    intro:
+      en: Nine working days from kit issue to packed carton on a standard order, twelve with a custom label or firmware key.
+    steps:
+      - title:
+          en: Kit issue and traceability
+          zh: 备料与追溯
+        body:
+          en: Every frame, motor and board is scanned into the unit record. The record follows the aircraft through test and is what we query when a field failure comes back.
+          zh: 每个机架、电机、板卡都扫进整机档案。这份档案跟着飞机走完测试，现场失效返回时我们查的就是它。
+      - title:
+          en: Sub-assembly and calibration
+          zh: 部件装配与标定
+        body:
+          en: Gimbal is calibrated on a three-axis rate table, not by hand. The calibration file is stored per serial number, so a replacement gimbal is calibrated before it ships.
+          zh: 云台在三轴速率台上标定，不靠手工。标定文件按序列号存档，替换云台在出厂前就已完成标定。
+      - title:
+          en: Firmware and keys
+          zh: 固件与密钥
+        body:
+          en: The firmware hash is written into the unit record and matched against the certification revision. Customer keys are loaded here and never leave the plant in plaintext.
+          zh: 固件哈希写进整机档案，并与认证版本比对。客户密钥在这一步写入，明文不出厂。
+      - title:
+          en: Environmental screening
+          zh: 环境筛选
+        body:
+          en: 30 minutes of thermal cycling from -10 to 45 °C with the unit powered and logging. Units that log a sensor fault here do not go to flight test.
+          zh: 通电记录状态下做 30 分钟 -10 至 45 ℃ 温度循环。在这一步记录到传感器故障的机器，不进入飞行测试。
+      - title:
+          en: Flight test
+          zh: 实飞测试
+        body:
+          en: Every unit flies a six-minute automated profile inside the cage — hover stability, gimbal sweep, link margin at low power, and a deliberate compass disturbance to confirm the redundancy switch. The log ships with the aircraft.
+          zh: 每台在笼内飞六分钟自动科目——悬停稳定性、云台扫掠、低功率下的链路余量，以及一次人为罗盘干扰以确认冗余切换。日志随飞机交付。
+      - title:
+          en: Pack and document
+          zh: 包装与文件
+        body:
+          en: The carton gets the flight log card, the compliance sheet, and the UN38.3 lot number for the batteries in that specific box. Battery serials are matched to the carton, not to the order.
+          zh: 箱内放飞行日志卡、合规说明，以及这一箱电池对应的 UN38.3 批次号。电池序列号对应到箱，而不是对应到订单。
+  - type: stats
+    title:
+      en: Plant at a glance
+      zh: 厂区概况
+    items:
+      - value: 12,000 m²
+        label:
+          en: Plant area
+          zh: 厂区面积
+        note:
+          en: Bao'an, Shenzhen
+          zh: 深圳宝安
+      - value: "2,400"
+        label:
+          en: Units per month
+          zh: 月产能（台）
+        note:
+          en: across six platforms
+          zh: 覆盖六条平台线
+      - value: "62"
+        label:
+          en: R&D engineers
+          zh: 研发工程师
+        note:
+          en: flight control, vision, RF
+          zh: 飞控、视觉、射频
+      - value: "100%"
+        label:
+          en: Units flight tested
+          zh: 出厂实飞比例
+        note:
+          en: no sampling
+          zh: 不做抽检
+  - type: factory
+    kicker:
+      en: Audit trail
+      zh: 审核与记录
+    title:
+      en: What you can verify without flying to Shenzhen
+      zh: 不来深圳也能核的部分
+    intro:
+      en: A plant photo proves there is a plant. A report number proves somebody outside the company looked at it — so the numbers below are the ones you can look up.
+      zh: 厂房照片只能证明有厂房。报告编号才能证明公司以外的人查过——所以下面这些编号都是你能查的。
+    equipment:
+      - name:
+          en: SMT lines for flight controller and BMS
+          zh: 飞控与 BMS 板 SMT 线
+        qty: "2"
+        note:
+          en: Yamaha mounters, ten-zone reflow, AOI after each pass
+          zh: Yamaha 贴片机、十温区回流焊、每道后 AOI
+      - name:
+          en: Flight test cage
+          zh: 飞行测试笼
+        qty: "1"
+        note:
+          en: 12 × 8 × 5 m, netted, six-minute automated profile
+          zh: 12 × 8 × 5 米，带防护网，六分钟自动科目
+      - name:
+          en: Three-axis rate tables
+          zh: 三轴速率台
+        qty: "2"
+        note:
+          en: gimbal calibration, file stored per serial number
+          zh: 云台标定，按序列号存档
+      - name:
+          en: Thermal cycling chambers
+          zh: 温度循环箱
+        qty: "4"
+        note:
+          en: −20 to 60 °C, unit powered and logging
+          zh: −20 至 60 ℃，通电记录状态
+      - name:
+          en: Battery test cabinets
+          zh: 电池测试柜
+        qty: "2"
+        note:
+          en: charge/discharge cycling and internal resistance
+          zh: 充放电循环与内阻
+      - name:
+          en: EMC pre-compliance chamber
+          zh: 电磁兼容预测试暗室
+        qty: "1"
+        note:
+          en: pre-test only — formal reports come from the third party below
+          zh: 只做预测试，正式报告由下面的第三方出
+    audits:
+      - name:
+          en: SGS pre-shipment inspection (AQL 2.5)
+          zh: SGS 出货前检验（AQL 2.5）
+        number: SGS-CN-26-05231
+        issuer: SGS China
+        date: "2026-09-30"
+      - name:
+          en: CE-RED type examination (radio equipment)
+          zh: CE-RED 型式检验（无线电设备）
+        number: TUV-5033-RED-2025-08
+        issuer: TÜV Rheinland
+        date: "2025-08-20"
+        valid_until: "2030-08-19"
+      - name:
+          en: UN 38.3 battery transport test summary
+          zh: UN 38.3 电池运输测试摘要
+        number: UN383-CTI-2025-1147
+        issuer: CTI Shenzhen
+        date: "2025-07-11"
+      - name:
+          en: ISO 9001 quality management
+          zh: ISO 9001 质量管理体系
+        number: CN-QMS-2024-08871
+        issuer: SGS China
+        date: "2024-11-05"
+        valid_until: "2027-11-04"
+      - name:
+          en: amfori BSCI social audit
+          zh: amfori BSCI 社会责任审核
+        number: BSCI-26-77310
+        issuer: TÜV SÜD
+        date: "2026-04-16"
+        valid_until: "2027-04-15"
+    retention:
+      en: Every lot keeps one complete unit and 20 cells from the same battery lot, sealed, for 18 months — cells age faster than airframes, and 18 months is the window where a field failure still tells us something about the build.
+      zh: 每批留一台整机与同批电芯 20 只，封存 18 个月——电芯比机体老得快，而 18 个月是现场失效还能说明装配问题的窗口期。
+    photos:
+      - src: media/factory/line-01.jpg
+        date: "2026-09-12"
+        caption:
+          en: SMT line, second shift
+          zh: SMT 线，二班
+      - src: media/factory/cage-01.jpg
+        date: "2026-09-12"
+        caption:
+          en: Flight test cage during a six-minute profile
+          zh: 六分钟科目中的飞行测试笼
+  - type: faq
+    title:
+      en: Visiting without visiting
+      zh: 不到厂，也能看到厂
+    items:
+      - q:
+          en: Can we do a video factory audit instead of flying in?
+          zh: 能安排视频验厂吗？不飞过来。
+        a:
+          en: Yes. A live video walk of the SMT line, the calibration bench and the flight test cage takes about an hour, on the same terms as a plant visit — arranged for buyers evaluating a first order. We do not send a produced promo reel instead; you direct the camera, and any unit can be opened on camera.
+          zh: 可以。对 SMT 线、标定工位与飞行测试笼做一次实时视频走厂，约一小时，条件与到厂相同——面向评估首单的买家安排。我们不拿制作好的宣传片代替；镜头由你指挥，任何一台整机都可以当镜头拆开。
+      - q:
+          en: Do you have reference customers in our region we can talk to?
+          zh: 我们所在区域有可以询访的参考客户吗？
+        a:
+          en: Yes, by region. Several distributors and operators — including the ones behind the testimonials on this site and the Dubai perimeter deployment — have agreed to take a reference call. Ask the export desk and we will make the introduction, with the contact closest to your use case first.
+          zh: 有，按区域。包括本站证言的几位经销商与运营方、迪拜周界项目的客户在内，多家客户同意接受参考询访。向出口部提出即可，我们会做引荐，并优先安排与你的使用场景最接近的一位。
+  - type: cta
+    title:
+      en: Come and watch the flight test
+      zh: 来看一次实飞测试
+    body:
+      en: If you are evaluating a first order above 50 units, we will arrange a plant visit with two weeks notice. You can pick any unit off the line and watch it fly, then take the log home.
+      zh: 如果你在评估 50 台以上的首单，提前两周我们可以安排到厂。你可以从线上随机挑一台看它飞，然后把日志带走。
+    cta_text:
+      en: Arrange a visit
+      zh: 安排到厂
+    cta_href: "/contact/"

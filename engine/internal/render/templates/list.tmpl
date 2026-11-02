@@ -1,0 +1,20 @@
+{{/* 列表页：产品总览 / 分类页 / 案例总览共用。 */}}
+{{define "list"}}
+{{template "crumb" .Crumb}}
+<header class="page-head">
+  <h1>{{.PageTitle}}</h1>
+  {{if .Intro}}<p class="lead">{{.Intro}}</p>{{end}}
+  {{if .Groups}}
+  <nav class="chip-nav">
+    {{range .Groups}}<a href="{{.Href}}">{{.Label}}</a>{{end}}
+  </nav>
+  {{end}}
+</header>
+{{if .Cover}}<div class="list-cover">{{template "image" .Cover}}</div>{{end}}
+<section class="section">
+  <div class="grid">
+    {{range .Cards}}{{template "card" .}}{{end}}
+  </div>
+</section>
+{{template "inquiry_form" .}}
+{{end}}

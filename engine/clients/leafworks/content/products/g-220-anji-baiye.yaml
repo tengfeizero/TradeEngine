@@ -1,0 +1,139 @@
+slug: g-220-anji-baiye
+status: published
+order: 2
+featured: true
+model_no: LW-G220
+category: green-tea
+scenarios: [retail-private-label, gifting]
+certificates: [usda-organic, eu-organic, fssc-22000]
+markets: [EU, US, JP]
+hs_code: "090220"
+moq: 300
+moq_unit: kg
+
+lead_time:
+  en: 25–35 days after deposit, spring lot only
+  zh: 定金后 25–35 天，仅春茶批次
+packaging:
+  en: 20 kg multiwall bag with liner, or 5 kg foil brick for gift packing
+  zh: 20 公斤多层纸袋内衬，或 5 公斤铝箔砖供礼盒分装
+sample_policy:
+  en: 300 g at cost plus freight, one sample per buyer per season
+  zh: 300 克按成本加运费，每客户每季一份
+
+title:
+  en: G-220 Anji Baiye, Late April
+  zh: G-220 安吉白叶，四月下旬
+subtitle:
+  en: The white-leaf cultivar, processed as green tea — high theanine, low bitterness
+  zh: 白叶一号品种，按绿茶工艺制作——茶氨酸高、苦涩低
+summary:
+  en: The tea that converts people who say they do not like green tea. 5.8% amino acids, almost no astringency, and a colour that photographs well in a clear glass.
+  zh: 能让「我不爱喝绿茶」的人改口的那一款。氨基酸 5.8%，几乎不涩，汤色在玻璃杯里很上相。
+
+description:
+  en: |
+    Anji Baiye is a cultivar, not a white tea. The bush produces pale leaves for about three weeks in spring because of a temperature-sensitive chlorophyll trait; picked in that window and processed green, the result is high theanine and very little catechin bitterness. Picked a week late, it is ordinary tea. This is the constraint that sets our shipping calendar.
+
+    For private label it does one job well: it is the green tea you can put in front of a customer who found your last green tea too bitter. We recommend it as the second SKU in a range, not the first — it sells on taste, not on name recognition.
+  zh: |
+    安吉白叶是品种，不是白茶。因为叶绿素对温度敏感，春天大约三周里新叶会发白；在这段时间采下、按绿茶工艺做，茶氨酸高、儿茶素苦涩极低。晚采一周，就是普通茶。这个约束决定了我们的发货日历。
+
+    做自有品牌它只干一件事，但干得好：这是你能端给「上一款绿茶太苦」的客户的那杯。我们建议把它放在产品线的第二支，不是第一支——它靠口味卖，不靠名字。
+
+highlights:
+  - en: 5.8% free amino acids, measured per lot
+    zh: 游离氨基酸 5.8%，按批检测
+  - en: Three-week picking window, documented by date
+    zh: 三周采摘窗口，按日期记录
+  - en: Works in clear glass and cold brew without clouding
+    zh: 玻璃杯冷泡也清澈不浑
+
+applications:
+  - en: Entry-level premium green tea for retail
+    zh: 零售端的入门级高端绿茶
+  - en: Gift tins and hotel amenity
+    zh: 礼盒铁罐与酒店客房用茶
+
+specs:
+  - group:
+      en: Leaf and lot
+      zh: 鲜叶与批次
+    items:
+      - key: origin
+        label:
+          en: Growing district
+          zh: 产区
+        value:
+          en: Xilong, Anji County
+          zh: 安吉县溪龙
+      - key: cultivar
+        label:
+          en: Cultivar
+          zh: 品种
+        value:
+          en: Baiye Yihao (temperature-sensitive albino)
+          zh: 白叶一号（温度敏感白化）
+      - key: amino
+        label:
+          en: Free amino acids
+          zh: 游离氨基酸
+        value_num: 5.8
+        unit: "%"
+        filterable: true
+      - key: moisture
+        label:
+          en: Moisture at packing
+          zh: 装箱含水率
+        value_num: 4
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: liquor
+        label:
+          en: Liquor
+          zh: 汤色
+        value:
+          en: Very pale green, bright
+          zh: 极浅绿，明亮
+      - key: taste
+        label:
+          en: Taste
+          zh: 滋味
+        value:
+          en: Umami, sweet finish, no astringency
+          zh: 鲜甜，无涩感
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 18
+        unit: months
+        filterable: true
+
+price:
+  min: 42
+  max: 58
+  currency: USD
+  incoterm: FOB Ningbo
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.045
+  gross_weight_kg: 20.6
+
+cover: media/products/g220-anji.jpg
+related: [g-100-longjing-43, w-520-silver-needle]
+cases: [nordic-grocery]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Anji Baiye Green Tea, Bulk — High Theanine, 300 kg MOQ
+    zh: 安吉白叶绿茶原料 — 高茶氨酸，300 公斤起订
+  description:
+    en: Baiye Yihao cultivar processed as green tea, 5.8% free amino acids, 4% moisture. Bulk 300 kg MOQ for private-label ranges and gift tins.
+    zh: 白叶一号品种按绿茶工艺制作，游离氨基酸 5.8%，含水率 4%。300 公斤起订，适合自有品牌与礼盒。

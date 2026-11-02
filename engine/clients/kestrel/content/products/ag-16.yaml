@@ -1,0 +1,176 @@
+slug: ag-16
+status: published
+order: 4
+model_no: KA-AG16
+category: agriculture
+scenarios: [precision-ag]
+certificates: [ce-red, iso-9001, un383]
+markets: [EU, JP, AE]
+hs_code: "880623"
+moq: 10
+moq_unit: pcs
+
+lead_time:
+  en: 30–35 days after deposit
+  zh: 定金后 30–35 天
+packaging:
+  en: Folded airframe in a carton with foam inserts, battery in a separate UN38.3 carton
+  zh: 折叠机身装泡沫内衬纸箱，电池另装 UN38.3 外箱
+sample_policy:
+  en: One unit at 1.35× FOB for terraced and small-plot trials
+  zh: 单台按 FOB 1.35 倍价，供梯田与小地块试用
+
+title:
+  en: AG-16
+  zh: AG-16 小型植保机
+subtitle:
+  en: 16 L tank, 9 hectares per hour, carried by one person
+  zh: 16 升药箱、每小时 9 公顷、单人可搬运
+summary:
+  en: Built for terraces, greenhouses and plots under three hectares, where a 40 L machine cannot turn around. Folds to 780 mm and weighs 24 kg dry, so one operator loads it into a kei truck without a ramp.
+  zh: 为梯田、大棚与三公顷以下地块设计，40 升机型在这些地方转不开身。折叠后 780 毫米、空机 24 公斤，一人可装进轻型卡车，不需要坡道。
+
+description:
+  en: |
+    Half the world's farmland is in plots too small for a 40 L machine to be efficient. Japan, Korea, southern China, the Mediterranean hills — the fields are 0.2 to 1 hectare, the access roads are narrow, and the refill point is often a hose at the edge of a terrace.
+
+    The AG-16 carries 16 L, sprays a 6.5 m swath and folds to 780 mm. Two people can move it between terraces by hand, and one person can load it alone. It uses the same nozzle family and the same RTK base station as the AG-40, so a dealer stocking both carries one set of wear parts.
+
+    The control software has a terrace mode that records the polygon once and reuses it, because re-teaching a 0.4-hectare plot before every flight is how small-plot operators give up on drones.
+  zh: |
+    世界上有一半农田的地块小到 40 升机型无法高效作业。日本、韩国、中国南方、地中海丘陵——地块 0.2 到 1 公顷，机耕道很窄，加药点常常只是梯田边的一根水管。
+
+    AG-16 载药 16 升，喷幅 6.5 米，折叠后 780 毫米。两人可手抬在梯田之间转移，一人可独自装车。喷头系列与 RTK 基站与 AG-40 通用，同时备这两款的经销商只需一套易损件。
+
+    控制软件有梯田模式：地块多边形录一次，之后复用。因为每次起飞前重教一块 0.4 公顷的地，正是小地块用户放弃无人机的真实原因。
+
+highlights:
+  - en: 16 L tank, 6.5 m swath, 9 ha/h on small plots
+    zh: 16 升药箱、6.5 米喷幅、小地块每小时 9 公顷
+  - en: Folds to 780 mm, 24 kg dry, one-person loading
+    zh: 折叠后 780 毫米、空机 24 公斤、单人装车
+  - en: Terrace mode saves a plot polygon once and reuses it
+    zh: 梯田模式一次录地块、长期复用
+  - en: Shares nozzles and base station with AG-40
+    zh: 与 AG-40 共用喷头与基站
+
+applications:
+  - en: Terraced fields and hillside orchards
+    zh: 梯田与山坡果园
+  - en: Greenhouses and plots under three hectares
+    zh: 大棚与三公顷以下地块
+
+specs:
+  - group:
+      en: Airframe & spraying
+      zh: 机身与喷洒
+    items:
+      - key: mtow
+        label:
+          en: Max take-off weight
+          zh: 最大起飞重量
+        value_num: 42
+        unit: kg
+        filterable: true
+      - key: tank
+        label:
+          en: Usable tank
+          zh: 可用药量
+        value_num: 16
+        unit: L
+        filterable: true
+      - key: coverage
+        label:
+          en: Coverage rate
+          zh: 作业效率
+        value_num: 9
+        unit: ha/h
+        filterable: true
+      - key: swath
+        label:
+          en: Spray width
+          zh: 喷幅
+        value_num: 6.5
+        unit: m
+      - key: folded
+        label:
+          en: Folded size
+          zh: 折叠尺寸
+        value:
+          en: 780 × 620 × 480 mm
+          zh: 780 × 620 × 480 毫米
+      - key: ip
+        label:
+          en: Ingress protection
+          zh: 防护等级
+        value:
+          en: IP65 airframe, IP67 spray circuit
+          zh: 机身 IP65，喷洒回路 IP67
+      - key: wind
+        label:
+          en: Wind resistance
+          zh: 抗风能力
+        value_num: 7
+        unit: m/s
+  - group:
+      en: Navigation & power
+      zh: 导航与动力
+    items:
+      - key: rtk
+        label:
+          en: RTK accuracy
+          zh: RTK 精度
+        value:
+          en: ±2 cm horizontal, shares AG-40 base station
+          zh: 水平 ±2 厘米，共用 AG-40 基站
+      - key: battery
+        label:
+          en: Battery
+          zh: 电池
+        value:
+          en: 1 × 18,000 mAh 12S, 500 cycles to 80 percent
+          zh: 1 块 18,000 mAh 12S，500 次循环至 80%
+      - key: plot_memory
+        label:
+          en: Plot memory
+          zh: 地块存储
+        value:
+          en: 200 saved polygons with spray parameters
+          zh: 可存 200 个地块多边形与喷洒参数
+  - group:
+      en: Export & support
+      zh: 出口与支持
+    items:
+      - key: spares
+        label:
+          en: Spares kit
+          zh: 备件包
+        value:
+          en: 1 kit per 10 aircraft, 8 nozzles, pump diaphragm, 2 props
+          zh: 每 10 台配 1 套，8 个喷头、泵膜、2 支桨
+      - key: warranty
+        label:
+          en: Warranty
+          zh: 质保
+        value_num: 18
+        unit: months
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.62
+  gross_weight_kg: 46
+
+cover: media/products/ag-16.jpg
+gallery: [media/products/ag-16.jpg, media/products/cat-agriculture.jpg]
+related: [ag-40]
+cases: [bavaria-orchard]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: 16 L Spraying Drone for Small Plots — 9 ha/h, 780 mm Fold
+    zh: 小地块 16 升植保无人机 — 每小时 9 公顷，折叠 780 毫米
+  description:
+    en: 16 L tank, 6.5 m swath, 24 kg dry, folds to 780 mm for one-person loading. Terrace mode reuses saved plot polygons. Shares parts with the AG-40.
+    zh: 16 升药箱、6.5 米喷幅、空机 24 公斤、折叠 780 毫米可单人装车。梯田模式复用已存地块。与 AG-40 共用备件。

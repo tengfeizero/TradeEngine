@@ -1,0 +1,14 @@
+{{define "thanks"}}
+<section class="thanks">
+  <h1>{{.UI.thanks_title}}</h1>
+  <p>{{.UI.thanks_body}}</p>
+  <p><a class="back" href="{{.BackHref}}">{{.UI.back_home}}</a></p>
+</section>
+{{if .GA4ID}}<script>
+/* 转化事件（M5-4）：只有同意 Cookie 后 gtag 才存在，拒绝时不产生任何上报。 */
+(function(){var g=window.gtag;
+if(typeof g==='function'){g('event','generate_lead',{form_id:'inquiry'});return}
+if(!window.dataLayer){return}
+window.dataLayer.push({event:'generate_lead',form_id:'inquiry',page:location.pathname});})();
+</script>
+{{end}}{{end}}

@@ -1,0 +1,31 @@
+slug: gulf-hotel
+status: published
+order: 5
+title:
+  en: Forty hotel outlets moved from six tea suppliers to two blends
+  zh: 四十家酒店门店从六家供应商收成两款拼配
+country: AE
+industry:
+  en: Hotel group F&B
+  zh: 酒店集团餐饮
+customer: Al Rayhan Hospitality
+challenge:
+  en: Every property bought tea locally, so a guest had a different breakfast tea in Dubai and in Muscat. Six suppliers meant six invoice currencies, six halal certificates and no way to compare cost per outlet.
+  zh: 每家酒店各自本地采购，客人在迪拜与马斯喀特喝到的是不同的早餐茶。六家供应商意味着六种结算币种、六份清真证书，且无法比较单店成本。
+solution:
+  en: Two blends — an English breakfast built on Assam CTC with 30% Keemun, and a mint green for the region — packed in 1 kg foil and 500 g tins, halal certified, with Arabic and English labels on the same dieline. Stock held in Jebel Ali for 48-hour replenishment.
+  zh: 两款拼配——以阿萨姆 CTC 加 30% 祁门做的英式早餐，以及适合本地的薄荷绿茶——1 公斤铝箔与 500 克铁罐，清真认证，同一刀版上做阿拉伯语与英语标签。货存杰贝阿里，48 小时补货。
+result:
+  en: Tea cost per outlet fell 31% in the first year, and the group now runs one purchase order instead of six.
+  zh: 第一年单店茶成本下降 31%，集团从六张订单变成一张。
+products: [b-380-assam-ctc, b-310-keemun-hao-ya, x-730-hangbaiju]
+cover: media/cases/gulf-hotel.jpg
+updated_at: 2026-05-19
+
+seo:
+  title:
+    en: Case — 40 hotel outlets, six suppliers down to two blends
+    zh: 案例——四十家酒店门店，六家供应商收成两款拼配
+  description:
+    en: Two halal-certified blends, bilingual labels on one dieline and Jebel Ali stock cut tea cost per outlet by 31%.
+    zh: 两款清真认证拼配、一套双语标签与杰贝阿里备货，让单店茶成本下降 31%。

@@ -1,0 +1,34 @@
+slug: amazon-grid
+status: published
+title:
+  en: Thermal inspection of 3,200 km of transmission line in Pará
+  zh: 帕拉州 3,200 公里输电线热成像巡检
+country: BR
+industry:
+  en: Power transmission utility
+  zh: 输配电企业
+customer: Norte Energia Transmissão S.A.
+challenge:
+  en: |
+    3,200 km of 230 kV line through rainforest, inspected twice a year, previously by helicopter at a cost the regulator would no longer accept. The utility needed a per-tower cost below the helicopter baseline and, more importantly, images that could enter their asset management system without a data-entry team.
+
+    Rain was the second constraint. Between November and April the line is wet for most of the working day, and their first trial with a consumer-grade aircraft ended after eleven flights with water in the gimbal.
+  zh: |
+    3,200 公里 230 千伏线路穿雨林，每年巡检两次，原用直升机，监管方已不再接受该成本。业主要的不是便宜一点的巡检，而是每基塔成本低于直升机基线，且图片能直接进资产系统，不用一个数据录入班组。
+
+    第二个约束是雨。11 月到 4 月，线路大半个工作日都是湿的，他们用消费级机型的第一次尝试在第十一架次后云台进水结束。
+solution:
+  en: |
+    Eighteen IN-25 airframes across three bases, flying a fixed tower pattern: thermal pass at 25 m on the conductor side, then a zoom pass on the insulator strings. Both cameras share the stabilized axis, so one pass produces aligned pairs.
+
+    The on-board index writes tower ID, GPS, gimbal attitude and measured temperature into a CSV next to the images, and the utility maps that file into their SAP PM asset records. Two LG-10 units carry spare gimbals and battery packs to the remote bases on a weekly schedule instead of a four-hour drive.
+  zh: |
+    三个基地共 18 台 IN-25，按固定塔型航线飞：导线侧 25 米高度做热成像通场，再对绝缘子串做变焦拍摄。两个相机同轴增稳，一次通场得到对齐的图像对。
+
+    机载索引把塔号、GPS、云台姿态与实测温度写进图片旁的 CSV，业主把这个文件映射进 SAP PM 资产记录。两台 LG-10 每周把备用云台与电池送到偏远基地，替代四小时车程。
+result:
+  en: 42 minutes per tower down to 9, defect location accuracy 96 percent
+  zh: 单基塔巡检从 42 分钟降到 9 分钟，缺陷定位准确率 96%
+products: [in-25, lg-10]
+cover: media/cases/amazon-grid.jpg
+updated_at: 2026-10-22

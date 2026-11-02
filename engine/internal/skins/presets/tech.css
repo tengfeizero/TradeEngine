@@ -1,0 +1,87 @@
+/*!
+ * @skin tech
+ * @label 暗色科技（无人机 / 3C / 智能硬件）
+ * @category 消费电子
+ * @tone dark
+ */
+
+/* 语言是「仪表盘」：暗底、辉光、渐变文字、方角细边。
+   注意：基线色板不在 CSS 里写死——写在 :root 之后会静默盖掉主题色，
+   深色兜底由渲染层按 @tone dark 处理（见 B5 缺陷 18）。 */
+
+html[data-skin=tech] body{background:var(--paper);color:var(--ink)}
+html[data-skin=tech] .site-header{background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.1);padding:16px 32px}
+html[data-skin=tech] .site-nav a,html[data-skin=tech] .brand{color:var(--ink)}
+html[data-skin=tech] .site-nav a{font-size:13px;letter-spacing:.02em;opacity:.66}
+html[data-skin=tech] .site-nav a:hover{opacity:1;color:var(--primary-text)}
+
+/* 首屏：左文右图，图带主色辉光与外圈细边 */
+html[data-skin=tech] .hero{border-bottom:1px solid rgba(255,255,255,.1);background:radial-gradient(1200px 420px at 18% -20%,color-mix(in srgb,var(--primary) 26%,transparent),transparent 70%)}
+html[data-skin=tech] .hero.split{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:72px 0 64px}
+html[data-skin=tech] .hero h1{font-size:56px;letter-spacing:-.03em;font-weight:600;line-height:1.05}
+html[data-skin=tech] .hero.split .hero-img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);margin:0;border:1px solid rgba(255,255,255,.12);box-shadow:0 0 80px color-mix(in srgb,var(--primary) 18%,transparent)}
+html[data-skin=tech] .hero-copy{text-align:left;padding:0}
+html[data-skin=tech] .hero-copy .badge{margin:0 0 20px;border-color:color-mix(in srgb,var(--primary) 40%,transparent);color:var(--primary-text);background:color-mix(in srgb,var(--primary) 8%,transparent)}
+html[data-skin=tech] .hero-copy p{max-width:56ch;margin:0 0 24px;color:color-mix(in srgb,var(--ink) 72%,var(--paper))}
+html[data-skin=tech] .hero-copy .hero-cta{justify-content:flex-start;margin-bottom:0}
+html[data-skin=tech] .hero-copy .btn{margin:0}
+html[data-skin=tech] .hero-stats{grid-template-columns:repeat(4,1fr);margin:38px 0 0;padding-top:22px;border-top-color:rgba(255,255,255,.12);text-align:left;max-width:none}
+html[data-skin=tech] .hero-stats b{font-size:28px;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+html[data-skin=tech] .hero-stats span{color:color-mix(in srgb,var(--ink) 55%,var(--paper))}
+html[data-skin=tech] .hl{font-style:normal;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+
+/* 按钮：渐变实心 / 细边幽灵 */
+html[data-skin=tech] .btn{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#08111C;font-weight:600;box-shadow:0 4px 18px color-mix(in srgb,var(--primary) 26%,transparent)}
+html[data-skin=tech] .btn:hover{transform:translateY(-1px);filter:none;box-shadow:0 6px 26px color-mix(in srgb,var(--primary) 40%,transparent)}
+html[data-skin=tech] .btn.ghost{background:transparent;color:var(--ink);border-color:rgba(255,255,255,.22);box-shadow:none}
+html[data-skin=tech] .btn.ghost:hover{color:var(--primary-text);border-color:var(--primary-text)}
+
+/* 区块与卡片：三列紧凑、细边、方角 */
+html[data-skin=tech] .section{padding:52px 0 0}
+html[data-skin=tech] .section-head{padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:26px}
+html[data-skin=tech] .kicker{color:var(--primary-text);font-family:var(--font-mono);letter-spacing:.18em}
+html[data-skin=tech] h2{letter-spacing:-.02em;font-weight:600}
+html[data-skin=tech] .grid{grid-template-columns:repeat(3,1fr);gap:18px}
+html[data-skin=tech] .card{background:var(--surface);border:1px solid rgba(255,255,255,.1);border-radius:2px}
+html[data-skin=tech] a.card:hover{transform:none;box-shadow:0 0 0 1px color-mix(in srgb,var(--primary) 55%,transparent),0 8px 32px rgba(0,0,0,.4);border-color:transparent}
+html[data-skin=tech] .card h3{color:var(--ink)}
+html[data-skin=tech] .card p{color:color-mix(in srgb,var(--ink) 62%,var(--paper))}
+html[data-skin=tech] .card .thumb{background:rgba(255,255,255,.03)}
+
+/* 能力网格：三列、图标发光；编号卡回到两列 */
+html[data-skin=tech] .features{grid-template-columns:repeat(3,1fr);gap:16px}
+html[data-skin=tech] .features.numbered{grid-template-columns:repeat(2,1fr)}
+html[data-skin=tech] .feature{background:var(--surface);border:1px solid rgba(255,255,255,.1);border-radius:2px;padding:22px 20px}
+html[data-skin=tech] .feature .f-icon{background:color-mix(in srgb,var(--primary) 16%,transparent);box-shadow:0 0 26px color-mix(in srgb,var(--primary) 24%,transparent);border-radius:8px;color:var(--primary-text)}
+html[data-skin=tech] .card.icon-card{background:var(--surface);border-color:rgba(255,255,255,.1)}
+html[data-skin=tech] .card.icon-card .f-icon{background:color-mix(in srgb,var(--primary) 16%,transparent);border-radius:8px;box-shadow:0 0 24px color-mix(in srgb,var(--primary) 20%,transparent)}
+html[data-skin=tech] .checks li{color:color-mix(in srgb,var(--ink) 66%,var(--paper))}
+html[data-skin=tech] .checks .ic{color:var(--primary-text)}
+
+/* 正文与表格：暗底上的字色要压到可读 */
+html[data-skin=tech] .richtext p,html[data-skin=tech] .body-text p,html[data-skin=tech] .faq .answer,html[data-skin=tech] .case-body p{color:color-mix(in srgb,var(--ink) 72%,var(--paper))}
+html[data-skin=tech] table th{color:color-mix(in srgb,var(--ink) 50%,var(--paper));border-color:rgba(255,255,255,.1)}
+html[data-skin=tech] table td{border-color:rgba(255,255,255,.1)}
+html[data-skin=tech] .stats{border-color:rgba(255,255,255,.1)}
+html[data-skin=tech] .stat .value{font-family:var(--font-mono);font-weight:600;letter-spacing:-.02em}
+html[data-skin=tech] .step{border-top-color:color-mix(in srgb,var(--primary) 60%,transparent)}
+html[data-skin=tech] .step .no{font-family:var(--font-mono)}
+html[data-skin=tech] .cta{background:var(--surface);border-color:rgba(255,255,255,.1);border-left-color:var(--primary-text)}
+html[data-skin=tech] .inquiry{background:var(--surface);border-color:rgba(255,255,255,.1)}
+html[data-skin=tech] .inquiry input,html[data-skin=tech] .inquiry select,html[data-skin=tech] .inquiry textarea{background:color-mix(in srgb,var(--paper) 88%,#000);border-color:rgba(255,255,255,.18);color:var(--ink)}
+html[data-skin=tech] .inquiry button{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#08111C;font-weight:600}
+html[data-skin=tech] .faq details{border-color:rgba(255,255,255,.1)}
+html[data-skin=tech] footer{border-color:rgba(255,255,255,.1);color:color-mix(in srgb,var(--ink) 55%,var(--paper))}
+
+@media (max-width:900px) {
+  html[data-skin=tech] .hero.split{grid-template-columns:1fr;gap:28px;padding:44px 0 36px}
+  html[data-skin=tech] .hero h1{font-size:36px}
+  html[data-skin=tech] .grid{grid-template-columns:repeat(2,1fr)}
+  html[data-skin=tech] .features,html[data-skin=tech] .features.numbered{grid-template-columns:1fr;gap:16px}
+  html[data-skin=tech] .hero-stats{grid-template-columns:repeat(2,1fr);gap:16px 20px}
+}
+@media (max-width:640px) {
+  html[data-skin=tech] .hero h1{font-size:30px}
+  html[data-skin=tech] .grid{grid-template-columns:1fr}
+  html[data-skin=tech] .site-header{padding:14px 20px}
+}

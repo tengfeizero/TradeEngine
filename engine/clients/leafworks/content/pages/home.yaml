@@ -1,0 +1,216 @@
+slug: home
+status: published
+title:
+  en: Private-label tea development and packing in Hangzhou
+  zh: 杭州的茶叶开发与自有品牌包装
+summary:
+  en: Thirty-eight base lots, an in-house blending bench and 300 kg minimums. We develop the tea your brand sells, and we put the numbers on paper.
+  zh: 三十八个基底批次、自有拼配台、300 公斤起订。我们开发你品牌要卖的茶，并把数字写在纸上。
+updated_at: 2026-10-22
+blocks:
+  - type: hero
+    badge:
+      en: Hangzhou · private-label tea since 2009
+      zh: 杭州 · 自有品牌茶，始于 2009
+    headline:
+      en: Tea, {developed}.
+      zh: 茶，是{开发}出来的。
+    sub:
+      en: We are not a tea garden. We are the bench between the garden and your shelf — thirty-eight base lots, a lab that cups blind, and a packing hall that will run 300 kilograms without asking you to buy a tonne.
+      zh: 我们不是茶园。我们是茶园与你货架之间的那张台子——三十八个基底批次、一间盲评的实验室、一条 300 公斤就能开的包装线，不需要你先买一吨。
+    cta_text:
+      en: Start with a brief
+      zh: 从一份需求开始
+    cta_href: "/private-label/"
+    cta2_text:
+      en: Explore the six teas
+      zh: 看六类茶
+    cta2_href: "/products/"
+    image: media/hero/bench.jpg
+  - type: stats
+    kicker:
+      en: By the numbers
+      zh: 数字里的茶园
+    items:
+      - value: "38"
+        label:
+          en: Base lots in stock
+          zh: 常备基底批次
+        note:
+          en: six categories
+          zh: 六个品类
+      - value: "420"
+        label:
+          en: Formulas on file
+          zh: 存档配方
+        note:
+          en: yours stays yours
+          zh: 你的配方只属于你
+      - value: "1,900t"
+        label:
+          en: Packed last year
+          zh: 去年包装量
+        note:
+          en: 2025, all channels
+          zh: 2025 年全渠道
+      - value: "12"
+        label:
+          en: Days to first sample
+          zh: 首次寄样工作日
+        note:
+          en: from a complete brief
+          zh: 需求完整起算
+  - type: category_grid
+    kicker:
+      en: Our Tea Collection
+      zh: 茶叶系列
+    title:
+      en: The base library
+      zh: 基底库
+    intro:
+      en: Six categories, thirty-eight lots. Every lot is cupped blind by three people before it earns a place above the bench, and re-cupped every six months while it is in stock.
+      zh: 六个品类、三十八个批次。每一批要经三人盲评才能上台，在库期间每半年复评一次。
+  - type: image_text
+    kicker:
+      en: Our Tea Garden
+      zh: 自有茶园
+    title:
+      en: A sample bench, not a sales desk
+      zh: 一张样品台，不是一张销售桌
+    body:
+      en: |
+        The first thing a new buyer gets is not a catalogue. It is three to five lots, chosen against the cup you described, each with a CoA, a brewing card and the price at your volume. If none of them work, we say so and quote a development run instead of pushing the nearest match.
+
+        Formulas we build for you are not reused. Your blend sits in a file with your code on it, and it does not appear in another buyer's sample set — the only exception is a base lot, which by definition several customers buy.
+      zh: |
+        新买家收到的第一样东西不是产品册，而是三到五个批次——按你描述的那杯茶挑出来的，每一份都带检测报告、冲煮卡和对应你量的价格。如果都不合适，我们直说，然后报一个开发批次，而不是把最接近的那个推给你。
+
+        为你做的配方不会复用。你的拼配存在一个以你编号命名的档案里，不会出现在别的买家样品盒中——唯一的例外是基底批次，那本来就是多个客户在买的。
+    bullets:
+      - en: Three to five lots per sample set, not a full catalogue
+        zh: 每次寄样三到五支，不寄整本产品册
+      - en: CoA and brewing card with every sample
+        zh: 每份样都附检测报告与冲煮卡
+      - en: Your formula is not reused for another buyer
+        zh: 你的配方不会给别的买家复用
+    image: media/lab/blending.jpg
+    cta_text:
+      en: How private label works
+      zh: 自有品牌怎么做
+    cta_href: "/private-label/"
+  - type: scenario_grid
+    kicker:
+      en: By Application
+      zh: 按应用场景
+    title:
+      en: Four ways we get used
+      zh: 我们的四种用法
+    intro:
+      en: The same bench, specified four different ways. Most buyers start in one channel and add a second within a year.
+      zh: 同一张台子，四种规格。多数买家从一个渠道开始，一年内会加第二个。
+  - type: features
+    kicker:
+      en: How We Work
+      zh: 我们的工作方式
+    title:
+      en: From leaf to shipped container
+      zh: 从一片叶子到一个货柜
+    intro:
+      en: A vertically integrated operation — our gardens, our blending hall, your artwork, one quality file.
+      zh: 垂直整合——自有茶园、自有拼配车间、你的包装稿、一份质量档案。
+    items:
+      - icon: leaf
+        title:
+          en: Own gardens & partner farms
+          zh: 自有茶园与合作农场
+        body:
+          en: Single-origin traceability, garden to batch number.
+          zh: 产地可追溯到具体茶园与批次号。
+      - icon: flask
+        title:
+          en: Lab-tested batches
+          zh: 批批送检
+        body:
+          en: EU 396/2005 MRL panels on every harvest lot.
+          zh: 每个采收批次按欧盟 396/2005 做农残检测。
+      - icon: package
+        title:
+          en: Private label ready
+          zh: 自有品牌代工
+        body:
+          en: Your artwork from 300 kg per SKU, tins or pouches.
+          zh: 单 SKU 300 公斤起印你的包装，铁罐或铝箔袋。
+      - icon: headset
+        title:
+          en: One contact, twelve hours
+          zh: 一个对接人，12 小时答复
+        body:
+          en: Wholesale desk replies within twelve hours on business days.
+          zh: 批发专席，工作日 12 小时内答复。
+  - type: process
+    kicker:
+      en: Craftsmanship
+      zh: 工艺
+    title:
+      en: From brief to container
+      zh: 从需求到货柜
+    intro:
+      en: Five stages, and the numbers we hold ourselves to at each one. The slow part is usually your artwork, not our tea.
+      zh: 五个阶段，以及每一阶段我们对自己的数字要求。慢的通常是你的包装设计，不是我们的茶。
+    steps:
+      - title:
+          en: Brief
+          zh: 需求
+        body:
+          en: Category, the cup you want, price band per kilogram, target market and annual volume. Half a page is enough; a catalogue request is not a brief.
+          zh: 品类、你想要的那杯、每公斤价格带、目标市场与年用量。半页纸就够；「发本产品册来」不算需求。
+      - title:
+          en: Sample set
+          zh: 寄样
+        body:
+          en: Three to five lots by courier within 12 working days, each with CoA and a brewing card. We tell you which one we would pick and why.
+          zh: 12 个工作日内快递三到五支，每支附检测报告与冲煮卡。我们会告诉你我们会选哪支，以及为什么。
+      - title:
+          en: Panel and revision
+          zh: 杯测与调整
+        body:
+          en: Blind cupping at your side and ours, then up to two revision rounds in 200 g trials. Most blends settle in the second round.
+          zh: 双方盲评，然后最多两轮 200 克小样调整。多数拼配在第二轮定稿。
+      - title:
+          en: Scale trial
+          zh: 上机试产
+        body:
+          en: 50 kg on the production line with the same grinder setting as bulk. This is where a bench blend either survives or turns out to need a different base.
+          zh: 50 公斤上生产线，研磨参数与大货一致。小样能不能活下来，这一步见分晓。
+      - title:
+          en: Production and pre-shipment
+          zh: 量产与出货
+        body:
+          en: 25 kg bags or your retail format, retained sample per lot, CoA and packing list issued before the container leaves. Loading photos go to you the same day.
+          zh: 25 公斤袋或你的零售规格，每批留样，柜子发出前出具检测报告与装箱单。装柜照片当天发你。
+  - type: case_grid
+    kicker:
+      en: Global Partners
+      zh: 全球伙伴
+    title:
+      en: Recent work
+      zh: 近期案例
+    intro:
+      en: Five briefs, five constraints that were not about the tea. The interesting part of a project is usually the packing line or the customs document.
+      zh: 五份需求，五个与茶本身无关的约束。项目里真正有意思的部分，往往是包装线或那张单证。
+    limit: 4
+  - type: cta
+    kicker:
+      en: Get in Touch
+      zh: 联系我们
+    title:
+      en: Send a brief, get three samples
+      zh: 发一份需求，收三支样
+    body:
+      en: Tell us the category, the cup, your price band and your market. We reply within one business day with what we would send and what it costs to send it.
+      zh: 告诉我们品类、你想要的那杯、价格带与市场。一个工作日内回复：我们会寄什么，寄样要多少钱。
+    cta_text:
+      en: Send a brief
+      zh: 发送需求
+    cta_href: "/contact/"
+  - type: inquiry

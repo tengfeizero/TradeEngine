@@ -1,0 +1,174 @@
+slug: home
+status: published
+title:
+  en: OEM bicycle and e-bike manufacturer in Zhejiang
+  zh: 浙江自行车与电助力车 OEM 制造商
+summary:
+  en: OEM bicycles and e-bikes built to your drawing, certified for the EU and North America, shipped from Taizhou since 2011.
+  zh: 按你的图纸生产自行车与电助力车，符合欧盟与北美认证，2011 年起自台州出货。
+updated_at: 2026-10-22
+blocks:
+  - type: hero
+    badge:
+      en: Taizhou · Zhejiang · since 2011
+      zh: 浙江台州 · 始于 2011
+    headline:
+      en: Your geometry. {Our line.}
+      zh: 你的几何，{我们的产线}。
+    sub:
+      en: Frames drawn to your numbers, built on an adjustable jig, and shipped with EN 15194 and ISO 4210 reports attached to the lot. 50 to 200 unit minimums, depending on platform.
+      zh: 按你的数字画的车架，在可调夹具上生产，随批附带 EN 15194 与 ISO 4210 报告。按平台不同，50 至 200 台起订。
+    cta_text:
+      en: Request a quote
+      zh: 获取报价
+    cta_href: "/contact/"
+    cta2_text:
+      en: Explore the line-up
+      zh: 看整车系列
+    cta2_href: "/products/"
+    image: media/products/cat-ebike.jpg
+  - type: stats
+    kicker:
+      en: By the numbers
+      zh: 数字里的工厂
+    items:
+      - value: "120k"
+        label:
+          en: Units per year
+          zh: 年产能（台）
+        note:
+          en: two plants
+          zh: 两个厂区
+      - value: "15"
+        label:
+          en: Years exporting
+          zh: 出口年数
+        note:
+          en: since 2011
+          zh: 自 2011 年起
+      - value: "45"
+        label:
+          en: Export countries
+          zh: 出口国家
+        note:
+          en: EU / NA / APAC / ME
+          zh: 欧洲 / 北美 / 亚太 / 中东
+      - value: "98.6%"
+        label:
+          en: First-pass inspection
+          zh: 一次验货合格率
+        note:
+          en: 2025 average
+          zh: 2025 年均值
+  - type: product_grid
+    kicker:
+      en: Bicycles for Every Ride
+      zh: 每一种骑行
+    title:
+      en: Platforms we build most
+      zh: 出货量最大的平台
+    intro:
+      en: Six categories, one drawing standard. Everything below can carry your geometry, your paint code and your decals.
+      zh: 六个品类，一套图纸标准。下面每一款都能换成你的几何、色号与贴花。
+    featured: false
+    limit: 6
+  - type: image_text
+    kicker:
+      en: Our Factory
+      zh: 自有工厂
+    title:
+      en: A frame drawing you can actually revise
+      zh: 一份真的能改的车架图纸
+    body:
+      en: |
+        Most factories quote a geometry change as a new mould. Ours runs on adjustable jigs, so a head angle or reach change is a drawing revision — three weeks, not sixteen.
+
+        You get the 2D drawing, the weld map and the fixture offsets with every platform, so your engineer can check our numbers against yours before tooling starts.
+      zh: |
+        多数工厂把改几何报成开新模。我们用的是可调夹具，改头管角或前伸量属于改图纸——三周，不是十六周。
+
+        每个平台都交付 2D 图纸、焊接图与夹具偏置，你的工程师可以在开模前把我们的数字和自己的对一遍。
+    bullets:
+      - en: Adjustable jigs, geometry changes without new tooling
+        zh: 可调夹具，改几何不需重开模
+      - en: 2D drawing, weld map and fixture offsets included
+        zh: 2D 图纸、焊接图与夹具偏置一并交付
+      - en: ISO 4210-2 fatigue and impact testing per batch
+        zh: 每批做 ISO 4210-2 疲劳与冲击测试
+    image: media/products/cat-mountain.jpg
+    cta_text:
+      en: See how we build
+      zh: 看看我们怎么生产
+    cta_href: "/factory/"
+  - type: features
+    kicker:
+      en: Built Responsibly
+      zh: 负责任地造车
+    title:
+      en: Our commitment to the planet
+      zh: 我们对这颗星球的承诺
+    intro:
+      en: Every Ridgeway is engineered for a decade of daily use — and for the day it is retired.
+      zh: 每一辆 Ridgeway 都为十年的日常使用而设计，也为退役的那一天。
+    items:
+      - icon: recycle
+        title:
+          en: 92% recyclable frame sets
+          zh: 92% 可回收车架
+        body:
+          en: Aluminium monocoque with water-based coating.
+          zh: 铝合金单体壳，水性涂层。
+      - icon: battery
+        title:
+          en: Second-life battery program
+          zh: 电池二次利用计划
+        body:
+          en: Packs below 80% capacity go to off-grid storage partners.
+          zh: 低于 80% 容量的电池包转投离网储能伙伴。
+      - icon: users
+        title:
+          en: Fair-work audited lines
+          zh: 公平劳动审核产线
+        body:
+          en: BSCI audit report renewed every two years.
+          zh: BSCI 审核报告每两年更新。
+      - icon: wrench
+        title:
+          en: Ten-year spares promise
+          zh: 十年备件承诺
+        body:
+          en: Every fastener and board kept in stock for a decade.
+          zh: 每一颗螺丝与控制板，十年常备库存。
+  - type: scenario_grid
+    kicker:
+      en: Ride Scenarios
+      zh: 骑行场景
+    title:
+      en: Who we build for
+      zh: 我们为谁生产
+    intro:
+      en: The same frame line, specified four different ways depending on who rides it and how it is maintained.
+      zh: 同一条车架产线，按使用者与维护方式做四种不同规格。
+  - type: case_grid
+    kicker:
+      en: Trusted Worldwide
+      zh: 全球信赖
+    title:
+      en: Recent work
+      zh: 近期案例
+    limit: 4
+  - type: cta
+    kicker:
+      en: Request a Quote
+      zh: 获取报价
+    title:
+      en: Send your drawing, get a costed offer
+      zh: 发来图纸，收到带成本的报价
+    body:
+      en: Include frame material, geometry sheet, annual volume, target market and certification requirements. We reply within 12 hours on business days with an FOB estimate and a tooling position.
+      zh: 请注明车架材质、几何表、年采购量、目标市场与认证要求。工作日 12 小时内回复 FOB 估价与开模方案。
+    cta_text:
+      en: Request a quote
+      zh: 获取报价
+    cta_href: "/contact/"
+  - type: inquiry

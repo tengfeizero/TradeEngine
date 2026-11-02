@@ -1,0 +1,148 @@
+base_url: https://leafworks-tea.example.com
+schema_version: 1
+default_lang: en
+langs: [en, zh]
+theme: leafworks
+
+brand:
+  name: Leafworks Tea Co.
+  logo: media/brand/logo.svg
+  tagline:
+    en: Tea development and private-label packing, from a bench in Hangzhou
+    zh: 杭州的一间拼配台，做茶叶开发与自有品牌包装
+
+company:
+  legal_name: Hangzhou Leafworks Tea Co., Ltd.
+  founded_year: 2009
+  address:
+    country: CN
+    region: Zhejiang
+    city: Hangzhou
+    street: No.6 Chayuan Road, Yuhang District
+    zip: "311100"
+
+contact:
+  email: hello@leafworks-tea.example.com
+  phone: "+86 571 8899 2140"
+  whatsapp: "8613800000000"
+
+markets:
+  - code: EU
+    name:
+      en: European Union
+      zh: 欧盟
+    langs: [en]
+  - code: UK
+    name:
+      en: United Kingdom
+      zh: 英国
+    langs: [en]
+  - code: US
+    name:
+      en: North America
+      zh: 北美
+    langs: [en]
+  - code: JP
+    name:
+      en: Japan
+      zh: 日本
+    langs: [en]
+  - code: AU
+    name:
+      en: Australia
+      zh: 澳洲
+    langs: [en]
+  - code: AE
+    name:
+      en: Middle East
+      zh: 中东
+    langs: [en]
+
+social:
+  linkedin: https://linkedin.com/company/leafworks-tea
+  instagram: https://instagram.com/leafworkstea
+
+analytics:
+  ga4_id: G-XXXXXXXXXX
+  # Google Search Console 的 HTML 标签验证码（只填 content 的值）
+  # gsc_verify: "abc123..."
+
+compliance:
+  eu_responsible:
+    name: Leafworks Europe B.V.
+    address: Pierre Lallementstraat 42, 1097 JR Amsterdam, Netherlands
+    email: eu@leafworks-tea.example.com
+    phone: "+31 20 000 0000"
+  legal_notice:
+    register_no: "KvK 92345678"
+    register_court: Amsterdam
+    vat_id: NL866234567B01
+    managing_director: A. Bakker
+    email: legal@leafworks-tea.example.com
+    phone: "+31 20 000 0000"
+  epr:
+    de_packaging: "LUCID DE2345678901234"
+    fr_packaging: "FR-2024-123456"
+    weee: ""
+
+catalog:
+  file: media/catalog.pdf
+  label:
+    en: Download product catalogue (PDF)
+    zh: 下载产品目录（PDF）
+
+nav:
+  - label:
+      en: Products
+      zh: 产品
+    href: "/products/"
+  - label:
+      en: Applications
+      zh: 应用场景
+    href: "/scenarios/"
+  - label:
+      en: Private Label
+      zh: 自有品牌
+    href: "/private-label/"
+  - label:
+      en: Quality
+      zh: 品控
+    href: "/quality/"
+  - label:
+      en: Certifications
+      zh: 认证
+    href: "/certifications/"
+  - label:
+      en: Cases
+      zh: 案例
+    href: "/cases/"
+  - label:
+      en: About
+      zh: 关于
+    href: "/about/"
+  - label:
+      en: Contact
+      zh: 联系
+    href: "/contact/"
+
+inquiry:
+  recipients: [hello@leafworks-tea.example.com]
+  fields: [name, company, email, country, product, volume, message]
+  required: [name, email, message]
+  product_field: true
+  success_url: /{lang}/thank-you/
+  turnstile_sitekey: ""
+  api_base: ""
+  allowed_origins: []
+  rate_limit_per_hour: 10
+  webhook: ""
+
+images:
+  transcode: false
+  quality: 82
+  widths: [640, 960, 1280]
+  max_kb: 400
+
+store:
+  driver: sqlite
+  dsn: .data/inquiries.db

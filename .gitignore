@@ -1,0 +1,20 @@
+# ---- 内部工作区与私有数据（永不入库）----
+.workbuddy/
+reports/
+
+# ---- 构建产物与二进制 ----
+*.exe
+*.db
+engine/release/
+**/.build/
+**/.data/
+.tmp/
+node_modules/
+__pycache__/
+*.pyc
+
+# ---- 临时与系统文件 ----
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,81 @@
+slug: business-terms
+status: published
+title:
+  en: Business Terms
+  zh: 商业模式政策
+summary:
+  en: OEM and ODM minimums, white label, exclusivity, who owns the firmware, and how long a quotation holds — answered before you ask.
+  zh: OEM/ODM 起订量、白标、独家代理、固件归谁、报价保多久——在你开口之前先答清楚。
+blocks:
+  - type: richtext
+    title:
+      en: OEM and ODM
+      zh: OEM 与 ODM
+    body:
+      en: |
+        **OEM.** We build to your specification on our platforms. First run starts at 50 units for inspection and survey airframes and 30 for the smaller carrier platforms; repeat orders start at 20. What you can change without a new certification: shell colour and silk print, boot logo, package, transmitter sticks, and a firmware parameter set (altitude ceiling, return-to-home behaviour, spray rate). What needs a new certification run: airframe geometry, motor and ESC, battery, RF module. We will tell you which side of that line your request falls on before you pay a sample fee.
+
+        **ODM.** An existing platform carries your brand: minimum 30 units per model and colour, with your logo on the shell, the case and the manual. Lead time is 25–45 days from artwork approval. Firmware stays ours and is signed with our key.
+      zh: |
+        **OEM。** 在我们的平台上按你的规格生产。巡检与测绘机型首单 50 台起，小型载具平台 30 台起，返单 20 台起。**不需要重新认证**的可改项：外壳颜色与丝印、开机画面、包装、遥控器摇杆、一组固件参数集（限高、返航行为、喷洒量）。**需要重新认证**的项目：机体几何、电机与电调、电池、射频模块。你的需求落在哪一侧，我们在收打样费之前就说明。
+
+        **ODM。** 现成平台贴你的品牌：单款单色 30 台起，外壳、箱体与说明书可印你的标识。交期自稿件确认起 25–45 天。固件仍归我方，并用我们的密钥签名。
+  - type: richtext
+    title:
+      en: White label and exclusivity
+      zh: 白标与独家代理
+    body:
+      en: |
+        **White label.** Your brand on the product, the case and the manual; no factory marks on the shell or the carton. Neutral packaging is available for marketplace sellers, with one condition that is not negotiable: the CE-RED and FCC certificates must stay filed under your legal entity. A certificate filed under ours cannot be used by you, and a relabelled product without a valid certificate is an expensive way to lose a market.
+
+        **Exclusivity.** Granted territory by territory, never globally. It requires a committed annual volume of 1,200 units, a review every 12 months, and 90 days' notice to withdraw. If we cannot ship within the quoted lead time twice in a year, you are released from the commitment immediately.
+      zh: |
+        **白标。** 产品、箱体与说明书印你的品牌；外壳与外箱不出现工厂标识。平台卖家可用中性包装，但有一个不可协商的条件：CE-RED 与 FCC 证书必须挂在你自己的法人主体名下。挂在我方名下的证书你用不了，而一个没有有效证书的换标产品，是丢市场最贵的方式。
+
+        **独家代理。** 按区域授予，从不给全球独家。条件：年度承诺量 1,200 台、每 12 个月复核、退出提前 90 天通知。若我方一年内有两次未能在报价交期内发货，你可立即解除承诺。
+  - type: richtext
+    title:
+      en: Firmware, IP and quotation validity
+      zh: 固件、知识产权与报价有效期
+    body:
+      en: |
+        **What is yours.** Your mission software, your payload interface, your airframe design if you paid for it, and your brand. We sign an NDA before quoting, and we never build your geometry or your payload mount for another buyer.
+
+        **What is ours.** The flight-control stack, the redundancy logic, the gimbal calibration routines and the test fixtures. We do not share source code, we do not sell a development licence, and we do not support reverse engineering — asking will end the conversation politely but firmly. A parameter set is not source code; you get every tunable that your certification allows.
+
+        **Quotation validity.** 30 days from the date of issue, printed on every quotation. Battery cells and MCUs move faster than that, and a price held for six months is a price we will lose money on or quietly degrade the BOM to keep. Volume breaks apply per order, not per year.
+      zh: |
+        **属于你的。** 你的任务软件、你的载荷接口、你出资开发的机体设计，以及你的品牌。报价前可签保密协议，我们不会把你的机体几何或载荷挂架做给其他买家。
+
+        **属于我方的。** 飞控栈、冗余逻辑、云台标定例程与测试工装。我们不提供源码、不卖开发授权、也不配合逆向——问了会得到礼貌但明确的拒绝。参数集不是源码，凡你的认证允许调整的量，你都能拿到。
+
+        **报价有效期。** 自开出日起 30 天，每份报价都写明。电芯与 MCU 的价格动得比这快，一份压半年的价格，要么我们亏着做，要么悄悄降 BOM 去保。阶梯价按单次订单计算，不按年度累计。
+  - type: faq
+    title:
+      en: Questions buyers ask first
+      zh: 买家最常问的几个问题
+    items:
+      - q:
+          en: Can the product carry our brand with no reference to you at all?
+          zh: 能不能完全贴我们的品牌、不出现你们的任何信息？
+        a:
+          en: On the shell and the carton, yes. In the legal documents, no — EU GPSR requires the manufacturer's name and address on the product or its packaging. That line is a compliance requirement, not branding.
+          zh: 外壳与外箱可以。法律文件里不行——欧盟 GPSR 要求在产品或包装上标注制造商名称与地址。这一行是合规要求，不是品牌问题。
+      - q:
+          en: Can we get the firmware source for our own integration?
+          zh: 能否提供固件源码用于我们自己的集成？
+        a:
+          en: No. What you can have is a documented parameter interface, the MAVLink message set we support, and a signed firmware build with your configuration baked in. If your requirement genuinely needs source, we will say so early rather than string you along.
+          zh: 不能。你能拿到的是有文档的参数接口、我们支持的 MAVLink 消息集，以及把配置烧进去的签名固件。如果你的需求确实要源码，我们会尽早说不，不拖着。
+      - q:
+          en: Who handles export licensing?
+          zh: 出口许可由谁办？
+        a:
+          en: We file the export licence as the exporter of record; you provide the end-user and end-use declaration. For destinations where the platform crosses the control threshold we will tell you before the proforma invoice, not after the deposit.
+          zh: 我方以出口经营者身份办理出口许可，你方提供最终用户与最终用途声明。目的地若触及管制阈值，我们在形式发票之前就说明，不会等收到定金再说。
+      - q:
+          en: Do you sell the same platform to our competitors in the same country?
+          zh: 会把同一平台卖给同国的竞争对手吗？
+        a:
+          en: Without an exclusivity agreement, we may supply other buyers in your market, but never your payload interface or your custom geometry. An exclusivity agreement turns that boundary into a contract clause with a volume commitment behind it.
+          zh: 没有独家协议时，我们可能向你的市场供应其他买家，但绝不会用你的载荷接口或定制几何。签独家协议后，这条边界就变成带采购量承诺的合同条款。

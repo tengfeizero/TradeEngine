@@ -1,0 +1,69 @@
+slug: certifications
+status: published
+title:
+  en: Certificates, the revision they belong to, and how to check
+  zh: 认证、它们对应哪个版本、以及怎么核
+summary:
+  en: Six reports covering radio, safety, hazardous substances and battery transport. Each is issued against a hardware revision that is printed on the label.
+  zh: 六份报告，覆盖射频、安全、有害物质与电池运输。每份对应一个硬件版本，版本号印在机身标签上。
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    title:
+      en: A certificate covers a revision, not a product name
+      zh: 证书对应的是一个版本，不是一个产品名
+    lead:
+      en: If the revision on the label does not match the revision on the report, the certificate does not cover your unit.
+      zh: 如果标签上的版本和报告上的版本对不上，这份证书就不覆盖你那台机器。
+    body:
+      en: |
+        This is the most common failure in a customs hold, and it is entirely avoidable. A manufacturer changes the radio module, keeps the product name, and the CE report on file now describes a different device. The paperwork looks complete until somebody reads the revision field.
+
+        Every report below states the hardware revision and the firmware hash range it covers. We print the same revision on the label. If you are checking a competitor's file, that is the field to look at first.
+      zh: |
+        这是海关扣货最常见的成因，而且完全可以避免。厂家换了射频模块，产品名不变，存档的 CE 报告描述的已经是另一台设备。文件看起来齐全，直到有人去读版本号那一栏。
+
+        下面每份报告都写明硬件版本与它覆盖的固件哈希区间。我们把同一个版本号印在标签上。如果你在核竞争对手的文件，先看的就是这一栏。
+  - type: certificate_grid
+    title:
+      en: Current reports
+      zh: 当前有效报告
+    intro:
+      en: Downloadable in full. The number on each card is the number to quote to your broker.
+      zh: 可完整下载。每张卡片上的编号就是你可以报给报关行的编号。
+  - type: richtext
+    title:
+      en: What each one actually covers
+      zh: 每一份到底覆盖什么
+    body:
+      en: |
+        FCC Part 15.247 covers the radio transmitter in the 2.4 and 5.8 GHz bands. It does not cover the aircraft's safety, and it is not a licence to fly in the US.
+
+        CE RED covers radio equipment placed on the EU market. For a UAV above 900 g the EU also expects a class marking under the drone regulation, which is a separate declaration and is the operator's responsibility, not the manufacturer's.
+
+        RoHS covers restricted substances in the electrical assembly. UN38.3 covers the battery as a transport article — it is a test report, not an approval, and your freight forwarder will want it per lot, not per model year.
+
+        IP54 is an ingress test to IEC 60529. It says dust protected and splash resistant. It does not say the aircraft can be flown in rain, which is why the SR-30 has a separate test note for wet operation.
+
+        ISO 9001 is a management system certificate for the plant, not for the product.
+      zh: |
+        FCC Part 15.247 覆盖的是 2.4 与 5.8 GHz 频段的射频发射部分。它不覆盖飞行安全，也不是在美国飞行的许可。
+
+        CE RED 覆盖投放欧盟市场的无线电设备。900 克以上的无人机，欧盟另外要求按无人机法规做类别标识，那是一份独立声明，责任在运营人，不在制造商。
+
+        RoHS 覆盖电气组件中的受限物质。UN38.3 是把电池当作运输物品来测——它是一份试验报告，不是批准，而且你的货代会按批次要，不是按型号年份。
+
+        IP54 是 IEC 60529 的防护等级测试，含义是防尘、防溅。它不代表可以在雨里飞，所以 SR-30 对湿态作业另有一份测试说明。
+
+        ISO 9001 是厂区管理体系的证书，不是产品的。
+  - type: cta
+    title:
+      en: Need the full file for a tender?
+      zh: 投标需要完整文件包?
+    body:
+      en: We can send the complete report set, the label artwork and the declaration of conformity as a single PDF pack with a contents page, which is usually what a tender document asks for.
+      zh: 我们可以把完整报告集、标签稿与符合性声明打成一个带目录的 PDF 包发给你，招标文件通常要的就是这个。
+    cta_text:
+      en: Request the file pack
+      zh: 索取文件包
+    cta_href: "/contact/"

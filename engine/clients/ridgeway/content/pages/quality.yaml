@@ -1,0 +1,140 @@
+slug: quality
+status: published
+title:
+  en: Quality control & inspection
+  zh: 品控与检验
+summary:
+  en: What we test, how often, and what happens when a batch fails. Sampling plans, torque records and the three defects we treat as stop-the-line.
+  zh: 我们测什么、多久测一次、不合格怎么处理。抽检计划、扭矩记录，以及三类停线缺陷。
+cover: media/products/cat-city.jpg
+updated_at: 2026-10-20
+blocks:
+  - type: stats
+    items:
+      - value: "98.6%"
+        label:
+          en: First-pass inspection
+          zh: 一次验货合格率
+        note:
+          en: 2025, third-party
+          zh: 2025 年第三方
+      - value: "AQL 2.5"
+        label:
+          en: Sampling standard
+          zh: 抽检标准
+        note:
+          en: critical 0, major 2.5
+          zh: 致命 0，主要 2.5
+      - value: "100%"
+        label:
+          en: Ride tested
+          zh: 骑行测试比例
+        note:
+          en: every unit
+          zh: 每台
+      - value: "0.4%"
+        label:
+          en: Field failure rate
+          zh: 售后故障率
+        note:
+          en: frame-related, 2025
+          zh: 车架相关，2025 年
+  - type: richtext
+    title:
+      en: Three defects stop the line
+      zh: 三类缺陷直接停线
+    body:
+      en: |
+        Most inspection lists are long and nobody reads them. Ours has three items that stop the line immediately, and everything else is handled by AQL sampling.
+
+        **1. Weld porosity on the head tube or bottom bracket.** These are the two joints that fail catastrophically rather than gradually. Any porosity found on either joint stops the batch until the welding parameters are re-verified.
+
+        **2. Brake performance below spec.** Every unit gets a brake test on a roller rig; a unit below 3.4 m/s² deceleration on the front brake is rejected, and if two consecutive units fail, the whole shift is re-tested.
+
+        **3. Battery pack insulation below 20 MΩ.** On EPAC builds, a low-insulation pack is a fire risk in transit. Packs are tested at 500 V DC before installation, and any failure quarantines the entire cell lot.
+      zh: |
+        多数检验清单很长，没人看。我们的清单里只有三项是立即停线，其余交给 AQL 抽检。
+
+        **一、车头管或五通焊缝有气孔。** 这两处是「灾难性失效」而非渐进失效的位置。任一处发现气孔，该批停产，直到重新验证焊接参数。
+
+        **二、刹车性能低于规格。** 每台在滚轮台上测刹车；前刹减速度低于 3.4 米/秒² 判不合格，若连续两台不合格，整班次重测。
+
+        **三、电助力电池包绝缘低于 20 兆欧。** 绝缘不足的电池包在运输中有起火风险。装车前按 500 伏直流测试，任一不合格则整批电芯隔离。
+  - type: process
+    title:
+      en: When a batch fails
+      zh: 批次不合格时
+    intro:
+      en: The sequence matters more than the promise. This is the order we actually follow, including who pays.
+      zh: 顺序比承诺重要。这是我们实际执行的次序，包含费用归属。
+    steps:
+      - title:
+          en: Quarantine
+          zh: 隔离
+        body:
+          en: The lot is moved to a marked area and the traceability cards are pulled. Nothing leaves until the cause is identified.
+          zh: 该批移入标识区，调出追溯卡。查清原因前不发货。
+      - title:
+          en: Root cause
+          zh: 原因定位
+        body:
+          en: We check whether the defect is parameter drift, material, or operator. This decides whether it is a rework or a rebuild.
+          zh: 判断是参数漂移、材料还是人为。这决定返工还是重做。
+      - title:
+          en: Rework or rebuild
+          zh: 返工或重做
+        body:
+          en: Rework at our cost. If more than 15% of the lot is affected, we rebuild rather than patch, because patched frames fail later in your market.
+          zh: 返工由我们承担。若不良超过 15%，我们重做而不是修补——修补过的车架会在你的市场后期失效。
+      - title:
+          en: Re-inspection
+          zh: 复检
+        body:
+          en: A third party re-inspects at our cost. You get the report before we ask for the balance payment.
+          zh: 由第三方复检，费用我们承担。报告发你之后，我们才请款余款。
+      - title:
+          en: Disclosure
+          zh: 告知
+        body:
+          en: You get the root cause in writing, plus what we changed. We do not ship a reworked lot without telling you it was reworked.
+          zh: 书面告知根因与我们改了什么。返工过的批次一定告知，不会当作正常货发。
+  - type: faq
+    title:
+      en: Inspection questions
+      zh: 检验相关问题
+    items:
+      - q:
+          en: Can we use our own inspection company?
+          zh: 可以用我们自己的验货公司吗？
+        a:
+          en: Yes. Book them for the pre-shipment date in the PO; we will have the goods palletised and accessible. If they find a major defect we did not, we cover their fee.
+          zh: 可以。在订单里约定验货日期，我们会把货打托并保证可检。若他们发现我们漏检的主要缺陷，验货费由我们承担。
+      - q:
+          en: Do you provide test reports per lot or per year?
+          zh: 检测报告是按批还是按年？
+        a:
+          en: Per lot for battery safety, brake performance and paint adhesion. Frame fatigue is per 500 units or per year, whichever comes first.
+          zh: 电池安全、刹车性能、涂装附着力按批；车架疲劳每 500 台或每年一次，以先到者为准。
+      - q:
+          en: What is your AQL on cosmetic defects?
+          zh: 外观缺陷的 AQL 是多少？
+        a:
+          en: 2.5 for major cosmetic (visible at 1 m), 4.0 for minor (visible at 0.5 m under D65). Paint runs inside the bottom bracket shell are not counted.
+          zh: 主要外观缺陷（1 米可见）2.5，次要（D65 光源下 0.5 米可见）4.0。五通内部的流挂不计。
+      - q:
+          en: How do you handle a claim after delivery?
+          zh: 到货后的索赔怎么处理？
+        a:
+          en: Send the frame number and photos. We check the traceability card, and if it is our defect we credit or replace in the next shipment — no return freight, because shipping a broken frame back costs more than the frame.
+          zh: 提供车架号与照片。我们查追溯卡，确属我方缺陷则在下一批抵扣或补发——不退运，因为把坏车架运回来的费用比车架本身还贵。
+  - type: cta
+    title:
+      en: Want the inspection plan before you order?
+      zh: 下单前先要检验计划？
+    body:
+      en: We can send the full checklist, the sampling table and a sample traceability card so your QA team can review them against your own standard.
+      zh: 我们可以发完整检验清单、抽检表与一张样本追溯卡，供你的质量团队对照自己的标准评审。
+    cta_text:
+      en: Request the documents
+      zh: 索取文件
+    cta_href: "/contact/"

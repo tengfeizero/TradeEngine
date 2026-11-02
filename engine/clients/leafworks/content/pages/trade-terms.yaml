@@ -1,0 +1,69 @@
+slug: trade-terms
+status: published
+title:
+  en: Trade Terms
+  zh: 贸易条款
+summary:
+  en: Payment, incoterms, shipping documents and claims — the commercial baseline for every Leafworks order.
+  zh: 付款、贸易术语、随货单证与索赔——每张 Leafworks 订单的商业基线。
+blocks:
+  - type: richtext
+    kicker:
+      en: Payment and incoterms
+      zh: 付款与贸易术语
+    title:
+      en: How orders are paid and shipped
+      zh: 订单如何付款与发运
+    body:
+      en: |
+        **Payment.** T/T — 30% deposit with order, 70% against copy of the bill of lading. Lead times on the product pages start from the day the deposit lands. A confirmed irrevocable L/C at sight is accepted for first orders above USD 50,000; repeat business is T/T on the same terms.
+
+        **Incoterms.** FOB at the origin port named on each product page — Ningbo, Fuzhou, Xiamen or Shantou, whichever is nearest to the garden your tea comes from. A lot does not travel across the country before the container does. CIF and EXW are quoted on request; DAP into the EU runs through Leafworks Europe B.V. in Amsterdam.
+
+        **Quotation validity.** 14 days, for the reason stated on our private-label page: tea is an agricultural product, and the next lot of the same garden is not the same price. A quote older than 14 days is re-issued against current stock.
+      zh: |
+        **付款方式。** 电汇 T/T：下单付 30% 定金，见提单副本付 70% 尾款。产品页上的交期都从定金到账当天起算。首单金额超过 5 万美元可接受保兑的不可撤销即期信用证；返单一律 T/T 同条款。
+
+        **贸易术语。** FOB，口岸以各产品页标注为准——宁波、福州、厦门或汕头，取离你那批茶的茶园最近的港口。茶叶不该在装柜之前先横穿整个国家。CIF 与 EXW 按需报价；欧盟境内 DAP 经阿姆斯特丹的 Leafworks Europe B.V. 执行。
+
+        **报价有效期。** 14 天，理由写在白标页上：茶是农产品，同一座园子的下一批茶不是同一个价。超过 14 天的报价按当前库存重新开出。
+  - type: richtext
+    kicker:
+      en: Shipping and documents
+      zh: 装运与单证
+    title:
+      en: What travels with the tea
+      zh: 随茶而行的文件
+    body:
+      en: |
+        Every shipment includes the commercial invoice, packing list, bill of lading, phytosanitary certificate, certificate of origin, and the CoA for your lot — the residue panel tested against the MRLs of your destination market, not a generic panel. Where the lot is certified organic under EU 2018/848, the organic certificate travels too; where it is not, nothing on the label claims it.
+
+        Tea ships in foil-lined export cartons on pallets, and the lot code on the carton is the same code on the CoA — one lookup takes you from the carton in your warehouse to the blending batch record.
+
+        Seasonal lots are booked against the harvest calendar, not against a warehouse. If a spring lot sells out while your container is in production, we re-quote from current stock instead of substituting a cheaper leaf — the same rule that limits our quotation validity.
+      zh: |
+        每批货随附商业发票、装箱单、提单、植物检疫证书、产地证，以及你这批茶的 CoA——农残对照**你的目的市场限量**检测，不是通用面板。批次若持有 EU 2018/848 有机认证，证书随货同行；若没有，标签上不会有任何有机字样。
+
+        茶叶用铝箔内衬出口纸箱码托盘发运，箱上的批次号与 CoA 一致——从你仓库里的纸箱查到拼配批记录，只要一次检索。
+
+        季节批次按采收日历排产，不按仓库排产。如果春茶在你的柜子生产期间售罄，我们按当前库存重新报价，而不是悄悄换便宜叶子——约束我们报价有效期的也是同一条规则。
+  - type: richtext
+    kicker:
+      en: Inspection and claims
+      zh: 验货与索赔
+    title:
+      en: What happens when a lot does not pass
+      zh: 一批茶没过检怎么办
+    body:
+      en: |
+        Third-party pre-shipment inspection (SGS or Intertek, buyer's choice of the two) is available on every order, sampled to the applicable AQL plan. If a lot fails your inspection, the ship date decides the remedy: if it allows, we replace from stock at our cost; if not, we refund the deposit and hand you the failing report — so you can tell your own customer the truth instead of a story.
+
+        Claims after arrival: 30 days from container arrival, with the lot code and photos. The lot code is the key to the blending batch record, so a claim is answered against the exact batch, not the average of a season. Storage-related quality loss after delivery is judged against the storage conditions printed on the carton — tea keeps its word only if you keep it cool, dry and dark.
+
+        There is no warranty section on this page because tea is not a machine; there is a lot code, a CoA, and a batch record behind both.
+      zh: |
+        每张订单可安排出货前第三方验货（SGS 或 Intertek，二选一由买方定），按适用 AQL 方案抽样。批次没过检，补救方案看船期：来得及，我们换货，费用我方承担；来不及，退定金，把不合格报告交给你——让你能对自己的客户说真话，而不是讲故事。
+
+        到货后索赔：集装箱到港后 30 天内，凭批次号与照片提出。批次号对应拼配批记录，索赔针对的是确切的那一批，而不是一个季度的平均值。交付后与储存相关的品质问题，以箱上印的储存条件为准——茶叶守不守得住承诺，取决于你是否让它保持低温、干燥与避光。
+
+        这一页没有质保一节，因为茶不是机器；有的是批次号、CoA，以及两者背后的批记录。

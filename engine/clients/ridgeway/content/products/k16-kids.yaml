@@ -1,0 +1,142 @@
+slug: k16-kids
+status: published
+order: 7
+featured: false
+model_no: RD-K16
+category: kids
+scenarios: [retail-private-label]
+certificates: [bsci, iso-9001]
+markets: [EU, US, AU]
+hs_code: "8712009000"
+moq: 200
+moq_unit: pcs
+
+lead_time:
+  en: 40–55 days after deposit
+  zh: 定金后 40–55 天
+packaging:
+  en: One unit per carton, 95% assembled, training wheels fitted
+  zh: 一车一箱，95% 组装，辅助轮已装
+sample_policy:
+  en: Sample at 2× FOB, freight collect
+  zh: 样品按 FOB 两倍价，运费到付
+
+title:
+  en: K-16 Kids
+  zh: K-16 童车
+subtitle:
+  en: 16" wheels, ages 3–6, EN 71 and CPSIA compliant paint and parts
+  zh: 16 英寸轮径，3–6 岁，涂料与部件符合 EN 71 与 CPSIA
+
+summary:
+  en: Kids bikes are a compliance product before they are a design product. Every painted part on the K-16 carries an EN 71-3 and CPSIA test report tied to the production lot.
+  zh: 童车首先是合规产品，其次才是设计产品。K-16 每个涂装件都有与生产批次绑定的 EN 71-3 与 CPSIA 检测报告。
+
+description:
+  en: |
+    A kids bike that fails a phthalate test is a container stuck at customs. We buy paint and grips against EN 71-3 migration limits, hold the batch certificates, and print the lot number on the carton so a recall can be traced to a single container.
+
+    Geometry is the other half: a low standover, a 42 cm Q-factor narrow enough for small hips, and a reach-adjustable stem so the same bike fits from age three to six.
+  zh: |
+    童车一旦领苯二甲酸酯超标，整柜就卡在海关。我们按 EN 71-3 迁移限值采购涂料与把套，留存批次证书，并在纸箱印批号，使召回可追溯到单一货柜。
+
+    另一半是几何：低跨高、42 厘米窄 Q 值以适应儿童髋宽、可调前伸量的把立，让同一台车从三岁骑到六岁。
+
+highlights:
+  - en: EN 71-3 and CPSIA reports tied to the production lot
+    zh: EN 71-3 与 CPSIA 报告与生产批次绑定
+  - en: Lot number printed on the carton for traceability
+    zh: 纸箱印批号，可追溯
+  - en: 42 cm Q-factor, narrow enough for small hips
+    zh: 42 厘米 Q 值，适配儿童髋宽
+  - en: Reach-adjustable stem covers ages 3–6
+    zh: 可调前伸把立覆盖 3–6 岁
+
+applications:
+  - en: Retail kids and family ranges
+    zh: 零售童车与家庭车系
+  - en: Supermarket and toy-channel seasonal programmes
+    zh: 商超与玩具渠道的季节性项目
+
+specs:
+  - group:
+      en: Frame & geometry
+      zh: 车架与几何
+    items:
+      - key: frame
+        label:
+          en: Frame material
+          zh: 车架材质
+        value:
+          en: High-tensile steel, powder coated
+          zh: 高碳钢，粉末涂装
+      - key: wheel_size
+        label:
+          en: Wheel size
+          zh: 轮径
+        value:
+          en: 16"
+          zh: 16 英寸
+      - key: age_range
+        label:
+          en: Age range
+          zh: 适用年龄
+        value:
+          en: 3–6 years
+          zh: 3–6 岁
+      - key: weight
+        label:
+          en: Complete bike weight
+          zh: 整车重量
+        value_num: 8.2
+        unit: kg
+        filterable: true
+  - group:
+      en: Compliance & export data
+      zh: 合规与出口数据
+    items:
+      - key: compliance
+        label:
+          en: Compliance
+          zh: 合规
+        value:
+          en: EN 71-3, CPSIA, ISO 8098
+          zh: EN 71-3、CPSIA、ISO 8098
+      - key: brakes
+        label:
+          en: Brakes
+          zh: 刹车
+        value:
+          en: Coaster plus front caliper
+          zh: 倒刹加前钳刹
+      - key: extras
+        label:
+          en: Standard extras
+          zh: 标配附件
+        value:
+          en: Removable training wheels, chainguard, bell
+          zh: 可拆辅助轮、链罩、车铃
+      - key: max_load
+        label:
+          en: Max rider load
+          zh: 最大骑行者载重
+        value_num: 40
+        unit: kg
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.12
+  gross_weight_kg: 9.8
+
+cover: media/products/k16-kids.jpg
+related: [f20-folding]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Kids Bike OEM — EN 71-3 and CPSIA Compliant, 200 Unit MOQ
+    zh: 童车 OEM — 符合 EN 71-3 与 CPSIA，200 台起订
+  description:
+    en: 16" kids bike, ages 3–6, lot-traceable paint reports, removable training wheels. MOQ 200 units, 40–55 day lead time.
+    zh: 16 英寸童车，3–6 岁，批次可追溯的涂料报告，可拆辅助轮。200 台起订，40–55 天交期。

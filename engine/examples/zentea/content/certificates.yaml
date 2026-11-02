@@ -1,0 +1,29 @@
+- slug: usda-organic
+  status: published
+  name: { en: USDA Organic, zh: 美国有机认证 }
+  issuer: OneCert International
+  number: OC-2025-088412
+  issued: 2025-07-01
+  expires: 2027-06-30
+  markets: [US]
+  file: media/certs/usda-organic.pdf
+
+- slug: eu-organic
+  status: published
+  name: { en: EU Organic, zh: 欧盟有机认证 }
+  issuer: CERES Certification
+  number: CERES-2025-11452
+  issued: 2025-05-12
+  expires: 2028-05-11
+  markets: [EU]
+  file: media/certs/eu-organic.pdf
+
+- slug: haccp
+  status: published
+  name: { en: HACCP, zh: HACCP 体系认证 }
+  issuer: SGS China
+  number: CN-HACCP-2024-7731
+  issued: 2024-09-20
+  expires: 2027-09-19
+  markets: [EU, US, JP]
+  file: media/certs/haccp.pdf

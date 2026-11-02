@@ -1,0 +1,43 @@
+{{define "case"}}{{with .Case}}
+{{template "crumb" $.Crumb}}
+<article>
+  <header class="page-head">
+    <h1>{{.Title}}</h1>
+  </header>
+  <div class="case-head">
+    <div>
+      <div class="case-meta">
+        {{if .Country}}<div><strong>{{$.UI.country}}</strong>{{.Country}}</div>{{end}}
+        {{if .Industry}}<div><strong>{{$.UI.industry}}</strong>{{.Industry}}</div>{{end}}
+        {{if .Customer}}<div><strong>{{$.UI.account}}</strong>{{.Customer}}</div>{{end}}
+      </div>
+      {{if .Result}}<p class="case-result">{{.Result}}</p>{{end}}
+    </div>
+    {{if .Image}}{{template "image" .Image}}{{end}}
+  </div>
+
+  <div class="case-body">
+    <div>
+      <h3>{{$.UI.challenge}}</h3>
+      {{range .Challenge}}<p>{{.}}</p>{{end}}
+    </div>
+    <div>
+      <h3>{{$.UI.solution}}</h3>
+      {{range .Solution}}<p>{{.}}</p>{{end}}
+    </div>
+    <div>
+      <h3>{{$.UI.result}}</h3>
+      <p>{{.Result}}</p>
+    </div>
+  </div>
+
+  {{if .Products}}
+  <section class="section">
+    <h2>{{$.UI.products}}</h2>
+    <div class="grid">{{range .Products}}{{template "card" .}}{{end}}</div>
+  </section>
+  {{end}}
+</article>
+{{end}}
+{{template "inquiry_form" .}}
+{{end}}

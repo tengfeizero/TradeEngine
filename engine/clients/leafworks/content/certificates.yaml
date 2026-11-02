@@ -1,0 +1,77 @@
+- slug: usda-organic
+  status: published
+  order: 1
+  name:
+    en: USDA Organic
+    zh: 美国有机
+  issuer: OneCert International
+  number: OC-2026-11482
+  issued: "2026-03-11"
+  expires: "2027-03-10"
+  markets: [US]
+  file: media/certs/usda-organic.pdf
+
+- slug: eu-organic
+  status: published
+  order: 2
+  name:
+    en: EU Organic (2018/848)
+    zh: 欧盟有机（2018/848）
+  issuer: CERES Certification
+  number: CER-OR-2287
+  issued: "2025-09-01"
+  expires: "2027-08-31"
+  markets: [EU, UK]
+  file: media/certs/eu-organic.pdf
+
+- slug: fssc-22000
+  status: published
+  order: 3
+  name:
+    en: FSSC 22000 v6
+    zh: FSSC 22000 第六版
+  issuer: SGS China
+  number: CN-FSSC-004219
+  issued: "2025-07-01"
+  expires: "2027-06-30"
+  markets: [EU, UK, US, JP, AU, AE]
+  file: media/certs/fssc-22000.pdf
+
+- slug: brcgs
+  status: published
+  order: 4
+  name:
+    en: BRCGS Food Safety, Grade A
+    zh: BRCGS 食品安全 A 级
+  issuer: BRCGS
+  number: BRC-4419-26
+  issued: "2025-11-15"
+  expires: "2027-11-14"
+  markets: [EU, UK]
+  file: media/certs/brcgs.pdf
+
+- slug: kosher
+  status: published
+  order: 5
+  name:
+    en: Kosher Pareve
+    zh: 犹太洁食（Pareve）
+  issuer: Orthodox Union
+  number: OU-7812-K
+  issued: "2026-01-01"
+  expires: "2027-12-31"
+  markets: [US, EU]
+  file: media/certs/kosher.pdf
+
+- slug: halal
+  status: published
+  order: 6
+  name:
+    en: Halal
+    zh: 清真
+  issuer: MUI Indonesia
+  number: MUI-0021-1187
+  issued: "2026-02-01"
+  expires: "2028-01-31"
+  markets: [AE, EU]
+  file: media/certs/halal.pdf

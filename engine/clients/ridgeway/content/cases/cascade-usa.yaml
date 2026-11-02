@@ -1,0 +1,30 @@
+slug: cascade-usa
+status: published
+title:
+  en: US trail brand cuts geometry iteration from 16 weeks to 3
+  zh: 美国越野品牌把几何迭代周期从 16 周压到 3 周
+country: US
+industry:
+  en: Trail and gravel bikes
+  zh: 山地与砾石自行车
+customer: Cascade Outdoors
+challenge:
+  en: Every geometry change meant a new mould — USD 90,000 and sixteen weeks. They were launching two seasons behind European brands whose numbers moved annually.
+  zh: 每次改几何都要新开模：9 万美元、16 周。他们的上新比每年改数字的欧洲品牌慢了整整两季。
+solution:
+  en: We put their frame on an adjustable jig, so a head angle or reach change is a drawing revision. Two production batches per year are pulled for ISO 4210-2 fatigue and impact testing before release.
+  zh: 我们把他们的车架放到可调夹具上，改头管角或前伸量只需改图纸。每年两批在放行前抽检 ISO 4210-2 疲劳与冲击。
+result:
+  en: Iteration dropped to three weeks, four new geometries shipped in two seasons, and sell-through on the new SKUs reached 92%.
+  zh: 迭代周期降到三周，两季推出四个新几何，新 SKU 的售罄率达到 92%。
+products: [m720-trail, g500-gravel, e500-e-mtb]
+cover: media/cases/cascade.jpg
+updated_at: 2026-08-28
+
+seo:
+  title:
+    en: Case study — geometry iteration from 16 weeks to 3
+    zh: 客户案例——几何迭代从 16 周缩到 3 周
+  description:
+    en: An adjustable frame jig replaced USD 90,000 moulds, cutting geometry iteration from 16 weeks to 3 and lifting new-SKU sell-through to 92%.
+    zh: 可调夹具替代 9 万美元开模，几何迭代从 16 周降到 3 周，新 SKU 售罄率达 92%。

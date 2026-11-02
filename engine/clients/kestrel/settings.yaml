@@ -1,0 +1,148 @@
+base_url: https://kestrel-aero.example.com
+schema_version: 1
+default_lang: en
+langs: [en, zh]
+theme: kestrel
+
+brand:
+  name: Kestrel Aero
+  logo: media/brand/logo.svg
+  tagline:
+    en: Task-specific UAV platforms, exported with the paperwork already done
+    zh: 为具体任务造的无人机平台，出口文件随货备齐
+
+company:
+  legal_name: Shenzhen Kestrel Aero Technology Co., Ltd.
+  founded_year: 2011
+  address:
+    country: CN
+    region: Guangdong
+    city: Shenzhen
+    street: Building 7, Aerospace Technology Park, Bao'an District
+    zip: "518101"
+
+contact:
+  email: export@kestrel-aero.example.com
+  phone: "+86 755 8899 4200"
+  whatsapp: "8613800000000"
+
+markets:
+  - code: EU
+    name:
+      en: Europe
+      zh: 欧洲
+    langs: [en]
+  - code: US
+    name:
+      en: North America
+      zh: 北美
+    langs: [en]
+  - code: JP
+    name:
+      en: Japan
+      zh: 日本
+    langs: [en]
+  - code: AU
+    name:
+      en: Australia & NZ
+      zh: 澳洲与新西兰
+    langs: [en]
+  - code: AE
+    name:
+      en: Middle East
+      zh: 中东
+    langs: [en]
+  - code: BR
+    name:
+      en: Latin America
+      zh: 拉美
+    langs: [en]
+
+social:
+  linkedin: https://linkedin.com/company/kestrel-aero
+  youtube: https://youtube.com/@kestrelaero
+
+analytics:
+  ga4_id: G-XXXXXXXXXX
+  # Google Search Console 的 HTML 标签验证码（只填 content 的值）
+  # gsc_verify: "abc123..."
+
+compliance:
+  eu_responsible:
+    name: Kestrel Europe B.V.
+    address: Havenstraat 88, 3011 Rotterdam, Netherlands
+    email: eu@kestrel-aero.example.com
+    phone: "+31 10 000 0000"
+  legal_notice:
+    register_no: "KvK 91234567"
+    register_court: Rotterdam
+    vat_id: NL865123456B01
+    managing_director: J. van Dijk
+    email: legal@kestrel-aero.example.com
+    phone: "+31 10 000 0000"
+  epr:
+    de_packaging: "LUCID DE9876543210987"
+    fr_packaging: ""
+    weee: "WEEE DE 12345678"
+
+catalog:
+  file: media/catalog.pdf
+  label:
+    en: Download product catalogue (PDF)
+    zh: 下载产品目录（PDF）
+
+nav:
+  - label:
+      en: Products
+      zh: 产品
+    href: "/products/"
+  - label:
+      en: Applications
+      zh: 应用场景
+    href: "/scenarios/"
+  - label:
+      en: Technology
+      zh: 技术
+    href: "/technology/"
+  - label:
+      en: Factory
+      zh: 工厂
+    href: "/factory/"
+  - label:
+      en: Quality
+      zh: 品控
+    href: "/quality/"
+  - label:
+      en: Certifications
+      zh: 认证
+    href: "/certifications/"
+  - label:
+      en: Cases
+      zh: 案例
+    href: "/cases/"
+  - label:
+      en: Contact
+      zh: 联系
+    href: "/contact/"
+
+inquiry:
+  recipients: [export@kestrel-aero.example.com]
+  fields: [name, company, email, country, product, volume, message]
+  required: [name, email, message]
+  product_field: true
+  success_url: /{lang}/thank-you/
+  turnstile_sitekey: ""
+  api_base: ""
+  allowed_origins: []
+  rate_limit_per_hour: 10
+  webhook: ""
+
+images:
+  transcode: false
+  quality: 82
+  widths: [640, 960, 1280]
+  max_kb: 400
+
+store:
+  driver: sqlite
+  dsn: .data/inquiries.db

@@ -1,0 +1,178 @@
+slug: in-25
+status: published
+order: 5
+featured: true
+model_no: KA-IN25
+category: inspection
+scenarios: [grid-inspection]
+certificates: [ce-red, fcc-id, ip54, un383]
+markets: [EU, US, AU, BR]
+hs_code: "880622"
+moq: 10
+moq_unit: pcs
+
+lead_time:
+  en: 35–45 days after deposit, 14 days extra for a customer-specified radiometric calibration range
+  zh: 定金后 35–45 天，指定测温标定区间另加 14 天
+packaging:
+  en: One aircraft per hard case with gimbal brace, two batteries per UN38.3 carton
+  zh: 一机一硬箱含云台支撑，两块电池一箱按 UN38.3 发运
+sample_policy:
+  en: Demo unit at 1.5× FOB, returned within 60 days against a bulk order
+  zh: 演示机按 FOB 1.5 倍价，60 天内下大货可退
+
+title:
+  en: IN-25
+  zh: IN-25 工业巡检机
+subtitle:
+  en: Radiometric thermal plus 10× optical zoom, IP54, 45 minutes
+  zh: 测温热成像加 10 倍光学变焦、IP54、45 分钟
+summary:
+  en: One aircraft for the two inspections a utility actually runs — thermal on the conductor clamps, optical zoom on the insulator strings. Both cameras point the same direction, so the thermal and visible frames of the same tower line up without a second flight.
+  zh: 一台机器覆盖电力公司真正会做的两种巡检——导线线夹测温、绝缘子串变焦拍照。两个相机同轴，同一基塔的热成像与可见光画面无需二次飞行即可对齐。
+
+description:
+  en: |
+    Inspection buyers care about one thing after the first month: how many towers a crew can do in a day, and whether the images are usable in the asset management system afterwards without a human sorting them.
+
+    The IN-25 puts a 640×512 radiometric sensor and a 48 MP 10× optical zoom on the same stabilized axis. A single pass gives you the hot spot and the close-up of the same fitting, already aligned. The on-board processor tags each image with GPS, gimbal attitude, tower ID from the flight plan and the measured temperature, and writes a CSV index alongside the images.
+
+    The CSV index is the part customers underestimate. Without it, a 400-image flight is a folder someone has to rename by hand. With it, the images drop into most asset management systems as records rather than files.
+  zh: |
+    巡检客户在第一个月之后只关心两件事：一天能飞多少基塔，以及拍回来的图能不能直接进资产管理系统，而不是让人先手工分拣一遍。
+
+    IN-25 把 640×512 测温热成像与 4800 万像素 10 倍光学变焦装在同一根增稳轴上。一次通场就能拿到同一个金具的热点与特写，且已经对齐。机载处理器给每张图打上 GPS、云台姿态、航线里的塔号与实测温度，并在图片旁边写一份 CSV 索引。
+
+    CSV 索引是客户最容易低估的部分。没有它，一次 400 张的飞行就是一个需要有人手工改名的文件夹；有了它，图片在多数资产管理系统里是记录，而不是文件。
+
+highlights:
+  - en: 640×512 radiometric thermal, ±2 °C, emissivity table editable
+    zh: 640×512 测温热成像，±2 ℃，发射率表可编辑
+  - en: 48 MP 10× optical zoom on the same stabilized axis
+    zh: 4800 万像素 10 倍光学变焦，同一增稳轴
+  - en: CSV index with tower ID, GPS, gimbal attitude and temperature
+    zh: CSV 索引含塔号、GPS、云台姿态与温度
+  - en: IP54 airframe, 12 m/s wind, 1,200 m laser rangefinder
+    zh: IP54 机身、抗风 12 米/秒、1,200 米激光测距
+
+applications:
+  - en: Transmission line and substation inspection
+    zh: 输电线与变电站巡检
+  - en: Wind blade, flare stack and solar farm survey
+    zh: 风电叶片、火炬塔与光伏电站巡检
+
+specs:
+  - group:
+      en: Sensors
+      zh: 传感器
+    items:
+      - key: thermal
+        label:
+          en: Thermal camera
+          zh: 热成像
+        value:
+          en: 640×512 radiometric, -20 to 550 °C, ±2 °C or ±2 percent
+          zh: 640×512 测温型，-20 至 550 ℃，±2 ℃ 或 ±2%
+      - key: zoom
+        label:
+          en: Visible camera
+          zh: 可见光
+        value:
+          en: 48 MP 1/2-inch, 10× optical, 56× hybrid
+          zh: 4800 万像素 1/2 英寸，10 倍光学，56 倍混合变焦
+      - key: laser
+        label:
+          en: Laser rangefinder
+          zh: 激光测距
+        value:
+          en: 3–1,200 m, ±1 m, used for auto-focus and distance tags
+          zh: 3–1,200 米，±1 米，用于自动对焦与距离标记
+      - key: stabilization
+        label:
+          en: Gimbal
+          zh: 云台
+        value:
+          en: 3-axis, ±0.005° residual, both cameras on one axis
+          zh: 三轴，残余抖动 ±0.005°，双相机同轴
+  - group:
+      en: Flight
+      zh: 飞行
+    items:
+      - key: mtow
+        label:
+          en: Max take-off weight
+          zh: 最大起飞重量
+        value_num: 6.8
+        unit: kg
+        filterable: true
+      - key: flight_time
+        label:
+          en: Flight time
+          zh: 续航时间
+        value_num: 45
+        unit: min
+        filterable: true
+      - key: wind
+        label:
+          en: Wind resistance
+          zh: 抗风能力
+        value_num: 12
+        unit: m/s
+      - key: ip
+        label:
+          en: Ingress protection
+          zh: 防护等级
+        value:
+          en: IP54, tested to IEC 60529 report IEC60529-2025-KA-0219
+          zh: IP54，依据 IEC 60529 报告 IEC60529-2025-KA-0219
+      - key: transmission
+        label:
+          en: Video transmission
+          zh: 图传
+        value:
+          en: 15 km FCC / 8 km CE, 1080p/60
+          zh: FCC 15 公里 / CE 8 公里，1080p/60
+  - group:
+      en: Export & support
+      zh: 出口与支持
+    items:
+      - key: index
+        label:
+          en: Data output
+          zh: 数据输出
+        value:
+          en: JPEG + TIFF radiometric, CSV index, Exif GPS and attitude
+          zh: JPEG 与测温 TIFF、CSV 索引、Exif 含 GPS 与姿态
+      - key: spares
+        label:
+          en: Spares kit
+          zh: 备件包
+        value:
+          en: 1 kit per 10 aircraft, props, gimbal ribbon, motor, landing gear
+          zh: 每 10 台配 1 套，桨叶、云台排线、电机、起落架
+      - key: warranty
+        label:
+          en: Warranty
+          zh: 质保
+        value_num: 24
+        unit: months
+        filterable: true
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.28
+  gross_weight_kg: 21
+
+cover: media/products/in-25.jpg
+gallery: [media/products/in-25.jpg, media/products/cat-inspection.jpg]
+related: [sr-30, x9-cine]
+cases: [amazon-grid, outback-survey]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Inspection Drone OEM — Radiometric Thermal, 10× Zoom
+    zh: 巡检无人机 OEM — 测温热成像，10 倍光学变焦
+  description:
+    en: 640×512 radiometric thermal and 48 MP 10× zoom on one stabilized axis, IP54, 45-minute flight, CSV index for asset management systems.
+    zh: 640×512 测温热成像与 4800 万像素 10 倍变焦同轴增稳，IP54、45 分钟续航、面向资产管理系统的 CSV 索引。

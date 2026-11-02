@@ -1,0 +1,131 @@
+/*!
+ * @skin industrial
+ * @label 工业硬朗（机械 / 五金 / 化工 / 建材）
+ * @category 机械工业
+ * @tone light
+ */
+
+/* 语言是「工程图纸」：方角、2px 实线、等宽编号、无阴影、深色页头压顶。
+   买家看的是参数与产能，所以版面要密、要硬、要有表格感——
+   这是工业品类和消费品在审美上最大的分歧点。 */
+
+html[data-skin=industrial] body{font-size:15px;line-height:1.65}
+html[data-skin=industrial] h1,html[data-skin=industrial] h2,html[data-skin=industrial] h3{letter-spacing:-.01em}
+html[data-skin=industrial] h1{font-size:44px;font-weight:700;line-height:1.1}
+html[data-skin=industrial] h2{font-size:24px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+html[data-skin=industrial] h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
+html[data-skin=industrial] .lead{font-size:16px;color:color-mix(in srgb,var(--ink) 70%,var(--paper))}
+
+/* 页头：深色压顶横条，全站重心的第一锚点 */
+html[data-skin=industrial] .site-header{background:var(--ink);border-bottom:3px solid var(--primary);padding:0 32px;height:64px;gap:32px}
+html[data-skin=industrial] .brand{color:var(--paper);font-size:19px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+html[data-skin=industrial] .brand img{filter:brightness(0) invert(1)}
+html[data-skin=industrial] .site-nav a{color:color-mix(in srgb,var(--paper) 78%,var(--ink));font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:1;padding:22px 0;border-bottom:3px solid transparent}
+html[data-skin=industrial] .site-nav a:hover{color:var(--paper);border-bottom-color:var(--primary-text)}
+html[data-skin=industrial] .lang-switch a{color:color-mix(in srgb,var(--paper) 60%,var(--ink));border-radius:0}
+html[data-skin=industrial] .lang-switch a[aria-current]{color:var(--primary-text);border-color:var(--primary-text)}
+
+/* 首屏：左文右图，图方角带粗边；顶部一条主色刻度线 */
+html[data-skin=industrial] .hero{padding:0 0 44px;border-bottom:0;position:relative}
+html[data-skin=industrial] .hero::before{content:"";display:block;height:6px;background:var(--primary);margin:0 -32px 40px}
+html[data-skin=industrial] .hero h1{font-size:46px;max-width:22ch}
+html[data-skin=industrial] .hero .kicker{font-family:var(--font-mono);letter-spacing:.2em;color:var(--primary-text);font-size:11px}
+html[data-skin=industrial] .hero p{font-size:16px;max-width:52ch}
+html[data-skin=industrial] .hero.split{grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+html[data-skin=industrial] .hero.split .hero-img{aspect-ratio:4/3;border-radius:0;border:2px solid var(--ink);object-fit:cover}
+html[data-skin=industrial] .hero .badge{border-radius:0;border:1px solid var(--ink);background:transparent;color:var(--ink);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px}
+html[data-skin=industrial] .hero-cta .btn{border-radius:0}
+html[data-skin=industrial] .hero-stats{grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:0;margin-top:36px}
+html[data-skin=industrial] .hero-stats>div{padding:16px 18px;border-left:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+html[data-skin=industrial] .hero-stats>div:first-child{border-left:0;padding-left:0}
+html[data-skin=industrial] .hero-stats b{font-family:var(--font-mono);font-size:26px;font-weight:700;color:var(--ink)}
+html[data-skin=industrial] .hero-stats span{font-size:10px;letter-spacing:.12em;color:var(--muted-text)}
+
+/* 区块：小号大写字 + 左侧主色竖条，像技术手册的章标题 */
+html[data-skin=industrial] .section{padding:48px 0 0}
+html[data-skin=industrial] .section-head{border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:24px;align-items:flex-end}
+html[data-skin=industrial] .section-head h2{padding-left:14px;border-left:5px solid var(--primary);line-height:1.1}
+html[data-skin=industrial] .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--muted-text);margin-bottom:6px}
+
+/* 卡片：方角 2px 边，无阴影，悬停只换边色——工程件不需要浮起来 */
+html[data-skin=industrial] .grid{grid-template-columns:repeat(3,1fr);gap:20px}
+html[data-skin=industrial] .card{background:var(--surface);border:2px solid color-mix(in srgb,var(--ink) 18%,transparent);border-radius:0}
+html[data-skin=industrial] a.card:hover{transform:none;box-shadow:none;border-color:var(--primary-text)}
+html[data-skin=industrial] .card .thumb{border-bottom:2px solid color-mix(in srgb,var(--ink) 12%,transparent);aspect-ratio:4/3}
+html[data-skin=industrial] .card .body{padding:14px 16px 16px}
+html[data-skin=industrial] .card h3{font-size:16px;text-transform:none;letter-spacing:0;font-weight:700}
+html[data-skin=industrial] .card .meta{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+
+/* 能力网格：三列、顶部 4px 主色条、等宽编号 */
+html[data-skin=industrial] .features{grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink);border-left:2px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+html[data-skin=industrial] .features.numbered{grid-template-columns:repeat(2,1fr)}
+html[data-skin=industrial] .feature{background:transparent;border:0;border-right:2px solid color-mix(in srgb,var(--ink) 16%,transparent);border-bottom:2px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:0;padding:22px 22px 24px;position:relative}
+html[data-skin=industrial] .feature::before{content:"";position:absolute;left:-2px;top:-2px;width:calc(100% + 2px);height:4px;background:var(--primary)}
+html[data-skin=industrial] .feature .f-icon{background:transparent;border:2px solid var(--ink);border-radius:0;color:var(--ink);width:40px;height:40px;margin-bottom:14px}
+html[data-skin=industrial] .feature h3{font-size:15px;letter-spacing:.02em;text-transform:none;font-weight:700}
+html[data-skin=industrial] .feature .no{font-family:var(--font-mono);font-size:11px;color:var(--primary-text);letter-spacing:.12em}
+
+/* 数据条：整幅色带，格子之间用竖线切 */
+html[data-skin=industrial] .stats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;padding:0;border:2px solid var(--ink);background:color-mix(in srgb,var(--ink) 4%,var(--paper))}
+html[data-skin=industrial] .stat{padding:20px 22px;border-left:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+html[data-skin=industrial] .stat:first-child{border-left:0}
+html[data-skin=industrial] .stat .value{font-family:var(--font-mono);font-size:34px;font-weight:700;color:var(--ink)}
+html[data-skin=industrial] .stat .label{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-text)}
+
+/* 流程：等宽大序号压住标题，横向推进 */
+html[data-skin=industrial] .process{gap:0;border-top:2px solid var(--ink);margin-top:8px}
+html[data-skin=industrial] .step{border-top:0;border-left:1px solid color-mix(in srgb,var(--ink) 18%,transparent);padding:20px 20px 4px 20px}
+html[data-skin=industrial] .step:first-child{border-left:0;padding-left:0}
+html[data-skin=industrial] .step .no{font-family:var(--font-mono);font-size:30px;font-weight:700;color:color-mix(in srgb,var(--primary) 70%,var(--ink));letter-spacing:-.02em;line-height:1}
+html[data-skin=industrial] .step h3{font-size:15px;text-transform:none;letter-spacing:0;font-weight:700;margin:8px 0 6px}
+
+/* 图文：图上文下、方角、粗边 */
+html[data-skin=industrial] .image-text{gap:36px}
+html[data-skin=industrial] .image-text .media img{border-radius:0;border:2px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+html[data-skin=industrial] .checks li{color:color-mix(in srgb,var(--ink) 74%,var(--paper))}
+html[data-skin=industrial] .checks .ic{color:var(--primary-text);stroke-width:2.6}
+
+/* 表单 / CTA / 页脚：全部方角实线 */
+html[data-skin=industrial] .cta{background:var(--ink);border:0;border-radius:0;border-left:8px solid var(--primary);color:var(--paper);padding:36px 34px}
+html[data-skin=industrial] .cta h2{color:var(--paper)}
+html[data-skin=industrial] .cta p{color:color-mix(in srgb,var(--paper) 78%,var(--ink))}
+html[data-skin=industrial] .cta .btn{background:var(--primary);color:#fff;border-radius:0;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:12px}
+html[data-skin=industrial] .inquiry{background:var(--surface);border:2px solid var(--ink);border-radius:0;padding:30px}
+html[data-skin=industrial] .inquiry input,html[data-skin=industrial] .inquiry select,html[data-skin=industrial] .inquiry textarea{border-radius:0;border:2px solid color-mix(in srgb,var(--ink) 22%,transparent);background:var(--paper)}
+html[data-skin=industrial] .inquiry button{border-radius:0;background:var(--primary-fill);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:12px;padding:13px 26px}
+html[data-skin=industrial] .btn{border-radius:0;background:var(--primary-fill);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:12px;padding:13px 24px}
+html[data-skin=industrial] .btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+html[data-skin=industrial] .faq details{border-bottom:1px solid color-mix(in srgb,var(--ink) 18%,transparent);padding:14px 0}
+html[data-skin=industrial] .faq summary{font-weight:700;font-size:15px}
+html[data-skin=industrial] footer{background:var(--ink);color:color-mix(in srgb,var(--paper) 62%,var(--ink));border-top:3px solid var(--primary);padding:22px 32px;font-family:var(--font-mono);font-size:12px;letter-spacing:.04em}
+html[data-skin=industrial] footer a{color:var(--paper)}
+html[data-skin=industrial] .foot-brand strong,html[data-skin=industrial] .foot-col h3{color:var(--paper)}
+html[data-skin=industrial] .foot-brand p,html[data-skin=industrial] .foot-col a,html[data-skin=industrial] .foot-legal{color:color-mix(in srgb,var(--paper) 62%,var(--ink))}
+html[data-skin=industrial] table th{border-bottom:2px solid var(--ink);font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+html[data-skin=industrial] table td{border-bottom:1px solid color-mix(in srgb,var(--ink) 14%,transparent)}
+html[data-skin=industrial] .highlights li{border-radius:0;border:1px solid var(--ink);font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+html[data-skin=industrial] .product-head .cover,html[data-skin=industrial] .case-head img{border-radius:0;border:2px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+html[data-skin=industrial] .crumb{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+
+@media (max-width:900px) {
+  html[data-skin=industrial] .hero.split{grid-template-columns:1fr;gap:26px}
+  html[data-skin=industrial] .hero h1{font-size:34px}
+  html[data-skin=industrial] .hero::before{margin-left:-20px;margin-right:-20px}
+  html[data-skin=industrial] .grid{grid-template-columns:repeat(2,1fr)}
+  html[data-skin=industrial] .features,html[data-skin=industrial] .features.numbered{grid-template-columns:1fr}
+  html[data-skin=industrial] .hero-stats{grid-template-columns:repeat(2,1fr)}
+  html[data-skin=industrial] .hero-stats>div:nth-child(3){border-left:0;padding-left:0}
+  html[data-skin=industrial] .process{display:grid;grid-template-columns:1fr}
+  html[data-skin=industrial] .step{border-left:0;border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent);padding:16px 0}
+}
+@media (max-width:640px) {
+  html[data-skin=industrial] .grid{grid-template-columns:1fr}
+  html[data-skin=industrial] .site-header{padding:0 20px;height:auto;justify-content:space-between}
+  html[data-skin=industrial] .site-nav{gap:12px}
+  html[data-skin=industrial] .site-nav a{padding:14px 0}
+  html[data-skin=industrial] .hero h1{font-size:30px}
+  html[data-skin=industrial] .stats{grid-template-columns:1fr}
+  html[data-skin=industrial] .stat{border-left:0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+  html[data-skin=industrial] .stat:first-child{border-top:0}
+  html[data-skin=industrial] .cta{padding:26px 22px}
+}

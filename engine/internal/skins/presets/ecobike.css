@@ -1,0 +1,262 @@
+/*!
+ * @skin ecobike
+ * @label 生态骑行（自行车 / 户外出行 / 环保制造）
+ * @category 绿色出行
+ * @tone light
+ */
+
+/* 语言严格转译自 design/ecobike-website.html（CSS Zen Garden：HTML 说有什么，
+   皮肤说像什么）。四条设计语法：
+   1) 通栏色带：首屏与 CTA 是 #0D2818 深林绿满宽暗带，图文/能力/团队/FAQ/表单
+      坐在 #F6F8F5 浅灰绿满宽带上，其余节白底——色带沾满视口宽度（::before 100vw）。
+   2) 一切居中：节标题是「眉题 13px 大写 → 40px 大标题 → 17px 副文」的中轴三段式。
+   3) 字阶来自设计稿：hero 64 / h2 40 / 卡片题 21 / 正文 14–16 / 眉题 13。
+   4) 配色不改：全部取设计稿 :root 原值（#2D9B3E/#1E7B2C/#155A20/#0D2818/#061A0C/
+      #E8F5E9/#F1F8F2/#F6F8F5/#E0E5DF/#1A2B1F/#5D6B5E/#4CAF50/#81C784）。
+      唯一例外：小号绿字与按钮白字用色板里的 primary-dark #1E7B2C——
+      设计稿的 #2D9B3E 白字对比 3.4:1 不过 WCAG AA，#1E7B2C 是同色板内的达标色。
+   图标规格：52px 薄荷绿 #E8F5E9 底座（8px 圆角）+ 28px 2px 描边线性图标。 */
+
+/* ---- 主题令牌对齐设计稿（派生变量随之落到同色板） ---- */
+html[data-skin=ecobike]{
+  --paper:#FFFFFF;--surface:#F6F8F5;--ink:#1A2B1F;--muted:#5D6B5E;
+  --muted-text:#5D6B5E;--primary:#2D9B3E;--primary-fill:#1E7B2C;
+  --primary-text:#1E7B2C;--accent:#1E7B2C;--accent-text:#1E7B2C;--radius:8px}
+html[data-skin=ecobike] body{font-size:16px;line-height:1.55;color:#1A2B1F;overflow-x:hidden;overflow-x:clip}
+
+/* ---- 版心：1280 + 32px（设计稿 .container），节距 80px ---- */
+html[data-skin=ecobike] main{max-width:1280px;padding:0 32px 0}
+html[data-skin=ecobike] .section{padding:80px 0}
+
+/* ---- 通栏色带：:has 选中无类名的 section 外壳；内容仍在 1280 版心内。
+   几何与底色拆两条：带色的规则各自独立，避免 :is() 特异性（含 :has）
+   压过单类覆盖（0,2,2 > 0,2,1 的坑）。 ---- */
+html[data-skin=ecobike] :is(.hero,.cta,
+  .image-text,.faq,.testimonials,.inquiry,.factory,
+  section:has(>.features),section:has(>.team),
+  section:has(>.gallery),section:has(>.logos)){position:relative;isolation:isolate}
+html[data-skin=ecobike] :is(.hero,.cta,
+  .image-text,.faq,.testimonials,.inquiry,.factory,
+  section:has(>.features),section:has(>.team),
+  section:has(>.gallery),section:has(>.logos))::before{
+  content:"";position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);z-index:-1}
+html[data-skin=ecobike] :is(.image-text,.faq,.testimonials,.inquiry,.factory,
+  section:has(>.features),section:has(>.team),
+  section:has(>.gallery),section:has(>.logos))::before{background:#F6F8F5}
+
+/* ---- 排版 ---- */
+html[data-skin=ecobike] h1{font-size:40px;font-weight:700;letter-spacing:-.01em;line-height:1.15}
+html[data-skin=ecobike] h2{font-size:40px;font-weight:700;letter-spacing:-.025em;line-height:1.15;color:#1A2B1F}
+html[data-skin=ecobike] h3{font-weight:600}
+html[data-skin=ecobike] .lead{font-size:17px;line-height:1.6;color:#5D6B5E;max-width:64ch}
+html[data-skin=ecobike] .kicker{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#1E7B2C;margin:0 0 12px}
+html[data-skin=ecobike] .hl{font-style:normal;background:linear-gradient(135deg,#4CAF50,#81C784);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+
+/* 节标题：居中三段式（眉题 / 标题 / 副文），下距 48px */
+html[data-skin=ecobike] .section-head{flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:0;margin-bottom:48px}
+html[data-skin=ecobike] .section-head h2{margin:0}
+html[data-skin=ecobike] .section-head .lead{margin:16px 0 0;max-width:640px}
+html[data-skin=ecobike] .section-head .more{margin-top:18px;color:#1E7B2C;font-size:14px;font-weight:600;border:0}
+
+/* ---- 按钮：8px 圆角，10/20 内距，14px/500（设计稿 .btn） ---- */
+html[data-skin=ecobike] .btn{border-radius:8px;font-weight:500;font-size:14px;padding:10px 20px;letter-spacing:0;background:#1E7B2C}
+html[data-skin=ecobike] .btn:hover{filter:none;background:#2D9B3E}
+html[data-skin=ecobike] .btn.ghost{background:transparent;color:#1A2B1F;border:1px solid #C8CFC4}
+html[data-skin=ecobike] .btn.ghost:hover{background:transparent;border-color:#2D9B3E;color:#1E7B2C}
+
+/* ---- 页头：白底 68px，发丝线，品牌深绿 22px/700 ---- */
+html[data-skin=ecobike] .site-header{border-bottom:1px solid #E0E5DF;padding:0 32px;height:68px}
+html[data-skin=ecobike] .brand{color:#155A20;font-weight:700;letter-spacing:-.02em;font-size:22px}
+html[data-skin=ecobike] .site-nav{gap:28px}
+html[data-skin=ecobike] .site-nav a{font-weight:500;font-size:14px;opacity:1;color:#2D3B2E}
+html[data-skin=ecobike] .site-nav a:hover{color:#2D9B3E}
+html[data-skin=ecobike] .lang-switch a{color:#5D6B5E}
+
+/* ---- 首屏：#0D2818 满宽暗带 + 双绿辉光，文案与数据全部居中 ---- */
+html[data-skin=ecobike] .hero{padding:80px 0 100px;border-bottom:0;border-radius:0;margin-top:0;text-align:center}
+html[data-skin=ecobike] .hero::before{
+  background:
+    radial-gradient(600px 600px at 90% -10%, rgba(45,155,62,.15), transparent 70%),
+    radial-gradient(500px 500px at -10% 110%, rgba(76,175,80,.10), transparent 70%),
+    #0D2818}
+html[data-skin=ecobike] .hero-copy{display:flex;flex-direction:column;align-items:center;gap:0}
+html[data-skin=ecobike] .hero .badge{background:rgba(45,155,62,.15);border:1px solid rgba(45,155,62,.3);color:#81C784;font-size:13px;font-weight:600;padding:6px 16px;margin:0 0 24px;letter-spacing:0}
+html[data-skin=ecobike] .hero .badge i{background:#81C784}
+html[data-skin=ecobike] .hero .kicker{color:#81C784;letter-spacing:.08em;margin:0 0 18px}
+html[data-skin=ecobike] .hero h1{font-size:64px;line-height:1.08;letter-spacing:-.03em;max-width:22ch;margin:0 auto;color:#FFFFFF}
+html[data-skin=ecobike] .hero p{font-size:18px;line-height:1.6;color:#8AAB8A;max-width:580px;margin:24px auto 0}
+html[data-skin=ecobike] .hero .btn.ghost{color:#FFFFFF;border-color:rgba(255,255,255,.3)}
+html[data-skin=ecobike] .hero .btn.ghost:hover{border-color:#FFFFFF;color:#FFFFFF}
+html[data-skin=ecobike] .hero-cta{justify-content:center;margin-top:32px}
+html[data-skin=ecobike] .hero-img{aspect-ratio:16/8;max-width:900px;margin:56px auto 0;border-radius:16px;border:1px solid rgba(255,255,255,.08);box-shadow:0 24px 48px rgba(13,40,24,.16)}
+html[data-skin=ecobike] .hero.split{display:flex;flex-direction:column;align-items:center;max-width:900px;margin:0 auto}
+html[data-skin=ecobike] .hero.split .hero-img{width:100%}
+/* 首屏数据行：进暗带，leaf-light 大数字 */
+html[data-skin=ecobike] .hero-stats{border-top:0;padding-top:0;margin-top:48px;gap:48px;justify-content:center}
+html[data-skin=ecobike] .hero-stats>div{text-align:center}
+html[data-skin=ecobike] .hero-stats b{font-size:36px;font-weight:700;color:#81C784;letter-spacing:-.02em}
+html[data-skin=ecobike] .hero-stats span{font-size:13px;letter-spacing:0;text-transform:none;color:#8AAB8A;margin-top:4px}
+
+/* ---- 数据条：薄荷浅底瓷砖格（设计稿 factory-stat），不再通栏描边 ---- */
+html[data-skin=ecobike] .stats{border:0;padding:0;gap:20px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+html[data-skin=ecobike] .stat{background:#F1F8F2;border:1px solid #EDEFEA;border-radius:12px;padding:20px}
+html[data-skin=ecobike] .stat .value{font-size:32px;font-weight:700;color:#2D9B3E;letter-spacing:-.02em}
+html[data-skin=ecobike] .stat .label{font-size:13px;color:#5D6B5E;margin-top:4px}
+html[data-skin=ecobike] .stat .note{font-size:12px;color:#5D6B5E}
+
+/* ---- 卡片：白底细线 #E0E5DF、12px 圆角、悬停浮起（设计稿 .scenario-card） ---- */
+html[data-skin=ecobike] .grid{grid-template-columns:repeat(3,1fr);gap:24px}
+html[data-skin=ecobike] .card{background:#FFFFFF;border:1px solid #E0E5DF;border-radius:12px;overflow:hidden}
+html[data-skin=ecobike] a.card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(13,40,24,.12)}
+html[data-skin=ecobike] .card .body{padding:24px}
+html[data-skin=ecobike] .card h3{font-size:21px;font-weight:600;margin:0 0 8px}
+html[data-skin=ecobike] .card p{font-size:14px;line-height:1.55;color:#5D6B5E}
+html[data-skin=ecobike] .card .meta{font-size:12px;color:#5D6B5E;letter-spacing:.02em}
+html[data-skin=ecobike] .card .count{font-size:12px;color:#1E7B2C;font-weight:600}
+html[data-skin=ecobike] a.dl{font-size:13px;font-weight:600;color:#1E7B2C}
+
+/* ---- 图标卡 / 能力网格：白卡 + 52px 薄荷底座 + 28px 绿色线性图标 ---- */
+html[data-skin=ecobike] .feature{background:#FFFFFF;border:1px solid #E0E5DF;border-radius:12px;padding:28px}
+html[data-skin=ecobike] .feature:hover{box-shadow:0 4px 12px rgba(13,40,24,.08)}
+html[data-skin=ecobike] .feature h3{font-size:18px;font-weight:600}
+html[data-skin=ecobike] .feature p{font-size:14px;color:#5D6B5E;line-height:1.5}
+html[data-skin=ecobike] .feature .no{color:#1E7B2C;font-weight:600;font-size:13px}
+html[data-skin=ecobike] .feature .f-icon,html[data-skin=ecobike] .card.icon-card .f-icon{
+  width:52px;height:52px;border-radius:8px;background:#E8F5E9;color:#2D9B3E;margin:0 0 16px}
+html[data-skin=ecobike] .feature .f-icon .ic,html[data-skin=ecobike] .card.icon-card .f-icon .ic{width:28px;height:28px;stroke-width:2}
+html[data-skin=ecobike] .card.icon-card{background:#FFFFFF;border:1px solid #E0E5DF;border-radius:12px}
+html[data-skin=ecobike] .card.icon-card .f-icon{margin:24px 24px 0}
+html[data-skin=ecobike] .card.icon-card .body{padding-top:14px}
+html[data-skin=ecobike] .card.icon-card h3{font-size:18px}
+html[data-skin=ecobike] .checks .ic{color:#1E7B2C;stroke-width:2.2}
+
+/* ---- 图文：36px 标题 + 16px 圆角图 + 绿勾 ---- */
+html[data-skin=ecobike] .image-text{gap:48px}
+html[data-skin=ecobike] .image-text h2{font-size:36px;letter-spacing:-.015em}
+html[data-skin=ecobike] .image-text p{font-size:16px;line-height:1.65;color:#5D6B5E}
+html[data-skin=ecobike] .image-text .media img{border-radius:16px;box-shadow:0 12px 32px rgba(13,40,24,.12)}
+html[data-skin=ecobike] .image-text ul{color:#5D6B5E;font-size:14px}
+
+/* ---- 流程：序号坐薄荷圆章，去顶线 ---- */
+html[data-skin=ecobike] .step{border-top:0;padding-top:0}
+html[data-skin=ecobike] .step .no{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#E8F5E9;color:#1E7B2C;font-weight:600;font-size:13px;margin-bottom:12px}
+html[data-skin=ecobike] .step h3{font-weight:600}
+
+/* ---- 团队：白卡 + 居中信息（设计稿 .team-card） ---- */
+html[data-skin=ecobike] .team{gap:20px}
+html[data-skin=ecobike] .member{background:#FFFFFF;border:1px solid #E0E5DF;border-radius:12px;overflow:hidden}
+html[data-skin=ecobike] .member:hover{box-shadow:0 4px 12px rgba(13,40,24,.08)}
+html[data-skin=ecobike] .member img{border-radius:0;aspect-ratio:1}
+html[data-skin=ecobike] .member h3{font-size:17px;text-align:center;margin:16px 0 2px;padding:0 20px}
+html[data-skin=ecobike] .member .role{font-size:13px;letter-spacing:0;text-transform:none;color:#1E7B2C;font-weight:500;text-align:center}
+html[data-skin=ecobike] .member p{font-size:13px;color:#5D6B5E;line-height:1.45;text-align:center;padding:0 20px 20px;margin:8px 0 0}
+
+/* ---- FAQ：发丝线分隔，加号为绿 ---- */
+html[data-skin=ecobike] .faq details{border-bottom:1px solid #E0E5DF}
+html[data-skin=ecobike] .faq summary{font-size:16px;font-weight:500}
+html[data-skin=ecobike] .faq summary::after{color:#2D9B3E}
+html[data-skin=ecobike] .faq .answer{color:#5D6B5E;font-size:15px}
+
+/* ---- 证言：白卡（坐在浅带上） ---- */
+html[data-skin=ecobike] .quotes{gap:24px}
+html[data-skin=ecobike] .quote{background:#FFFFFF;border:1px solid #E0E5DF;border-radius:12px;padding:24px}
+html[data-skin=ecobike] .quote blockquote{font-size:18px;line-height:1.55}
+html[data-skin=ecobike] .quote .who{color:#1A2B1F;font-weight:500}
+html[data-skin=ecobike] .quote .on{color:#1E7B2C;font-weight:600}
+
+/* ---- 产品徽章 chips：薄荷绿底 + 深绿字（设计稿 .scenario-features） ---- */
+html[data-skin=ecobike] .highlights li{background:#E8F5E9;border:0;color:#155A20;font-size:12px;font-weight:600;border-radius:6px;padding:4px 10px}
+
+/* ---- CTA：第二段 #0D2818 满宽暗带（设计稿认证墙语言） ---- */
+html[data-skin=ecobike] .cta{margin:0;padding:80px 32px;border:0;border-radius:0;border-left:0;text-align:center}
+html[data-skin=ecobike] .cta::before{background:#0D2818}
+html[data-skin=ecobike] .cta h2{color:#FFFFFF}
+html[data-skin=ecobike] .cta p{color:#8AAB8A;font-size:17px;margin:16px auto 0;max-width:640px}
+html[data-skin=ecobike] .cta .btn{margin-top:28px}
+html[data-skin=ecobike] .cta .btn.ghost{color:#FFFFFF;border-color:rgba(255,255,255,.3)}
+html[data-skin=ecobike] .cta .btn.ghost:hover{border-color:#FFFFFF;color:#FFFFFF}
+
+/* ---- 询盘表单：浅带上的白卡浮起（设计稿 .inquiry-form） ---- */
+html[data-skin=ecobike] .inquiry{padding:80px 0}
+html[data-skin=ecobike] .inquiry form{background:#FFFFFF;border:1px solid #E0E5DF;border-radius:16px;padding:36px;box-shadow:0 4px 12px rgba(13,40,24,.08)}
+html[data-skin=ecobike] .inquiry h2{font-size:36px}
+html[data-skin=ecobike] .inquiry .field span{font-size:13px;font-weight:600;color:#2D3B2E;letter-spacing:0}
+html[data-skin=ecobike] .inquiry input[type=text],html[data-skin=ecobike] .inquiry input[type=email],html[data-skin=ecobike] .inquiry input[type=tel],html[data-skin=ecobike] .inquiry select,html[data-skin=ecobike] .inquiry textarea{
+  border-radius:8px;border-color:#C8CFC4;padding:10px 14px;font-size:14px}
+html[data-skin=ecobike] .inquiry input:focus,html[data-skin=ecobike] .inquiry select:focus,html[data-skin=ecobike] .inquiry textarea:focus{border-color:#2D9B3E;box-shadow:0 0 0 1px #2D9B3E}
+html[data-skin=ecobike] .inquiry button{background:#1E7B2C;border-radius:8px;font-weight:600;font-size:15px;padding:14px 28px}
+html[data-skin=ecobike] .inquiry button:hover{filter:none;background:#2D9B3E}
+html[data-skin=ecobike] .inquiry .privacy{color:#5D6B5E}
+html[data-skin=ecobike] .form-note.ok{background:#E8F5E9;color:#155A20}
+
+/* ---- 工厂证据链：审计卡白底细线 ---- */
+html[data-skin=ecobike] .audits li{background:#FFFFFF;border:1px solid #E0E5DF;border-radius:12px}
+html[data-skin=ecobike] .audits .meta{color:#5D6B5E}
+html[data-skin=ecobike] .retention{background:#F1F8F2;border-left:3px solid #2D9B3E;border-radius:8px;color:#5D6B5E}
+html[data-skin=ecobike] .retention strong{color:#1A2B1F}
+html[data-skin=ecobike] .factory table.facts th,html[data-skin=ecobike] .factory table.facts td{border-bottom:1px solid #EDEFEA}
+html[data-skin=ecobike] .factory table.facts td{color:#5D6B5E}
+
+/* ---- 法定披露 / 图集 / 标志墙 ---- */
+html[data-skin=ecobike] .legal-facts dt{color:#5D6B5E}
+html[data-skin=ecobike] .list-cover img,html[data-skin=ecobike] .product-head .cover,html[data-skin=ecobike] .case-head img,html[data-skin=ecobike] .gallery img{border-radius:16px}
+html[data-skin=ecobike] .case-result{color:#1E7B2C}
+html[data-skin=ecobike] .sub{color:#1E7B2C}
+
+/* ---- 页脚：#061A0C 满宽深色带（设计稿 .footer） ---- */
+html[data-skin=ecobike] footer{background:#061A0C;border-top:0;margin-top:0;padding:64px 32px 32px;color:#8AAB8A;font-size:14px}
+html[data-skin=ecobike] .foot-grid{max-width:1280px}
+html[data-skin=ecobike] .foot-brand strong{color:#FFFFFF;font-size:20px;font-weight:700}
+html[data-skin=ecobike] .foot-brand p{color:#8AAB8A;font-size:14px;line-height:1.6}
+html[data-skin=ecobike] .foot-addr{color:#8AAB8A}
+html[data-skin=ecobike] .foot-dl a{color:#81C784;border-bottom-color:rgba(129,199,132,.4)}
+html[data-skin=ecobike] .foot-col h3{color:#FFFFFF;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:0 0 6px}
+html[data-skin=ecobike] .foot-col a{color:#8AAB8A;font-size:14px}
+html[data-skin=ecobike] .foot-col a:hover{color:#81C784}
+html[data-skin=ecobike] .foot-legal{max-width:1280px;border-top:1px solid rgba(255,255,255,.08);color:#8AAB8A}
+html[data-skin=ecobike] .foot-compliance{max-width:1280px;color:#8AAB8A;font-size:12.5px}
+
+/* ---- 常驻浮层与 Cookie 条：换用色板深绿 ---- */
+html[data-skin=ecobike] .fc-mail{background:#1E7B2C}
+html[data-skin=ecobike] .fc-phone{background:#155A20}
+html[data-skin=ecobike] .cookie-bar{background:#FFFFFF;border-color:#E0E5DF;box-shadow:0 12px 32px rgba(13,40,24,.16)}
+html[data-skin=ecobike] .cookie-bar button{background:#1E7B2C}
+html[data-skin=ecobike] .cookie-bar button:hover{background:#2D9B3E;filter:none}
+/* 拒绝按钮保持幽灵样式：上面 (0,2,2) 的绿底会压过基础层 .ck-no 的透明底（0,2,1），必须显式还原 */
+html[data-skin=ecobike] .cookie-bar button.ck-no{background:transparent;color:#5D6B5E;border:1px solid rgba(0,0,0,.18)}
+html[data-skin=ecobike] .cookie-bar button.ck-no:hover{background:transparent;filter:none}
+
+/* ---- 断点重压（1024/640 双档，取设计稿节奏；900px 断点必须有） ---- */
+@media (max-width:900px){
+  html[data-skin=ecobike] main{padding:0 24px}
+  html[data-skin=ecobike] .section{padding:56px 0}
+  html[data-skin=ecobike] .hero{padding:56px 0 72px}
+  html[data-skin=ecobike] .hero h1{font-size:44px;letter-spacing:-.02em}
+  html[data-skin=ecobike] h2{font-size:32px}
+  html[data-skin=ecobike] .image-text h2,html[data-skin=ecobike] .inquiry h2,html[data-skin=ecobike] .cta h2{font-size:30px}
+  html[data-skin=ecobike] .grid{grid-template-columns:repeat(2,1fr);gap:20px}
+  html[data-skin=ecobike] .features{grid-template-columns:repeat(2,1fr);gap:20px}
+  html[data-skin=ecobike] .features.numbered{grid-template-columns:repeat(2,1fr);gap:20px}
+  html[data-skin=ecobike] .stats{grid-template-columns:repeat(2,1fr)}
+  html[data-skin=ecobike] .hero-stats{grid-template-columns:repeat(2,1fr);gap:20px 32px}
+  html[data-skin=ecobike] .cta{padding:56px 24px}
+  html[data-skin=ecobike] .inquiry{padding:56px 0}
+  html[data-skin=ecobike] .site-header{padding:0 24px}
+}
+@media (max-width:640px){
+  html[data-skin=ecobike] main{padding:0 20px}
+  html[data-skin=ecobike] .section{padding:44px 0}
+  html[data-skin=ecobike] .hero{padding:44px 0 56px}
+  html[data-skin=ecobike] .hero h1{font-size:34px}
+  html[data-skin=ecobike] h2{font-size:26px}
+  html[data-skin=ecobike] .grid{grid-template-columns:1fr}
+  html[data-skin=ecobike] .features{grid-template-columns:1fr}
+  html[data-skin=ecobike] .stats{grid-template-columns:1fr}
+  html[data-skin=ecobike] .quotes{grid-template-columns:1fr}
+  html[data-skin=ecobike] .inquiry{padding:44px 0}
+  html[data-skin=ecobike] .inquiry form{padding:24px 20px}
+  html[data-skin=ecobike] .inquiry .fields{grid-template-columns:1fr}
+  html[data-skin=ecobike] .footer{padding:44px 20px 24px}
+  html[data-skin=ecobike] .foot-grid{grid-template-columns:1fr;gap:24px}
+  html[data-skin=ecobike] .site-header{padding:0 20px}
+}

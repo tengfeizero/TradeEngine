@@ -1,0 +1,115 @@
+slug: quality
+status: published
+title:
+  en: What we test, and what we stopped testing
+  zh: 我们测什么，以及我们停掉了什么测试
+summary:
+  en: Every unit flies before it ships. Beyond that, the test plan is built around the failures that actually come back from the field.
+  zh: 每台出厂前都实飞。除此之外，测试计划是围绕「现场真的返修回来的失效」设计的。
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    title:
+      en: A test plan written from return data
+      zh: 一份按返修数据写的测试计划
+    lead:
+      en: We review field returns every quarter and add or drop a test based on them. The plan you get is the current one, and it changes.
+      zh: 每季度复核现场返修，并据此增删测试项。你拿到的是当前版本，而它会变。
+    body:
+      en: |
+        In 2023 the top return reason was gimbal ribbon fatigue, at 34 percent of all returns. We added a 5,000-cycle gimbal sweep before packing, which added nine minutes per unit, and the return rate fell to 9 percent over two quarters. That is the whole logic — find the failure that costs the most, test for it, and accept the cycle time.
+
+        We also dropped a test. The 2-hour continuous hover burn-in was in the plan for four years and never caught a fault that the six-minute flight profile missed, because thermal issues show up in the environmental screen, not in a long hover. It cost 2 hours of cage time per unit for nothing.
+      zh: |
+        2023 年第一返修原因是云台排线疲劳，占全部返修的 34%。我们在包装前加了一道 5,000 次云台扫掠，每台多九分钟，两个季度后返修率降到 9%。逻辑就这一条——找出代价最大的失效，为它加测试，并接受增加的节拍。
+
+        我们也砍掉过一项测试。两小时连续悬停老化在计划里放了四年，从没抓到过六分钟飞行科目漏掉的故障，因为热问题在环境筛选中就会显形，不在长时间悬停里。它每台白占两小时笼位。
+  - type: process
+    title:
+      en: The current test plan
+      zh: 当前的测试计划
+    intro:
+      en: Seven gates. A unit that fails any of them goes to a repair cell and re-enters at gate one, not at the gate it failed.
+    steps:
+      - title:
+          en: Incoming inspection
+          zh: 来料检验
+        body:
+          en: Carbon frames are checked for delamination by tap test on every frame. Motors are sampled for bearing noise and, since 2024, for winding resistance spread across the lot.
+          zh: 碳纤维机架逐台敲击检查分层。电机抽检轴承异响，并从 2024 年起增加批次绕组电阻离散度检查。
+      - title:
+          en: Board-level functional test
+          zh: 板级功能测试
+        body:
+          en: Every flight controller and BMS board is tested on a bed-of-nails fixture before it is potted. Firmware hash is recorded against the serial.
+          zh: 每块飞控与 BMS 板在灌封前过针床夹具测试。固件哈希与序列号一并记录。
+      - title:
+          en: Environmental screen
+          zh: 环境筛选
+        body:
+          en: 30 minutes of powered thermal cycling, -10 to 45 °C. Catches solder voids and connector seating that a room-temperature test does not.
+          zh: 通电状态 30 分钟 -10 至 45 ℃ 温度循环。抓的是常温测试抓不到的焊点空洞与接插件不到位。
+      - title:
+          en: Gimbal 5,000-cycle sweep
+          zh: 云台 5,000 次扫掠
+        body:
+          en: Added after ribbon fatigue became the top return reason. Nine minutes per unit, and it is the single most effective test we run.
+          zh: 在排线疲劳成为第一返修原因后加入。每台九分钟，是我们最有效的一项测试。
+      - title:
+          en: Flight test, 6 minutes
+          zh: 实飞测试 6 分钟
+        body:
+          en: Automated profile in the cage, including a deliberate compass disturbance. The log is attached to the unit and shipped in the carton.
+          zh: 笼内自动科目，含一次人为罗盘干扰。日志随整机归档并放进包装箱。
+      - title:
+          en: Link margin at low power
+          zh: 低功率链路余量
+        body:
+          en: Transmission is tested at 10 percent of rated power to confirm the link still holds at 2 km. This catches antenna seating faults that pass a full-power test.
+          zh: 图传在额定功率 10% 下测试，确认 2 公里链路仍可用。抓的是全功率测试通不过的射频天线接触不良。
+      - title:
+          en: Pack audit
+          zh: 包装审核
+        body:
+          en: One in ten cartons is opened after packing and checked against the document list, including battery serial to carton matching.
+          zh: 每十箱抽一箱在包装后开箱，对着文件清单核，含电池序列号与箱号对应关系。
+  - type: faq
+    title:
+      en: Quality questions buyers ask in the audit
+      zh: 审厂时买家会问的质量问题
+    items:
+      - q:
+          en: Can we send an inspector?
+          zh: 我们可以派人验货吗
+        a:
+          en: |
+            Yes, and we prefer it. Third-party inspection is welcome at any stage; we ask for two weeks notice so the units you want to see are still on the line rather than already packed. If your inspector wants to witness a flight test, that is the easiest thing to arrange.
+          zh: |
+            可以，而且我们希望你派。任何阶段的第三方验货都欢迎；提前两周通知即可，这样你要看的机器还在线上，而不是已经装箱。如果验货员想看实飞测试，这是最容易安排的一项。
+      - q:
+          en: What is your AQL?
+          zh: 你们的 AQL 是多少
+        a:
+          en: |
+            We do not run AQL sampling on function, because every unit is flight tested. AQL 0.65 is applied to cosmetic and packaging defects, where sampling makes sense. Quoting an AQL for function would imply we skip units, and we do not.
+          zh: |
+            功能项不做 AQL 抽检，因为每台都实飞。外观与包装缺陷按 AQL 0.65 抽检，这两项抽样才有意义。给功能项报一个 AQL 等于承认我们会跳检，而我们不跳。
+      - q:
+          en: How do you handle a batch failure after shipment?
+          zh: 出货后出现批次问题怎么处理
+        a:
+          en: |
+            The unit record tells us which lot the boards, motors and gimbal came from, so we can bound the problem in hours rather than weeks. If it is our fault we ship replacement parts at our cost and extend the warranty on the affected units by six months. We have done this twice, both times on a connector batch.
+          zh: |
+            整机档案能查出板卡、电机与云台来自哪个批次，所以问题范围可以在几小时内圈定，而不是几周。如果是我们的责任，替换件由我们承担运费，受影响机器的质保延长六个月。这种情况发生过两次，都是接插件批次问题。
+  - type: cta
+    title:
+      en: Ask for the last four quarters of return data
+      zh: 索取最近四个季度的返修数据
+    body:
+      en: Return rate by model, by failure mode, with the trend. It is the most useful document we have for a buyer deciding whether to commit to a first order.
+      zh: 按型号、按失效模式的返修率与趋势。对一个正在决定要不要下首单的买家来说，这是我们最有用的文件。
+    cta_text:
+      en: Request the data
+      zh: 索取数据
+    cta_href: "/contact/"

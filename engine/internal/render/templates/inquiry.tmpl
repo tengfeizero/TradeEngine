@@ -1,0 +1,55 @@
+{{define "inquiry_form"}}{{with .Form}}{{template "form_body" .}}{{end}}{{end}}
+
+{{/* form_body 直接接收 InquiryForm，页面尾部与 inquiry 区块共用同一个实现。 */}}
+{{define "form_body"}}{{with .}}
+<section class="inquiry" id="inquiry">
+  <h2>{{.Title}}</h2>
+  <p class="inquiry-intro">{{.Intro}}</p>
+  <form method="post" action="{{.Action}}" data-inquiry
+        data-sending="{{.Sending}}" data-thanks="{{.Thanks}}" data-error="{{.ErrorText}}"
+        data-catalog-intent="{{.CatalogIntent}}">
+    <input type="hidden" name="lang" value="{{.Lang}}">
+    {{if .PresetProduct}}<input type="hidden" name="product" value="{{.PresetProduct}}">{{end}}
+    <input type="hidden" name="render_ts" data-inq="render_ts" value="">
+    <input type="hidden" name="source_page" data-inq="source_page" value="">
+    <input type="hidden" name="referrer" data-inq="referrer" value="">
+    <input type="hidden" name="utm_source" data-inq="utm_source" value="">
+    <input type="hidden" name="utm_medium" data-inq="utm_medium" value="">
+    <input type="hidden" name="utm_campaign" data-inq="utm_campaign" value="">
+
+    {{/* 蜜罐：真人看不见也不会聚焦，机器人会填。被填即静默丢弃。 */}}
+    <div class="hp" aria-hidden="true">
+      <label>Leave this field empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <div class="fields">
+      {{range .Fields}}
+      <label class="field{{if eq .Type "textarea"}} wide{{end}}">
+        <span>{{.Label}}{{if .Required}}<i class="req" aria-hidden="true">*</i>{{end}}</span>
+        {{if eq .Type "textarea"}}
+        <textarea name="{{.Key}}" rows="4" placeholder="{{.Placeholder}}"{{if .Required}} required{{end}}></textarea>
+        {{else if eq .Type "select"}}
+        <select name="{{.Key}}" autocomplete="{{.Autocomplete}}"{{if .Required}} required{{end}}>
+          <option value=""></option>
+          {{range .Options}}<option value="{{.Value}}">{{.Label}}</option>{{end}}
+        </select>
+        {{else}}
+        <input type="{{.Type}}" name="{{.Key}}" placeholder="{{.Placeholder}}"
+               {{if .Autocomplete}}autocomplete="{{.Autocomplete}}"{{end}}{{if .Required}} required{{end}}>
+        {{end}}
+      </label>
+      {{end}}
+    </div>
+
+    {{if .TurnstileKey}}
+    <div class="cf-turnstile" data-sitekey="{{.TurnstileKey}}" data-theme="light"></div>
+    {{end}}
+
+    <div class="actions">
+      <button type="submit">{{.Submit}}</button>
+      <span class="privacy">{{.Privacy}}</span>
+    </div>
+    <p class="form-note" role="status" hidden></p>
+  </form>
+</section>
+{{end}}{{end}}

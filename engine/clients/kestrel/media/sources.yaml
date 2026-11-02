@@ -1,0 +1,102 @@
+# 槽位 → 原图映射（kestrel）
+#
+# 原图来自参考设计稿 design/aeronova-website.html 的配图。同一张原图取不同
+# 焦点/缩放，产出的是两张构图不同的裁切——比在多个卡片上重复同一张图专业，
+# 也比凭空生成更可信。客户给真图后，改这里的 src 重跑即可，站点路径不变。
+#
+#   out   : 槽位路径（不带扩展名；输出统一 .jpg）
+#   src   : 原图路径（相对站点 media/ 目录，或绝对路径）
+#   focus : 保留区域的中心，0–1 归一化坐标
+#   zoom  : 1.0 为整幅，>1 放大后再裁（数字越大看得越近）
+#   cut   : 先切掉底部的比例（默认 0.13，用来去掉生成图右下角的水印）
+
+photos:
+  # --- 产品：每条平台线一张 ---
+  - out: media/products/x9-cine
+    src: ../../../../design/images/A_professional_consumer_aerial_2026-08-10T08-33-34.png
+    focus: "0.42,0.48"
+    zoom: "1.05"
+  - out: media/products/m4-mini
+    src: ../../../../design/images/A_sleek_futuristic_quadcopter__2026-08-10T08-33-34.png
+    focus: "0.50,0.46"
+  - out: media/products/ag-16
+    src: ../../../../design/images/An_agricultural_drone_spraying_2026-08-10T08-33-34.png
+    focus: "0.45,0.50"
+  - out: media/products/ag-40
+    src: ../../../../design/images/An_agricultural_drone_spraying_2026-08-10T08-33-34.png
+    focus: "0.68,0.60"
+    zoom: "1.25"
+  - out: media/products/in-25
+    src: ../../../../design/images/An_industrial_inspection_drone_2026-08-10T08-33-34.png
+    focus: "0.50,0.48"
+  - out: media/products/sr-30
+    src: ../../../../design/images/A_security_and_rescue_drone_wi_2026-08-10T08-34-04.png
+    focus: "0.50,0.48"
+  - out: media/products/lg-10
+    src: ../../../../design/images/A_logistics_delivery_drone_car_2026-08-10T08-34-04.png
+    focus: "0.45,0.52"
+  - out: media/products/fx-5
+    src: ../../../../design/images/A_sleek_futuristic_quadcopter__2026-08-10T08-33-34.png
+    focus: "0.40,0.58"
+    zoom: "1.30"
+
+  # --- 品类封面（列表页 / 首页品类网格） ---
+  - out: media/products/cat-cinema
+    src: ../../../../design/images/A_professional_consumer_aerial_2026-08-10T08-33-34.png
+    focus: "0.52,0.42"
+    zoom: "1.15"
+  - out: media/products/cat-agriculture
+    src: ../../../../design/images/An_agricultural_drone_spraying_2026-08-10T08-33-34.png
+    focus: "0.32,0.45"
+    zoom: "1.20"
+  - out: media/products/cat-inspection
+    src: ../../../../design/images/An_industrial_inspection_drone_2026-08-10T08-33-34.png
+    focus: "0.60,0.55"
+    zoom: "1.25"
+  - out: media/products/cat-security
+    src: ../../../../design/images/A_security_and_rescue_drone_wi_2026-08-10T08-34-04.png
+    focus: "0.42,0.50"
+    zoom: "1.20"
+  - out: media/products/cat-logistics
+    src: ../../../../design/images/A_logistics_delivery_drone_car_2026-08-10T08-34-04.png
+    focus: "0.58,0.42"
+    zoom: "1.20"
+  - out: media/products/cat-fpv
+    src: ../../../../design/images/A_sleek_futuristic_quadcopter__2026-08-10T08-33-34.png
+    focus: "0.54,0.38"
+    zoom: "1.35"
+
+  # --- 案例 ---
+  - out: media/cases/amazon-grid
+    src: ../../../../design/images/A_logistics_delivery_drone_car_2026-08-10T08-34-04.png
+    focus: "0.38,0.38"
+    zoom: "1.15"
+  - out: media/cases/bavaria-orchard
+    src: ../../../../design/images/An_agricultural_drone_spraying_2026-08-10T08-33-34.png
+    focus: "0.55,0.68"
+    zoom: "1.15"
+  - out: media/cases/dubai-perimeter
+    src: ../../../../design/images/A_security_and_rescue_drone_wi_2026-08-10T08-34-04.png
+    focus: "0.62,0.40"
+    zoom: "1.15"
+  - out: media/cases/outback-survey
+    src: ../../../../design/images/An_industrial_inspection_drone_2026-08-10T08-33-34.png
+    focus: "0.38,0.58"
+    zoom: "1.15"
+  - out: media/cases/sakura-fpv
+    src: ../../../../design/images/A_sleek_futuristic_quadcopter__2026-08-10T08-33-34.png
+    focus: "0.46,0.62"
+    zoom: "1.15"
+
+  # --- 工厂 ---
+  - out: media/factory/line-01
+    src: ../../../../design/images/A_modern_drone_manufacturing_f_2026-08-10T08-34-05.png
+    focus: "0.50,0.50"
+  - out: media/factory/line-02
+    src: ../../../../design/images/A_modern_drone_manufacturing_f_2026-08-10T08-34-05.png
+    focus: "0.30,0.55"
+    zoom: "1.20"
+  - out: media/factory/cage-01
+    src: ../../../../design/images/A_modern_drone_manufacturing_f_2026-08-10T08-34-05.png
+    focus: "0.70,0.38"
+    zoom: "1.35"

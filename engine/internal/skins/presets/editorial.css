@@ -1,0 +1,108 @@
+/*!
+ * @skin editorial
+ * @label 出版编辑（茶叶 / 轻奢 / 文化产品）
+ * @category 出版文化
+ * @tone light
+ */
+
+/* 语言是「刊物的语法」：粗顶线、衬线大标题、无卡片边框、靠线与留白分栏。
+   首屏改成图文上下压叠（像杂志跨页），列表两列大图。
+   适合需要「故事感与产地感」的品类：茶、咖啡、家居、文创。 */
+
+html[data-skin=editorial] body{font-size:17px;line-height:1.75}
+html[data-skin=editorial] main{max-width:1080px}
+
+/* 页头：编辑部报头——粗顶线、大字标、小字距导航 */
+html[data-skin=editorial] .site-header{padding:26px 40px 22px;border-bottom:2px solid var(--ink);background:transparent}
+html[data-skin=editorial] .brand{font-family:var(--font-heading);font-size:25px;letter-spacing:-.02em;font-weight:500}
+html[data-skin=editorial] .site-nav a{text-transform:uppercase;font-size:11px;letter-spacing:.14em;opacity:.8}
+
+/* 标题层级：大、轻、紧 */
+html[data-skin=editorial] h1{font-size:58px;line-height:1.06;letter-spacing:-.025em;font-weight:400}
+html[data-skin=editorial] h2{font-size:34px;line-height:1.15;letter-spacing:-.015em;font-weight:400}
+html[data-skin=editorial] h3{text-transform:none;letter-spacing:0;font-size:18px;font-weight:500;color:var(--ink)}
+html[data-skin=editorial] .lead,html[data-skin=editorial] .hero p{font-size:20px;line-height:1.6;color:color-mix(in srgb,var(--ink) 68%,var(--paper))}
+
+/* 首屏：文案在上、整幅图下沉，比例 21:9 */
+html[data-skin=editorial] .hero{padding:56px 0 0;border-bottom:0}
+html[data-skin=editorial] .hero.split{display:block}
+html[data-skin=editorial] .hero.split .hero-copy{max-width:820px}
+html[data-skin=editorial] .hero h1{font-size:64px;max-width:26ch}
+html[data-skin=editorial] .hero.split .hero-img{margin:40px 0 0;aspect-ratio:21/9;border-radius:0;width:100%}
+html[data-skin=editorial] .hero .badge{border:0;border-radius:0;padding:0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text)}
+html[data-skin=editorial] .hero .badge i{display:none}
+html[data-skin=editorial] .hero-stats{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin-top:40px;padding:18px 0}
+html[data-skin=editorial] .hero-stats b{font-weight:400;font-style:italic;font-size:30px}
+html[data-skin=editorial] .hl{font-style:italic;color:var(--primary-text)}
+
+/* 区块节奏：每节一条顶线，像目录分栏 */
+html[data-skin=editorial] .section{padding:52px 0 0;margin-top:0}
+html[data-skin=editorial] .section-head{align-items:flex-end;padding-bottom:12px;border-bottom:1px solid var(--ink);margin-bottom:28px}
+html[data-skin=editorial] .kicker{font-family:var(--font-body);font-size:11px;letter-spacing:.2em;color:var(--accent-text)}
+
+/* 卡片：去掉边框，只留顶线；文字压在图下 */
+html[data-skin=editorial] .grid{grid-template-columns:repeat(2,1fr);gap:44px 36px}
+html[data-skin=editorial] .card{background:transparent;border:0;border-radius:0;border-top:1px solid var(--ink);padding-top:14px}
+html[data-skin=editorial] .card .thumb{border-radius:0;aspect-ratio:3/2}
+html[data-skin=editorial] .card .body{padding:16px 0 0}
+html[data-skin=editorial] a.card:hover{transform:none;box-shadow:none}
+html[data-skin=editorial] a.card:hover h3{color:var(--primary-text)}
+
+/* 能力网格：报头式分栏，无边框无底色 */
+html[data-skin=editorial] .features{grid-template-columns:repeat(2,1fr);gap:36px 44px}
+html[data-skin=editorial] .features.numbered{grid-template-columns:repeat(2,1fr)}
+html[data-skin=editorial] .feature,html[data-skin=editorial] .card.icon-card{background:transparent;border:0;border-top:1px solid var(--ink);border-radius:0;padding:18px 0 0}
+html[data-skin=editorial] .feature .f-icon,html[data-skin=editorial] .card.icon-card .f-icon{background:transparent;border-radius:0;color:var(--ink);width:30px;height:30px;margin:0 0 14px}
+html[data-skin=editorial] .feature .no{color:var(--ink);opacity:.55}
+html[data-skin=editorial] .card.icon-card .body{padding:0}
+
+/* 数据条：衬线斜体数字，横贯一条 */
+html[data-skin=editorial] .stats{border-top:1px solid var(--ink);border-bottom:0;padding:24px 0;gap:40px}
+html[data-skin=editorial] .stat .value{font-size:44px;font-style:italic;font-weight:400}
+html[data-skin=editorial] .stat .label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-text)}
+
+/* 流程：横向等分，序号用衬线斜体 */
+html[data-skin=editorial] .process{gap:32px}
+html[data-skin=editorial] .step{border-top:1px solid var(--ink);padding-top:14px}
+html[data-skin=editorial] .step .no{font-family:var(--font-heading);font-style:italic;font-size:16px;color:var(--accent-text)}
+
+/* 图文：单栏错落，图在上 */
+html[data-skin=editorial] .image-text{grid-template-columns:1fr;gap:28px}
+html[data-skin=editorial] .image-text .media{order:2}
+html[data-skin=editorial] .image-text.flip .media{order:0}
+html[data-skin=editorial] .image-text .media img{aspect-ratio:16/9;border-radius:0}
+
+/* 正文：首字母下沉，是刊物最省力的身份标记 */
+html[data-skin=editorial] .richtext{grid-template-columns:1fr;gap:0}
+html[data-skin=editorial] .richtext .body-text{max-width:70ch;margin-top:18px}
+html[data-skin=editorial] .richtext .body-text p:first-child::first-letter{float:left;font-family:var(--font-heading);font-size:58px;line-height:.86;padding:6px 10px 0 0;color:var(--primary-text)}
+
+/* 表单与 CTA：线框，不用底色 */
+html[data-skin=editorial] .cta{background:transparent;border:0;border-top:2px solid var(--ink);border-left:0;border-radius:0;padding:34px 0 0}
+html[data-skin=editorial] .inquiry{background:transparent;border:1px solid var(--ink);border-radius:0;padding:30px 28px}
+html[data-skin=editorial] .inquiry input,html[data-skin=editorial] .inquiry select,html[data-skin=editorial] .inquiry textarea{background:transparent;border-radius:0;border-color:color-mix(in srgb,var(--ink) 30%,transparent)}
+html[data-skin=editorial] .btn{border-radius:0;background:var(--ink);color:var(--paper);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:13px 30px}
+html[data-skin=editorial] .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+html[data-skin=editorial] footer{border-top:2px solid var(--ink);padding:26px 40px}
+
+/* 产品页：图置顶单栏，参数表退成细线 */
+html[data-skin=editorial] .product-head{grid-template-columns:1fr;gap:34px}
+html[data-skin=editorial] .product-head .cover{border-radius:0;aspect-ratio:16/9}
+html[data-skin=editorial] .case-body{grid-template-columns:repeat(2,1fr)}
+html[data-skin=editorial] table th,html[data-skin=editorial] table td{border-color:color-mix(in srgb,var(--ink) 18%,transparent)}
+
+@media (max-width:900px) {
+  html[data-skin=editorial] h1,html[data-skin=editorial] .hero h1{font-size:38px}
+  html[data-skin=editorial] h2{font-size:27px}
+  html[data-skin=editorial] .grid{grid-template-columns:1fr;gap:32px}
+  html[data-skin=editorial] .features,html[data-skin=editorial] .features.numbered{grid-template-columns:1fr;gap:26px}
+  html[data-skin=editorial] .hero.split .hero-img{aspect-ratio:3/2;margin-top:28px}
+  html[data-skin=editorial] .stats{grid-template-columns:repeat(2,1fr);gap:24px 20px}
+  html[data-skin=editorial] .site-header{padding:18px 24px}
+  html[data-skin=editorial] .richtext .body-text p:first-child::first-letter{font-size:44px}
+}
+@media (max-width:640px) {
+  html[data-skin=editorial] .hero h1{font-size:32px}
+  html[data-skin=editorial] .step{border-top-width:1px}
+  html[data-skin=editorial] footer{padding:22px 20px}
+}

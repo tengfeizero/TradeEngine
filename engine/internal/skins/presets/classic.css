@@ -1,0 +1,26 @@
+/*!
+ * @skin classic
+ * @label 通用商务（中性基线）
+ * @category 通用制造
+ * @tone light
+ */
+
+/* classic 直接沿用基础层的中性基线，这里只补几处让它「像成稿」的细节：
+   报头细分隔线、卡片悬停位移、按钮字重。
+   它同时是「皮肤只写了三行」时的退路——所以克制比个性重要。 */
+html[data-skin=classic] .section{padding:56px 0 0}
+html[data-skin=classic] .section-head{padding-bottom:14px;border-bottom:1px solid rgba(0,0,0,.07);margin-bottom:26px}
+html[data-skin=classic] .section-head h2{font-size:28px}
+html[data-skin=classic] .hero{border-bottom:1px solid rgba(0,0,0,.07)}
+html[data-skin=classic] .btn{font-weight:500;letter-spacing:.03em}
+html[data-skin=classic] .card{border-color:rgba(0,0,0,.07)}
+html[data-skin=classic] .feature{border-color:rgba(0,0,0,.07)}
+html[data-skin=classic] .stats{gap:32px}
+html[data-skin=classic] .step{border-top-width:2px;border-top-color:color-mix(in srgb,var(--primary) 70%,transparent)}
+html[data-skin=classic] .cta{border-left-width:4px}
+html[data-skin=classic] .kicker{color:var(--primary-text)}
+
+@media (max-width:900px) {
+  html[data-skin=classic] .section{padding:40px 0 0}
+  html[data-skin=classic] .section-head h2{font-size:24px}
+}

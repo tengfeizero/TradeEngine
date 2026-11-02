@@ -1,0 +1,147 @@
+slug: about
+status: published
+title:
+  en: Fifteen years of building the thing that breaks
+  zh: 十五年，一直在造那个会坏的东西
+summary:
+  en: Started in 2011 rebuilding gimbals for a Shenzhen camera shop. Still run by the same two people, still shipping from Bao'an.
+  zh: 2011 年从给深圳一家相机店修云台开始。至今还是那两个人管，还是从宝安出货。
+updated_at: 2026-10-22
+blocks:
+  - type: richtext
+    title:
+      en: We started on the repair side
+      zh: 我们是从维修那一头开始的
+    lead:
+      en: The company began as a repair bench, not a factory. That is still how we decide what to build.
+      zh: 这家公司是从一张维修台开始的，不是从工厂开始的。我们决定造什么，用的还是那套判断。
+    body:
+      en: |
+        In 2011 two of us repaired camera gimbals for a shop in Huaqiangbei. The work was mostly the same three failures, and after two years we had a clear opinion about which parts were designed badly. The first product was a replacement gimbal ribbon that did not fatigue at 3,000 cycles.
+
+        The habit stuck. We still keep a return bench in the plant, and the people who work there report directly to engineering rather than to after-sales. When a return rate moves, the conversation is about the design, not about the customer's usage.
+
+        We are 148 people now, 62 of them in engineering. We export to 48 countries and we have never had a year where the largest single customer was more than 18 percent of revenue, which is deliberate — an OEM business that depends on one buyer is a job, not a company.
+      zh: |
+        2011 年，我们两个人在华强北给一家店修相机云台。修来修去就是那三种故障，两年后我们对哪些件设计得糟糕有了很明确的看法。第一件产品是一根不会在 3,000 次循环时疲劳的云台排线。
+
+        这个习惯留下来了。厂里至今有一张返修台，坐在那里的人直接向工程汇报，而不是向售后汇报。返修率一动，讨论的是设计，不是客户用法。
+
+        现在是 148 人，其中 62 人在研发。出口 48 个国家，从没有哪一年最大单一客户超过营收的 18%——这是刻意控制的：一个靠一个买家的 OEM 生意是一份工作，不是一家公司。
+  - type: stats
+    title:
+      en: The company
+      zh: 公司概况
+    items:
+      - value: "2011"
+        label:
+          en: Founded
+          zh: 成立年份
+        note:
+          en: as a gimbal repair bench
+          zh: 起点是云台维修台
+      - value: "148"
+        label:
+          en: People
+          zh: 员工人数
+        note:
+          en: 62 in engineering
+          zh: 其中研发 62 人
+      - value: "48"
+        label:
+          en: Export countries
+          zh: 出口国家
+        note:
+          en: EU, NA, APAC, ME, LATAM
+          zh: 欧洲、北美、亚太、中东、拉美
+      - value: "18%"
+        label:
+          en: Largest customer share
+          zh: 最大客户占比
+        note:
+          en: kept under this on purpose
+          zh: 刻意控制在此之下
+  - type: team
+    title:
+      en: Who answers the technical questions
+      zh: 技术问题由谁回
+    intro:
+      en: These three people are on the email thread for any first order. Not a sales engineer relaying questions.
+      zh: 任何首单的邮件里都有这三个人。不是销售工程师在中间转述。
+    members:
+      - name: W. Zhou
+        role:
+          en: Head of flight control
+          zh: 飞控负责人
+        bio:
+          en: Twelve years on autopilots, seven of them on ours. Wrote the redundancy logic and the sensor fault naming scheme.
+          zh: 十二年飞控经验，其中七年在这套飞控上。冗余切换逻辑与传感器故障命名都是他写的。
+      - name: L. Chen
+        role:
+          en: Export compliance
+          zh: 出口合规
+        bio:
+          en: Handles the certification revisions, the battery transport files and the customs questions that arrive on a Friday night.
+          zh: 负责认证版本、电池运输文件，以及周五晚上到达的清关问题。
+      - name: H. Lin
+        role:
+          en: Field support
+          zh: 现场支持
+        bio:
+          en: Runs the training and the on-site commissioning for agricultural and inspection fleets. Former utility inspection pilot.
+          zh: 负责农业与巡检机队的培训与现场调试。此前是电力巡检飞手。
+  - type: testimonials
+    kicker:
+      en: Buyer voices
+      zh: 买家怎么说
+    title:
+      en: Three buyers, three different failures
+      zh: 三个买家，三种不同的失效
+    intro:
+      en: Names and companies are shown with permission. Each quote links to the platform it is about, so you can read the specification yourself.
+      zh: 姓名与公司经对方同意后展示。每条都链到对应平台，规格你可以自己去核。
+    items:
+      - quote:
+          en: We fly 900 hectares a season with 22 aircraft. What made us switch was not the spray pattern, it was that a crashed unit comes back with its flight log already on the card — we can see the motor current spike two seconds before impact instead of arguing about pilot error.
+          zh: 我们一个作业季飞 900 公顷、22 架机器。让我们换供应商的不是喷洒效果，而是摔下来的机器带着飞行日志一起回来——我们能在卡里看到撞地前两秒的电机电流尖峰，而不是跟人争论是不是飞手的问题。
+        author: Rafael Nunes
+        role:
+          en: Operations director
+          zh: 运营总监
+        company: AgroVoo Serviços Agrícolas
+        country: BR
+        date: "2026-07-08"
+        product: ag-40
+      - quote:
+          en: Our procurement asked for the CE-RED report number before the first invoice, and got it the same day. The second order was delayed nine days because a batch failed our incoming thermal test — they told us before we found out, and shipped from the retained lot.
+          zh: 我们的采购在第一张发票前就要 CE-RED 报告编号，当天就拿到了。第二单因为一批没通过我们的来料热测而晚了九天——他们在我们发现之前就说了，并从留样批次补货。
+        author: Katrin Vogel
+        role:
+          en: Technical procurement
+          zh: 技术采购
+        company: Nordnetz Energie GmbH
+        country: DE
+        date: "2026-03-19"
+        product: in-25
+      - quote:
+          en: Rental fleets destroy gimbals, and most suppliers treat a replacement as a new sale. Here the calibration file travels with the serial number, so we fit a new gimbal and it is already calibrated for that airframe. Our turnaround went from three days to a shift.
+          zh: 租赁机队最毁云台，多数供应商把换件当成又一次销售。这里的标定文件跟着序列号走，我们换上新的云台，它已经按那台整机标定好了。周转从三天变成一个班次。
+        author: Sean Doherty
+        role:
+          en: Fleet manager
+          zh: 机队经理
+        company: Lumen Aerial Rentals
+        country: US
+        date: "2026-01-27"
+        product: x9-cine
+  - type: cta
+    title:
+      en: Talk to the engineer, not the sales desk
+      zh: 直接找工程师，不用过销售台
+    body:
+      en: Send a mission profile and it goes to whoever owns that subsystem, with a copy to export compliance. On business days the reply comes within 12 hours and it includes the parts we would have to change.
+      zh: 发来任务说明，它会直接到负责那个子系统的人手上，并抄送出口合规。工作日 12 小时内回复，且会写明我们需要改哪些件。
+    cta_text:
+      en: Send a mission profile
+      zh: 发任务说明
+    cta_href: "/contact/"

@@ -1,0 +1,31 @@
+# 二进制
+engine
+engine.exe
+loadtest
+loadtest.exe
+
+# 询盘数据库（含客户个人信息，绝不入库）
+.data/
+**/.data/
+
+# 构建产物
+.build/
+**/.build/
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# 发布产物
+release/
+*.zip
+*.tar.gz
+
+# 实测报告（构建时可复现）
+docs-lighthouse-*.json
+
+# 派生图片缓存
+media/.derived/
+**/media/.derived/

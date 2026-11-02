@@ -1,0 +1,138 @@
+slug: o-460-dancong
+status: published
+order: 6
+model_no: LW-O460
+category: oolong
+scenarios: [gifting, retail-private-label]
+certificates: [fssc-22000, eu-organic]
+markets: [EU, UK, JP]
+hs_code: "090240"
+moq: 150
+moq_unit: kg
+
+lead_time:
+  en: 35–45 days after deposit, single-bush lots are limited
+  zh: 定金后 35–45 天，单株批次数量有限
+packaging:
+  en: 10 kg foil bag in carton, nitrogen-flushed on request
+  zh: 10 公斤铝箔袋装箱，可按要求充氮
+sample_policy:
+  en: 200 g at cost plus freight, one bush per sample
+  zh: 200 克按成本加运费，每份样对应单株
+
+title:
+  en: O-460 Mi Lan Dancong, Single Bush
+  zh: O-460 蜜兰单丛，单株
+subtitle:
+  en: One bush, one lot, 22 kg — the smallest run we pack
+  zh: 一株、一批、22 公斤——我们最小的包装批量
+summary:
+  en: Honey orchid from a single old bush in Wudong. 22 kg a year, and we will not blend it with the neighbours' leaf to fill an order.
+  zh: 乌岽单株老树的蜜兰香。年产 22 公斤，我们不会为了凑单掺邻家的叶子。
+
+description:
+  en: |
+    Dancong is sold on aroma type — mi lan, ya shi, huang zhi — and the names are only half true. Two bushes of the same type, fifty metres apart, make different tea; the old bush on the rock gives the honey note, the younger one gives flowers and a thinner body. We buy by bush, keep the lots separate, and put the bush number on the bag.
+
+    At 22 kg a year this is not a volume product and we do not pretend otherwise. It exists for a gift range or a tea house that wants one thing nobody else on the shelf has. If you need 300 kg of "dancong", we will sell you a blended lot and call it blended.
+  zh: |
+    单丛按香型卖——蜜兰、鸭屎、黄枝——而这些名字只对一半。同一香型的两株树，隔五十米，做出来是不同的茶；岩上老树给蜜，小树给花香和更薄的汤感。我们按株采购、按株存放，把株号写在袋子上。
+
+    一年 22 公斤，这不是走量产品，我们也不假装它是。它的用处是礼盒，或者一间想让货架上有一件别人没有的东西的茶馆。如果你要 300 公斤「单丛」，我们会卖你一批拼配的，并且告诉你这是拼配的。
+
+highlights:
+  - en: Single bush, bush number on the bag
+    zh: 单株，袋上标株号
+  - en: 22 kg annual lot, never extended with bought leaf
+    zh: 年产 22 公斤，绝不掺外购叶
+  - en: Nitrogen flush available for the gift trade
+    zh: 礼盒渠道可充氮
+
+applications:
+  - en: Limited gift ranges
+    zh: 限量礼盒
+  - en: Tea houses and collectors
+    zh: 茶馆与藏家
+
+specs:
+  - group:
+      en: Leaf and lot
+      zh: 鲜叶与批次
+    items:
+      - key: origin
+        label:
+          en: Growing district
+          zh: 产区
+        value:
+          en: Wudong, Phoenix Mountain, Chaozhou
+          zh: 潮州凤凰山乌岽
+      - key: bush
+        label:
+          en: Bush age
+          zh: 树龄
+        value:
+          en: Approx. 60 years, single bush
+          zh: 约 60 年，单株
+      - key: lot
+        label:
+          en: Annual lot
+          zh: 年产量
+        value_num: 22
+        unit: kg
+        filterable: true
+      - key: moisture
+        label:
+          en: Moisture
+          zh: 含水率
+        value_num: 5
+        unit: "%"
+        filterable: true
+  - group:
+      en: Cup and shelf life
+      zh: 滋味与保质
+    items:
+      - key: aroma
+        label:
+          en: Aroma
+          zh: 香气
+        value:
+          en: Honey, orchid, warm stone fruit
+          zh: 蜜、兰、熟核果
+      - key: infusions
+        label:
+          en: Infusions
+          zh: 耐泡度
+        value_num: 8
+        unit: times
+        filterable: true
+      - key: shelf_life
+        label:
+          en: Shelf life
+          zh: 保质期
+        value_num: 36
+        unit: months
+        filterable: true
+
+price:
+  min: 96
+  max: 128
+  currency: USD
+  incoterm: FOB Shantou
+
+carton:
+  qty_per_carton: 1
+  cbm: 0.03
+  gross_weight_kg: 10.4
+
+cover: media/products/o460-dancong.jpg
+related: [o-410-tieguanyin]
+cases: [japan-gift]
+updated_at: 2026-10-22
+
+seo:
+  title:
+    en: Single-Bush Mi Lan Dancong Oolong — 22 kg Lot
+    zh: 单株蜜兰单丛 — 22 公斤限量批
+  description:
+    en: Honey-orchid dancong from one 60-year bush in Wudong, 22 kg a year, bush number on the bag. Limited gift and tea-house lots.
+    zh: 乌岽 60 年单株蜜兰香单丛，年产 22 公斤，袋上标株号。限量礼盒与茶馆用茶。

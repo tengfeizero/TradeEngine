@@ -1,0 +1,37 @@
+slug: abc
+status: draft
+category: green-tea
+
+title:
+  en: New product
+  zh: 新产品
+summary:
+  en: Replace this one-line summary (what it is, key benefit).
+  zh: 替换这句一句话简介（是什么、核心卖点）。
+description:
+  en: |
+    Replace with the full description: material, workmanship, use.
+  zh: |
+    替换为完整描述：材质、工艺、用途。
+lead_time:
+  en: 15-20 days after deposit
+  zh: 定金后 15-20 天
+packaging:
+  en: 1 pc / carton
+  zh: 1 台 / 纸箱
+
+moq: 100
+moq_unit: pcs
+
+specs:
+  - group:
+      en: Product data
+      zh: 产品参数
+    items:
+      - key: material
+        label:
+          en: Material
+          zh: 材质
+        value:
+          en: "-"
+          zh: "-"

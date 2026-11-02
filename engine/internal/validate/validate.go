@@ -18,9 +18,9 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/tradeengine/tradeengine/internal/icons"
-	"github.com/tradeengine/tradeengine/internal/model"
-	"github.com/tradeengine/tradeengine/internal/skins"
+	"github.com/tengfeizero/TradeEngine/internal/icons"
+	"github.com/tengfeizero/TradeEngine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/skins"
 )
 
 // Issue 是一条校验结果。

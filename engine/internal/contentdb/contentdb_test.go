@@ -7,8 +7,8 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/tradeengine/tradeengine/internal/loader"
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/loader"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // newFixture 造一个覆盖全部实体类型的最小站点。

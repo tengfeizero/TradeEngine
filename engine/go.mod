@@ -1,4 +1,4 @@
-module github.com/tradeengine/tradeengine
+module github.com/tengfeizero/TradeEngine
 
 go 1.27
 

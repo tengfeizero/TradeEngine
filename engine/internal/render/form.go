@@ -3,7 +3,7 @@ package render
 import (
 	"strings"
 
-	"github.com/tradeengine/tradeengine/internal/geo"
+	"github.com/tengfeizero/TradeEngine/internal/geo"
 )
 
 // Option 是下拉框的一个选项。

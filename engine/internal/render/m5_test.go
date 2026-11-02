@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // m5Fixture 搭一个带临时媒体目录的站点：品牌分享卡（M5-3）需要真实文件存在，

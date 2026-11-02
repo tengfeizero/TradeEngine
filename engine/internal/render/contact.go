@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tradeengine/tradeengine/internal/geo"
-	"github.com/tradeengine/tradeengine/internal/icons"
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/geo"
+	"github.com/tengfeizero/TradeEngine/internal/icons"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // 联系浮层与页脚：B1 A1/A2/A6/C7/D2 的引擎侧承载。

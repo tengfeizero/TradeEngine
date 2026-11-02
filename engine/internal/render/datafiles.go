@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // 机器可读的产物：llms.txt 与 CSV 导出（B1 v2.0 E7 / C10）。

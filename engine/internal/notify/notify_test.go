@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tradeengine/tradeengine/internal/store"
+	"github.com/tengfeizero/TradeEngine/internal/store"
 )
 
 func sample() *store.Inquiry {

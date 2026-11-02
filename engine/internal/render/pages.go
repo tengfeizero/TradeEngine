@@ -5,8 +5,8 @@ import (
 	"html/template"
 	"path"
 
-	"github.com/tradeengine/tradeengine/internal/icons"
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/icons"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // 页面级渲染：固定页、列表页、案例页、404。

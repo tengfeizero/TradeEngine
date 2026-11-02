@@ -12,7 +12,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/tradeengine/tradeengine/internal/contentdb"
+	"github.com/tengfeizero/TradeEngine/internal/contentdb"
 )
 
 // newEnv 造一个「文件站点 + 内容库 + 两个用户（admin/editor）」的测试环境。

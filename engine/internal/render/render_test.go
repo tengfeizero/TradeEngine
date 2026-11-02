@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tradeengine/tradeengine/internal/icons"
-	"github.com/tradeengine/tradeengine/internal/model"
-	"github.com/tradeengine/tradeengine/internal/skins"
+	"github.com/tengfeizero/TradeEngine/internal/icons"
+	"github.com/tengfeizero/TradeEngine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/skins"
 )
 
 // styles 的 :root 是一个 12 参的 fmt.Sprintf——参数与占位符错一位，

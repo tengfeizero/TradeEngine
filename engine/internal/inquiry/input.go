@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tradeengine/tradeengine/internal/geo"
+	"github.com/tengfeizero/TradeEngine/internal/geo"
 )
 
 // 字段启用键名。与 settings.inquiry.fields 中的取值一致。

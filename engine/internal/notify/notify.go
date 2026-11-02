@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tradeengine/tradeengine/internal/store"
+	"github.com/tengfeizero/TradeEngine/internal/store"
 )
 
 // Config 是通知配置。密钥类信息走环境变量，不写进 settings.yaml（会被提交到 Git）。

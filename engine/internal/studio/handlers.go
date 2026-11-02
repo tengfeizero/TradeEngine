@@ -12,8 +12,8 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/tradeengine/tradeengine/internal/contentdb"
-	"github.com/tradeengine/tradeengine/internal/server"
+	"github.com/tengfeizero/TradeEngine/internal/contentdb"
+	"github.com/tengfeizero/TradeEngine/internal/server"
 )
 
 // Options 是 Web Studio 的装配参数。

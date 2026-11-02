@@ -19,7 +19,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // Field 描述一个表单字段。Kind 决定控件，i18n 前缀表示按语言展开。

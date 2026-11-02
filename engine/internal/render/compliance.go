@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"strings"
 
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // 市场准入信息（B1 v2.0 R2）的渲染层。

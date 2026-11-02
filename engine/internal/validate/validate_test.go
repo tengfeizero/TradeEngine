@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tradeengine/tradeengine/internal/loader"
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/loader"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 const exampleSite = "../../examples/zentea"

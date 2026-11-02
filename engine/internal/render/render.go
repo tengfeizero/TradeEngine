@@ -17,10 +17,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tradeengine/tradeengine/internal/icons"
-	"github.com/tradeengine/tradeengine/internal/media"
-	"github.com/tradeengine/tradeengine/internal/model"
-	"github.com/tradeengine/tradeengine/internal/skins"
+	"github.com/tengfeizero/TradeEngine/internal/icons"
+	"github.com/tengfeizero/TradeEngine/internal/media"
+	"github.com/tengfeizero/TradeEngine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/skins"
 )
 
 //go:embed templates/*.tmpl

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // 这一组测试覆盖「让引擎追平 B3」新增的六项能力：

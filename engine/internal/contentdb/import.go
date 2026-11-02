@@ -9,8 +9,8 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/tradeengine/tradeengine/internal/loader"
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/loader"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // Import 把站点文件内容灌入 SQLite 内容库。

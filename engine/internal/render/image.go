@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/tradeengine/tradeengine/internal/media"
+	"github.com/tengfeizero/TradeEngine/internal/media"
 )
 
 // ImageView 是模板里的图片模型。

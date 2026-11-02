@@ -8,8 +8,8 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/tradeengine/tradeengine/internal/loader"
-	"github.com/tradeengine/tradeengine/internal/model"
+	"github.com/tengfeizero/TradeEngine/internal/loader"
+	"github.com/tengfeizero/TradeEngine/internal/model"
 )
 
 // DBLoader 从内容库读出 model.Site，实现 loader.Loader。

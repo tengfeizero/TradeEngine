@@ -8,8 +8,8 @@ TradeEngine 不是通用 CMS，而是一条**交付流水线**：Go 单二进制
 
 ```
 ├── LICENSE / NOTICE          MIT 许可 + 第三方资产说明（字体 OFL、AI 生成图）
-├── A1–A9 *.md                A 系列：开发实战知识（基础/选型/性能/询盘/多语言/部署/安全/数据/维保）
-├── B1–B6 *.md                B 系列：方法论（评分标准 → 评分 SOP → 引擎设计 → 使用说明 → 变更记录 → 交付 SOP）
+├── docs/                     A 系列（开发实战 9 篇）+ B 系列（方法论 6 篇）+ 三站评分报告
+├── docs/images/              演示站预览图
 ├── engine/                   Go 单二进制引擎（含 examples/zentea 演示站）
 │   ├── clients/              三个虚构演示站：kestrel（无人机）/ leafworks（茶叶）/ ridgeway（自行车）
 │   ├── internal/skins/       九套预置皮肤（CSS Zen Garden 模型，加皮肤零 Go 改动）
@@ -17,6 +17,17 @@ TradeEngine 不是通用 CMS，而是一条**交付流水线**：Go 单二进制
 ├── design/                   三份参考设计稿 + AI 生成配图
 └── tools/audit-site/         站点评测工具：probe.py（确定性取证）+ score.py（计分校验器）
 ```
+
+## 演示站预览
+
+四套皮肤 × 四个虚构品牌，全部由引擎从 YAML 内容 + 预置皮肤一键构建：
+
+| | |
+| --- | --- |
+| ![kestrel — aeronova 皮肤](docs/images/preview-kestrel.png) | ![leafworks — zentea 皮肤](docs/images/preview-leafworks.png) |
+| *kestrel 无人机 · aeronova（航宇暗色）* | *leafworks 茶叶 · zentea（茶韵东方）* |
+| ![ridgeway — ecobike 皮肤](docs/images/preview-ridgeway.png) | ![zentea — zentea 皮肤](docs/images/preview-zentea.png) |
+| *ridgeway 自行车 · ecobike（骑行自然）* | *zentea 示例站 · zentea（茶韵东方）* |
 
 ## 引擎核心能力
 
@@ -56,15 +67,15 @@ python tools/audit-site/scripts/score.py --verdict reports/demo/verdict.json
 
 ## 文档
 
-| 系列 | 内容 |
+| 文档 | 内容 |
 | --- | --- |
-| **B1** 优秀外贸站的标准 | 评什么：50 条评分标准 + 9 条否决项 + 8 条加分项 |
-| **B2** 评分 SOP | 怎么评：110 分钟六步流程与判定口径 |
-| **B3** 引擎设计实现 | 怎么造：架构、数据模型、56 个规则码 |
-| **B4** 使用说明 | 怎么用：14 个命令逐个讲 |
-| **B5** 变更记录 | 改了什么：逐版本 |
-| **B6** 承接交付 SOP | 一单活怎么干：从立项到移交 |
-| **A1–A9** | 开发基础 / 选型 / 性能 / 询盘 / 多语言 / 部署 / 安全 / 数据复盘 / 维保合同 |
+| **docs/B1** 优秀外贸站的标准 | 评什么：50 条评分标准 + 9 条否决项 + 8 条加分项 |
+| **docs/B2** 评分 SOP | 怎么评：110 分钟六步流程与判定口径 |
+| **docs/B3** 引擎设计实现 | 怎么造：架构、数据模型、56 个规则码 |
+| **docs/B4** 使用说明 | 怎么用：14 个命令逐个讲 |
+| **docs/B5** 变更记录 | 改了什么：逐版本 |
+| **docs/B6** 承接交付 SOP | 一单活怎么干：从立项到移交 |
+| **docs/A1–A9** | 开发基础 / 选型 / 性能 / 询盘 / 多语言 / 部署 / 安全 / 数据复盘 / 维保合同 |
 
 ## 状态
 

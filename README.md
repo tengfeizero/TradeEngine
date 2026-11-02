@@ -8,7 +8,7 @@ TradeEngine 不是通用 CMS，而是一条**交付流水线**：Go 单二进制
 
 ```
 ├── LICENSE / NOTICE          MIT 许可 + 第三方资产说明（字体 OFL、AI 生成图）
-├── docs/                     A 系列（开发实战 9 篇）+ B 系列（方法论 6 篇）+ 三站评分报告
+├── docs/                     A 系列（开发实战 9 篇）+ B 系列（方法论 6 篇）
 ├── docs/images/              演示站预览图
 ├── engine/                   Go 单二进制引擎（含 examples/zentea 演示站）
 │   ├── clients/              三个虚构演示站：kestrel（无人机）/ leafworks（茶叶）/ ridgeway（自行车）
